@@ -1,26 +1,57 @@
-html, body {
-	font-family: Consolas, monaco, monospace;
-	background-color: #272822;
-	color: #F8F8F2;
-}
+@import 'reset.css';
 
 .container {
-	margin: 50px;
+  width: 980px;
+  margin: auto; }
+
+.clearfix {
+  clear: both;
+  display: block; }
+
+
+/* ---------------------NAVIGATION--------------------- */
+nav {
+	background-color:  rgba(85, 173, 183, 0.84);
+	padding: 28px 0;
+	position: fixed;
+    right: 0;
+    left: 0;
 }
 
-a {
+nav h1 {
+	float: left;
+	font-family: CherrySwash;
+	color:  #FFF;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 25px;
+	text-align: left;
+}
+
+nav ul {
+	float: right;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	font-family: HelveticaLT;
+	color: #dce3e4;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: left;
+	text-transform: uppercase;
 	text-decoration: none;
-	color: #A6E22E;
+	padding: 0 10px;
+}
+nav ul li::after {
+	color: #dce3e4;
+	content: "/";
+}
+nav ul li:last-child::after {
+	content: "";
 }
 
-a:hover {
-	color: #F92672;
-}
-
-h1 {
-	color: #F92672;
-}
-
-h2 {
-	color: #66D9EF;
-}
+/* ---------------------HEADER--------------------- */
