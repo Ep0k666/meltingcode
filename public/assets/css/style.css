@@ -1,7 +1,7 @@
 @import 'reset.css';
 
 .container {
-  width: 980px;
+  width: 1200px;
   margin: auto; }
 
 .clearfix {
@@ -13,7 +13,6 @@
 nav {
 	background-color:  rgba(85, 173, 183, 0.84);
 	padding: 28px 0;
-	position: fixed;
     right: 0;
     left: 0;
 }

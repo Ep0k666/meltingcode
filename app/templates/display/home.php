@@ -1,24 +1,13 @@
 <?php $this->layout('layout', ['title' => '']) ?>
-	<!-- NAVIGATION -->
-	<nav>
-		<div class="container">
-			<h1>Lor'N SHOP</h1>
-			<ul>
-				<li><a href="#">Accueil</a></li>
-				<li><a href="#">Boutique</a></li>
-				<li><a href="#">Produits</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			<!-- Bouton de recherche -->
-			<!-- FR/EN -->
-			<div class="clearfix"></div>
-		</div>
-	</nav>
+
+<?php $this->start('main_content') ?>
 
 	<!-- HEADER CAROUSEL -->
 	<header>
 		<div class="container">
-			<!-- <h2></h2> -->
+			<h2>Lor'N Shop</h2>
+			<p>Vos boutiques de Lorraine</p> 
+			sdfghqfkjhqhfkihqfjufe
 			<ul>
 				<li class="active"><a href="#"></a></li>
 				<li><a href="#"></a></li>
@@ -34,7 +23,19 @@
 		<section id="boutiques">
 			<div class="container">
 				<h3>Dernières boutiques</h3>
-				<div></div>
+
+				<!-- Dernière boutique en ligne -->
+				<article class="firstboutik">
+					<p></p>
+				</article>
+				<!-- Avant-dernière boutique en ligne -->
+				<article class="secondtboutik">	
+					<p></p>
+				</article>
+				<!-- Avant avant-dernière boutique en ligne -->
+				<article class="thirdboutik">	
+					<p></p>
+				</article>
 			</div>
 	</section>
 
@@ -42,3 +43,5 @@
 	<section>
 		
 	</section>
+
+<?php $this->stop('main_content') ?>
