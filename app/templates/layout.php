@@ -68,6 +68,18 @@
 			</section>
 
 			<footer>
+				<div class="social-container">
+				<!-- Réseaux Sociaux -->
+					<ul>
+						<li><a href="" id="facebook"></a></li>
+						<li><a href="" id="twitter"></a></li>
+						<li><a href="" id="google"></a></li>
+					</ul>
+					<div class="clearfix"></div>
+				<!-- Copyright -->
+				<p>copyright &copy; 2016 Lor'N Shop.com</p>
+				
+				</div>
 				
 			</footer>
 		</div>

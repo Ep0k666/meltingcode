@@ -35,7 +35,6 @@
 				NEWS BOUTIQUE 
 		 ****************************-->
 
-	<section>
 		<section id="new_shop">
 			<div class="container">
 
@@ -61,10 +60,9 @@
 				<?php endforeach; ?>
 
 				<div class="clearfix"></div>
-
+				
 			</div>
 		</section>
-	</section>
 
 	<!-- ****************************
 				   ABOUT US 

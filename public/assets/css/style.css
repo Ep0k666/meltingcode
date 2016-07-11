@@ -261,3 +261,76 @@ button[name="search_submit"]{
 	border-radius: 75px;
 	margin: 0px auto 20px;
 }
+
+/****************************
+	        FOOTER
+ ****************************/
+
+/* Couleur de fond du footer */
+footer{
+	background-color:#454444;
+	padding:10px 0px;
+	text-align:center;
+	color:#8E8C8C;
+}
+
+/* Centrage */
+footer .social-container {
+	display:inline-block;
+}
+
+
+/*  Réseaux sociaux  */
+footer ul li a{
+	display: block;
+	background-image: url('../img/sprite3.jpg');
+	width:50px;
+	height:50px;
+	float: left;
+	margin-right: 15px;
+	margin-left:15px;
+	transition: transform 0.5s ease-in-out;
+	border-radius: 84px;
+	box-shadow:4px 6px 7px #565555;
+}
+
+/* Positionnement du sprite */
+#facebook{
+	background-position: -3px -4px;
+}
+#twitter{
+	background-position: -137px -4px;
+}
+#google{
+	background-position: -202px -4px;
+}
+
+/* Pas de margin sur le dernier enfant */
+ footer ul li:last-of-type a{
+ 	margin-right:0px;
+ }
+
+/* Réseaux sociaux au survol: rotation */
+footer ul li:hover a{
+	transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+
+/*  Réseaux sociaux au survol */
+#facebook:hover{
+	background-position: -3px -136px;
+}
+#twitter:hover{
+	background-position: -137px -136px;
+}
+#google:hover{
+	background-position: -202px -136px;
+}
+
+footer p{
+	margin-top:10px;
+	float:right;
+}
+
+
+
+
