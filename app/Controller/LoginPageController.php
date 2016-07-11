@@ -18,9 +18,9 @@ class LoginPageController extends Controller
 
     public function connect()
     {
-        user = $manager -> connectUser
+       /* user = $manager -> connectUser
             if user different de false
-        authen
+        authen*/
         $this->show('loginPage/connect');
     }
 
