@@ -26,42 +26,30 @@
 
 
 	<!-- ****************************
-				HIGH NAVIGATION 
+				LOW NAVIGATION 
 		 ****************************-->
 
-		<nav id="high_nav">
-			<div class="container">
+		<header>
 
-			<!-- *** Titre *** -->
-			<h1>
-				<strong>Lor' 
-					<span>N</span>
-					<span> Shop</span>
-				</strong>
-			</h1>
-			
-			<!-- *** Search formulaire *** -->
-				<form method="POST" action="#">
+			<nav id="low_nav">
+				<div class="container">
 
-					<button type="submit" name="search_submit">
-						<i class="fa fa-search fa-lg" id="search_icon"></i>
-					</button>
+					<ul>
+						<!-- *** Connexion *** -->
+						<li>
+							<a href="" id="connexion">Connexion</a>
+						</li>
 
-					<input type="text" name="search_bar_small" placeholder="Rechercher un produit">
-				</form>
+						<!-- *** Inscription *** -->
+						<li>
+							<a href="" id="subscribe">Inscription</a>
+						</li>
+					</ul>
 
-				<!-- *** Liens de navigation *** -->
-				<ul>
-					<li><a href="#">Accueil</a></li>
-					<li><a href="#">Boutique</a></li>
-					<li><a href="#">Produits</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
+					<div class="container"></div>
 
-				<div class="clearfix"></div>
-
-			</div>
-		</nav>
+				</div>
+			</nav>
 
 			<section>
 				<?= $this->section('main_content') ?>
@@ -70,6 +58,5 @@
 			<footer>
 				
 			</footer>
-		</div>
 	</body>
 </html>

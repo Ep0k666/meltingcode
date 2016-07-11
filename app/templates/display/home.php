@@ -6,23 +6,60 @@
 	<!--*************************
 			SLIDER BOUTIQUE 
 		*************************-->
-	<header>
-		<div class="container">
 
+		<nav id="high_nav">
+			<div class="container">
+
+			<!-- *** Titre *** -->
+			<h1>
+				<strong>Lor' 
+					<span>N</span>
+					<span> Shop</span>
+				</strong>
+			</h1>
+			
+			<!-- *** Search formulaire *** -->
+				<form method="POST" action="#">
+
+					<button type="submit" name="search_submit">
+						<i class="fa fa-search fa-lg" id="search_icon"></i>
+					</button>
+
+					<input type="text" name="search_bar_small" placeholder="Rechercher un produit">
+				</form>
+
+				<!-- *** Liens de navigation *** -->
+				<ul>
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#">Boutique</a></li>
+					<li><a href="#">Produits</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+
+				<div class="clearfix"></div>
+
+			</div>
+		</nav>
+
+		<div class="container">
 			<div class="flexslider">
 				<ul class="slides">
 
+				<!-- *** Pour chaque Shop MostViewed *** -->
+				<?php foreach($shopsMostViewed as $shopMostViewed) : ?>
+
+					<!-- ** Définition du lien de l'image ** -->
+					<?php 
+						$path = $shopMostViewed['pictures'];
+						$img = $this->assetUrl($path);
+					?>
+
 					<!-- *** First shop *** -->
-					<li id="bonbon_fury">
+					<li class="most_viewed" style="background-image: url('<?= $img ?>')">
 					</li>
 
-					<!-- *** Second shop *** -->
-					<li id="fight_club">
-					</li>
-
-					<!-- *** Third shop *** -->
-					<li id="sport_nutrition">
-					</li>
+				<!-- ** Fin foreach ** -->
+				<?php endforeach; ?>
 
 				</ul>
 			</div>
@@ -34,37 +71,37 @@
 	<!-- ****************************
 				NEWS BOUTIQUE 
 		 ****************************-->
-
-	<section>
 		<section id="new_shop">
 			<div class="container">
 
-				<h3>Découvrez les dernières boutiques</h3>
+				<h3>Découvrez les dernières boutiques ...</h3>
 
-				<!-- *** Infos des boutiques récentes *** -->
-				<?php foreach($shops as $shop): ?>
+				<!-- *** Pour chaque Shop Most Recent *** -->
+				<?php foreach($shopsMostRecent as $shopMostRecent): ?>
 
 					<article class="shop_discovery">
 
+					<!-- ** Définition du lien pour chaque image ** -->
 					<?php 
-					$path = $shop['pictures'];
-					$img = '$this->assetUrl(' . $path . ')';
+					$path = $shopMostRecent['pictures'];
+					$img = $this->assetUrl($path);
 					?>
 
-						<img href="<?= $img ?>">
+						<img src="<?= $img ?>">
 
-						<h4 class="shop_title"><?= $shop['name'] ?></h4>
+						<h4 class="shop_title"><?= $shopMostRecent['name'] ?></h4>
 
-						<p class="shop_description"><?= $shop['description'] ?></p>
+						<p class="shop_description"><?= $shopMostRecent['description'] ?></p>
 
 					</article>
+
+				<!-- ** Fin foreach ** -->
 				<?php endforeach; ?>
 
 				<div class="clearfix"></div>
 
 			</div>
 		</section>
-	</section>
 
 	<!-- ****************************
 				   ABOUT US 

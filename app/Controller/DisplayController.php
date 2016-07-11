@@ -10,17 +10,16 @@ class DisplayController extends Controller
 	/**
 	 * Page d'accueil par défaut
 	 */
-	/*public function home()
-	{
-		$this->show('display/home');
-	}
-*/
-	public function listing()
+	public function home()
     {
         $manager = new \Manager\ShopManager();
-        $shops = $manager->findAll();
+        $shopsMostViewed = $manager->mostViewed();
+        $shopsMostRecent = $manager->mostRecent();
         
-        $this->show('display/home', ['shops' => $shops]);
+        $this->show('display/home', 
+            [
+                'shopsMostViewed' => $shopsMostViewed,
+                'shopsMostRecent' => $shopsMostRecent
+            ]);
     }
-
 }
