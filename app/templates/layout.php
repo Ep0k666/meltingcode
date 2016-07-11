@@ -1,75 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Home</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- *** RESET CSS *** -->
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/reset.css') ?>">
-	<!-- *** STYLE CSS *** -->
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
-	<!-- *** FONT AWESON CSS *** -->
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/font-awesome.min.css') ?>">
+    <title>Home</title>
 
-	<!-- *** CDN JQUERY *** -->
-	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-	<!-- *** JQUERY FLEXSLIDER *** -->
-	<script src="<?= $this->assetUrl('js/jquery.flexslider.js') ?>"></script> 
-	<!-- *** SCRIPT *** --> 
-	<script src="<?= $this->assetUrl('js/script.js') ?>"></script>
+    <!-- *** RESET CSS *** -->
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/reset.css') ?>">
+    <!-- *** STYLE CSS *** -->
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
+    <!-- *** FONT AWESON CSS *** -->
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/font-awesome.min.css') ?>">
+    <!-- *** CSS Page Login/Connect *** -->
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/loginstyle.css') ?>">
+
+
+
+    <!-- *** CDN JQUERY *** -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="<?= $this->assetUrl('js/jquery.js')?>"></script>
+    <!-- *** JQUERY FLEXSLIDER *** -->
+    <script src="<?= $this->assetUrl('js/jquery.flexslider.js') ?>"></script>
+    <!-- *** SCRIPT *** -->
+    <script src="<?= $this->assetUrl('js/script.js') ?>"></script>
+    <!-- *** SCRIPT *** -->
+    <script src="<?= $this->assetUrl('js/scriptconnect.js') ?>"></script>
 
 </head>
-	<body>
+<body>
 
 
-	<!-- ****************************
-				HIGH NAVIGATION 
-		 ****************************-->
+<!-- ****************************
+            LOW NAVIGATION
+     ****************************-->
 
-		<nav id="high_nav">
-			<div class="container">
+<header>
 
-			<!-- *** Titre *** -->
-			<h1>
-				<strong>Lor' 
-					<span>N</span>
-					<span> Shop</span>
-				</strong>
-			</h1>
-			
-			<!-- *** Search formulaire *** -->
-				<form method="POST" action="#">
+    <nav id="low_nav">
+        <div class="container">
 
-					<button type="submit" name="search_submit">
-						<i class="fa fa-search fa-lg" id="search_icon"></i>
-					</button>
+            <ul>
+                <!-- *** Connexion *** -->
+                <li>
+                    <a href="" id="connexion">Connexion</a>
+                </li>
 
-					<input type="text" name="search_bar_small" placeholder="Rechercher un produit">
-				</form>
+                <!-- *** Inscription *** -->
+                <li>
+                    <a href="" id="subscribe">Inscription</a>
+                </li>
+            </ul>
 
-				<!-- *** Liens de navigation *** -->
-				<ul>
-					<li><a href="#">Accueil</a></li>
-					<li><a href="#">Boutique</a></li>
-					<li><a href="#">Produits</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
+            <div class="clearfix"></div>
 
-				<div class="clearfix"></div>
+        </div>
+    </nav>
 
-			</div>
-		</nav>
+    <section>
+        <?= $this->section('main_content') ?>
 
-			<section>
-				<?= $this->section('main_content') ?>
-			</section>
+    </section>
 
-			<footer>
-				
-			</footer>
-		</div>
-	</body>
+    <footer>
+
+    </footer>
+
+</body>
 </html>
