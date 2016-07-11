@@ -13,13 +13,20 @@
 	<link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
 	<!-- *** FONT AWESON CSS *** -->
 	<link rel="stylesheet" href="<?= $this->assetUrl('css/font-awesome.min.css') ?>">
+	<!-- *** CSS Page Login/Connect *** -->
+	<link rel="stylesheet" href="<?= $this->assetUrl('css/loginstyle.css') ?>">
+
+
 
 	<!-- *** CDN JQUERY *** -->
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script src="<?= $this->assetUrl('js/jquery.js')?>"></script>
 	<!-- *** JQUERY FLEXSLIDER *** -->
 	<script src="<?= $this->assetUrl('js/jquery.flexslider.js') ?>"></script> 
 	<!-- *** SCRIPT *** --> 
 	<script src="<?= $this->assetUrl('js/script.js') ?>"></script>
+    <!-- *** SCRIPT *** -->
+    <script src="<?= $this->assetUrl('js/scriptconnect.js') ?>"></script>
 
 </head>
 	<body>
@@ -65,11 +72,13 @@
 
 			<section>
 				<?= $this->section('main_content') ?>
+				<?= $this->section('connect') ?>
+				<?= $this->section('signup') ?>
 			</section>
 
 			<footer>
 				
 			</footer>
-		</div>
+
 	</body>
 </html>
