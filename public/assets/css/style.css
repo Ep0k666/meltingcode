@@ -42,6 +42,21 @@ body{
 }
 
 /*****************************
+		LOW NAVIGATION
+ *****************************/
+
+#low_nav{
+}
+
+#low_nav ul{
+	float: right;
+}
+
+#connexion, #subscribe{
+	float: left;
+}
+
+/*****************************
 		HIGH NAVIGATION
  *****************************/
 
