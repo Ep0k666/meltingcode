@@ -1,7 +1,7 @@
 
 <?php $this->layout('layout', ['title' => 'Inscription']) ?>
 
-<?php $this->start('signup') ?>
+<?php $this->start('main_content') ?>
 
 
 <div id="logo">
@@ -16,9 +16,14 @@
             <input type="email" name="mail" placeholder="Votre E-Mail" id="" required>
             <input type="password" name="pass1" placeholder="Mot de Passe" required>
             <input type="password" name="pass2" placeholder="Confirmer Mot de Passe" required>
+            <input type="text" name="number" placeholder="">
+            <input type="text" name="adress" placeholder="">
+            <input type="text" name="zipcode" placeholder="">
+            <input type="text" name="city" placeholder="">
+
             <br>
             <button type="submit" name="add-user">S'inscrire</button>
-            <a href="http://localhost/meltingcode/public/loginPage/signup">Déjà inscrit ?</a>
+            <a href="<?= $this->url("connect")?>">Déjà Inscrit ? ?</a>
         </div>
     </form>
     <canvas></canvas>
@@ -42,7 +47,4 @@
 
 
 
-
-
-
-<?php $this->stop('signup') ?>
+<?php $this->stop('main_content') ?>

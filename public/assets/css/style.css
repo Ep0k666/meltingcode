@@ -17,13 +17,28 @@ body{
 }
 
 .container {
-  width: 1100px;
-  margin: auto; 
+	width: 1100px;
+	margin: auto;
 }
 
 .clearfix {
-  clear: both;
-  display: block; 
+	clear: both;
+	display: block;
+}
+
+/*****************************
+		LOW NAVIGATION
+ *****************************/
+
+#low_nav{
+}
+
+#low_nav ul{
+	float: right;
+}
+
+#connexion, #subscribe{
+	float: left;
 }
 
 /*****************************
@@ -53,7 +68,6 @@ body{
 #high_nav{
 	background-color: #252424;
 	color: #FFF;
-	margin-bottom: 20px;
 }
 
 /*** Liens de navigation ***/
@@ -81,8 +95,8 @@ body{
 	border: none;
 	margin-top: 25px;
 	color: #FFF;
-	font-weight: 600;	
-} 
+	font-weight: 600;
+}
 
 button[name="search_submit"]{
 	float: right;
@@ -98,29 +112,11 @@ button[name="search_submit"]{
 			  SLIDER
  *********************************/
 
-#bonbon_fury{
-	background-image: url('../img/bonbon-fury.jpg');
+.most_viewed{
+	padding: 250px 0px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	padding: 300px 0px;
-}
-
-#fight_club{
-	background-image: url('../img/fight-club.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	padding: 300px 0px;
-}
-
-#sport_nutrition{
-	background-image: url('../img/sport-nutrition.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	padding: 300px 0px;
-	display: block;
 }
 
 
@@ -131,13 +127,13 @@ button[name="search_submit"]{
 /*** Section new shop ***/
 #new_shop{
 	color: #322F2F;
-	padding-top: 570px;
+	padding-top: 480px;
 	padding-bottom: 50px;
 	font-family: 'Montserrat', sans-serif;
 }
 
 #new_shop h3{
-	font-size: 35px; 
+	font-size: 35px;
 }
 
 #new_shop article:first-of-type{
@@ -261,3 +257,4 @@ button[name="search_submit"]{
 	border-radius: 75px;
 	margin: 0px auto 20px;
 }
+

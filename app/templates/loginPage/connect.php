@@ -1,6 +1,7 @@
-<?php $this->layout('layout', ['title' => 'Connexion']) ?>
 
-<?php $this->start('connect') ?>
+<?php $this->layout('layout', ['title' => 'Inscription']) ?>
+
+<?php $this->start('main_content') ?>
 
 
 <div id="logo">
@@ -8,18 +9,16 @@
 </div>
 <section class="stark-login">
 
-    <form action="#" method="POST">
+    <form action="" method="POST">
         <div id="fade-box">
             <label for="connexion">Connexion</label>
-            <input type="text" name="username" id="username" placeholder="Identifiant" required>
-            <input type="password" placeholder="Mot de Passe" required>
-            <br>
-            <button>Connexion</button>
-            <a href="http://localhost/meltingcode/public/loginPage/connect">Pas encore de compte ?</a>
-
+            <input type="email" name="mail" placeholder="Votre E-Mail" id="" required>
+            <input type="password" name="pass" placeholder="Mot de Passe" required>
+            <button type="submit" name="login-button"">Connexion</button>
+            <a href="<?= $this->url("login")?>">Pas encore de compte ?</a>
         </div>
     </form>
-<canvas></canvas>
+    <canvas></canvas>
 </section>
 
 <div id="circle1">
@@ -40,7 +39,4 @@
 
 
 
-
-
-
-<?php $this->stop('connect') ?>
+<?php $this->stop('main_content') ?>
