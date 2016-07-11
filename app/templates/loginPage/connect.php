@@ -1,7 +1,7 @@
 
 <?php $this->layout('layout', ['title' => 'Inscription']) ?>
 
-<?php $this->start('main_content') ?>
+<?php $this->start('signup') ?>
 
 
 <div id="logo">
@@ -45,4 +45,4 @@
 <canvas></canvas>
 
 
-<?php $this->stop('main_content') ?>
+<?php $this->stop('signup') ?>
