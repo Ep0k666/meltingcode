@@ -1,5 +1,5 @@
 <?php
 	
 	$w_routes = array(
-		['GET', '/', 'Display#home', 'home'],	
+		['GET', '/', 'Display#listing', 'home'],	
 	);
