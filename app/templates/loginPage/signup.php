@@ -1,6 +1,6 @@
 <?php $this->layout('layout', ['title' => 'Connexion']) ?>
 
-<?php $this->start('main_content') ?>
+<?php $this->start('connect') ?>
 
 
 <div id="logo">
@@ -8,7 +8,7 @@
 </div>
 <section class="stark-login">
 
-    <form action="" method="">
+    <form action="#" method="POST">
         <div id="fade-box">
             <label for="connexion">Connexion</label>
             <input type="text" name="username" id="username" placeholder="Identifiant" required>
@@ -43,4 +43,4 @@
 
 
 
-<?php $this->stop('main_content') ?>
+<?php $this->stop('connect') ?>
