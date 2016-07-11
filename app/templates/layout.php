@@ -68,8 +68,11 @@
 				
 			</footer>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> c902c4249d9b6b0e78e0ebe9c5f6136a74bf9c27
+=======
+>>>>>>> steven
 	</body>
 </html>
