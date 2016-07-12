@@ -12,7 +12,7 @@
     <form action="#" method="POST">
         <div id="fade-box">
             <label for="connexion">Inscription</label>
-            <input type="text" name="username" id="username" placeholder="Identifiant" required>
+            <input type="text" name="login" id="username" placeholder="Identifiant" required>
             <input type="text" name="company" id="company" placeholder="Compagnie" required>
             <input type="text" name="firstname" id="firstname" placeholder="Prénom" required >
             <input type="text" name="lastname" id="lastname" placeholder="Nom de famille" required >

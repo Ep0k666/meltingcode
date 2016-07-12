@@ -8,7 +8,7 @@
     Merci de renseigner un login et un mot de passe
 <?php elseif(isset($errorLogin)) : ?>
 Connexion impossible. Erreur d'identifiant !
-
+<?php endif ?>
 
 <div id="logo">
     <h1><i> Lor'N Shop FRANCE</i></h1>
@@ -18,13 +18,13 @@ Connexion impossible. Erreur d'identifiant !
     <form action="#" method="POST">
         <div id="fade-box">
             <label for="connexion">Connexion</label>
-            <input type="email" name="mail" placeholder="Votre E-Mail" >
-            <input type="password" name="pass" placeholder="Mot de Passe" >
-            <button type="submit" name="login-button" value="login">Connexion</button>
+            <input type="email" name="login" placeholder="Identifiant" value="login" >
+            <input type="password" name="password" placeholder="Mot de Passe" value="password   " >
+            <button type="submit" name="connect" value="submit">Connexion</button>
             <a href="<?= $this->url("login")?>">Pas encore de compte ?</a>
         </div>
     </form>
-    <canvas></canvas>
+
 </section>
 
 <div id="circle1">
@@ -33,6 +33,7 @@ Connexion impossible. Erreur d'identifiant !
     </div>
 </div>
 
+<canvas></canvas>
 
 
 <ul>

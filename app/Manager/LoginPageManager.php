@@ -6,3 +6,4 @@ class LoginPageManager extends \W\Manager\Manager
 {
 
 }
+
