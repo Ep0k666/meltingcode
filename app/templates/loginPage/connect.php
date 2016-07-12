@@ -1,7 +1,13 @@
-
 <?php $this->layout('layout', ['title' => 'Inscription']) ?>
 
 <?php $this->start('main_content') ?>
+
+<?php if(isset($_SESSION['user'])) echo 'Connecté en tant que ' . $_SESSION['user']['login'] ?>
+
+<?php if(isset($errorEmptyFields)) : ?>
+    Merci de renseigner un login et un mot de passe
+<?php elseif(isset($errorLogin)) : ?>
+Connexion impossible. Erreur d'identifiant !
 
 
 <div id="logo">
@@ -9,12 +15,12 @@
 </div>
 <section class="stark-login">
 
-    <form action="" method="POST">
+    <form action="#" method="POST">
         <div id="fade-box">
             <label for="connexion">Connexion</label>
-            <input type="email" name="mail" placeholder="Votre E-Mail" id="" required>
-            <input type="password" name="pass" placeholder="Mot de Passe" required>
-            <button type="submit" name="login-button"">Connexion</button>
+            <input type="email" name="mail" placeholder="Votre E-Mail" >
+            <input type="password" name="pass" placeholder="Mot de Passe" >
+            <button type="submit" name="login-button" value="login">Connexion</button>
             <a href="<?= $this->url("login")?>">Pas encore de compte ?</a>
         </div>
     </form>
