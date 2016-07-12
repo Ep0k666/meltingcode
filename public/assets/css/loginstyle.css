@@ -7,8 +7,6 @@
 html {
     background-size: cover;
     font-size: 10px;
-    height: 100%;
-    overflow: hidden;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -197,7 +195,7 @@ Log in form Inscription
     box-shadow: 0 0 15px #00fffd;
     border-radius: 5px;
     display: inline-block;
-    height: 420px;
+    height: 530px;
     margin: 203px 0 0 60px;
     position: relative;
     z-index: 4;
@@ -301,7 +299,7 @@ Spinner => Connexion
     animation: circle1 4s linear infinite, circle-entry 6s ease-in-out;
     background: #000;
     border-radius: 50%;
-    border: 10px solid #FAB368;
+    border: 10px solid #00a4a2;
     box-shadow: 0 0 0 2px black, 0 0 0 6px #00fffc;
     height: 700px;
     width: 700px;
@@ -317,7 +315,7 @@ Spinner => Connexion
 #inner-cirlce1 {
     background: #000;
     border-radius: 50%;
-    border: 36px solid #78F55B;
+    border: 36px solid #00a4a2;
     height: 660px;
     width: 660px;
     margin: 10px;
@@ -348,7 +346,7 @@ Spinner inscription
     animation: circle1 4s linear infinite, circle-entry 6s ease-in-out;
     background: #000;
     border-radius: 50%;
-    border: 10px solid #FAB368;
+    border: 10px solid #00a4a2;
     box-shadow: 0 0 0 2px black, 0 0 0 6px #00fffc;
     height: 700px;
     width: 700px;
@@ -364,7 +362,7 @@ Spinner inscription
 #inner-cirlce2 {
     background: #000;
     border-radius: 50%;
-    border: 36px solid #78F55B;
+    border: 36px solid #00a4a2;
     height: 660px;
     width: 660px;
     margin: 10px;
