@@ -40,19 +40,18 @@
 
     <nav id="low_nav">
         <div class="container">
-
             <ul>
-                <!-- *** Connexion *** -->
-                <li>
-                    <a href="" id="connexion">Connexion</a>
-                </li>
+                <?php if ($w_user) :?>
 
-                <!-- *** Inscription *** -->
-                <li>
-                    <a href="" id="subscribe">Inscription</a>
-                </li>
+                    <li><a href="<?= $this->url('id', ['id'=>$w_user['id'] ]) ?>"><?= $w_user['firstname']." ".$w_user['lastname'] ?></a></li>
+                    <li><a href="<?= $this->url('logoff') ?>">Logout</a></li>
+
+                    <!-- sinon on affiche les liens de connexions et d'inscription -->
+                <?php else :?>
+                    <li><a href='<?= $this->url('connexion') ?>' id="connexion">Connexion</a></li>
+                    <li><a href='<?= $this->url('login') ?>' id="suscribe">Inscription</a></li>
+                <?php endif ?>
             </ul>
-
             <div class="clearfix"></div>
 
         </div>
