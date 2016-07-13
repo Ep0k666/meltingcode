@@ -6,33 +6,35 @@ use \W\Controller\Controller;
 
 class ConnectController extends Controller
 {
-
-    /**
-     * Page d'accueil par défaut
-     */
-    public function connect()
+    public function connexion()
     {
+        /*echo "start var_dump<br />\n";
+        var_dump($_POST);
+        echo "fin var_dump<br />\n";*/
+
         if (isset($_POST['connect'])) {
-            /* if(empty($_POST['login']) || empty($_POST['password'])) {
+
+             if(empty($_POST['email']) || empty($_POST['password'])) {
                  // Redirection vers le login
-                 $this->redirectToRoute('connect');
-             }*/
-            $userManager = new \Manager\LoginPageManager();
+                 $this->redirectToRoute('connexion');
+             }
+            $userManager = new \Manager\UserManager();
+
             // Creation du Manager
             $authentificationManager = new \W\Security\AuthentificationManager();
-            $id = $authentificationManager->isValidLoginInfo($_POST['login'], $_POST['password']);
-
+            $id = $authentificationManager->isValidLoginInfo($_POST['email'], $_POST['password']);
 
             // Si la connexion a reussi
-            if ($id != 0) {
+            if ($id) {
                 $userInfos = $userManager->find($id);
                 $authentificationManager->logUserIn($userInfos);
                 $this->redirectToRoute('home');
-            } else {
-                echo 'La connexion a échoué';
+            }else{
+                echo 'La Connexion à échoué';
             }
-            $this->show('loginPage/connect');
 
         }
+        
+        $this->show('/loginPage/connect');
     }
 }
