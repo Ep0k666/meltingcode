@@ -1,30 +1,7 @@
+<?php $this->layout('layout', ['title' => 'Accueil']) ?>
 
-	<!-- NAVIGATION -->
-	<nav>
-		<div class="container">
-			<h1>Lor'N SHOP</h1>
-			<ul>
-				<li><a href="#">Accueil</a></li>
-				<li><a href="#">Boutique</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			<!-- Bouton de recherche -->
-			<!-- FR/EN -->
-			<div class="clearfix"></div>
-		</div>
-	</nav>
-
-	<!-- HEADER -->
-	<header>
-		
-	</header>
-
-	<!-- SECTION BOUTIQUE -->
-	<section>
-		
-	</section>
-
-	<!-- SECTION TEAM -->
-	<section>
-		
-	</section>
+<?php $this->start('main_content') ?>
+	<h2>Let's code.</h2>
+	<p>Vous avez atteint la page d'accueil. Bravo.</p>
+	<p>Et maintenant, RTFM dans <strong><a href="../docs/tuto/" title="Documentation de W">docs/tuto</a></strong>.</p>
+<?php $this->stop('main_content') ?>

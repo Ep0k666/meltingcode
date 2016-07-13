@@ -1,5 +1,5 @@
 <?php
 	
 	$w_routes = array(
-		['GET', '/', 'Display#listing', 'home'],	
+		['GET|POST', '/shops', 'Shop#shopListCategory', 'add-shop'],
 	);
