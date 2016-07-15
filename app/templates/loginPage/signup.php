@@ -35,13 +35,6 @@
 
 <canvas></canvas>
 
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
 
 
 

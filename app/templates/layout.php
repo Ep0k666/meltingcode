@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>Lor'N Shop | Achetez plus proche</title>
+
     <title>Home</title>
 
     <!-- *** RESET CSS *** -->
@@ -17,7 +19,6 @@
     <link rel="stylesheet" href="<?= $this->assetUrl('css/loginstyle.css') ?>">
 
 
-
     <!-- *** CDN JQUERY *** -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="<?= $this->assetUrl('js/jquery.js')?>"></script>
@@ -27,10 +28,8 @@
     <script src="<?= $this->assetUrl('js/script.js') ?>"></script>
     <!-- *** SCRIPT *** -->
     <script src="<?= $this->assetUrl('js/scriptconnect.js') ?>"></script>
-
 </head>
 <body>
-
 
 <!-- ****************************
             LOW NAVIGATION
@@ -44,6 +43,7 @@
                 <?php if ($w_user) :?>
 
                     <li><a href="<?= $this->url('id', ['id'=>$w_user['id'] ]) ?>"><?= $w_user['firstname']." ".$w_user['lastname'] ?></a></li>
+                    <li><a href="<?= $this->url('logoff') ?>">Administration Boutiques</a></li>
                     <li><a href="<?= $this->url('logoff') ?>">Logout</a></li>
 
                     <!-- sinon on affiche les liens de connexions et d'inscription -->

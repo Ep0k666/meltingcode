@@ -27,14 +27,6 @@
 
 <canvas></canvas>
 
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
-
 
 
 <?php $this->stop('main_content') ?>
