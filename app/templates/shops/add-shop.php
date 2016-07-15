@@ -61,7 +61,7 @@
             
                 <!-- PREMIERE IMAGE BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
-                    Sélectionnez votre photo n° <?= $i ?>: <input name="logo<?= $i ?>" type="file" /></p>
+                    Sélectionnez votre photo n° 1: <input name="image1" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
                 <?php elseif(isset($errors['file']['noImg'])) : ?>
@@ -71,6 +71,32 @@
                 <?php elseif(isset($errors['file']['noFile'])) : ?>
                     <p  class="error">Merci de choisir un fichier</p>
                 <?php endif ?>
+
+            <!-- DEUXIEME IMAGE BOUTIQUE -->
+            <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+                Sélectionnez votre photo n° 2: <input name="image2" type="file" /></p>
+            <?php if(isset($errors['file']['upload'])) : ?>
+                <p  class="error">Erreur lors de l'upload du fichier</p>
+            <?php elseif(isset($errors['file']['noImg'])) : ?>
+                <p  class="error">Le fichier n'est pas une image</p>
+            <?php elseif(isset($errors['file']['moveUpload'])) : ?>
+                <p  class="error">Erreur lors du déplacement du fichier</p>
+            <?php elseif(isset($errors['file']['noFile'])) : ?>
+                <p  class="error">Merci de choisir un fichier</p>
+            <?php endif ?>
+
+            <!-- TROISIEME IMAGE BOUTIQUE -->
+            <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+                Sélectionnez votre photo n° 3: <input name="image3" type="file" /></p>
+            <?php if(isset($errors['file']['upload'])) : ?>
+                <p  class="error">Erreur lors de l'upload du fichier</p>
+            <?php elseif(isset($errors['file']['noImg'])) : ?>
+                <p  class="error">Le fichier n'est pas une image</p>
+            <?php elseif(isset($errors['file']['moveUpload'])) : ?>
+                <p  class="error">Erreur lors du déplacement du fichier</p>
+            <?php elseif(isset($errors['file']['noFile'])) : ?>
+                <p  class="error">Merci de choisir un fichier</p>
+            <?php endif ?>
           
 
             <!-- SECONDE IMAGE BOUTIQUE??? -->
