@@ -3,15 +3,21 @@
 /* Police des textes */
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
 
+
+div.separator{
+    display:block;
+}
+
 #cont section{
     width:25%;
     float:left;
     margin:0 50px;
+    text-align:left;
 }
 #cont{
     background: #efefef;
     width: 100%;
-    padding:100px 50px;
+    padding:100px 100px;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -25,7 +31,7 @@
 
 #cont h3{
     color:#80C2BB;
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Lobster', cursive;
     text-align:center;
 }
