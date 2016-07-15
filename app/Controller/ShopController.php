@@ -30,7 +30,7 @@ class ShopController extends Controller
             
             $errors = [];
             if(empty($name)) {
-                $errors['name']['empty'] = 'entrrer votre nom';
+                $errors['name']['empty'] = 'entrer votre nom';
 
             }
             if(empty($number)) {
@@ -54,11 +54,11 @@ class ShopController extends Controller
             if(empty($longitude)) {
                 $errors['longitude']['empty'] = true;
             }
-            
+
             if(empty($_POST['date_adding'])) {
                 $errors['date_adding']['empty'] = true;
             }
-            
+
             if(empty($_POST['city']) || is_numeric($_POST['city'])) {
                 $errors['city']['invalid'] = true;
             } else {
@@ -123,24 +123,25 @@ class ShopController extends Controller
                                 'pictures' =>     $pictures, 
                                 'description' =>  $description, 
                                 'category' =>     $category, 
-                                'date_adding' =>  $date_adding, 
+                                'date_adding' =>  $date_adding,
                                 'latitude' =>     $latitude,  
                                 'longitude' =>    $longitude,
                                 'number_view' =>  $number_view 
                                     ];
                             
                             $shopsInsert ->insert($data);
-                           
-                                                
-                            /*$this->redirectToRoot('home');*/ /*il me faut récupérer celui de steven et réadapter avec l'existant*/
+
+                            echo 'Bravo !!';
+                            $this->redirectToRoute('home');
                             exit;
-                            /* gérer le tableau d'erreur*/
+
                         }
                    }
                 }
             }else{
-                print_r($errors);
-                $this->redirectToRoute('add-shop',$errors);
+                //print_r($errors);
+                echo 'C est balow';
+                $this->show('shops/add-shop',['errors'=>$errors]);
             }
         } else{
                 $manager = new \Manager\ShopManager();

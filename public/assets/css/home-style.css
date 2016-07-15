@@ -268,7 +268,7 @@ button[name="search_submit"]:hover{
 	display: block;
 }
 
-h3{
+#new_shop h3, #about_us h3 {
 	font-family: 'Lobster', cursive;
 	background-color:  white;
 	font-size: 35px;
@@ -623,7 +623,7 @@ footer p{
 	text-align:center;
 	color:#80C2BB;
 	font-weight:bold;
-	padding:10px;
+	padding:30px;
 }
 
 /*******************

@@ -1,275 +1,145 @@
-/*****************************
-	DÉCLARATION DES POLICES
- *****************************/
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900);
+/* Police des titres */
 @import url(https://fonts.googleapis.com/css?family=Lobster);
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import url(https://fonts.googleapis.com/css?family=Bangers);
+/* Police des textes */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
 
-
-/*****************************
-		  UTILITAIRES
- *****************************/
-
-body{
-	font-family: 'Roboto', sans-serif;
+#cont section{
+    width:25%;
+    float:left;
+    margin:0 50px;
+}
+#cont{
+    background: #efefef;
+    width: 100%;
+    padding:100px 50px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-.container {
-	width: 1100px;
-	margin: auto;
+#cont h2{
+    text-align:center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:40px;
+    margin-bottom:2em;
+    color:#CCCCCC;
 }
 
-.clearfix {
-	clear: both;
-	display: block;
+#cont h3{
+    color:#80C2BB;
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+    text-align:center;
+}
+#cont .error{
+    color: red;
+}
+#cont legend {
+    color:#80C2BB;
+    font-size: 4em;
+    font-family: 'Lobster', cursive;
+    margin:auto;
+    padding-bottom: 50px;
 }
 
-/*****************************
-		LOW NAVIGATION
- *****************************/
-
-#low_nav{
+#cont form label{
+    text-transform:uppercase;
+    font-size:15px;
 }
 
-#low_nav ul{
-	float: right;
+#cont form{
+    width:100%;
 }
 
-#connexion, #subscribe{
-	float: left;
+#cont form p{
+    color:#313A3D;
+    margin:20px 0px;
+    font-size:20px;
 }
 
-/*****************************
-		LOW NAVIGATION
- *****************************/
-
-#low_nav{
+#cont input{
+    width:100%;
+    height:2em;
+    margin-top:10px;
+    margin-bottom:5px;
+    border: none;
+    background: #E8E9EA;
+    padding-left: 5%;
+    color: #80C2BB;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    padding:10px 5%;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-#low_nav ul{
-	float: right;
+#cont input:focus{
+    outline: none;
 }
 
-#connexion, #subscribe{
-	float: left;
+#cont textarea{
+    width:100%;
+    height:10em;
+    margin-bottom:20px;
+    border: none;
+    background: #E8E9EA;
+    padding-left: 5%;
+    color: #80C2BB;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 10px 5%;
 }
 
-/*****************************
-		HIGH NAVIGATION
- *****************************/
-
-/*** Titre principal ***/
-#high_nav h1{
-	float: left;
-	font-family: 'Bangers', sans-serif;
-	font-size: 45px;
-	color: #FAB368;
-	line-height: 42px;
-	padding: 15px 0;
-	text-shadow: 1px 1px 1px #FFF;
+#cont textarea:focus{
+    outline: none;
 }
 
-#high_nav strong span:first-child{
-	color: #78F55B;
+#cont select{
+    border: none;
+    background: #E8E9EA;
+    font-size: 0.8em;
+    font-family: 'Titillium Web', sans-serif;
+    color: #6E6E6E;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    margin-bottom:4em;
 }
 
-#high_nav strong span:nth-child(2){
-	font-weight: 600;
+#cont select:focus{
+    outline: none;
+    border:none;
 }
 
-/*** Barre de navigation ***/
-#high_nav{
-	background-color: #252424;
-	color: #FFF;
+#cont select:hover{
+    outline: none;
+    border:none;
 }
 
-/*** Liens de navigation ***/
-#high_nav ul{
-	float: right;
-	text-decoration: none;
+#cont input[type="file"]{
+    background-color:#efefef;
 }
 
-#high_nav ul li{
-	float: left;
+#cont p button{
+    background:#313A3D;
+    color: white;
+    -webkit-appearance: none;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    padding: 13px 50px;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+    display:block;
+    margin:auto;
+
 }
 
-#high_nav ul li a{
-	margin-right: 15px;
-	color: #FFF;
-	display: inline-block;
-	text-decoration: none;
-	padding: 25px 15px;
+#cont button:hover {
+    background: #80C2BB;
+    color: white;
 }
-
-/*** Formulaire de recherche ***/
-#high_nav input{
-	float: right;
-	background-color: #252424;
-	border: none;
-	margin-top: 25px;
-	color: #FFF;
-	font-weight: 600;
-}
-
-button[name="search_submit"]{
-	float: right;
-	margin-top: 23px;
-	font-size: 15px;
-	border: none;
-	color: #FFF;
-	background-color: #252424;
-}
-
-
-/*********************************
-			  SLIDER
- *********************************/
-
-.most_viewed{
-	padding: 250px 0px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
-
-/****************************
-	SECTION NEW BOUTIQUE
- ****************************/
-
-/*** Section new shop ***/
-#new_shop{
-	color: #322F2F;
-	padding-top: 480px;
-	padding-bottom: 50px;
-	font-family: 'Montserrat', sans-serif;
-}
-
-#new_shop h3{
-	font-size: 35px;
-}
-
-#new_shop article:first-of-type{
-	margin-left: 0;
-}
-
-#new_shop .container article:nth-of-type(2n){
-	margin-left: 0;
-}
-
-/*** Article découverte boutique ***/
-.shop_discovery{
-	float: left;
-	width: 30%;
-	margin-left: 5%;
-	padding-top: 50px;
-}
-
-#new_shop img{
-	width: 100px;
-	height: 100px;
-	display: block;
-	margin: 0 auto;
-}
-
-.shop_title{
-	text-align: center;
-	font-size: 30px;
-	padding-top: 15px;
-}
-
-.shop_discovery p{
-	text-align: center;
-	padding: 30px;
-}
-
-/****************************
-	SECTION ABOUT US
- ****************************/
-
-#about_us{
-	font-family: 'Montserrat', sans-serif;
-	color: #322F2F;
-}
-
-#about_us p{
-	margin-top: 25px;
-}
-
-#about_us p:first-of-type{
-	padding-bottom: 50px;
-}
-
-#malika, #julie, #halima, #fra_xa, #steven{
-	width: 18%;
-	margin-right: 2%;
-	float: left;
-	text-align: center;
-}
-
-#steven{
-	margin-right: 0;
-}
-
-#about_us h3{
-	font-size: 35px;
-	padding-bottom: 15px;
-}
-
-#malika::before{
-	content: "";
-	display: block;
-	width: 75px;
-	background-image: url('../img/malika.jpg');
-	background-size: cover;
-	height: 75px;
-	border-radius: 75px;
-	margin: 0px auto 20px;
-}
-
-#julie::before{
-	content: "";
-	display: block;
-	width: 75px;
-	background-image: url('../img/julie.jpg');
-	background-size: cover;
-	height: 75px;
-	border-radius: 75px;
-	margin: 0px auto 20px;
-}
-
-#halima::before{
-	content: "";
-	display: block;
-	width: 75px;
-	background-image: url('../img/halima.jpg');
-	background-size: cover;
-	height: 75px;
-	border-radius: 75px;
-	margin: 0px auto 20px;
-}
-
-#fra_xa::before{
-	content: "";
-	display: block;
-	width: 75px;
-	background-image: url('../img/fra_xa.jpg');
-	background-size: cover;
-	height: 75px;
-	border-radius: 75px;
-	margin: 0px auto 20px;
-}
-
-#steven::before{
-	content: "";
-	display: block;
-	width: 75px;
-	background-image: url('../img/steven.jpg');
-	background-size: cover;
-	height: 75px;
-	border-radius: 75px;
-	margin: 0px auto 20px;
-}
-

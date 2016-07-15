@@ -82,7 +82,7 @@
 					<!-- ** Définition du lien pour chaque image ** -->
 					<?php
 					$path = $shopMostRecent['pictures'];
-					$img = $this->assetUrl($path);
+					$img = $this->assetUrl('uploads/'.$path);
 					?>
 
 					<img src="<?= $img ?>">
