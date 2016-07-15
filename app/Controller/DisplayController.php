@@ -7,41 +7,58 @@ use \W\Controller\Controller;
 class DisplayController extends Controller
 {
 
-	/**
-	 * Page d'accueil par défaut
-	 */
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-	public function home()
-	{
-		$this->show('display/home');
-	}
-
+    /***
+     * Fonction pour page "home" 
+     * Shops les plus consultées 
+     * Shops les plus récents
+     ***/
 	public function listing()
-=======
-	public function home()
->>>>>>> c902c4249d9b6b0e78e0ebe9c5f6136a74bf9c27
-=======
-	public function home()
->>>>>>> steven
     {
-        $manager = new \Manager\ShopManager();
-        $shopsMostViewed = $manager->mostViewed();
-        $shopsMostRecent = $manager->mostRecent();
+        $manager            = new \Manager\ShopManager();
+        $shopsMostViewed    = $manager->mostViewed();
+        $shopsMostRecent    = $manager->mostRecent();
+        $shopsActivity      = $manager->getShopByActivity();
+        $productsCategory   = $manager->getProductsByCategory();
         
+        /*** Envoi à la page home ***/
         $this->show('display/home', 
             [
-                'shopsMostViewed' => $shopsMostViewed,
-                'shopsMostRecent' => $shopsMostRecent
+                'shopsMostViewed'   => $shopsMostViewed,
+                'shopsMostRecent'   => $shopsMostRecent,
+                'shopsActivity'     => $shopsActivity,
+                'productsCategory'  => $productsCategory
             ]);
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
+    /***
+     * Fonction pour page "search" 
+     * Récupère les shops contenant le tag dans la description 
+     * Récupère les products contenant le tag dans la description
+     ***/
+    public function search()
+    {
+        $manager = new \Manager\SearchManager();
+        
+        /*** Si search_submit à été cliqué ***/
+        if(isset($_POST['search_submit'])){
 
-=======
->>>>>>> c902c4249d9b6b0e78e0ebe9c5f6136a74bf9c27
-=======
->>>>>>> steven
+            /*** Récupération et nettoyage saisie ***/
+            $tagSearch = trim(htmlspecialchars($_POST['search_bar']));
+
+            /*** Appel des fonctions pour comparaison en DB ***/
+            $resultShops = $manager->searchShop($tagSearch);
+            $resultProduct = $manager->searchProduct($tagSearch);
+
+            /*** Envoi à la page "search" ***/
+            $this->show('display/search', 
+                [
+                    'resultShops'=> $resultShops,
+                    'resultProduct'=> $resultProduct
+                ]);
+
+            /*** Redirection vers "search" ***/
+            $this->redirectToRoute('search');
+        }
+    }
+
 }

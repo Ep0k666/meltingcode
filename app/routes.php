@@ -1,8 +1,20 @@
 <?php
-	
-	$w_routes = array(
-        ['GET',          '/',                    'Display#home',              'home'],
-		['GET|POST', 	'/loginPage/signup',     'LoginPage#login',            'login'],
-		['GET|POST',    '/loginPage/connect',   'LoginPage#connect',        'connect'],
-		['GET|POST',     '/login/disconnect', 	'LoginPage#logoff', 			 'logoff'],
-	);
+
+$w_routes = array(
+    /*************** ---------- HOME ------------ ******************/
+    ['GET|POST',    '/', 					'Display#listing',              'home'],
+    /************** ---------- SEARCH ------------ ***************/
+    ['GET|POST', 	'/search', 				'Display#search', 				'search'],
+    /************** ---------- CONTACT ------------ ***************/
+    ['GET|POST', 	 '/contact', 			'Contact#contact',				'contact'],
+    /*************** ---------- HOME ------------ ******************/
+    ['GET|POST', '/loginPage/', 'LoginPage#listing', 'id'],
+    /************** ---------- LOGIN ------------ ***************/
+    ['GET|POST', '/signup', 'LoginPage#login', 'login'],
+    /************** ---------- CONNECT ------------ ***************/
+    ['GET|POST', '/connect', 'Connect#connexion', 'connexion'],
+    /*************** ---------- LOGOFF ------------ ******************/
+    ['GET|POST', '/login/disconnect', 'LoginPage#logoff', 'logoff'],
+    /*************** ---------- ADMIN BOUTIQ ------------ ******************/
+    ['GET|POST', '/shops', 'Shop#shopListCategory', 'add-shop'],
+);
