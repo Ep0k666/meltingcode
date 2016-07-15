@@ -8,6 +8,7 @@ class ShopController extends Controller
 {
 	public function shopListCategory()
     {
+
         // J'ai recu des données de formulaire
         if (isset($_POST['add-shop'])) {
 
@@ -112,7 +113,7 @@ class ShopController extends Controller
                             $insertBDD = new \Manager\ShopManager();
                            
                             $shopsInsert = $insertBDD->setTable('shops');
-                           
+
                             $data = [
                                 'name' =>         $name, 
                                 'number' =>       $number, 

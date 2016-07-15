@@ -63,6 +63,7 @@ body{
 #high_nav{
 	background-color: #0F0E0E;
 	color: #FFF;
+    z-index: 1;
 }
 
 /*** Liens de navigation ***/
@@ -521,12 +522,12 @@ h3{
 footer{
 	background-color:#DDD;
   	border-top:5px solid #80C2BB;
+    padding: 20px 0;
+    text-align: center;
+
 }
 
-.footer {
-  padding: 20px 0;
-  text-align: center;
-}
+
 
 .social {
   display: inline-block;

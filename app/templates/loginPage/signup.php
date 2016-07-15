@@ -3,10 +3,8 @@
 
 <?php $this->start('main_content') ?>
 
-<div class="container">
-<div id="logo">
-    <h1><i> Lor'N Shop FRANCE</i></h1>
-</div>
+<div class="containerconnect">
+
 <section class="stark-login2">
 
     <form action="#" method="POST">
@@ -20,13 +18,14 @@
             <input type="password" name="pass1" placeholder="Mot de Passe" required>
             <br>
             <button type="submit" name="add-user" value="add-user">S'inscrire</button>
-            <a href="<?= $this->url("connexion")?>">Déjà Inscrit ? ?</a>
+            <!--<a href="<?/*= $this->url("connexion")*/?>">Déjà Inscrit ? ?</a>
+            <a href="<?/*= $this->url("home")*/?>">Revenir à l'acceuil</a>-->
         </div>
     </form>
 
 </section>
     
-</div>    
+
 <div id="circle2">
     <div id="inner-cirlce2">
         <h2> </h2>
@@ -36,6 +35,5 @@
 <canvas></canvas>
 
 
-
-
+</div>
 <?php $this->stop('main_content') ?>

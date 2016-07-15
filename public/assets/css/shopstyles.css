@@ -1,0 +1,45 @@
+body {
+    font-family: 'Open sans', sans-serif;
+}
+
+#cont form{
+    padding-left:250px;
+}
+
+#cont fieldset{
+    margin-top: 15px;
+    border: solid 2px #bcbce9;
+}
+/*choisir une autre font pour ce titre*/
+#cont h2{
+    margin:auto;
+    font-weight: bold;
+    color:#bcbce9;
+}
+#cont legend{
+    margin:auto;
+    font-weight: bold;
+}
+#cont p{
+    margin-top: 20px;
+}
+.error{
+    color:red;
+}
+#cont span{
+    font-style: italic;
+    font-size: 15px;
+}
+#cont h4{
+    margin-bottom: 15px;
+}
+#cont p input{
+    margin: auto;
+}
+#cont p textarea{
+    width: 500px;
+}
+#cont button{
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
