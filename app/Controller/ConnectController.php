@@ -3,11 +3,12 @@
 namespace Controller;
 
 use \W\Controller\Controller;
+
 class ConnectController extends Controller
 {
     public function connexion()
     {
-/*        echo "start var_dump<br />\n";
+        /*echo "start var_dump<br />\n";
         var_dump($_POST);
         echo "fin var_dump<br />\n";*/
 
@@ -33,7 +34,7 @@ class ConnectController extends Controller
             }
 
         }
-
+        
         $this->show('/loginPage/connect');
     }
 }
