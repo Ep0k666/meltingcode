@@ -8,6 +8,7 @@ class ShopController extends Controller
 {
 	public function shopListCategory()
     {
+        $this->allowTo(['editeur']);
 
         // J'ai recu des données de formulaire
         if (isset($_POST['add-shop'])) {
