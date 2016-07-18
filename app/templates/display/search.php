@@ -10,7 +10,7 @@
 		<div class="container">
 
 		<div class="bordure1"></div>
-			<h3>Résultat de votre recherche</h3>
+			<h3>Résultat de recherche pour : <?= $tagSearch ?></h3>
 
 			<!-- *** Pour chaque Shop Most Recent *** -->
 			<?php foreach($resultShops as $shop): ?>

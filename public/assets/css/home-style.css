@@ -261,7 +261,7 @@ button[name="search_submit"]:hover{
  ****************************/
 
 /*** Section new shop ***/
-#home #new_shop{
+#new_shop{
 	color: #322F2F;
 	padding-top: 15px;
 	padding-bottom: 50px;
@@ -270,18 +270,18 @@ button[name="search_submit"]:hover{
 
 /* bordure */
 
-#home .bordure1{
+.bordure1{
 	margin-top: 50px;
 	border-bottom: 5px double #80C2BB;
 }
 
-#home .bordure1::after{
+.bordure1::after{
 	clear: both;
 	content:"";
 	display: block;
 }
 
-#home #new_shop h3, #about_us h3 {
+#new_shop h3, #about_us h3 {
 	font-family: 'Lobster', cursive;
 	background-color:  white;
 	font-size: 35px;
@@ -296,47 +296,48 @@ button[name="search_submit"]:hover{
 	color:#80C2BB;
 }
 
-#home #new_shop h4{
+#new_shop h4{
 	font-family: 'Lobster', cursive;
 	color:#FFF;
 	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 
-#home #new_shop article:first-of-type{
+#new_shop article:first-of-type{
 	margin-left: 0;
 }
 
-#home #new_shop .container article:nth-of-type(2n){
+#new_shop .container article:nth-of-type(2n){
 	margin-left: 0;
 }
 
 /*** Article découverte boutique ***/
-#home .shop_discovery{
+.shop_discovery{
 	float: left;
 	width: 33.33%;
 	padding-top: 50px;
 }
 
-#home #new_shop img{
+#new_shop img{
 	width: 300px;
 	height: 200px;
 	display: block;
 	margin: -54px auto;
 }
 
-#home #new_shop img:hover{
+#new_shop img:hover{
 	background-color:#80C2BB;
 	opacity:0.5; 
 }
 
-#home .shop_title{
+.shop_title{
 	text-align: center;
 	font-size: 30px;
 	padding-top: 15px;
 }
 
-#home .shop_discovery p{
+.shop_discovery p{
 	padding: 30px;
+	font-size: 16px;
 	text-align:justify;
 }
 
@@ -407,7 +408,7 @@ button[name="search_submit"]:hover{
   position: relative;
   background: #FFF;
   box-shadow: 0 0 0 1px #E2E9ED;
-  padding: 10px;
+  padding: 40px 10px;
   box-sizing: border-box;
   -webkit-transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
   transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
@@ -421,6 +422,7 @@ button[name="search_submit"]:hover{
 }
 #home .at-column:hover {
   z-index: 1;
+  box-sizing: border-box;
   box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -519,12 +521,12 @@ button[name="search_submit"]:hover{
 	font-family: 'Lobster', cursive;
 	color:#80C2BB;
 	text-align:center;
-	margin-top:20px;
+	padding-top: 40px;
 }
 
 
 #home #about_us p{
-	margin:20px 0px;
+	padding: 30px 0px;
 }
 
 /****************************
@@ -539,8 +541,6 @@ footer{
     text-align: center;
 
 }
-
-
 
 .social {
   display: inline-block;
@@ -679,6 +679,10 @@ footer p{
 	#home #low_nav_desktop ul li a{
 		padding: 10px 15px;
 	}
+
+	#home .at-grid{
+		transform: scale(0.8);
+	}
 }
 
 /** Supérieur à 768px et inférieur à 992px **/
@@ -773,6 +777,34 @@ footer p{
 		width: 240px;
 		height: 170px;
 	}
+
+	/** About us **/
+
+	#home .at-grid{
+		transform: scale(1);
+	}
+
+	#home .at-column{
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+
+	#home .at-user__title{
+		font-size: 0.8rem;
+	}
+
+	#home .at-user__name{
+		font-size: 1rem;
+	}
+
+	#home .at-column {
+	    width: % !important;
+	    max-width: 33.33% !important;
+	    min-width: 33.33% !important;
+	    -webkit-flex-basis: 33.33% !important;
+	        -ms-flex-preferred-size: 33.33% !important;
+	            flex-basis: 33.6% !important;
+  	}
 }
 
 /*** Inférieur à 768px ***/
@@ -933,6 +965,25 @@ footer p{
 
 	footer p{
 		padding: 10px 0;
+	}
+
+	/** About us **/
+
+	#home .at-grid{
+		transform: scale(1);
+	}
+
+	#home .at-column{
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+
+	#home .at-user__title{
+		font-size: 0.8rem;
+	}
+
+	#home .at-user__name{
+		font-size: 1rem;
 	}
 
 }
