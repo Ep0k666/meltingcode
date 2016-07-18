@@ -3,25 +3,19 @@
 /* Police des textes */
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
 
-
-div.separator{
-    display:block;
-}
-
-#add-shop section{
+#cont section{
     width:25%;
     float:left;
     margin:0 50px;
-    text-align:left;
 }
-#add-shop .container{
+#cont{
     background: #efefef;
     width: 100%;
-    padding:100px 100px;
+    padding:100px 50px;
     font-family: 'Titillium Web', sans-serif;
 }
 
-#add-shop h2{
+#cont h2{
     text-align:center;
     font-family: 'Titillium Web', sans-serif;
     font-size:40px;
@@ -29,17 +23,16 @@ div.separator{
     color:#CCCCCC;
 }
 
-#add-shop h3{
+#cont h3{
     color:#80C2BB;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Lobster', cursive;
     text-align:center;
 }
-#add-shop .error{
+#cont .error{
     color: red;
 }
-
-#add-shop legend {
+#cont legend {
     color:#80C2BB;
     font-size: 4em;
     font-family: 'Lobster', cursive;
@@ -47,22 +40,22 @@ div.separator{
     padding-bottom: 50px;
 }
 
-#add-shop form label{
+#cont form label{
     text-transform:uppercase;
     font-size:15px;
 }
 
-#add-shop form{
+#cont form{
     width:100%;
 }
 
-#add-shop form p{
+#cont form p{
     color:#313A3D;
     margin:20px 0px;
     font-size:20px;
 }
 
-#add-shop input{
+#cont input{
     width:100%;
     height:2em;
     margin-top:10px;
@@ -77,11 +70,11 @@ div.separator{
     font-family: 'Titillium Web', sans-serif;
 }
 
-#add-shop input:focus{
+#cont input:focus{
     outline: none;
 }
 
-#add-shop textarea{
+#cont textarea{
     width:100%;
     height:10em;
     margin-bottom:20px;
@@ -95,11 +88,11 @@ div.separator{
     padding: 10px 5%;
 }
 
-#add-shop textarea:focus{
+#cont textarea:focus{
     outline: none;
 }
 
-#add-shop select{
+#cont select{
     border: none;
     background: #E8E9EA;
     font-size: 0.8em;
@@ -110,21 +103,21 @@ div.separator{
     margin-bottom:4em;
 }
 
-#add-shop select:focus{
+#cont select:focus{
     outline: none;
     border:none;
 }
 
-#add-shop select:hover{
+#cont select:hover{
     outline: none;
     border:none;
 }
 
-#add-shop input[type="file"]{
+#cont input[type="file"]{
     background-color:#efefef;
 }
 
-#add-shop p button{
+#cont p button{
     background:#313A3D;
     color: white;
     -webkit-appearance: none;
@@ -146,7 +139,7 @@ div.separator{
 
 }
 
-#add-shop button:hover {
+#cont button:hover {
     background: #80C2BB;
     color: white;
 }
