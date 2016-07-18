@@ -40,10 +40,12 @@ class ShopManager extends \W\Manager\Manager
      * Fonction pour page "home"
      * Shops par activité
      ***/
-    public function getShopByActivity()
+    public function getShopByActivity($id)
     {
-        $sql = 'SELECT * FROM shops ORDER BY category';
-        $stmt = $this->dbh->query($sql);
+        $sql = 'SELECT * FROM shops  WHERE id_category =:id';
+        $stmt = $this->dbh->prepare($sql);
+        $stmt->bindParam(':id',$id);
+        $stmt->execute();
         return $stmt->fetchAll();
     }
 
@@ -51,10 +53,12 @@ class ShopManager extends \W\Manager\Manager
      * Fonction pour page "home"
      * Products par category
      ***/
-    public function getProductsByCategory()
+    public function getProductsByCategory($id)
     {
-        $sql = 'SELECT * FROM products ORDER BY category';
-        $stmt = $this->dbh->query($sql);
+        $sql = 'SELECT * FROM categoryshops WHERE id_catshops';
+        $stmt = $this->dbh->prepare($sql);
+        $stmt->bindParam(':id',$id);
+        $stmt->execute();
         return $stmt->fetchAll();
     }
 }
