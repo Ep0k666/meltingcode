@@ -1,45 +1,148 @@
-body {
-    font-family: 'Open sans', sans-serif;
+
+
+div.separator{
+    display:block;
 }
 
-#cont form{
-    padding-left:250px;
+#add-shop section{
+    width:25%;
+    float:left;
+    margin:0 50px;
+    text-align:left;
+}
+#add-shop .container{
+    background: #efefef;
+    width: 100%;
+    padding:100px 100px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-#cont fieldset{
-    margin-top: 15px;
-    border: solid 2px #bcbce9;
+#add-shop h2{
+    text-align:center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:40px;
+    margin-bottom:2em;
+    color:#CCCCCC;
 }
-/*choisir une autre font pour ce titre*/
-#cont h2{
+
+#add-shop h3{
+    color:#80C2BB;
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    text-align:center;
+}
+#add-shop .error{
+    color: red;
+}
+
+#add-shop legend {
+    color:#80C2BB;
+    font-size: 4em;
+    font-family: 'Lobster', cursive;
     margin:auto;
-    font-weight: bold;
-    color:#bcbce9;
+    padding-bottom: 50px;
 }
-#cont legend{
+
+#add-shop form label{
+    text-transform:uppercase;
+    font-size:15px;
+}
+
+#add-shop form{
+    width:100%;
+}
+
+#add-shop form p{
+    color:#313A3D;
+    margin:20px 0px;
+    font-size:20px;
+}
+
+#add-shop input{
+    width:100%;
+    height:2em;
+    margin-top:10px;
+    margin-bottom:5px;
+    border: none;
+    background: #E8E9EA;
+    padding-left: 5%;
+    color: #80C2BB;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    padding:10px 5%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#add-shop input:focus{
+    outline: none;
+}
+
+#add-shop textarea{
+    width:100%;
+    height:10em;
+    margin-bottom:20px;
+    border: none;
+    background: #E8E9EA;
+    padding-left: 5%;
+    color: #80C2BB;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 10px 5%;
+}
+
+#add-shop textarea:focus{
+    outline: none;
+}
+
+#add-shop select{
+    border: none;
+    background: #E8E9EA;
+    font-size: 0.8em;
+    font-family: 'Titillium Web', sans-serif;
+    color: #6E6E6E;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    margin-bottom:4em;
+}
+
+#add-shop select:focus{
+    outline: none;
+    border:none;
+}
+
+#add-shop select:hover{
+    outline: none;
+    border:none;
+}
+
+#add-shop input[type="file"]{
+    background-color:#efefef;
+}
+
+#add-shop p button{
+    background:#313A3D;
+    color: white;
+    -webkit-appearance: none;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    padding: 13px 50px;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+    display:block;
     margin:auto;
-    font-weight: bold;
+
 }
-#cont p{
-    margin-top: 20px;
-}
-.error{
-    color:red;
-}
-#cont span{
-    font-style: italic;
-    font-size: 15px;
-}
-#cont h4{
-    margin-bottom: 15px;
-}
-#cont p input{
-    margin: auto;
-}
-#cont p textarea{
-    width: 500px;
-}
-#cont button{
-    margin-bottom: 15px;
-    margin-left: 50px;
+
+#add-shop button:hover {
+    background: #80C2BB;
+    color: white;
 }

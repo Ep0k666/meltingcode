@@ -10,7 +10,7 @@ $w_routes = array(
     /************** ---------- CONTACT ------------ ***************/
     ['GET|POST', 	 '/contact', 			'Contact#contact',				'contact'],
     /*************** ---------- HOME ------------ ******************/
-    ['GET|POST', '/loginPage/', 'LoginPage#listing', 'id'],
+    ['GET|POST', '/account[:id]/', 'LoginPage#account', 'id'],
     /************** ---------- LOGIN ------------ ***************/
     ['GET|POST', '/signup', 'LoginPage#login', 'login'],
     /************** ---------- CONNECT ------------ ***************/

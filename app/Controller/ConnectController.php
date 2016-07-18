@@ -14,27 +14,38 @@ class ConnectController extends Controller
 
         if (isset($_POST['connect'])) {
 
-             if(empty($_POST['email']) || empty($_POST['password'])) {
-                 // Redirection vers le login
-                 $this->redirectToRoute('connexion');
-             }
-            $userManager = new \Manager\UserManager();
+            $errors = [];
+            if(empty($_POST['email'])) {
+                $errors['email']['empty'] = 'true';
 
-            // Creation du Manager
-            $authentificationManager = new \W\Security\AuthentificationManager();
-            $id = $authentificationManager->isValidLoginInfo($_POST['email'], $_POST['password']);
+            }
+            if(empty($_POST['password'])) {
+                $errors['password']['empty'] = true;
+            }
+            if(count($errors) === 0){
 
-            // Si la connexion a reussi
-            if ($id) {
-                $userInfos = $userManager->find($id);
-                $authentificationManager->logUserIn($userInfos);
-                $this->redirectToRoute('home');
-            }else{
-                echo 'La Connexion à échoué';
+                $userManager = new \Manager\UserManager();
+
+                // Creation du Manager
+                $authentificationManager = new \W\Security\AuthentificationManager();
+                $id = $authentificationManager->isValidLoginInfo($_POST['email'], $_POST['password']);
+
+                // Si la connexion a reussi
+                if ($id) {
+                    $userInfos = $userManager->find($id);
+                    $authentificationManager->logUserIn($userInfos);
+                    $this->redirectToRoute('home');
+                }else{
+                    echo 'La Connexion à échoué';
+                    // Redirection vers le login
+                    $this->show('connexion', ['errors' => $errors]);
+                }
+
             }
 
         }
-        
+
         $this->show('/loginPage/connect');
     }
+
 }
