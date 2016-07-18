@@ -19,9 +19,14 @@
 /*****************************
 		  UTILITAIRES
  *****************************/
-
-body{
+body #high_nav{
 	font-family: 'Titillium Web', sans-serif;
+	font-size: 16px;
+}
+
+#home{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 16px;
 }
 
 .container {
@@ -48,6 +53,7 @@ body{
 	line-height: 42px;
 	padding: 15px 0 18px;
 	text-shadow: 1px 1px 1px #FFF;
+	font-weight: 600;
 }
 
 #high_nav strong span:first-child{
@@ -55,7 +61,6 @@ body{
 }
 
 #high_nav strong span:nth-child(2){
-	font-weight: 600;
 	color:#80C2BB;
 }
 
@@ -63,7 +68,6 @@ body{
 #high_nav{
 	background-color: #0F0E0E;
 	color: #FFF;
-    z-index: 1;
 }
 
 /*** Liens de navigation ***/
@@ -83,7 +87,6 @@ body{
 	text-decoration: none;
 	padding: 27px 15px;
 	border-bottom: 0px solid #80C2BB;
-	font-size: 16px;
 }
 
 #high_nav ul li a:hover{
@@ -122,23 +125,27 @@ button[name="search_submit"]:hover{
 	color: #80C2BB;
 }
 
+#high_nav hr{
+	display: none;
+}
 
 /*****************************
 		LOW NAVIGATION
  *****************************/
 
-#low_nav{
+/*** DESKTOP ***/
+#home #low_nav_desktop{
 	background-color: #E9EEEE;
 	overflow: hidden;
 }
 
-#low_nav ul{
-	width: 95%;
+#home #low_nav_desktop ul{
+	width: 100%;
 	display: block;
 	margin: auto;
 }
 
-#low_nav ul li a{
+#home #low_nav_desktop ul li a{
 	display: block;
 	color: #1A1717;
 	text-decoration: none;
@@ -147,7 +154,7 @@ button[name="search_submit"]:hover{
 	float: left;
 }
 
-#low_nav ul li a:hover{
+#home #low_nav_desktop ul li a:hover{
 	animation: 0.3s fretille ease infinite;
 	color: #1605FE;
 }
@@ -158,49 +165,54 @@ button[name="search_submit"]:hover{
 	100%{ transform: rotate(0deg); }
 }
 
-/*** Gestion menu shops au survol ***/
-
-#shops_menu, #products_menu{
-	width: 100%;
-	background-color: #ECF9F8;
-	width: 25%;
-	border-right: 1px solid #80C2BB;
-	border-left: 1px solid #80C2BB;
-	position: absolute;
-	z-index: 2;
+/*** MOBILE ***/
+#home #low_nav_mobile{
+	background-color: #E9EEEE;
+}
+#home #hamburger, #close_menu{
+	display: block;
+	text-align: center;
+	padding: 4px 0 7px;
+	border-bottom: 1px solid #FFF;
+	display: none;
 }
 
-#shops_menu h4, #products_menu h4{
-	font-size: 20px;
-	font-weight: 400;
-	font-family: 'Titillium Web', sans-serif;
-	border-bottom: 1px solid #80C2BB;
-	border-top: 1px solid #80C2BB;
-	padding: 8px 5px;
+#home #hamburger span, #close_menu{
+	font-family: sans-serif;
 }
 
-#shops_menu a, #products_menu a{
-	padding: 5px 5px;
-	color: #000;
+#home #cross{
+	font-size: 18px;
+}
+
+#home #low_nav_mobile ul{
+	display: none;
+}
+
+#home #low_nav_mobile ul li a{
 	text-decoration: none;
 	display: block;
-	border-bottom: 1px solid #80C2BB;
+	width: 100%;
+	border-bottom: 1px solid #FFF;
+	color: #000;
+	padding: 5px;
 }
 
-#shops_menu a:hover, #products_menu a:hover{
-	text-decoration: underline;
+#home #low_nav_mobile ul li a:focus, #low_nav_mobile ul li a:active{
+	color: #1605FE;
 }
 
 /*********************************
 			  SLIDER
  *********************************/
 
-#slider{
+#home #slider{
 	z-index: -1;
+	text-align: left;
 }
 
 /*** Images shops ***/
-.most_viewed{
+#home .most_viewed{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -209,7 +221,7 @@ button[name="search_submit"]:hover{
 	margin-bottom: 50px;
 }
 
-#slider_container{
+#home #slider_container{
 	background-color: rgba(0,0,0,0.6);
 	position: absolute;
 	left: -412px;
@@ -222,7 +234,7 @@ button[name="search_submit"]:hover{
 }
 
 /*** Name shops ***/
-.title_most_viewed{
+#home .title_most_viewed{
 	font-family: 'Lobster', cursive;
 	box-sizing: border-box;
 	z-index: 2;
@@ -233,7 +245,7 @@ button[name="search_submit"]:hover{
 	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 
-.description_most_viewed{
+#home .description_most_viewed{
 	font-size: 20px;
 	box-sizing: border-box;
 	color: #FFF;
@@ -249,7 +261,7 @@ button[name="search_submit"]:hover{
  ****************************/
 
 /*** Section new shop ***/
-#new_shop{
+#home #new_shop{
 	color: #322F2F;
 	padding-top: 15px;
 	padding-bottom: 50px;
@@ -258,18 +270,18 @@ button[name="search_submit"]:hover{
 
 /* bordure */
 
-.bordure1{
+#home .bordure1{
 	margin-top: 50px;
 	border-bottom: 5px double #80C2BB;
 }
 
-.bordure1::after{
+#home .bordure1::after{
 	clear: both;
 	content:"";
 	display: block;
 }
 
-#new_shop h3, #about_us h3 {
+#home #new_shop h3, #about_us h3 {
 	font-family: 'Lobster', cursive;
 	background-color:  white;
 	font-size: 35px;
@@ -284,46 +296,46 @@ button[name="search_submit"]:hover{
 	color:#80C2BB;
 }
 
-#new_shop h4{
+#home #new_shop h4{
 	font-family: 'Lobster', cursive;
 	color:#FFF;
 	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 
-#new_shop article:first-of-type{
+#home #new_shop article:first-of-type{
 	margin-left: 0;
 }
 
-#new_shop .container article:nth-of-type(2n){
+#home #new_shop .container article:nth-of-type(2n){
 	margin-left: 0;
 }
 
 /*** Article découverte boutique ***/
-.shop_discovery{
+#home .shop_discovery{
 	float: left;
 	width: 33.33%;
 	padding-top: 50px;
 }
 
-#new_shop img{
+#home #new_shop img{
 	width: 300px;
 	height: 200px;
 	display: block;
 	margin: -54px auto;
 }
 
-#new_shop img:hover{
+#home #new_shop img:hover{
 	background-color:#80C2BB;
 	opacity:0.5; 
 }
 
-.shop_title{
+#home .shop_title{
 	text-align: center;
 	font-size: 30px;
 	padding-top: 15px;
 }
 
-.shop_discovery p{
+#home .shop_discovery p{
 	padding: 30px;
 	text-align:justify;
 }
@@ -333,7 +345,7 @@ button[name="search_submit"]:hover{
 	SECTION ABOUT US
  ****************************/
 
- .at-grid {
+#home .at-grid {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -350,14 +362,14 @@ button[name="search_submit"]:hover{
   border: 1px solid #E2E9ED;
 }
 
-.at-grid[data-column="1"] .at-column {
+#home .at-grid[data-column="1"] .at-column {
   width: 100%;
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
 }
 
-.at-grid[data-column="2"] .at-column {
+#home .at-grid[data-column="2"] .at-column {
   width: 50%;
   max-width: 50%;
   min-width: 50%;
@@ -365,7 +377,7 @@ button[name="search_submit"]:hover{
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
 }
-.at-grid[data-column="3"] .at-column {
+#home .at-grid[data-column="3"] .at-column {
   width: 33.33333%;
   max-width: 33.33333%;
   min-width: 33.33333%;
@@ -373,7 +385,7 @@ button[name="search_submit"]:hover{
       -ms-flex-preferred-size: 33.33333%;
           flex-basis: 33.33333%;
 }
-.at-grid[data-column="4"] .at-column {
+#home .at-grid[data-column="4"] .at-column {
   width: 25%;
   max-width: 25%;
   min-width: 25%;
@@ -381,7 +393,7 @@ button[name="search_submit"]:hover{
       -ms-flex-preferred-size: 25%;
           flex-basis: 25%;
 }
-.at-grid[data-column="5"] .at-column {
+#home .at-grid[data-column="5"] .at-column {
   width: 20%;
   max-width: 20%;
   min-width: 20%;
@@ -390,7 +402,7 @@ button[name="search_submit"]:hover{
           flex-basis: 20%;
 }
 
-.at-column {
+#home .at-column {
   z-index: 0;
   position: relative;
   background: #FFF;
@@ -402,12 +414,12 @@ button[name="search_submit"]:hover{
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease;
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
 }
-.at-column:before {
+#home .at-column:before {
   content: "";
   display: block;
   padding-top: 100%;
 }
-.at-column:hover {
+#home .at-column:hover {
   z-index: 1;
   box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
   -webkit-transform: scale(1.05);
@@ -417,13 +429,13 @@ button[name="search_submit"]:hover{
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
 }
-.at-column:hover .at-social {
+#home .at-column:hover .at-social {
   margin: 0px 0 0;
   opacity: 1;
 }
-@media (max-width: 800px) {
-  .at-column {
-    width: 20% !important;
+@media (max-width: 800px) and (min-width: 600px){
+  #home .at-column {
+    width: 20%;
     max-width: 20% !important;
     min-width: 20% !important;
     -webkit-flex-basis: 50% !important;
@@ -432,7 +444,7 @@ button[name="search_submit"]:hover{
   }
 }
 @media (max-width: 600px) {
-  .at-column {
+  #home .at-column {
     width: 100% !important;
     max-width: 100% !important;
     min-width: 100% !important;
@@ -441,7 +453,7 @@ button[name="search_submit"]:hover{
             flex-basis: 100% !important;
   }
 }
-.at-user {
+#home .at-user {
   position: absolute;
   top: 50%;
   left: 0;
@@ -449,60 +461,60 @@ button[name="search_submit"]:hover{
   -webkit-transform: translate(0, -50%);
   text-align: center;
 }
-.at-user__avatar {
+#home .at-user__avatar {
   width: 98px;
   height: 98px;
   border-radius: 100%;
   margin: 0 auto 20px;
   overflow: hidden;
 }
-.at-user__avatar img {
+#home .at-user__avatar img {
   display: block;
   width: 100%;
   max-width: 100%;
 }
-.at-user__name {
+#home .at-user__name {
   color: #313435;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 0.625rem;
 }
-.at-user__name:hover{
+#home .at-user__name:hover{
 	color:#80C2BB;
 }
-.at-user__title {
+#home .at-user__title {
   color: #6F808A;
   font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
   line-height: 2.375rem;
 }
-.at-social {
+#home .at-social {
   margin: 0 0 -18px;
   opacity: 0;
   -webkit-transition: margin 0.2s ease, opacity 0.2s ease;
   transition: margin 0.2s ease, opacity 0.2s ease;
 }
-.at-social__item {
+#home .at-social__item {
   display: inline-block;
   margin: 0 10px;
 }
-.at-social__item a {
+#home .at-social__item a {
   display: block;
 }
-.at-social__item svg {
+#home .at-social__item svg {
   fill: #515F65;
   display: block;
   height: 18px;
   -webkit-transition: fill 0.2s ease;
   transition: fill 0.2s ease;
 }
-.at-social__item svg:hover {
+#home .at-social__item svg:hover {
   fill: #80C2BB;
 }
 
 /* Le projet */
-#about_us h4{
+#home #about_us h4{
 	font-size:25px;
 	font-family: 'Lobster', cursive;
 	color:#80C2BB;
@@ -511,7 +523,7 @@ button[name="search_submit"]:hover{
 }
 
 
-#about_us p{
+#home #about_us p{
 	margin:20px 0px;
 }
 
@@ -635,7 +647,7 @@ footer p{
 @media (min-width: 1200px){
 
 	/** Utilitaires **/
-	.container{
+	#home .container{
 		width: 1100px;
 	}
 }
@@ -644,7 +656,7 @@ footer p{
 @media (min-width: 992px) and (max-width: 1200px){
 
 	/** Utilitaires **/
-	.container{
+	#home .container, .container{
 		width: 900px;
 	}
 
@@ -658,8 +670,269 @@ footer p{
 	}
 
 	/** New shops **/
-	#new_shop img{
+	#home #new_shop img{
 		width: 240px;
 		height: 170px;
 	}
+
+	/** Links category **/
+	#home #low_nav_desktop ul li a{
+		padding: 10px 15px;
+	}
+}
+
+/** Supérieur à 768px et inférieur à 992px **/
+@media (min-width: 700px) and (max-width: 992px){
+
+	/** Utilitaires **/
+	#home .container, .container{
+		width: 650px;
+	}
+
+	/*** High navigation ***/
+	#high_nav{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	#high_nav ul li a:focus, #high_nav ul li a:active{
+		color: #80C2BB;
+	}
+
+	#high_nav ul li a:hover{
+		border: none;
+	}
+
+	#high_nav ul li a{
+		padding: 27px 15px;
+	}
+
+	#high_nav form{
+		margin-right: 0%;
+	}
+
+	#high_nav input{
+		margin-top: 0;
+	}
+
+	#high_nav button{
+		margin-top: 5px;
+		margin-right: 25px;
+	}
+
+	/*** Low navigation ***/
+	#home #low_nav_desktop{
+		display: none;
+	}
+
+	/*** Low navigation mobile ***/
+	#home #hamburger{
+		display: block;
+	}
+
+	#home #low_nav_mobile{
+		display: block;
+	}
+
+	/*** Slider ***/
+	#home #slider .container{
+		width: 100%;
+	}
+
+	#home .title_most_viewed{
+		font-size: 35px;
+		width: 250px;
+		padding: 50px 10px 15px 30px;
+	}
+
+	#home .description_most_viewed{
+		font-size: 18px;
+		padding: 50px 10px 15px 30px;
+	}
+
+	#home #slider_container{
+		left: -500px;
+	}
+
+	/*** Titre avec bordure séparation ***/
+	#home #new_shop h3, #about_us h3 {
+		border: 0px solid #FFF;
+		top: -45px;
+	}
+
+	/*** Description new shops ***/
+	#home .shop_discovery p{
+		padding: 30px 40px;
+	}
+
+	#home .shop_discovery{
+		width: 50%;
+	}
+
+	#home #new_shop img{
+		width: 240px;
+		height: 170px;
+	}
+}
+
+/*** Inférieur à 768px ***/
+@media (max-width: 700px){
+
+	/** Utilitaires **/
+	#home .container, .container{
+		width: 90%;
+	}
+
+	/*** Titre principal ***/
+	#high_nav h1{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	/*** High navigation ***/
+	#high_nav{
+		padding-bottom: 10px;
+	}
+
+	#high_nav a{
+		text-decoration: none;
+	}
+
+	/*** High navigation ***/
+	#high_nav ul li a:hover{
+		border: none;
+	}
+
+	#high_nav hr{
+		display: block;
+		width: 100%;
+	}
+
+	#high_nav ul{
+		float: none;
+		width: 100%;
+	}
+
+	#high_nav ul li{
+		width: 33%;
+		display: block;
+		text-align: center;
+		margin: auto;
+	}
+
+	#high_nav input{
+		margin: 0;
+		float: left;
+		width: 100px;
+	}
+
+	#high_nav button{
+		margin: 0;
+		float: right;
+	}
+
+	#high_nav ul li a{
+		padding: 15px 10px;
+	}
+
+	#high_nav ul li a:focus, #high_nav ul li a:active{
+		color: #80C2BB;
+	}
+
+	#high_nav ul li:nth-child(2){
+		display: none;
+	}
+
+	#mobile_clearfix{
+		display: block;
+		clear: both;
+	}
+
+	/*** Low navigation ***/
+	#home #low_nav_desktop{
+		display: none;
+	}
+
+	/*** Low navigation mobile ***/
+	#home #hamburger{
+		display: block;
+	}
+
+	#home #low_nav_mobile{
+		display: block;
+	}
+
+	/*** Slider ***/
+	#home .most_viewed{
+		height: 300px;
+		margin-bottom: 30px;
+	}
+
+	#home #slider .container{
+		width: 100%;
+	}
+
+	#home .title_most_viewed{
+		font-size: 25px;
+		width: 150px;
+		padding: 30px 10px 15px 20px;
+	}
+
+	#home .description_most_viewed{
+		font-size: 12px;
+		width: 170px;
+		padding: 30px 10px 15px 20px;
+	}
+
+	#home #slider_container{
+		left: -600px;
+	}
+
+	#home .bordure1{
+		display: none;
+	}
+
+	/*** Titre avec bordure séparation ***/
+	#home #new_shop h3, #about_us h3 {
+		border: 0px solid #FFF;
+		font-size: 25px;
+		top: -35px;
+		width: 250px;
+		padding-top: 20px;
+	}
+
+	#home #new_shop article:nth-child(5), #home #new_shop article:nth-child(6){
+		display: none;
+	}
+
+	/*** Description new shops ***/
+	#home .shop_discovery p{
+		padding: 30px 40px;
+	}
+
+	#home .shop_discovery{
+		width: 100%;
+	}
+
+	#home #new_shop img{
+		width: 250px;
+		height: 200px;
+	}
+
+	/*** Social network ***/
+	.social{
+		transform: scale(0.6);
+		margin: 0 0px;
+	}
+
+	/*** Footer ***/
+	footer{
+		padding: 0;
+	}
+
+	footer p{
+		padding: 10px 0;
+	}
+
 }

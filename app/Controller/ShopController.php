@@ -13,36 +13,22 @@ class ShopController extends Controller
         // J'ai recu des données de formulaire
         if (isset($_POST['add-shop'])) {
 
-            
-            $name           = trim(htmlspecialchars($_POST['name']));
-            $number         = trim(htmlspecialchars($_POST['number']));
-            $adress         = trim(htmlspecialchars($_POST['adress']));
-            $zip_code       = trim(htmlspecialchars($_POST['zip_code']));
-            $city           = trim(htmlspecialchars($_POST['city']));
-            $description    = trim(htmlspecialchars($_POST['description']));
-            $category       = trim(htmlspecialchars($_POST['select']));
-            $date_adding    = trim(htmlspecialchars($_POST['date_adding']));
+            // Vérification des champs
+            $name = trim(htmlspecialchars($_POST['name']));
+            $number = trim(htmlspecialchars($_POST['number']));
+            $adress = trim(htmlspecialchars($_POST['adress']));
+            $zip_code = trim(htmlspecialchars($_POST['zip_code']));
+            $city = trim(htmlspecialchars($_POST['city']));
+            $description = trim(htmlspecialchars($_POST['description']));
+            $category = trim(htmlspecialchars($_POST['select']));
+            $date_adding = trim(htmlspecialchars($_POST['date_adding']));
             /*$originalDate = "2010-03-21";
             $newDate = date("d-m-Y", strtotime($originalDate));*/
             /*$pictures = NULL;*/
-            $latitude       = trim(htmlspecialchars($_POST['latitude']));
-            $longitude      = trim(htmlspecialchars($_POST['longitude']));
-            $number_view    = NULL;
-
-            // PROTECTION DES DONNEES DE CONTACT
-            $phone          =trim(htmlspecialchars($_POST['phone']));
-            $fax            =trim(htmlspecialchars($_POST['fax']));
-            $mail           =trim(htmlspecialchars($_POST['mail']));
-
-
-            // PROTECTION DES DONNEES DES RESEAUX SOCIAUX
-            $link_facebook  = trim(htmlspecialchars($_POST['link_facebook']));
-            $link_instagram = trim(htmlspecialchars($_POST['link_instagram']));
-            $link_google    = trim(htmlspecialchars($_POST['link_google']));
-            $link_twitter   = trim(htmlspecialchars($_POST['link_twitter']));
-            $link_pinterest = trim(htmlspecialchars($_POST['link_pinterest']));
-
-            // GESTION D'ERREUR
+            $latitude = trim(htmlspecialchars($_POST['latitude']));
+            $longitude = trim(htmlspecialchars($_POST['longitude']));
+            $number_view = NULL;
+            
             $errors = [];
             if(empty($name)) {
                 $errors['name']['empty'] = 'entrer votre nom';
@@ -130,30 +116,18 @@ class ShopController extends Controller
                             $shopsInsert = $insertBDD->setTable('shops');
 
                             $data = [
-                                'name'           => $name, 
-                                'number'         => $number, 
-                                'adDress'        => $adress, 
-                                'zip_code'       => $zip_code, 
-                                'city'           => $city, 
-                                'pictures'       => $pictures, 
-                                'description'    => $description, 
-                                'category'       => $category, 
-                                'date_adding'    => $date_adding,
-                                'latitude'       => $latitude,  
-                                'longitude'      => $longitude,
-                                'number_view'    => $number_view, 
-
-                                // CONTACT
-                                'phone'          => $phone,
-                                'fax'            => $fax,
-                                'mail'           => $mail,
-
-                                // RESEAUX SOCIAUX
-                                'link_facebook'  => $link_facebook,
-                                'link_instagram' => $link_instagram,
-                                'link_google'    => $link_google,
-                                'link_twitter'   => $link_twitter,
-                                'link_pinterest' => $link_pinterest
+                                'name' =>         $name, 
+                                'number' =>       $number, 
+                                'adDress' =>      $adress, 
+                                'zip_code' =>     $zip_code, 
+                                'city' =>         $city, 
+                                'pictures' =>     $pictures, 
+                                'description' =>  $description, 
+                                'category' =>     $category, 
+                                'date_adding' =>  $date_adding,
+                                'latitude' =>     $latitude,  
+                                'longitude' =>    $longitude,
+                                'number_view' =>  $number_view 
                                     ];
                             
                             $shopsInsert ->insert($data);
