@@ -12,21 +12,19 @@ class DisplayController extends Controller
      * Shops les plus consultées 
      * Shops les plus récents
      ***/
-	public function listing()
+    public function listing()
     {
         $manager            = new \Manager\ShopManager();
         $shopsMostViewed    = $manager->mostViewed();
         $shopsMostRecent    = $manager->mostRecent();
-        $shopsActivity      = $manager->getShopByActivity();
-        $productsCategory   = $manager->getProductsByCategory();
+        $activities         = $manager->getAllActivities();
         
         /*** Envoi à la page home ***/
         $this->show('display/home', 
             [
                 'shopsMostViewed'   => $shopsMostViewed,
                 'shopsMostRecent'   => $shopsMostRecent,
-                'shopsActivity'     => $shopsActivity,
-                'productsCategory'  => $productsCategory
+                'activities'        => $activities
             ]);
     }
 
@@ -47,18 +45,31 @@ class DisplayController extends Controller
 
             /*** Appel des fonctions pour comparaison en DB ***/
             $resultShops = $manager->searchShop($tagSearch);
-            $resultProduct = $manager->searchProduct($tagSearch);
 
             /*** Envoi à la page "search" ***/
             $this->show('display/search', 
                 [
                     'resultShops'=> $resultShops,
-                    'resultProduct'=> $resultProduct
                 ]);
 
             /*** Redirection vers "search" ***/
             $this->redirectToRoute('search');
         }
+    }
+
+    public function shopActivity($id)
+    {
+        $manager = new \Manager\ShopManager();
+
+        $shopByActivity = $manager->getShopByActivity($id);
+        $categorySearch = $manager->getCategorySearch($id);
+
+        $this->show('display/activity-shop', 
+            [
+            'shopByActivity' => $shopByActivity,
+            'categorySearch' => $categorySearch
+            ]);
+
     }
 
 }

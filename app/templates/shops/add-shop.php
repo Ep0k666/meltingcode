@@ -16,7 +16,7 @@
 
         <section>
             <h3>La Boutique</h3>
-            <p><label>Intitulé de la boutique:  <input type="text" name="name" placeholder="Aux plaisirs sucrés" ></label></p>
+            <p><label>Intitulé de la boutique:  <input type="text" name="name" placeholder="Aux plaisirs sucrés" class="add-shop"></label></p>
             <?php if(isset($errors['name']['empty'])) : ?>
                 <p class="error">Le nom de la boutique doit être spécifié</p>
             <?php endif ?>
