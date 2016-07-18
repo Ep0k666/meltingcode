@@ -201,7 +201,7 @@ Log in form Inscription
     border-radius: 5px;
     display: inline-block;
     height: 530px;
-    margin: 97px 33px 0 0;
+    margin: 43px 33px;
     position: relative;
     z-index: 4;
     width: 500px;
@@ -350,11 +350,11 @@ Spinner inscription
     border-radius: 50%;
     border: 10px solid #00a4a2;
     box-shadow: 0 0 0 2px black, 0 0 0 6px #00fffc;
-    height: 700px;
-    width: 700px;
+    height: 600px;
+    width: 600px;
     position: absolute;
     top: 83px;
-    left: 45%;
+    left: 50%;
     margin-left: -300px;
     overflow: hidden;
     z-index: -3;
@@ -364,8 +364,8 @@ Spinner inscription
     background: #FFF;
     border-radius: 50%;
     border: 36px solid #00a4a2;
-    height: 660px;
-    width: 660px;
+    height: 560px;
+    width: 560px;
     margin: 10px;
 }
 #inner-cirlce2:before {
@@ -509,4 +509,23 @@ Utilitaires
     width: 1124px;
     margin: auto;
     height: 64em;
+}
+
+/*******************
+	 RESPONSIVE
+ *******************/
+
+/** Supérieur à 1200px **/
+@media (min-width: 1200px){
+
+
+}
+
+/** Supérieur à 992px et inférieur à 1200px **/
+@media (min-width: 992px) and (max-width: 1200px){
+
+    canvas{
+        display: none;
+    }
+
 }
