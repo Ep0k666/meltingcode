@@ -3,6 +3,8 @@
 $w_routes = array(
     /*************** ---------- HOME ------------ ******************/
     ['GET|POST',    '/', 					'Display#listing',              'home'],
+            /************** ---------- ACTIVITY ------------ ***************/
+        ['GET|POST',     '/activity/[:id]',             'Display#shopActivity',             'activity'],
     /************** ---------- SEARCH ------------ ***************/
     ['GET|POST', 	'/search', 				'Display#search', 				'search'],
     /************** ---------- CONTACT ------------ ***************/

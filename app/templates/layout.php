@@ -26,7 +26,6 @@
 
     <!-- *** CDN JQUERY *** -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    <script src="<?= $this->assetUrl('js/jquery.js')?>"></script>
     <!-- *** JQUERY FLEXSLIDER *** -->
     <script src="<?= $this->assetUrl('js/jquery.flexslider.js') ?>"></script>
     <!-- *** SCRIPT *** -->
@@ -42,7 +41,6 @@
  ****************************-->
 
 <header>
-
     <nav id="high_nav">
         <div class="container">
 
@@ -73,6 +71,8 @@
                 <?php endif ?>
             </ul>
 
+            <hr />
+
             <!-- *** Search formulaire *** -->
             <form method="POST" action="search">
 
@@ -90,6 +90,7 @@
 </header>
 <main>
     <section>
+
         <?= $this->section('main_content') ?>
 
     </section>
