@@ -9,7 +9,7 @@ class ShopManager extends \W\Manager\Manager
     /*créer un categoryManager à part */
     public function getAllcategories()
     {
-        $sql = 'SELECT DISTINCT category FROM shops ORDER BY category';
+        $sql = 'SELECT DISTINCT category FROM categoryshops ORDER BY category';
         $stmt=$this->dbh->query($sql);
         return $stmt->fetchAll();
     }
