@@ -1,19 +1,32 @@
 
 
-div.separator{
+/* div.separator{
     display:block;
-}
+} */
 
 #add-shop section{
-    width:25%;
+    width:33.33%;
     float:left;
-    margin:0 50px;
+    padding:100px 50px 25px;
     text-align:left;
+    box-sizing:border-box;
+}
+
+#add-shop section:nth-child(1), #add-shop section:nth-child(2), #add-shop section:nth-child(3){
+    height:500px;
+}
+
+/* #add-shop section:nth-child(4), #add-shop section:nth-child(5), #add-shop section:nth-child(6){
+    height:950px;
+} */
+
+#add-shop{
+    background-color: #efefef;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 #add-shop .container{
-    background: #efefef;
     width: 100%;
-    padding:100px 100px;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -30,6 +43,7 @@ div.separator{
     font-size: 3em;
     font-family: 'Lobster', cursive;
     text-align:center;
+    padding-bottom: 30px;
 }
 #add-shop .error{
     color: red;
@@ -54,8 +68,8 @@ div.separator{
 
 #add-shop form p{
     color:#313A3D;
-    margin:20px 0px;
     font-size:20px;
+    line-height:15px;
 }
 
 #add-shop input{
@@ -118,6 +132,7 @@ div.separator{
 
 #add-shop input[type="file"]{
     background-color:#efefef;
+    margin-bottom:15px;
 }
 
 #add-shop p button{
@@ -138,11 +153,56 @@ div.separator{
     -ms-transition: all 333ms ease-in-out;
     transition: all 333ms ease-in-out;
     display:block;
-    margin:auto;
+    margin:0 auto;
 
 }
 
 #add-shop button:hover {
     background: #80C2BB;
     color: white;
+}
+
+
+/* RESPONSIVE */
+
+/*supérieur à 1200px */
+@media (min-width:1200px){
+    #add-shop p button:first-of-type{
+        margin-top:50px;
+    }
+}
+
+/*inférieur à 1200px et supérieur à 992 */
+@media (min-width:992px) and (max-width:1200px){
+    #add-shop section{
+        width:50%;
+    }
+    #add-shop p button:last-of-type{
+        margin-top:50px;
+    }
+}
+
+/*inférieur à 992px et supérieur à 768 */
+@media (min-width:768px) and (max-width:992px){
+    #add-shop section{
+        width:50%;
+    }
+    #add-shop p button:last-of-type{
+        margin-top:20px;
+    }
+}
+
+/*inférieur 768 */
+@media (max-width:768px) {
+    #add-shop section {
+        width: 100%;
+    }
+
+    #add-shop p button:last-of-type {
+        margin-top: 20px;
+    }
+
+    #add-shop section {
+        padding: 20px 30px;
+    }
 }

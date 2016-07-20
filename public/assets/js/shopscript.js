@@ -15,7 +15,7 @@ $(function(){
         dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
         weekHeader: 'Sem.',
         dateFormat: 'yy-mm-dd'
-    });
-*/
+    });*/
+
 
 });

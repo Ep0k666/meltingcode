@@ -6,21 +6,19 @@ namespace Manager;
 class ShopManager extends \W\Manager\Manager
 {
 
-    /*créer un categoryManager à part */
+    /***
+     * Fonction pour page "addshop"
+     * Affiche la liste des catégories dans la balise select
+     ***/
     public function getAllcategories()
     {
-        $sql = 'SELECT DISTINCT category FROM categoryshops ORDER BY category';
+        $sql = 'SELECT * FROM categoryshops ORDER BY category';
         $stmt=$this->dbh->query($sql);
         return $stmt->fetchAll();
     }
 
-    public function getAllactivities()
-    {
-        $sql = 'SELECT * FROM categoryshops ORDER BY category ASC';
-        $stmt=$this->dbh->query($sql);
-        return $stmt->fetchAll();
-    }
-       /***
+    
+    /***
      * Fonction pour page "home"
      * Shops les plus consultées
      ***/
@@ -42,16 +40,20 @@ class ShopManager extends \W\Manager\Manager
         return $stmt->fetchAll();
     }
 
+     public function getAllActivities()
+    {
+        $sql = 'SELECT * FROM categoryshops ORDER BY category';
+        $stmt = $this->dbh->query($sql);
+        return $stmt->fetchAll();
+    }
     /***
      * Fonction pour page "home"
      * Shops par activité
      ***/
-    public function getShopByActivity($id)
+    public function getShopByActivity()
     {
-        $sql = 'SELECT * FROM shops  WHERE id_category =:id';
-        $stmt = $this->dbh->prepare($sql);
-        $stmt->bindParam(':id',$id);
-        $stmt->execute();
+        $sql = 'SELECT * FROM shops ORDER BY id_category';
+        $stmt = $this->dbh->query($sql);
         return $stmt->fetchAll();
     }
 
@@ -59,12 +61,10 @@ class ShopManager extends \W\Manager\Manager
      * Fonction pour page "home"
      * Products par category
      ***/
-    public function getProductsByCategory($id)
+    public function getProductsByCategory()
     {
-        $sql = 'SELECT * FROM categoryshops WHERE id_catshops';
-        $stmt = $this->dbh->prepare($sql);
-        $stmt->bindParam(':id',$id);
-        $stmt->execute();
+        $sql = 'SELECT * FROM products ORDER BY id_catproduct';
+        $stmt = $this->dbh->query($sql);
         return $stmt->fetchAll();
     }
 }
