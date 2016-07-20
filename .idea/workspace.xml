@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f83b534-6e0e-4550-9eca-5adbdd73efe0" name="Default" comment="Commit 15.07- boutique ok +">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Controller/draft.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/shops/edit-shop.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/shops/shopview.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/shopviewstyle.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/script_shop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/shopscript.js" />
+    <list default="true" id="7f83b534-6e0e-4550-9eca-5adbdd73efe0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/LoginPageController.php" afterPath="$PROJECT_DIR$/app/Controller/LoginPageController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/ShopController.php" afterPath="$PROJECT_DIR$/app/Controller/ShopController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Manager/ShopManager.php" afterPath="$PROJECT_DIR$/app/Manager/ShopManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/loginPage/connect.php" afterPath="$PROJECT_DIR$/app/templates/loginPage/connect.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/shopstyles.css" afterPath="$PROJECT_DIR$/public/assets/css/shopstyles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/script.js" afterPath="$PROJECT_DIR$/public/assets/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/scriptconnect.js" afterPath="$PROJECT_DIR$/public/assets/js/scriptconnect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/layout.php" afterPath="$PROJECT_DIR$/app/templates/layout.php" />
     </list>
     <list id="1cde1371-fd02-46a5-aec5-57d0d483e9c5" name="Rejected commit: Default" comment="Commit 15.07" />
     <list id="e491c87d-7d1e-4bb7-9b45-2409c1aac59d" name="Rejected commit: Default (2)" comment="Commit 15.07- boutique ok +" />
@@ -40,21 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="layout.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/templates/layout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShopManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Manager/ShopManager.php">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+            <state relative-caret-position="75">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShopController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShopController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Controller/ShopController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="523">
@@ -175,7 +162,6 @@
         <option value="$PROJECT_DIR$/app/templates/loginPage/loginPage.php" />
         <option value="$PROJECT_DIR$/app/Controller/DisplayController.php" />
         <option value="$PROJECT_DIR$/app/templates/display/home.php" />
-        <option value="$PROJECT_DIR$/app/templates/layout.php" />
         <option value="$PROJECT_DIR$/public/assets/css/style.css" />
         <option value="$PROJECT_DIR$/public/assets/css/home-style.css" />
         <option value="$PROJECT_DIR$/app/templates/shops/add-shop.php" />
@@ -187,6 +173,7 @@
         <option value="$PROJECT_DIR$/public/assets/css/shopstyles.css" />
         <option value="$PROJECT_DIR$/public/assets/css/shopviewstyle.css" />
         <option value="$PROJECT_DIR$/app/Controller/ShopController.php" />
+        <option value="$PROJECT_DIR$/app/templates/layout.php" />
       </list>
     </option>
   </component>
@@ -415,7 +402,7 @@
       <workItem from="1468592600357" duration="588000" />
       <workItem from="1468593282131" duration="43000" />
       <workItem from="1468844341046" duration="426000" />
-      <workItem from="1468999810952" duration="2374000" />
+      <workItem from="1468999810952" duration="2564000" />
     </task>
     <task id="LOCAL-00001" summary="Commit test">
       <created>1468235455427</created>
@@ -515,11 +502,18 @@
       <option name="project" value="LOCAL" />
       <updated>1468592047503</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Commit 15.07- boutique ok +">
+      <created>1469008025199</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1469008025199</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54847000" />
+    <option name="totallyTimeSpent" value="55037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="23" width="1379" height="877" extended-state="6" />
@@ -794,13 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Manager/ContactManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -913,6 +900,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
           <caret line="409" column="41" selection-start-line="409" selection-start-column="41" selection-end-line="409" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -22,6 +22,9 @@
     <!-- *** CSS Page Login/Connect *** -->
     <link rel="stylesheet" href="<?= $this->assetUrl('css/loginstyle.css') ?>">
 
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/shopstyles.css') ?>">
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/shopviewstyle.css') ?>">
+
 
     <!-- *** CDN JQUERY *** -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
@@ -33,6 +36,10 @@
     <script src="<?= $this->assetUrl('js/scriptconnect.js') ?>"></script>
     <!-- *** SCRIPT *** -->
     <script src="<?= $this->assetUrl('js/script.js') ?>"></script>
+
+    <!-- celui de malika à voir si je supprime ou non et charger jquery 3_1 dans js dossier-->
+    <!-- <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+    -->
 </head>
 <body>
 <!-- ****************************
