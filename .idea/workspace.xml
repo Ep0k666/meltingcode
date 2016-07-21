@@ -1,13 +1,250 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f83b534-6e0e-4550-9eca-5adbdd73efe0" name="Default" comment="">
+    <list default="true" id="7f83b534-6e0e-4550-9eca-5adbdd73efe0" name="Default" comment="Commit 21.07&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/layout.php" afterPath="$PROJECT_DIR$/app/templates/layout.php" />
     </list>
     <list id="1cde1371-fd02-46a5-aec5-57d0d483e9c5" name="Rejected commit: Default" comment="Commit 15.07" />
     <list id="e491c87d-7d1e-4bb7-9b45-2409c1aac59d" name="Rejected commit: Default (2)" comment="Commit 15.07- boutique ok +" />
     <list id="c156c7e0-28ac-4188-a7b7-45744fcb1b8d" name="Rejected commit: Default (3)" comment="Commit 15.07- boutique ok +" />
+    <list id="10c7913d-29d7-44e7-93ad-135005dd7434" name="Rejected commit: Default (4)" comment="Commit 21.07&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/_bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/_bowerrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/_jscsrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/_npmignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/.bowerrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/.jscsrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/.npmignore" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/LICENSE.md" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/README.mdown" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/README.mdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower.json" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/MIT-LICENSE.txt" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/MIT-LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/bower.json" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/dist/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/dist/jquery.min.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/dist/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/jsonp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/load.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/load.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/parseJSON.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/parseJSON.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/parseXML.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/parseXML.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/var/nonce.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/var/nonce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/var/rquery.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/var/rquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/ajax/xhr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/attributes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/attributes/attr.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/attributes/attr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/attributes/classes.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/attributes/classes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/attributes/prop.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/attributes/prop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/attributes/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/attributes/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/attributes/val.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/attributes/val.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/callbacks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/core.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/core/access.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/core/access.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/core/init.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/core/init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/core/parseHTML.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/core/parseHTML.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/core/ready.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/core/ready.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/core/var/rsingleTag.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/core/var/rsingleTag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/addGetHookIf.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/addGetHookIf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/curCSS.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/curCSS.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/defaultDisplay.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/defaultDisplay.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/hiddenVisibleSelectors.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/hiddenVisibleSelectors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/swap.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/swap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/var/cssExpand.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/var/cssExpand.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/var/isHidden.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/var/isHidden.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/var/rmargin.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/var/rmargin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/var/rnumnonpx.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/css/var/rnumnonpx.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/data.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/data/accepts.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/data/accepts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/data/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/data/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/deferred.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/deprecated.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/dimensions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/effects.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/effects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/effects/Tween.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/effects/Tween.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/effects/animatedSelector.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/effects/animatedSelector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/effects/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/effects/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/event.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/event.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/event/ajax.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/event/ajax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/event/alias.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/event/alias.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/event/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/event/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/exports/amd.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/exports/amd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/exports/global.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/exports/global.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/intro.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/intro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/jquery.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/manipulation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/manipulation/_evalUrl.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/manipulation/_evalUrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/manipulation/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/manipulation/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/manipulation/var/rcheckableType.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/manipulation/var/rcheckableType.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/offset.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/offset.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/outro.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/outro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/queue.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/queue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/queue/delay.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/queue/delay.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/selector-sizzle.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/selector-sizzle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/selector.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/selector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/serialize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/sizzle/dist/sizzle.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/sizzle/dist/sizzle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/sizzle/dist/sizzle.min.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/sizzle/dist/sizzle.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/traversing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/traversing/findFilter.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/traversing/findFilter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/traversing/var/rneedsContext.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/traversing/var/rneedsContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/class2type.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/class2type.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/concat.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/concat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/deletedIds.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/deletedIds.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/hasOwn.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/hasOwn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/indexOf.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/indexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/pnum.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/pnum.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/push.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/push.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/rnotwhite.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/rnotwhite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/slice.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/slice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/strundefined.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/strundefined.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/toString.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/var/toString.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/bower_components/jquery/src/wrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/changelog.txt" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/changelog.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/composer.json" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/css/base.less" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/css/base.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/css/font.less" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/css/font.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/css/mixins.less" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/css/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/css/resets.less" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/css/resets.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/css/responsive.less" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/css/responsive.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/css/theme.less" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/css/theme.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/css/variables.less" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/css/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/basic-carousel.html" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/basic-carousel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/basic-slider-with-caption.html" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/basic-slider-with-caption.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/basic-slider-with-custom-direction-nav.html" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/basic-slider-with-custom-direction-nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/carousel-min-max.html" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/carousel-min-max.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/css/demo.css" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/css/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/dynamic-carousel-min-max.html" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/dynamic-carousel-min-max.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/fonts/webfonts/geo-medium/svg/1110FC_0.svg" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/fonts/webfonts/geo-medium/svg/1110FC_0.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/fonts/webfonts/geo-medium/svg/svg_test.html" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/fonts/webfonts/geo-medium/svg/svg_test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/fonts/webfonts/geo-regular/svg/11014B_0.svg" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/fonts/webfonts/geo-regular/svg/11014B_0.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/fonts/webfonts/geo-regular/svg/svg_test.html" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/fonts/webfonts/geo-regular/svg/svg_test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/fonts/webfonts/geo-semibold/svg/index.html" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/fonts/webfonts/geo-semibold/svg/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/fonts/webfonts/geo-semibold/svg/style_169898.svg" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/fonts/webfonts/geo-semibold/svg/style_169898.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/index.html" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/demo.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/demo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/froogaloop.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/froogaloop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/jquery.easing.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/jquery.easing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/jquery.fitvid.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/jquery.fitvid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/jquery.mousewheel.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/jquery.mousewheel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/modernizr.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/modernizr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/shBrushCss.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/shBrushCss.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/shBrushJScript.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/shBrushJScript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/shBrushXml.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/shBrushXml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/shCore.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/js/shCore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/thumbnail-controlnav.html" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/thumbnail-controlnav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/thumbnail-slider.html" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/thumbnail-slider.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/video-wistia.html" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/video-wistia.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/video.html" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/demo/video.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/flexslider.css" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/flexslider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/flexslider.less" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/flexslider.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/fonts/flexslider-icon.svg" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/fonts/flexslider-icon.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/jquery.flexslider-min.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/jquery.flexslider-min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/jquery.flexslider.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/jquery.flexslider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/AUTHORS.txt" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/AUTHORS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/MIT-LICENSE.txt" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/MIT-LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/README.md" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/bower.json" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/dist/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/dist/jquery.min.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/dist/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/package.json" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/jsonp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/load.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/load.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/parseJSON.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/parseJSON.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/parseXML.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/parseXML.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/var/nonce.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/var/nonce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/var/rquery.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/var/rquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/ajax/xhr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/attributes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/attributes/attr.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/attributes/attr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/attributes/classes.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/attributes/classes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/attributes/prop.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/attributes/prop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/attributes/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/attributes/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/attributes/val.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/attributes/val.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/callbacks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/core.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/core/access.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/core/access.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/core/init.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/core/init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/core/parseHTML.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/core/parseHTML.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/core/ready.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/core/ready.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/core/var/rsingleTag.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/core/var/rsingleTag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/addGetHookIf.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/addGetHookIf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/curCSS.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/curCSS.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/defaultDisplay.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/defaultDisplay.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/hiddenVisibleSelectors.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/hiddenVisibleSelectors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/swap.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/swap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/var/cssExpand.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/var/cssExpand.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/var/isHidden.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/var/isHidden.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/var/rmargin.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/var/rmargin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/var/rnumnonpx.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/css/var/rnumnonpx.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/data.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/data/accepts.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/data/accepts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/data/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/data/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/deferred.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/deprecated.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/dimensions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/effects.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/effects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/effects/Tween.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/effects/Tween.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/effects/animatedSelector.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/effects/animatedSelector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/effects/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/effects/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/event.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/event.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/event/ajax.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/event/ajax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/event/alias.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/event/alias.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/event/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/event/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/exports/amd.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/exports/amd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/exports/global.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/exports/global.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/intro.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/intro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/jquery.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/manipulation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/manipulation/_evalUrl.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/manipulation/_evalUrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/manipulation/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/manipulation/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/manipulation/var/rcheckableType.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/manipulation/var/rcheckableType.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/offset.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/offset.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/outro.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/outro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/queue.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/queue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/queue/delay.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/queue/delay.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/selector-sizzle.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/selector-sizzle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/selector.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/selector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/serialize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/dist/sizzle.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/dist/sizzle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/dist/sizzle.min.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/dist/sizzle.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/test/data/mixed_sort.html" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/test/data/mixed_sort.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/test/data/testinit.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/test/data/testinit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/test/index.html" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/test/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/test/jquery.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/test/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/test/unit/extending.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/test/unit/extending.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/test/unit/selector.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/test/unit/selector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/test/unit/utilities.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/sizzle/test/unit/utilities.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/traversing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/traversing/findFilter.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/traversing/findFilter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/traversing/var/rneedsContext.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/traversing/var/rneedsContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/class2type.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/class2type.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/concat.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/concat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/deletedIds.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/deletedIds.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/hasOwn.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/hasOwn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/indexOf.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/indexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/pnum.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/pnum.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/push.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/push.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/rnotwhite.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/rnotwhite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/slice.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/slice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/strundefined.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/strundefined.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/support.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/toString.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/var/toString.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/node_modules/jquery/src/wrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/package.json" afterPath="$PROJECT_DIR$/app/templates/display/woothemes-FlexSlider-2.6.1-0-g622f7fd/woothemes-FlexSlider-622f7fd/package.json" />
+    </list>
+    <list id="125f4705-9964-4fdb-ba56-d6af6bf08c32" name="Rejected commit: Rejected commit: Default (4)" comment="Commit 21.07&#10;" />
     <ignored path="meltingcode.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -27,51 +264,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="layout.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layout.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/layout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Controller/ConnectController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="12" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginPageController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Controller/LoginPageController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+            <state relative-caret-position="435">
+              <caret line="52" column="68" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -80,18 +277,84 @@
       <file leaf-file-name="shopstyles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/css/shopstyles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
+            <state relative-caret-position="617">
               <caret line="207" column="1" selection-start-line="207" selection-start-column="1" selection-end-line="207" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shopviewstyle.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home-style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/css/home-style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="656" column="5" selection-start-line="656" selection-start-column="5" selection-end-line="656" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shopviewstyle.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/assets/css/shopviewstyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="669" column="23" selection-start-line="669" selection-start-column="23" selection-end-line="669" selection-end-column="23" />
+            <state relative-caret-position="235">
+              <caret line="328" column="0" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/ConnectController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResetPassword.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/ResetPassword.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+              <folding>
+                <marker date="1469085139000" expanded="true" signature="246:307" ph="SELECT COUNT... Users" />
+                <marker date="1469085139000" expanded="true" signature="992:1042" ph="SELECT id FR... Users" />
+                <marker date="1469085139000" expanded="true" signature="1527:1580" ph="UPDATE Users... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/W/Manager/UserManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-105">
+              <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+              <folding>
+                <marker date="1468229443000" expanded="true" signature="482:695" ph="SELECT * FRO... ${$app-&gt;getConfig('security_user_table')}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add-shop.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/shops/add-shop.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1320">
+              <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -100,28 +363,8 @@
       <file leaf-file-name="ShopController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Controller/ShopController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="409" column="41" selection-start-line="409" selection-start-column="41" selection-end-line="409" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/display/home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="connect.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/loginPage/connect.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+            <state relative-caret-position="-900">
+              <caret line="147" column="86" selection-start-line="147" selection-start-column="86" selection-end-line="147" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -152,7 +395,6 @@
         <option value="$PROJECT_DIR$/app/Manager/LoginPageManager.php" />
         <option value="$PROJECT_DIR$/app/Manager/UsersManager.php" />
         <option value="$PROJECT_DIR$/app/Manager/ConnectManager.php" />
-        <option value="$PROJECT_DIR$/app/Controller/ConnectController.php" />
         <option value="$PROJECT_DIR$/app/Manager/UserManager.php" />
         <option value="$PROJECT_DIR$/app/templates/loginPage/signup.php" />
         <option value="$PROJECT_DIR$/app/templates/loginPage/connect.php" />
@@ -163,17 +405,21 @@
         <option value="$PROJECT_DIR$/app/Controller/DisplayController.php" />
         <option value="$PROJECT_DIR$/app/templates/display/home.php" />
         <option value="$PROJECT_DIR$/public/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/public/assets/css/home-style.css" />
-        <option value="$PROJECT_DIR$/app/templates/shops/add-shop.php" />
         <option value="$PROJECT_DIR$/app/config.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/Manager/ShopManager.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/Controller/LoginPageController.php" />
-        <option value="$PROJECT_DIR$/public/assets/css/shopstyles.css" />
-        <option value="$PROJECT_DIR$/public/assets/css/shopviewstyle.css" />
         <option value="$PROJECT_DIR$/app/Controller/ShopController.php" />
+        <option value="$PROJECT_DIR$/app/templates/shops/add-shop.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/templates/loginPage/resetPass.php" />
+        <option value="$PROJECT_DIR$/app/Controller/ConnectController.php" />
+        <option value="$PROJECT_DIR$/app/Controller/ResetPassword.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/public/assets/css/shopstyles.css" />
         <option value="$PROJECT_DIR$/app/templates/layout.php" />
+        <option value="$PROJECT_DIR$/public/assets/css/home-style.css" />
+        <option value="$PROJECT_DIR$/public/assets/css/shopviewstyle.css" />
       </list>
     </option>
   </component>
@@ -252,6 +498,60 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meltingcode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meltingcode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meltingcode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meltingcode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meltingcode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meltingcode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -292,7 +592,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="loginPage" />
+              <option name="myItemId" value="shops" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -402,7 +702,7 @@
       <workItem from="1468592600357" duration="588000" />
       <workItem from="1468593282131" duration="43000" />
       <workItem from="1468844341046" duration="426000" />
-      <workItem from="1468999810952" duration="2564000" />
+      <workItem from="1468999810952" duration="7847000" />
     </task>
     <task id="LOCAL-00001" summary="Commit test">
       <created>1468235455427</created>
@@ -509,11 +809,25 @@
       <option name="project" value="LOCAL" />
       <updated>1469008025199</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Commit 20.07&#10;">
+      <created>1469008239010</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1469008239010</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Commit 21.07&#10;">
+      <created>1469086982356</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1469086982356</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55037000" />
+    <option name="totallyTimeSpent" value="60320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="23" width="1379" height="877" extended-state="6" />
@@ -525,19 +839,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.5026022" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.49739778" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298292" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -558,7 +872,10 @@
     <MESSAGE value="Commit 15.07-1 creation de boutique avec erreurs..." />
     <MESSAGE value="Commit 15.07- boutique ok" />
     <MESSAGE value="Commit 15.07- boutique ok +" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 15.07- boutique ok +" />
+    <MESSAGE value="&#10;" />
+    <MESSAGE value="Commit 20.07&#10;" />
+    <MESSAGE value="Commit 21.07&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 21.07&#10;" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -566,36 +883,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/templates/loginPage/signup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/loginPage/connect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/loginPage/signup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/UserController.php" />
-    <entry file="file://$PROJECT_DIR$/app/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Manager/UserManager.php" />
     <entry file="file://$PROJECT_DIR$/app/templates/layout.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -661,21 +948,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/UserController.php" />
-    <entry file="file://$PROJECT_DIR$/W/Security/AuthorizationManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Manager/UsersManager.php" />
-    <entry file="file://$PROJECT_DIR$/W/Manager/UserManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/css/contact-style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -781,13 +1054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/home-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9375">
-          <caret line="625" column="13" selection-start-line="625" selection-start-column="13" selection-end-line="625" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Manager/ContactManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -799,20 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/W/Security/AuthentificationManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/shops/add-shop.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="75" column="76" selection-start-line="75" selection-start-column="76" selection-end-line="75" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -848,66 +1100,152 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/loginPage/connect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/ConnectController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="12" selection-end-column="38" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/LoginPageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
+        <state relative-caret-position="525">
           <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/shopstyles.css">
+    <entry file="file://$PROJECT_DIR$/W/Security/StringUtils.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="207" column="1" selection-start-line="207" selection-start-column="1" selection-end-line="207" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/shopviewstyle.css">
+    <entry file="file://$PROJECT_DIR$/app/templates/loginPage/resetPass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="669" column="23" selection-start-line="669" selection-start-column="23" selection-end-line="669" selection-end-column="23" />
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/loginPage/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W/Security/AuthorizationManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W/Security/AuthentificationManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-313">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/ShopController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="409" column="41" selection-start-line="409" selection-start-column="41" selection-end-line="409" selection-end-column="41" />
+        <state relative-caret-position="-900">
+          <caret line="147" column="86" selection-start-line="147" selection-start-column="86" selection-end-line="147" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W/Manager/UserManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+          <folding>
+            <marker date="1468229443000" expanded="true" signature="482:695" ph="SELECT * FRO... ${$app-&gt;getConfig('security_user_table')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/reset password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/ConnectController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/ResetPassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+          <folding>
+            <marker date="1469085139000" expanded="true" signature="246:307" ph="SELECT COUNT... Users" />
+            <marker date="1469085139000" expanded="true" signature="992:1042" ph="SELECT id FR... Users" />
+            <marker date="1469085139000" expanded="true" signature="1527:1580" ph="UPDATE Users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/shops/add-shop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/shopstyles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="207" column="1" selection-start-line="207" selection-start-column="1" selection-end-line="207" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/layout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="435">
+          <caret line="52" column="68" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/home-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="656" column="5" selection-start-line="656" selection-start-column="5" selection-end-line="656" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/shopviewstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="328" column="0" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
           <folding />
         </state>
       </provider>
