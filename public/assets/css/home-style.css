@@ -655,8 +655,8 @@ ol li a{
 	            flex-basis: 50% !important;
 	    margin: auto;
 	}
-
-	at-column img{
+	
+	.at-column img{
 		transform: scale(0.75);
 	}
 }

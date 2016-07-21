@@ -2,7 +2,7 @@ $(function(){
 	/*$(window).load(function() {
       $('.flexslider').flexslider();
    });*/
-    $( ".datepicker" ).datepicker({
+   /* $( ".datepicker" ).datepicker({
         altField: "#datepicker",
         closeText: 'Fermer',
         prevText: 'Précédent',
@@ -16,6 +16,6 @@ $(function(){
         weekHeader: 'Sem.',
         dateFormat: 'yy-mm-dd'
     });
-
+*/
 
 });

@@ -1,45 +1,208 @@
-body {
-    font-family: 'Open sans', sans-serif;
+
+
+/* div.separator{
+    display:block;
+} */
+
+#add-shop section{
+    width:33.33%;
+    float:left;
+    padding:100px 50px 25px;
+    text-align:left;
+    box-sizing:border-box;
 }
 
-#cont form{
-    padding-left:250px;
+#add-shop section:nth-child(1), #add-shop section:nth-child(2), #add-shop section:nth-child(3){
+    height:500px;
 }
 
-#cont fieldset{
-    margin-top: 15px;
-    border: solid 2px #bcbce9;
+/* #add-shop section:nth-child(4), #add-shop section:nth-child(5), #add-shop section:nth-child(6){
+    height:950px;
+} */
+
+#add-shop{
+    background-color: #efefef;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
-/*choisir une autre font pour ce titre*/
-#cont h2{
+#add-shop .container{
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#add-shop h2{
+    text-align:center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:40px;
+    margin-bottom:2em;
+    color:#CCCCCC;
+}
+
+#add-shop h3{
+    color:#80C2BB;
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    text-align:center;
+    padding-bottom: 30px;
+}
+#add-shop .error{
+    color: red;
+}
+
+#add-shop legend {
+    color:#80C2BB;
+    font-size: 4em;
+    font-family: 'Lobster', cursive;
     margin:auto;
-    font-weight: bold;
-    color:#bcbce9;
+    padding-bottom: 50px;
 }
-#cont legend{
-    margin:auto;
-    font-weight: bold;
+
+#add-shop form label{
+    text-transform:uppercase;
+    font-size:15px;
 }
-#cont p{
-    margin-top: 20px;
+
+#add-shop form{
+    width:100%;
 }
-.error{
-    color:red;
+
+#add-shop form p{
+    color:#313A3D;
+    font-size:20px;
+    line-height:15px;
 }
-#cont span{
-    font-style: italic;
-    font-size: 15px;
+
+#add-shop input{
+    width:100%;
+    height:2em;
+    margin-top:10px;
+    margin-bottom:5px;
+    border: none;
+    background: #E8E9EA;
+    padding-left: 5%;
+    color: #80C2BB;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    padding:10px 5%;
+    font-family: 'Titillium Web', sans-serif;
 }
-#cont h4{
-    margin-bottom: 15px;
+
+#add-shop input:focus{
+    outline: none;
 }
-#cont p input{
-    margin: auto;
+
+#add-shop textarea{
+    width:100%;
+    height:10em;
+    margin-bottom:20px;
+    border: none;
+    background: #E8E9EA;
+    padding-left: 5%;
+    color: #80C2BB;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 10px 5%;
 }
-#cont p textarea{
-    width: 500px;
+
+#add-shop textarea:focus{
+    outline: none;
 }
-#cont button{
-    margin-bottom: 15px;
-    margin-left: 50px;
+
+#add-shop select{
+    border: none;
+    background: #E8E9EA;
+    font-size: 0.8em;
+    font-family: 'Titillium Web', sans-serif;
+    color: #6E6E6E;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    margin-bottom:4em;
+}
+
+#add-shop select:focus{
+    outline: none;
+    border:none;
+}
+
+#add-shop select:hover{
+    outline: none;
+    border:none;
+}
+
+#add-shop input[type="file"]{
+    background-color:#efefef;
+    margin-bottom:15px;
+}
+
+#add-shop p button{
+    background:#313A3D;
+    color: white;
+    -webkit-appearance: none;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    padding: 13px 50px;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+    display:block;
+    margin:0 auto;
+
+}
+
+#add-shop button:hover {
+    background: #80C2BB;
+    color: white;
+}
+
+
+/* RESPONSIVE */
+
+/*supérieur à 1200px */
+@media (min-width:1200px){
+    #add-shop p button:first-of-type{
+        margin-top:50px;
+    }
+}
+
+/*inférieur à 1200px et supérieur à 992 */
+@media (min-width:992px) and (max-width:1200px){
+    #add-shop section{
+        width:50%;
+    }
+    #add-shop p button:last-of-type{
+        margin-top:50px;
+    }
+}
+
+/*inférieur à 992px et supérieur à 768 */
+@media (min-width:768px) and (max-width:992px){
+    #add-shop section{
+        width:50%;
+    }
+    #add-shop p button:last-of-type{
+        margin-top:20px;
+    }
+}
+
+/*inférieur 768 */
+@media (max-width:768px) {
+    #add-shop section {
+        width: 100%;
+    }
+
+    #add-shop p button:last-of-type {
+        margin-top: 20px;
+    }
+
+    #add-shop section {
+        padding: 20px 30px;
+    }
 }

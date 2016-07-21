@@ -27,7 +27,17 @@
     <link rel="stylesheet" href="<?= $this->assetUrl('css/activity-style.css') ?>">
     <?php endif; ?>
 
+    <?php if($title == 'newsletter') : ?>
         <!-- *** STYLE CSS NEWSLETTER*** -->
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/home-style.css') ?>">
+    <?php endif; ?>
+
+    <!-- *** STYLE CSS ACTIVITY *** -->
+    <?php if($title == 'activity') : ?>
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/activity-style.css') ?>">
+    <?php endif; ?>
+
+    <!-- *** STYLE CSS NEWSLETTER*** -->
     <?php if($title == 'newsletter') : ?>
         <link rel="stylesheet" href="<?= $this->assetUrl('css/news-style.css') ?>">
     <?php endif; ?>
@@ -42,12 +52,21 @@
         <!-- *** STYLE CSS CONTACT *** -->
     <?php if($title == 'contact') :?>
     <link rel="stylesheet" href="<?= $this->assetUrl('css/contact-style.css') ?>">
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/search-style.css') ?>">
+    <?php endif; ?>
+
+    <!-- *** STYLE CSS CONTACT *** -->
+    <?php if($title == 'contact') :?>
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/contact-style.css') ?>">
     <?php endif; ?>
     <!-- *** FONT AWESOME CDN *** -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <!-- *** CSS Page Login/Connect *** -->
     <link rel="stylesheet" href="<?= $this->assetUrl('css/loginstyle.css') ?>">
-
+    <!-- *** CSS Page Login/Connect *** -->
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/shopviewstyle.css') ?>">
+    <!-- *** CSS Page Login/Connect *** -->
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/shopstyles.css') ?>">
 
     <!-- *** CDN JQUERY *** -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
@@ -59,6 +78,10 @@
     <script src="<?= $this->assetUrl('js/scriptconnect.js') ?>"></script>
     <!-- *** SCRIPT *** -->
     <script src="<?= $this->assetUrl('js/script.js') ?>"></script>
+    <!-- *** SCRIPT *** -->
+    <script src="<?= $this->assetUrl('js/shopscript.js') ?>"></script>
+    <!-- *** SCRIPT *** -->
+    <script src="<?= $this->assetUrl('js/script_shop.js') ?>"></script>
 </head>
 <body>
 <!-- ****************************
@@ -128,13 +151,13 @@
 </main>
 <footer>
 
-        <div class="social">&#62220;</div>
-        <div class="social">&#62217;</div>
-        <div class="social">&#62223;</div>
-        <div class="social">&#62232;</div>
-        <div class="social">&#62235;</div>
-        <div class="social">&#62226;</div>
-        <div class="social">&#62214;</div>
+    <div class="social">&#62220;</div>
+    <div class="social">&#62217;</div>
+    <div class="social">&#62223;</div>
+    <div class="social">&#62232;</div>
+    <div class="social">&#62235;</div>
+    <div class="social">&#62226;</div>
+    <div class="social">&#62214;</div>
 
     <!-- *** Copyright *** -->
     <p>copyright &copy; 2016 Lor'N Shop.com</p>
