@@ -19,8 +19,8 @@ $w_routes = array(
     ['GET|POST',     '/connect', 'Connect#connexion', 'connexion'],
     /*************** ---------- LOGOFF ------------ ******************/
     ['GET|POST',     '/disconnect', 'Connect#logoff', 'logoff'],
-
-    /*************** ---------- ADMIN BOUTIQ ------------ ******************/
+    /*************** ---------- ADMIN BOUTIQ HOME ------------ ******************/
+    ['GET|POST', '/admin', 'Display#adminHome', 'admin-home'],
     /*************** ---------- Ajout ------------ ******************/
     ['GET|POST',     '/shops', 'Shop#shopListCategory', 'add-shop'],
     /*************** ---------- Edition ------------ ******************/

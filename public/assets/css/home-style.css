@@ -458,6 +458,8 @@ ol li a{
 
 	#low_nav_mobile{
 		display: block;
+		font-size: 14px;
+		font-family: 'Titillium Web', sans-serif;
 	}
 
 	/*** Slider ***/
@@ -653,7 +655,7 @@ ol li a{
 	            flex-basis: 50% !important;
 	    margin: auto;
 	}
-
+	
 	.at-column img{
 		transform: scale(0.75);
 	}
