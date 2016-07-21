@@ -53,6 +53,8 @@
 /*** MOBILE ***/
 #low_nav_mobile{
 	background-color: #E9EEEE;
+	font-size: 18px;
+	font-family: 'Titillium Web', sans-serif;
 }
 #hamburger, #close_menu{
 	display: block;

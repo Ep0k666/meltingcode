@@ -32,8 +32,6 @@
         <link rel="stylesheet" href="<?= $this->assetUrl('css/news-style.css') ?>">
     <?php endif; ?>
 
-    <link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
-
     <!-- *** STYLE CSS SEARCH *** -->
     <?php if($title == 'search') :?>
         <link rel="stylesheet" href="<?= $this->assetUrl('css/search-style.css') ?>">
@@ -89,7 +87,7 @@
             <!-- *** Liens de navigation *** -->
             <ul>
                 <li><a href="<?= $this->url('home') ?>">Accueil</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="<?= $this->url('contact') ?>">Contact</a></li>
                 <?php if ($w_user) :?>
 
                     <li><a href="<?= $this->url('id', ['id'=>$w_user['id'] ]) ?>"><?= $w_user['firstname']." ".$w_user['lastname'] ?></a></li>
