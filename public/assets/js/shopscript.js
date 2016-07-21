@@ -1,21 +1,59 @@
-$(function(){
-	/*$(window).load(function() {
-      $('.flexslider').flexslider();
-   });*/
-   /* $( ".datepicker" ).datepicker({
-        altField: "#datepicker",
-        closeText: 'Fermer',
-        prevText: 'Précédent',
-        nextText: 'Suivant',
-        currentText: 'Aujourd\'hui',
-        monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
-        monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
-        dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
-        dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
-        dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
-        weekHeader: 'Sem.',
-        dateFormat: 'yy-mm-dd'
-    });*/
+$(function (){
+$('.arrowRight').click(function(){
+    var elsuperfarLeft = $('.elementItem.superfarLeft');
+    var elfarLeft = $('.elementItem.farLeft');
+    var elLeft = $('.elementItem.left');
+    var elMiddle = $('.elementItem.active');
+    var elRight = $('.elementItem.right');
+    var elfarRight = $('.elementItem.farRight');
+    var elsuperfarRight = $('.elementItem.superfarRight');
+    var eltextMiddle = $('.elementContentWrapper.active');
+    var eltextLeft = $('.elementContentWrapper.left');
+    var eltextRight = $('.elementContentWrapper.right');
+
+    elMiddle.removeClass('active').addClass('right');
+    elLeft.removeClass('left').addClass('active');
+    elfarLeft.removeClass('farLeft').addClass('left');
+    elRight.removeClass('right').addClass('farRight');
+    elfarRight.removeClass('farRight').addClass('superfarRight');
+    elsuperfarLeft.removeClass('superfarLeft').addClass('farLeft');
+    elsuperfarRight.removeClass('superfarRight').addClass('superfarLeft');
+
+    eltextMiddle.removeClass('active').addClass('right');
+    eltextLeft.removeClass('left').addClass('active');
+    eltextRight.removeClass('right').addClass('left');
 
 
 });
+
+$('.arrowLeft').click(function(){
+    var elsuperfarLeft = $('.elementItem.superfarLeft');
+    var elfarLeft = $('.elementItem.farLeft');
+    var elLeft = $('.elementItem.left');
+    var elMiddle = $('.elementItem.active');
+    var elRight = $('.elementItem.right');
+    var elfarRight = $('.elementItem.farRight');
+    var elsuperfarRight = $('.elementItem.superfarRight');
+    var eltextMiddle = $('.elementContentWrapper.active');
+    var eltextLeft = $('.elementContentWrapper.left');
+    var eltextRight = $('.elementContentWrapper.right');
+
+    elMiddle.removeClass('active').addClass('left');
+    elLeft.removeClass('left').addClass('farLeft');
+    elRight.removeClass('right').addClass('active');
+    elfarLeft.removeClass('farLeft').addClass('superfarLeft');
+    elfarRight.removeClass('farRight').addClass('right');
+    elsuperfarLeft.removeClass('superfarLeft').addClass('superfarRight');
+    elsuperfarRight.removeClass('superfarRight').addClass('farRight');
+
+    eltextMiddle.removeClass('active').addClass('left');
+    eltextLeft.removeClass('left').addClass('right');
+    eltextRight.removeClass('right').addClass('active');
+});
+
+var show = function(){
+    $('.loadPage.shown').fadeOut('slow');
+};
+setTimeout(show, 2000);
+
+})

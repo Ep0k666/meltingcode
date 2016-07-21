@@ -1,15 +1,15 @@
 $(document).ready(function() {
 
-    var $slider = $(".slider"),
+    var $slider = $("#boutik .slider"),
         $slideBGs = $(".slide__bg"),
         diff = 0,
         curSlide = 0,
-        numOfSlides = $(".slide").length-1,
+        numOfSlides = $("#boutik .slide").length-1,
         animating = false,
         animTime = 500,
         autoSlideTimeout,
-        autoSlideDelay = 100000,
-        $pagination = $(".slider-pagi");
+        autoSlideDelay = 6000000,
+        $pagination = $("#boutik .slider-pagi");
 
     function createBullets() {
         for (var i = 0; i < numOfSlides+1; i++) {
@@ -23,9 +23,9 @@ $(document).ready(function() {
     createBullets();
 
     function manageControls() {
-        $(".slider-control").removeClass("inactive");
-        if (!curSlide) $(".slider-control.left").addClass("inactive");
-        if (curSlide === numOfSlides) $(".slider-control.right").addClass("inactive");
+        $("#boutik .slider-control").removeClass("inactive");
+        if (!curSlide) $("#boutik .slider-control.left").addClass("inactive");
+        if (curSlide === numOfSlides) $("#boutik .slider-control.right").addClass("inactive");
     };
 
     function autoSlide() {
@@ -52,8 +52,8 @@ $(document).ready(function() {
             }, animTime);
         }
         window.clearTimeout(autoSlideTimeout);
-        $(".slider-pagi__elem").removeClass("active");
-        $(".slider-pagi__elem-"+curSlide).addClass("active");
+        $("#boutik .slider-pagi__elem").removeClass("active");
+        $("#boutik .slider-pagi__elem-"+curSlide).addClass("active");
         $slider.css("transform", "translate3d("+ -curSlide*100 +"%,0,0)");
         $slideBGs.css("transform", "translate3d("+ curSlide*50 +"%,0,0)");
         diff = 0;
@@ -72,7 +72,7 @@ $(document).ready(function() {
         changeSlides();
     }
 
-    $(document).on("mousedown touchstart", ".slider", function(e) {
+    $(document).on("mousedown touchstart", "#boutik .slider", function(e) {
         if (animating) return;
         window.clearTimeout(autoSlideTimeout);
         var startX = e.pageX || e.originalEvent.touches[0].pageX,
@@ -107,7 +107,7 @@ $(document).ready(function() {
         }
     });
 
-    $(document).on("click", ".slider-control", function() {
+    $(document).on("click", "#boutik .slider-control", function() {
         if ($(this).hasClass("left")) {
             navigateLeft();
         } else {
@@ -115,67 +115,9 @@ $(document).ready(function() {
         }
     });
 
-    $(document).on("click", ".slider-pagi__elem", function() {
+    $(document).on("click", "#boutik .slider-pagi__elem", function() {
         curSlide = $(this).data("page");
         changeSlides();
     });
-    $('.arrowRight').click(function(){
-        var elsuperfarLeft = $('.elementItem.superfarLeft');
-        var elfarLeft = $('.elementItem.farLeft');
-        var elLeft = $('.elementItem.left');
-        var elMiddle = $('.elementItem.active');
-        var elRight = $('.elementItem.right');
-        var elfarRight = $('.elementItem.farRight');
-        var elsuperfarRight = $('.elementItem.superfarRight');
-        var eltextMiddle = $('.elementContentWrapper.active');
-        var eltextLeft = $('.elementContentWrapper.left');
-        var eltextRight = $('.elementContentWrapper.right');
 
-        elMiddle.removeClass('active').addClass('right');
-        elLeft.removeClass('left').addClass('active');
-        elfarLeft.removeClass('farLeft').addClass('left');
-        elRight.removeClass('right').addClass('farRight');
-        elfarRight.removeClass('farRight').addClass('superfarRight');
-        elsuperfarLeft.removeClass('superfarLeft').addClass('farLeft');
-        elsuperfarRight.removeClass('superfarRight').addClass('superfarLeft');
-
-        eltextMiddle.removeClass('active').addClass('right');
-        eltextLeft.removeClass('left').addClass('active');
-        eltextRight.removeClass('right').addClass('left');
-
-
-    });
-
-    $('.arrowLeft').click(function(){
-        var elsuperfarLeft = $('.elementItem.superfarLeft');
-        var elfarLeft = $('.elementItem.farLeft');
-        var elLeft = $('.elementItem.left');
-        var elMiddle = $('.elementItem.active');
-        var elRight = $('.elementItem.right');
-        var elfarRight = $('.elementItem.farRight');
-        var elsuperfarRight = $('.elementItem.superfarRight');
-        var eltextMiddle = $('.elementContentWrapper.active');
-        var eltextLeft = $('.elementContentWrapper.left');
-        var eltextRight = $('.elementContentWrapper.right');
-
-        elMiddle.removeClass('active').addClass('left');
-        elLeft.removeClass('left').addClass('farLeft');
-        elRight.removeClass('right').addClass('active');
-        elfarLeft.removeClass('farLeft').addClass('superfarLeft');
-        elfarRight.removeClass('farRight').addClass('right');
-        elsuperfarLeft.removeClass('superfarLeft').addClass('superfarRight');
-        elsuperfarRight.removeClass('superfarRight').addClass('farRight');
-
-        eltextMiddle.removeClass('active').addClass('left');
-        eltextLeft.removeClass('left').addClass('right');
-        eltextRight.removeClass('right').addClass('active');
-    });
-
-    var show = function(){
-        $('.loadPage.shown').fadeOut('slow');
-    };
-    setTimeout(show, 2000);
 });
-
-
-// google api

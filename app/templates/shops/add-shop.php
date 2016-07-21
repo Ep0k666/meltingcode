@@ -1,8 +1,3 @@
-<?php
-/*session_start(); attention existe deja dans W */
-/*$currentPage = 'add-shop';*/
-?>
-
 <?php $this->layout('layout', ['title' => 'Création Boutique']) ?>
 
 <?php $this->start('main_content') ?>
@@ -16,7 +11,7 @@
 
             <section>
                 <h3>La Boutique</h3>
-                <p><label>Intitulé de la boutique:  <input type="text" name="name" placeholder="Aux plaisirs sucrés" class="add-shop"></label></p>
+                <p><label>Intitulé de la boutique *:  <input type="text" name="name" placeholder="Aux plaisirs sucrés" class="add-shop"></label><!--required  --></p>
                 <?php if(isset($errors['name']['empty'])) : ?>
                     <p class="error">Le nom de la boutique doit être spécifié</p>
                 <?php endif ?>
@@ -29,44 +24,50 @@
 
                 <!-- LES CATEGORIES -->
                 <p><label>Catégorie Boutique:  <span>(en sélectionnant "Personnalisée" vous pouvez créer votre propre catégorie)</span>
-                        <select name="select">
+                        <select name="category">
                             <!-- boucle pour récupérer les différentes catégorie dans la DB-->
                             <?php foreach ($shopsCategory as $category) : ?>
-                                <option value=" <?php echo $category['category'] ?>"><?php echo $category['category'] ?></option>
+                                <option value=" <?php echo $category['id_catshops'] ?>"><?php echo $category['category'] ?></option>
                             <?php endforeach ?>
                         </select></p></label>
 
                 <!-- DATE DE CREATION DE BOUTIQUE -->
-                <!-- <p><label>Date d'ouverture de votre boutique: <input type="text" name="date_adding" class="datepicker" placeholder="Date de création"></label></p>
-            <?php if(isset($errors['date_adding']['empty'])) : ?>
-            <p  class="error">La date de création doit être spécifiée</p>
-            <?php elseif(isset($errors['date_adding']['invalid'])) : ?>
-            <p  class="error">Le format n'est pas valide. Merci d'entrer une date au format Y-m-d </p>
-            <?php endif ?> -->
+                <p><label>Date d'ouverture de votre boutique: <input type="text" name="date_adding" class="datepicker" placeholder="Date de création" value="<?php echo date("Y-m-d H:i:s");?>"></label></p>
             </section>
 
             <section>
                 <h3>Adresse</h3>
-                <p><label>Numéro de rue:  <input type="text" name="number" placeholder="33" ></label></p> <!-- required  -->
+                <p><label>Numéro de rue *:  <input type="text" name="number" placeholder="33" ></label></p> <!-- required  -->
                 <?php if(isset($errors['number']['empty'])) : ?>
                     <p  class="error">Le numéro de rue doit être spécifié</p>
                 <?php endif ?>
 
-                <p><label>Adresse:  <input type="text" name="adress" placeholder="Avenue de Gaulle"></label></p> <!-- required  -->
+                <p><label>Adresse *:  <input type="text" name="adress" placeholder="Avenue de Gaulle"></label></p> <!-- required  -->
                 <?php if(isset($errors['adress']['empty'])) : ?>
                     <p  class="error">L'adresse doit être spécifiée</p>
                 <?php endif ?>
 
-                <p><label>Code postal: <input type="text" name="zip_code" placeholder="57290" ></label></p> <!-- required  -->
+                <p><label>Code postal *: <input type="text" name="zip_code" placeholder="57290" ></label></p> <!-- required  -->
                 <?php if(isset($errors['zip_code']['empty'])) : ?>
                     <p  class="error">Le code postal doit être spécifié</p>
                 <?php endif ?>
 
-                <p><label>Ville: <input type="text" name="city" placeholder="YUTZ" ></label></p> <!-- required  -->
+                <p><label>Ville *: <input type="text" name="city" placeholder="YUTZ" ></label></p> <!-- required  -->
                 <?php if(isset($errors['city']['empty'])) : ?>
                     <p  class="error">La ville doit être spécifiée</p>
                 <?php endif ?>
-                <!-- <div class="clearfix"></div> -->
+
+                <!-- COORDONNEES GPS -->
+                <p><label>Coordonnées GPS:  </label>
+                    <input type="text" name="latitude" placeholder="Latitude">
+                    <?php /*if(isset($errors['latitude']['empty'])) :*/ ?>
+                    <!-- <p>La latitude doit être spécifiée</p>-->
+                    <?php /*endif*/ ?>
+
+                    <input type="text" name="longitude" placeholder="Longitude">
+                    <?php /*if(isset($errors['longitude']['empty'])) :*/ ?>
+                    <!-- <p>La longitude doit être spécifiée </p>-->
+                <?php /*endif*/ ?><p>               
             </section>
 
             <section>
@@ -81,21 +82,9 @@
                 <!-- MAIL -->
                 <p><label>Mail: <input type="email" name="mail" value="" placeholder="auxplaisirsucres@gmail.com"></label></p>
 
-                <!-- COORDONNEES GPS -->
-                <p><label>Coordonnées GPS:  </label>
-                    <input type="text" name="latitude" placeholder="Latitude">
-                    <?php /*if(isset($errors['latitude']['empty'])) :*/ ?>
-                    <!-- <p>La latitude doit être spécifiée</p>-->
-                    <?php /*endif*/ ?>
-
-                    <input type="text" name="longitude" placeholder="Longitude">
-                    <?php /*if(isset($errors['longitude']['empty'])) :*/ ?>
-                    <!-- <p>La longitude doit être spécifiée </p>-->
-                <?php /*endif*/ ?><p>
-                    <!-- <div class="clearfix"></div> -->
+                <!-- HORAIRE -->
+                <p><label>Horaires: <textarea name="horaires" placeholder="Ajoutez les horaires d'ouverture de votre boutique"></textarea></label></p>
             </section>
-
-            <!-- <div class="separator" visibility="hidden"></div> -->
 
             <section>
                 <h3>Vos Images</h3>
@@ -153,13 +142,14 @@
                     <p  class="error">Merci de choisir un fichier</p>
                 <?php endif ?>
             </section>
+
             <section>
                 <!-- AFFICHAGE DES PRODUITS PHARES -->
                 <h3>Vos 3 produits phares: </h3>
 
                 <!-- PREMIER PRODUIT PHARE -->
-                <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
-                    Sélectionnez votre premier produit phare: <input name="image3" type="file" /></p>
+                <!-- <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+                    Sélectionnez votre premier produit phare: <input name="imgprod1" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
                 <?php elseif(isset($errors['file']['noImg'])) : ?>
@@ -168,16 +158,16 @@
                     <p  class="error">Erreur lors du déplacement du fichier</p>
                 <?php elseif(isset($errors['file']['noFile'])) : ?>
                     <p  class="error">Merci de choisir un fichier</p>
-                <?php endif ?>
+                <?php endif ?> -->
                 <!-- DESCRIPTION PRODUIT -->
-                <p><label>Description du produit: <textarea name="description" placeholder="Ajoutez une description courte et concise"></textarea></label></p>
+                <!-- <p><label>Description du produit: <textarea name="descprod1" placeholder="Ajoutez une description courte et concise"></textarea></label></p>
                 <?php if(isset($errors['description']['empty'])) : ?>
                     <p  class="error">La description doit être spécifiée</p>
-                <?php endif ?>
+                <?php endif ?> -->
 
                 <!-- SECOND PRODUIT PHARE -->
-                <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
-                    Sélectionnez votre second produit phare: <input name="image3" type="file" /></p>
+                <!-- <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+                    Sélectionnez votre second produit phare: <input name="imgprod2" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
                 <?php elseif(isset($errors['file']['noImg'])) : ?>
@@ -186,16 +176,16 @@
                     <p  class="error">Erreur lors du déplacement du fichier</p>
                 <?php elseif(isset($errors['file']['noFile'])) : ?>
                     <p  class="error">Merci de choisir un fichier</p>
-                <?php endif ?>
+                <?php endif ?> -->
                 <!-- DESCRIPTION PRODUIT -->
-                <p><label>Description du produit: <textarea name="description" placeholder="Ajoutez une description courte et concise"></textarea></label></p>
+                <!-- <p><label>Description du produit: <textarea name="descprod2" placeholder="Ajoutez une description courte et concise"></textarea></label></p>
                 <?php if(isset($errors['description']['empty'])) : ?>
                     <p  class="error">La description doit être spécifiée</p>
-                <?php endif ?>
+                <?php endif ?> -->
 
                 <!-- TROISIEME PRODUIT PHARE -->
-                <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
-                    Sélectionnez votre troisième produit phare: <input name="image3" type="file" /></p>
+               <!--  <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+                    Sélectionnez votre troisième produit phare: <input name="imgprod3" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
                 <?php elseif(isset($errors['file']['noImg'])) : ?>
@@ -204,12 +194,12 @@
                     <p  class="error">Erreur lors du déplacement du fichier</p>
                 <?php elseif(isset($errors['file']['noFile'])) : ?>
                     <p  class="error">Merci de choisir un fichier</p>
-                <?php endif ?>
+                <?php endif ?> -->
                 <!-- DESCRIPTION PRODUIT -->
-                <p><label>Description du produit: <textarea name="description" placeholder="Ajoutez une description courte et concise"></textarea></label></p>
+               <!--  <p><label>Description du produit: <textarea name="descprod3" placeholder="Ajoutez une description courte et concise"></textarea></label></p>
                 <?php if(isset($errors['description']['empty'])) : ?>
                     <p  class="error">La description doit être spécifiée</p>
-                <?php endif ?>
+                <?php endif ?> -->
             </section>
 
 
@@ -217,25 +207,27 @@
                 <!-- LIENS RESEAUX SOCIAUX -->
                 <h3>Les réseaux sociaux</h3>
                 <!-- FACEBOOK -->
-                <p><label>Lien vers votre Facebook:<input type="text" name="link_facebook" value="" placeholder="Facebook"></label></p>
+                <p><label>Lien vers votre Facebook:<input type="text" name="facebook" value="" placeholder="Facebook"></label></p>
 
                 <!-- INSTAGRAM -->
-                <p><label>Lien vers votre Instagram:<input type="text" name="link_instagram" value="" placeholder="Instagram"></label></p>
+                <p><label>Lien vers votre Instagram:<input type="text" name="instagram" value="" placeholder="Instagram"></label></p>
 
                 <!-- GOOGLE + -->
-                <p><label>Lien vers votre Google +:<input type="text" name="link_google" value="" placeholder="Google +"></label></p>
+                <p><label>Lien vers votre Google +:<input type="text" name="google" value="" placeholder="Google +"></label></p>
 
                 <!-- TWITTER -->
-                <p><label>Lien vers votre Twitter:<input type="text" name="link_twitter" value="" placeholder="Google +"></label></p>
+                <p><label>Lien vers votre Twitter:<input type="text" name="twitter" value="" placeholder="Twitter"></label></p>
 
                 <!-- PINTEREST -->
-                <p><label>Lien vers votre Pinterst:<input type="text" name="link_pinterest" value="" placeholder="Google +"></label></p>
+                <p><label>Lien vers votre Pinterest:<input type="text" name="pinterest" value="" placeholder="Pinterest"></label></p>
 
             </section>
             <div class="clearfix"></div>
 
 
-            <p><button type="submit" name="add-shop" value="" />Ajouter la boutique</button></p>
+            <p><button type="submit" name="shop-add" value="" />Ajouter la boutique</button></p>
+            <p><button type="submit" name="draft-shop" value="" />Brouillon</button></p>
+            <p><button type="submit" name="preview-shop" value="" />Prévisualisation de la boutique</button></p>
             <p><button type="submit" name="cancel">Annuler</button></p>
         </form>
     </div>

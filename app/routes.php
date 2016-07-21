@@ -9,14 +9,17 @@ $w_routes = array(
     ['GET|POST', 	'/search', 				'Display#search', 				'search'],
     /************** ---------- CONTACT ------------ ***************/
     ['GET|POST', 	 '/contact', 			'Contact#contact',				'contact'],
-    /*************** ---------- HOME ------------ ******************/
-    ['GET|POST',     '/account[:id]/', 'LoginPage#account', 'id'],
+    /************** ---------- NEWSLETTER ------------ ***************/
+    ['GET|POST',     '/newsletter',            'Newsletter#newsletter',              'newsletter'],
+    /*************** ---------- account ------------ ******************/
+    ['GET|POST',     '/account[:id]/', 'Connect#account', 'id'],
     /************** ---------- LOGIN ------------ ***************/
-    ['GET|POST',     '/signup', 'LoginPage#login', 'login'],
+    ['GET|POST',     '/signup', 'Connect#login', 'login'],
     /************** ---------- CONNECT ------------ ***************/
     ['GET|POST',     '/connect', 'Connect#connexion', 'connexion'],
     /*************** ---------- LOGOFF ------------ ******************/
-    ['GET|POST',     '/login/disconnect', 'LoginPage#logoff', 'logoff'],
+    ['GET|POST',     '/disconnect', 'Connect#logoff', 'logoff'],
+
     /*************** ---------- ADMIN BOUTIQ ------------ ******************/
     /*************** ---------- Ajout ------------ ******************/
     ['GET|POST',     '/shops', 'Shop#shopListCategory', 'add-shop'],

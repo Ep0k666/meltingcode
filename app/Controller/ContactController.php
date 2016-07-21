@@ -14,29 +14,20 @@ class ContactController extends Controller
      ***/
     public function contact()
     {
-        /** Déclaration tableau erreurs **/
-        $errors = [];
 
         /*** Si on a cliqué sur send_message ***/
         if(isset($_POST['send-message'])){
-
-            /*** New mangager ***/
-            $manager = new \Manager\ContactManager();
 
             /*** Récupération et nettoyage des saisies ***/
             $name = trim(htmlspecialchars($_POST['name']));
             $mail = trim(htmlspecialchars($_POST['mail']));
             $message = trim(htmlspecialchars($_POST['message']));
-
-            /*** Ajout saisies au tableau data [] ***/
-            $data = [
-                'name'      => $name,
-                'mail'      => $mail,
-                'message'   => $message,
-            ];
+            
+            /** Déclaration tableau erreurs **/
+            $errors = [];
 
             /**************
-            NAME
+                NAME
              **************/
 
             /* Vérif name integer */
@@ -55,11 +46,11 @@ class ContactController extends Controller
             }
 
             /**************
-            EMAIL
+                EMAIL
              **************/
 
             /* Vérif mail format mail */
-            if(filter_var($mail, FILTER_VALIDATE_EMAIL)){
+            if(!filter_var($mail, FILTER_VALIDATE_EMAIL)){
                 $errors['mail']['format'] = true;
             }
 
@@ -74,7 +65,7 @@ class ContactController extends Controller
             }
 
             /**************
-            MESSAGE
+                MESSAGE
              **************/
 
             /* Vérif message tooShort */
@@ -88,28 +79,36 @@ class ContactController extends Controller
             }
 
             /** Si 0 erreurs dans $errors **/
-            if(count($errors) == 0){
+            if(count($errors) === 0)
+            {
+                /*** New mangager ***/
+                $manager = new \Manager\ContactManager();
 
-                /** Ajout en DB **/
-                $dataInserted = $manager->insert($data);
+                $usersContact = $manager->setTable('contact');
+
+                /*** Ajout saisies au tableau data [] ***/
+                $data = [
+                    'name'      => $name,
+                    'mail'      => $mail,
+                    'message'   => $message,
+                ];
+
+                $usersContact->insert($data);
             }
-        }
+        
+            /** Sinon ... **/
+            else
+            {
+                $mangager = new \Manager\ContactManager();
+                $this->show('display/contact', ['errors' => $errors]);
+            }
 
-        /** Si 0 erreurs dans $errors **/
-        if(count($errors) === 0)
-        {
-            /** On envoie pas $errors à "contact" **/
+        } 
+
+        else{
+            
+            $manager =  new \Manager\ContactManager();
             $this->show('display/contact');
         }
-
-        /** Sinon ... **/
-        else
-        {
-            /** On envoie $errors à "contact" **/
-            $this->show('display/contact',[
-                'errors' => $errors,
-            ]);
-        }
-
     }
 }
