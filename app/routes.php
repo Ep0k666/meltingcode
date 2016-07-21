@@ -10,7 +10,7 @@ $w_routes = array(
     /************** ---------- CONTACT ------------ ***************/
     ['GET|POST', 	 '/contact', 			'Contact#contact',				'contact'],
     /************** ---------- NEWSLETTER ------------ ***************/
-    ['GET|POST',     '/newsletter',            'Newsletter#newsletter',              'newsletter'],
+    ['GET|POST',     '/newsletter',            'Newsletter#subscribeNewsletter',              'newsletter'],
     /*************** ---------- account ------------ ******************/
     ['GET|POST',     '/account[:id]/', 'Connect#account', 'id'],
     /************** ---------- LOGIN ------------ ***************/
@@ -21,6 +21,7 @@ $w_routes = array(
     ['GET|POST',     '/disconnect', 'Connect#logoff', 'logoff'],
 
     /*************** ---------- ADMIN BOUTIQ ------------ ******************/
+    ['GET|POST',     '/admin', 'Display#adminHome', 'admin-home'],
     /*************** ---------- Ajout ------------ ******************/
     ['GET|POST',     '/shops', 'Shop#shopListCategory', 'add-shop'],
     /*************** ---------- Edition ------------ ******************/
