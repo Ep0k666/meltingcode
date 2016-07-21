@@ -40,7 +40,6 @@
     </div>
 </div>
 
-<canvas></canvas>
 
 </div>
 <?php $this->stop('main_content') ?>

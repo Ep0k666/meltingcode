@@ -32,7 +32,7 @@
     </div>
 </div>
 
-<canvas></canvas>
+
 
 
 </div>

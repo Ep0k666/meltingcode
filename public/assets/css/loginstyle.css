@@ -520,9 +520,6 @@ Utilitaires
 /** Supérieur à 992px et inférieur à 1200px **/
 @media (min-width: 992px) and (max-width: 1200px){
 
-    canvas{
-        display: none;
-    }
 
 }
 
@@ -536,11 +533,9 @@ Utilitaires
 
     /** Utilitaires **/
 
-    canvas{
-        position: absolute ;
-        top:50px; right: 0; bottom: 0; left: 0;
-        z-index: 0;
-    }
+
+
+
 
 }
 
@@ -577,7 +572,7 @@ Utilitaires
     .containerconnect {
         width: 100%;
         margin: auto;
-        height: 100%;
+
     }
 
     /** New shops **/
@@ -594,15 +589,245 @@ Utilitaires
     .at-grid{
         transform: scale(0.8);
     }
-
+    #circle2 {
+        display: none;
+    }
+    #circle1 {
+        display: none;
+    }
 }
 
 /*** Inférieur à 768px ***/
 @media (max-width: 700px){
 
+
+    .stark-login2 form {
+        
+        background: #FFF;
+        background: linear-gradient(#f3f3f3, #FFFFFF);
+        border: 6px solid #00a4a2;
+        box-shadow: 0 0 15px #00fffd;
+        border-radius: 5px;
+        display: inline-block;
+        height: 100%;
+        position: relative;
+        z-index: 4;
+        width: 100%;
+        transition: 1s all;
+        margin:0;
+    }
+    .stark-login form {
+
+        background: #FFF;
+        background: linear-gradient(#f3f3f3, #FFFFFF);
+        border: 6px solid #00a4a2;
+        box-shadow: 0 0 15px #00fffd;
+        border-radius: 5px;
+        display: inline-block;
+        height: 100%;
+        position: relative;
+        z-index: 4;
+        width: 100%;
+        transition: 1s all;
+        margin:0;
+    }
+    .stark-login2 input {
+        background: #222;
+        background: linear-gradient(#333333, #222222);
+        border: 1px solid #444;
+        border-radius: 5px;
+        box-shadow: 0 2px 0 #000;
+        color: #888;
+        display: block;
+        font-family: 'Cabin', helvetica, arial, sans-serif;
+        font-size: 1.3rem;
+        height: 40px;
+        margin: 20px auto 10px;
+        padding: 0 10px;
+        text-shadow: 0 -1px 0 #000;
+        width: 100%;
+    }
+    #circle2 {
+        display: none;
+    }
+
+    #circle1 {
+        display: none;
+    }
+
+    /** Utilitaires **/
+    .containerconnect{
+        width: 90%;
+        margin:auto;
+    }
+
+    /*** Low navigation ***/
+    #low_nav_desktop{
+        display: none;
+    }
+
+    /*** Low navigation mobile ***/
+    #hamburger{
+        display: block;
+    }
+
+    #low_nav_mobile{
+        display: block;
+    }
+
+
+    /*** Titre avec bordure séparation ***/
+    #new_shop h3, #about_us h3 {
+        border: 0px solid #FFF;
+        font-size: 25px;
+        top: -35px;
+        width: 250px;
+        padding-top: 20px;
+    }
+
+    #new_shop article:nth-child(5), #new_shop article:nth-child(6){
+        display: none;
+    }
+
+
+    /*** Social network ***/
+    .social{
+        transform: scale(0.6);
+        margin: 0 -10px -15px;
+    }
+
+    /** About us **/
+
+    .at-grid{
+        transform: scale(1);
+        border: none;
+    }
+
+    .at-column{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .at-user__title{
+        font-size: 0.8rem;
+    }
+
+    .at-user__name{
+        font-size: 1rem;
+    }
+
+    .at-column {
+        width: 50% !important;
+        max-width: 50% !important;
+        min-width: 50% !important;
+        -webkit-flex-basis: 50% !important;
+        -ms-flex-preferred-size: 50% !important;
+        flex-basis: 50% !important;
+        margin: auto;
+    }
+
+    .at-column img{
+        transform: scale(0.75);
+    }
 }
 
 @media (max-width: 550px){
 
+    .stark-login form {
 
+        background: #FFF;
+        background: linear-gradient(#f3f3f3, #FFFFFF);
+        border: 6px solid #00a4a2;
+        box-shadow: 0 0 15px #00fffd;
+        border-radius: 5px;
+        display: inline-block;
+        position: relative;
+        z-index: 4;
+        width: 100%;
+        transition: 1s all;
+        margin:0;
+    }
+    .stark-login input {
+        background: #222;
+        background: linear-gradient(#333333, #222222);
+        border: 1px solid #444;
+        border-radius: 5px;
+        box-shadow: 0 2px 0 #000;
+        color: #888;
+        display: block;
+        font-family: 'Cabin', helvetica, arial, sans-serif;
+        font-size: 1.3rem;
+        height: 40px;
+        margin: 20px auto 10px;
+        padding: 0 10px;
+        text-shadow: 0 -1px 0 #000;
+        width: 100%;
+    }
+
+    .stark-login button {
+        animation: input-entry 3s ease-in;
+        background: #222;
+        background: linear-gradient(#333333, #222222);
+        box-sizing: content-box;
+        border: 1px solid #444;
+        border-left-color: #000;
+        border-radius: 5px;
+        box-shadow: 0 2px 0 #000;
+        color: #fff;
+        display: block;
+        font-family: 'Cabin', helvetica, arial, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        height: 40px;
+        line-height: 40px;
+        margin: 20px auto;
+        padding: 0;
+        position: relative;
+        text-shadow: 0 -1px 0 #000;
+        width: 100%;
+        transition: 1s all;
+    }
+    .stark-login2 button {
+        animation: input-entry 3s ease-in;
+        background: #222;
+        background: linear-gradient(#333333, #222222);
+        box-sizing: content-box;
+        border: 1px solid #444;
+        border-left-color: #000;
+        border-radius: 5px;
+        box-shadow: 0 2px 0 #000;
+        color: #fff;
+        display: block;
+        font-family: 'Cabin', helvetica, arial, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        height: 40px;
+        line-height: 40px;
+        margin: 20px auto;
+        padding: 0;
+        position: relative;
+        text-shadow: 0 -1px 0 #000;
+        width: 100%;
+        transition: 1s all;
+    }
+    .containerconnect {
+        width: 100%;
+
+        margin: auto;
+    }
+    .star-login2 form {
+        animation: form-entry 3s ease-in-out;
+        background: #FFF;
+        background: linear-gradient(#f3f3f3, #FFFFFF);
+        border: 6px solid #00a4a2;
+        box-shadow: 0 0 15px #00fffd;
+        border-radius: 5px;
+        display: inline-block;
+        height: 100%;
+        position: relative;
+        z-index: 4;
+        width: 100%;
+        transition: 1s all;
+        margin:0;
+    }
 }

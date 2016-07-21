@@ -114,7 +114,7 @@ class ConnectController extends Controller
          }
          return $this->find($id);*/
 
-        $this->show('/account');
+        $this->show('/loginPage/loginPage');
     }
 
     public function logoff()
