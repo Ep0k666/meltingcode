@@ -21,4 +21,6 @@ $w_routes = array(
     ['GET|POST', '/login/disconnect', 'LoginPage#logoff', 'logoff'],
     /*************** ---------- ADMIN BOUTIQ ------------ ******************/
     ['GET|POST', '/shops', 'Shop#shopListCategory', 'add-shop'],
+    /*************** ---------- ADMIN BOUTIQ HOME ------------ ******************/
+    ['GET|POST', '/admin', 'Display#adminHome', 'admin-home'],
 );
