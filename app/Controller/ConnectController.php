@@ -8,9 +8,7 @@ class ConnectController extends Controller
 {
     public function connexion()
     {
-        /*echo "start var_dump<br />\n";
-        var_dump($_POST);
-        echo "fin var_dump<br />\n";*/
+
 
         if (isset($_POST['connect'])) {
 
@@ -126,7 +124,7 @@ class ConnectController extends Controller
 
     }
 
-    public function envoiMail($users, $message)
+    public function resetPassW($users, $message)
     {
 
         $mail = new PHPMailer();
@@ -155,6 +153,6 @@ class ConnectController extends Controller
         $mail->send();
 
         // username et setfrom et sender doivent etre les memes
-
+        $this->show('/LoginPage/resetPass');
     }
 }
