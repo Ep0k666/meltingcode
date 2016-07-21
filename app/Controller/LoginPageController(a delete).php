@@ -33,6 +33,7 @@ class LoginPageController extends Controller
                     'role' => 'editeur',
                 ];
                 $usersManager->insert($data);
+                $this->redirectToRoute('connexion');
             }
         }
         $this->show('/loginPage/signup');

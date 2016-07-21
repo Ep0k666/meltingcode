@@ -9,7 +9,7 @@ class ShopManager extends \W\Manager\Manager
     /*créer un categoryManager à part */
     public function getAllcategories()
     {
-        $sql = 'SELECT DISTINCT category FROM shops ORDER BY category';
+        $sql = 'SELECT DISTINCT category FROM categoryshops ORDER BY category';
         $stmt=$this->dbh->query($sql);
         return $stmt->fetchAll();
     }
@@ -37,28 +37,39 @@ class ShopManager extends \W\Manager\Manager
     }
 
     /***
-     * Fonction pour page "home"
-     * Shops par activité
+     * Fonction pour page "home" 
+     * Return Shop category
+     ***/
+    public function getAllActivities()
+    {
+        $sql = 'SELECT * FROM categoryshops ORDER BY category ASC';
+        $stmt = $this->dbh->query($sql);
+        return $stmt->fetchAll();
+    }
+
+    /***
+     * Fonction pour page "home" 
+     * Return Shop par l'activité
      ***/
     public function getShopByActivity($id)
     {
-        $sql = 'SELECT * FROM shops  WHERE id_category =:id';
+        $sql = 'SELECT * FROM shops WHERE id_category = :id';
         $stmt = $this->dbh->prepare($sql);
-        $stmt->bindParam(':id',$id);
+        $stmt->bindParam(':id', $id);
         $stmt->execute();
         return $stmt->fetchAll();
     }
 
     /***
-     * Fonction pour page "home"
-     * Products par category
+     * Fonction pour page "home" 
+     * Return Shop par l'activité
      ***/
-    public function getProductsByCategory($id)
+    public function getCategorySearch($id)
     {
-        $sql = 'SELECT * FROM categoryshops WHERE id_catshops';
+        $sql = 'SELECT * FROM categoryshops WHERE id_catshops = :id';
         $stmt = $this->dbh->prepare($sql);
-        $stmt->bindParam(':id',$id);
+        $stmt->bindParam(':id', $id);
         $stmt->execute();
-        return $stmt->fetchAll();
+        return $stmt->fetch();
     }
 }

@@ -49,7 +49,8 @@ class DisplayController extends Controller
             /*** Envoi à la page "search" ***/
             $this->show('display/search', 
                 [
-                    'resultShops'=> $resultShops,
+                    'resultShops'   => $resultShops,
+                    'tagSearch'     => $tagSearch
                 ]);
 
             /*** Redirection vers "search" ***/
@@ -63,13 +64,13 @@ class DisplayController extends Controller
 
         $shopByActivity = $manager->getShopByActivity($id);
         $categorySearch = $manager->getCategorySearch($id);
+        $activities         = $manager->getAllActivities();
 
         $this->show('display/activity-shop', 
             [
             'shopByActivity' => $shopByActivity,
-            'categorySearch' => $categorySearch
+            'categorySearch' => $categorySearch,
+            'activities'        => $activities
             ]);
-
     }
-
 }

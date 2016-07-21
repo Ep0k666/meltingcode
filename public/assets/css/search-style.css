@@ -1,0 +1,320 @@
+/*****************************
+	DÉCLARATION DES POLICES
+ *****************************/
+
+/* Police des titres */
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+/* Police des textes */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+/* Icones pour le footer */
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/****************************
+	SECTION SEARCH BOUTIQUE
+ ****************************/
+
+/*** Section new shop ***/
+#search_shop{
+	color: #322F2F;
+	padding-bottom: 50px;
+	padding-top: 15px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+/* bordure */
+
+.bordure1{
+	margin-top: 50px;
+	border-bottom: 5px double #80C2BB;
+}
+
+.bordure1::after{
+	clear: both;
+	content:"";
+	display: block;
+}
+
+#search_shop h3{
+	font-family: 'Lobster', cursive;
+	background-color:  white;
+	font-size: 35px;
+	font-weight: 700;
+	width: 400px;
+	margin: auto;
+	padding: 13px;
+	text-align: center;
+	position: relative;
+	top: -58px;
+	border: 20px solid #FFF;
+	color:#80C2BB;
+}
+
+#search_shop h4{
+	font-family: 'Lobster', cursive;
+	color:#FFF;
+	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+}
+
+#search_shop article:first-of-type{
+	margin-left: 0;
+}
+
+#search_shop .container article:nth-of-type(2n){
+	margin-left: 0;
+}
+
+/*** Article découverte boutique ***/
+.shop_discovery{
+	float: left;
+	width: 33.33%;
+	padding-top: 50px;
+}
+
+#search_shop img{
+	width: 300px;
+	height: 200px;
+	display: block;
+	margin: -54px auto;
+}
+
+#search_shop img:hover{
+	background-color:#80C2BB;
+	opacity:0.5; 
+}
+
+.shop_title{
+	text-align: center;
+	font-size: 30px;
+	padding-top: 15px;
+}
+
+.shop_discovery p{
+	padding: 30px;
+	font-size: 16px;
+	text-align:justify;
+}
+
+/*******************
+	 RESPONSIVE
+ *******************/
+
+/** Supérieur à 1200px **/
+@media (min-width: 1200px){
+
+	/** Utilitaires **/
+	.container{
+		width: 1100px;
+	}
+}
+
+/** Supérieur à 992px et inférieur à 1200px **/
+@media (min-width: 992px) and (max-width: 1200px){
+
+	/** Utilitaires **/
+	.container{
+		width: 900px;
+	}
+
+	/** Search barre **/
+	#high_nav input{
+		width: 150px;
+	}
+
+	button[name="search_submit"]{
+		margin-right: 35px;
+	}
+
+	/** Search shops **/
+	#search_shop img{
+		width: 240px;
+		height: 170px;
+	}
+
+	.at-grid{
+		transform: scale(0.8);
+	}
+}
+
+/** Supérieur à 768px et inférieur à 992px **/
+@media (min-width: 700px) and (max-width: 992px){
+
+	/** Utilitaires **/
+	.container{
+		width: 650px;
+	}
+
+	/*** High navigation ***/
+	#high_nav{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	#high_nav ul li a:focus, #high_nav ul li a:active{
+		color: #80C2BB;
+	}
+
+	#high_nav ul li a:hover{
+		border: none;
+	}
+
+	#high_nav ul li a{
+		padding: 27px 15px;
+	}
+
+	#high_nav form{
+		margin-right: 0%;
+	}
+
+	#high_nav input{
+		margin-top: 0;
+	}
+
+	#high_nav button{
+		margin-top: 5px;
+		margin-right: 25px;
+	}
+
+	/*** Titre avec bordure séparation ***/
+	#search_shop h3, #about_us h3 {
+		border: 10px solid #FFF;
+		top: -80px;
+		margin-top: 25px;
+	}
+
+	/*** Description new shops ***/
+	.shop_discovery p{
+		padding: 30px 40px;
+	}
+
+	.shop_discovery{
+		width: 50%;
+	}
+
+	#search_shop img{
+		width: 240px;
+		height: 170px;
+	}
+}
+
+/*** Inférieur à 768px ***/
+@media (max-width: 700px){
+
+	/** Utilitaires **/
+	.container{
+		width: 90%;
+	}
+
+	/*** Titre principal ***/
+	#high_nav h1{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	/*** High navigation ***/
+	#high_nav{
+		padding-bottom: 10px;
+	}
+
+	#high_nav a{
+		text-decoration: none;
+	}
+
+	/*** High navigation ***/
+	#high_nav ul li a:hover{
+		border: none;
+	}
+
+	#high_nav hr{
+		display: block;
+		width: 100%;
+	}
+
+	#high_nav ul{
+		float: none;
+		width: 100%;
+	}
+
+	#high_nav ul li{
+		width: 33%;
+		display: block;
+		text-align: center;
+		margin: auto;
+	}
+
+	#high_nav input{
+		margin: 0;
+		float: left;
+		width: 100px;
+	}
+
+	#high_nav button{
+		margin: 0;
+		float: right;
+	}
+
+	#high_nav ul li a{
+		padding: 15px 10px;
+	}
+
+	#high_nav ul li a:focus, #high_nav ul li a:active{
+		color: #80C2BB;
+	}
+
+	#high_nav ul li:nth-child(1){
+		display: none;
+	}
+
+	#mobile_clearfix{
+		display: block;
+		clear: both;
+	}
+
+	.bordure1{
+		display: none;
+	}
+
+	/*** Titre avec bordure séparation ***/
+	#search_shop h3, #about_us h3 {
+		border: 0px solid #FFF;
+		font-size: 25px;
+		top: -15px;
+		width: 250px;
+		padding-top: 20px;
+	}
+
+	#search_shop article:nth-child(5), #search_shop article:nth-child(6){
+		display: none;
+	}
+
+	/*** Description new shops ***/
+	.shop_discovery p{
+		padding: 30px 40px;
+	}
+
+	.shop_discovery{
+		width: 100%;
+	}
+
+	#search_shop img{
+		width: 240px;
+		height: 150px;
+	}
+
+	/*** Social network ***/
+	.social{
+		transform: scale(0.6);
+		margin: 0 -10px -15px;
+	}
+
+	/*** Footer ***/
+	footer{
+		padding: 0;
+	}
+
+	footer p{
+		padding: 25px 0 10px;
+	}
+}

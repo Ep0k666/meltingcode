@@ -13,15 +13,44 @@
     <link rel="stylesheet" href="<?= $this->assetUrl('css/reset.css') ?>">
     <!-- *** FLEXSLIDER CSS *** -->
     <link rel="stylesheet" href="<?= $this->assetUrl('css/flexslider.css') ?>">
-    <!-- *** STYLE CSS *** -->
-    <link rel="stylesheet" href="<?= $this->assetUrl('css/home-style.css') ?>">
+
+    <!-- *** LAYOUT CSS *** -->
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/layout-style.css') ?>">
+
+    <!-- *** STYLE CSS HOME *** -->
+    <?php if($title == 'home'):?>
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/home-style.css') ?>">
+    <?php endif; ?>
+
+    <!-- *** STYLE CSS ACTIVITY *** -->
+    <?php if($title == 'activity') : ?>
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/activity-style.css') ?>">
+    <?php endif; ?>
+
+    <!-- *** STYLE CSS NEWSLETTER*** -->
+    <?php if($title == 'newsletter') : ?>
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/news-style.css') ?>">
+    <?php endif; ?>
+
     <link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
-    <link rel="stylesheet" href="<?= $this->assetUrl('css/contact-style.css') ?>">
+
+    <!-- *** STYLE CSS SEARCH *** -->
+    <?php if($title == 'search') :?>
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/search-style.css') ?>">
+    <?php endif; ?>
+
+    <!-- *** STYLE CSS CONTACT *** -->
+    <?php if($title == 'contact') :?>
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/contact-style.css') ?>">
+    <?php endif; ?>
     <!-- *** FONT AWESOME CDN *** -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <!-- *** CSS Page Login/Connect *** -->
     <link rel="stylesheet" href="<?= $this->assetUrl('css/loginstyle.css') ?>">
-
+    <!-- *** CSS Page Login/Connect *** -->
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/shopviewstyle.css') ?>">
+    <!-- *** CSS Page Login/Connect *** -->
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/shopstyles.css') ?>">
 
     <!-- *** CDN JQUERY *** -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
@@ -33,6 +62,10 @@
     <script src="<?= $this->assetUrl('js/scriptconnect.js') ?>"></script>
     <!-- *** SCRIPT *** -->
     <script src="<?= $this->assetUrl('js/script.js') ?>"></script>
+    <!-- *** SCRIPT *** -->
+    <script src="<?= $this->assetUrl('js/shopscript.js') ?>"></script>
+    <!-- *** SCRIPT *** -->
+    <script src="<?= $this->assetUrl('js/script_shop.js') ?>"></script>
 </head>
 <body>
 <!-- ****************************
@@ -92,18 +125,23 @@
 
         <?= $this->section('main_content') ?>
 
+        <!-- *** LINK NEWSLETTER *** -->
+        <?php if($title == 'home' || $title == 'contact') :?>
+            <a href="<?= $this->url('newsletter') ?>" id="newsletter_link">Souscrivez à la newsletter</a>
+        <?php endif; ?>
+
     </section>
 
 </main>
 <footer>
 
-        <div class="social">&#62220;</div>
-        <div class="social">&#62217;</div>
-        <div class="social">&#62223;</div>
-        <div class="social">&#62232;</div>
-        <div class="social">&#62235;</div>
-        <div class="social">&#62226;</div>
-        <div class="social">&#62214;</div>
+    <div class="social">&#62220;</div>
+    <div class="social">&#62217;</div>
+    <div class="social">&#62223;</div>
+    <div class="social">&#62232;</div>
+    <div class="social">&#62235;</div>
+    <div class="social">&#62226;</div>
+    <div class="social">&#62214;</div>
 
     <!-- *** Copyright *** -->
     <p>copyright &copy; 2016 Lor'N Shop.com</p>

@@ -40,5 +40,4 @@ $(function(){
 			hamburger_menu.show();
 		}
 	})
-
 });
