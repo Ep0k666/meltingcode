@@ -82,7 +82,7 @@
             <!-- *** Liens de navigation *** -->
             <ul>
                 <li><a href="<?= $this->url('home') ?>">Accueil</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="<?= $this->url('contact') ?>">Contact</a></li>
                 <?php if ($w_user) :?>
 
                     <li><a href="<?= $this->url('id', ['id'=>$w_user['id'] ]) ?>"><?= $w_user['firstname']." ".$w_user['lastname'] ?></a></li>
