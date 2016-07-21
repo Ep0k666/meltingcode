@@ -1,12 +1,13 @@
-<?php $this->layout('layout', ['title' => '']) ?>
+<?php $this->layout('layout', ['title' => 'search']) ?>
 
 <?php $this->start('main_content') ?>
+
 
 <!-- ****************************
 			SEARCHED SHOPS
 	 ****************************-->
 
-	<section id="new_shop">
+	<section id="search_shop">
 		<div class="container">
 
 		<div class="bordure1"></div>
@@ -27,7 +28,7 @@
 
 					<h4 class="shop_title"><?= $shop['name'] ?></h4>
 
-					<p class="shop_description"><?= $shop['description'] ?></p>
+					<p class="shop_description"><?= substr($shop['description'], 0, 250)." [...]"; ?></p>
 
 				</article>
 

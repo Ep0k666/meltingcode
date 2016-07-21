@@ -64,13 +64,13 @@ class DisplayController extends Controller
 
         $shopByActivity = $manager->getShopByActivity($id);
         $categorySearch = $manager->getCategorySearch($id);
+        $activities         = $manager->getAllActivities();
 
         $this->show('display/activity-shop', 
             [
             'shopByActivity' => $shopByActivity,
-            'categorySearch' => $categorySearch
+            'categorySearch' => $categorySearch,
+            'activities'        => $activities
             ]);
-
     }
-
 }

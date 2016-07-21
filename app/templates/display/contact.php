@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => '']) ?>
+<?php $this->layout('layout', ['title' => 'contact']) ?>
 
 <?php $this->start('main_content') ?>
 
@@ -7,7 +7,7 @@
 
 		<h1>Contactez-nous</h1>
     
-	    <form method="POST" action="#">
+	    <form method="POST" action="">
 		      <div class="field name-box">
 
 		      		<!-- **** NAME **** -->

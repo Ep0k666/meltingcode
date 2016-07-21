@@ -9,6 +9,8 @@ $w_routes = array(
     ['GET|POST', 	'/search', 				'Display#search', 				'search'],
     /************** ---------- CONTACT ------------ ***************/
     ['GET|POST', 	 '/contact', 			'Contact#contact',				'contact'],
+    /************** ---------- NEWSLETTER ------------ ***************/
+    ['GET|POST',     '/newsletter',            'Newsletter#newsletter',              'newsletter'],
     /*************** ---------- HOME ------------ ******************/
     ['GET|POST', '/loginPage/', 'LoginPage#listing', 'id'],
     /************** ---------- LOGIN ------------ ***************/
