@@ -108,7 +108,7 @@
                 <li><a href="<?= $this->url('contact') ?>">Contact</a></li>
                 <?php if ($w_user) :?>
 
-                    <li><a href="<?= $this->url('id', ['id'=>$w_user['id'] ]) ?>"><?= $w_user['firstname']." ".$w_user['lastname'] ?></a></li>
+                    <li><a href="<?= $this->url('account', ['id'=>$w_user['id'] ]) ?>"><?= $w_user['firstname']." ".$w_user['lastname'] ?></a></li>
                     <li><a href="<?= $this->url('add-shop') ?>">Administration Boutiques</a></li>
                     <li><a href="<?= $this->url('logoff') ?>">Logout</a></li>
 
@@ -164,6 +164,5 @@
 
 
 </footer>
-</div>
 </body>
 </html>

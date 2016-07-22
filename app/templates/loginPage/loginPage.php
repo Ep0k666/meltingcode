@@ -7,7 +7,7 @@
 
         <form action="#" method="POST">
             <div id="fade-box">
-                <label for="connexion">Vos donnàes</label>
+                <label for="connexion">Vos données</label>
                 <input type="text" name="login" placeholder="Identifiant" required>
                 <input type="text" name="company" id="company" placeholder="Compagnie" required>
                 <input type="text" name="firstname" id="firstname" placeholder="Prénom" required >
