@@ -12,13 +12,18 @@ $w_routes = array(
     /************** ---------- NEWSLETTER ------------ ***************/
     ['GET|POST',     '/newsletter',            'Newsletter#subscribeNewsletter',              'newsletter'],
     /*************** ---------- account ------------ ******************/
-    ['GET|POST',     '/account[:id]/', 'Connect#account', 'id'],
+    ['GET|POST',     '/account/[:id]', 'Connect#account', 'account'],
     /************** ---------- LOGIN ------------ ***************/
     ['GET|POST',     '/signup', 'Connect#login', 'login'],
     /************** ---------- CONNECT ------------ ***************/
-    ['GET|POST',     '/connect', 'Connect#connexion', 'connexion'],
+    ['GET|POST', '/connect', 'Connect#connexion', 'connexion'],
+    /************** ---------- LOST ------------ ***************/
+    ['GET|POST', '/lost/', 'ResetPass#lostPassword', 'lost'],
+    /************** ---------- RESET ------------ ***************/
+    ['GET|POST', '/reset/[:tk]', 'ResetPass#resetPassword', 'reset'],
+
     /*************** ---------- LOGOFF ------------ ******************/
-    ['GET|POST',     '/disconnect', 'Connect#logoff', 'logoff'],
+    ['GET|POST', '/disconnect', 'Connect#logoff', 'logoff'],
 
     /*************** ---------- ADMIN BOUTIQ ------------ ******************/
     ['GET|POST',     '/admin', 'Display#adminHome', 'admin-home'],
