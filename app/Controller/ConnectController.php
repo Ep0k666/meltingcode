@@ -124,35 +124,5 @@ class ConnectController extends Controller
 
     }
 
-    public function resetPassW($users, $message)
-    {
 
-        $mail = new PHPMailer();
-
-        $mail->isSMTP();                                        // On va se servir de SMTP
-        $mail->Host = 'smtp.gmail.com';                 // Serveur SMTP
-        $mail->SMTPAuth = true;                                 // Active l'autentification SMTP
-        $mail->Username = 'mail.wf3@gmail.com';                 // SMTP username
-        $mail->Password = 'mailwf3741';                         // SMTP password
-        $mail->SMTPSecure = 'tls';                              // TLS Mode
-        $mail->Port = 587;                                      // Port TCP à utiliser
-
-        $mail->Sender = 'mailer@monsite.fr';          //mail de l expediteur
-        $mail->setFrom('mailer@monsite.fr', 'Mon programme PHP', false);
-        $mail->addAddress($users, 'Marielle');          // Ajouter un destinataire
-        $mail->addAddress('ellen@example.com');                 // Le nom est optionnel
-        $mail->addReplyTo('contact@monsite.fr', 'Information');
-
-
-        $mail->isHTML(true);                                     // Set email format to HTML
-
-        $mail->Subject = 'Nouveau mot de passe';
-        $mail->Body = 'Message au format html : <h1>Nouveau mot de passe</h1> <p> <a href="http://localhost/password/lost-pass/reset-password.php?tk="> Mot de passe </a> </p>';
-        $mail->AltBody = 'Le message en texte brut, pour les clients qui ont désactivé l\'affichage HTML';
-
-        $mail->send();
-
-        // username et setfrom et sender doivent etre les memes
-        $this->show('/LoginPage/resetPass');
-    }
 }

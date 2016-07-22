@@ -20,9 +20,9 @@ $w_routes = array(
     /************** ---------- CONNECT ------------ ***************/
     ['GET|POST',     '/connect', 'Connect#connexion', 'connexion'],
     /************** ---------- LOST ------------ ***************/
-    ['GET|POST',     '/lost/', 'ResetPass#LostPassword', 'lost'],
+    ['GET|POST',     '/lost/', 'resetpass#LostPassword', 'lost'],
     /************** ---------- RESET ------------ ***************/
-    ['GET|POST',     '/reset/[:tk]', 'ResetPass#LostPassword', 'reset'],
+    ['GET|POST',     '/reset/[:tk]', 'resetpass#resetPassword', 'reset'],
     /*************** ---------- LOGOFF ------------ ******************/
     ['GET|POST',     '/disconnect', 'Connect#logoff', 'logoff'],
 
