@@ -73,7 +73,7 @@ class ResetPassController extends Controller
     }
 
 
-    public function resetPassword($token)
+    public function resetPassword($tk)
     {
 
         if (isset($_POST['change_password'])) {

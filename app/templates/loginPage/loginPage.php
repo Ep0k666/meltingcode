@@ -15,9 +15,7 @@
                 <input type="email" name="mail" placeholder="Votre E-Mail" id="" required>
                 <input type="password" name="pass1" placeholder="Mot de Passe" required>
                 <br>
-                <button type="submit" name="add-user" value="add-user">S'inscrire</button>
-                <!--<a href="<?/*= $this->url("connexion")*/?>">Déjà Inscrit ? ?</a>-->
-                <a href="<?= $this->url("edit_account")?>">Modifier vos données</a>
+                <button type="submit" name="add-user" value="add-user">Modifier vos données</button>
                 <a href="<?= $this->url("home")?>">Revenir à l'acceuil</a>
             </div>
         </form>
