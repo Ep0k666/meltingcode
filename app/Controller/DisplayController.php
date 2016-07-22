@@ -73,4 +73,11 @@ class DisplayController extends Controller
             'activities'        => $activities
             ]);
     }
+
+    public function adminHome($id)
+    {
+        $manager = new \Manager\ShopManager();
+
+        $this->show('display/admin-shops');
+    }
 }

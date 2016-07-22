@@ -15,14 +15,14 @@ class ConnectController extends Controller
         if (isset($_POST['connect'])) {
 
             $errors = [];
-            if(empty($_POST['email'])) {
+            if (empty($_POST['email'])) {
                 $errors['email']['empty'] = 'true';
 
             }
-            if(empty($_POST['password'])) {
+            if (empty($_POST['password'])) {
                 $errors['password']['empty'] = true;
             }
-            if(count($errors) === 0){
+            if (count($errors) === 0) {
 
                 $userManager = new \Manager\UserManager();
 
@@ -35,7 +35,7 @@ class ConnectController extends Controller
                     $userInfos = $userManager->find($id);
                     $authentificationManager->logUserIn($userInfos);
                     $this->redirectToRoute('home');
-                }else{
+                } else {
                     echo 'La Connexion à échoué';
                     // Redirection vers le login
                     $this->show('connexion', ['errors' => $errors]);
@@ -48,7 +48,7 @@ class ConnectController extends Controller
         $this->show('/loginPage/connect');
     }
 
-        public function login()
+    public function login()
     {
 
 
@@ -77,7 +77,8 @@ class ConnectController extends Controller
 
     }
 
-    public function account(){
+    public function account()
+    {
         $this->allowTo(['editeur']);
 
         /* $data = [
@@ -113,7 +114,7 @@ class ConnectController extends Controller
          }
          return $this->find($id);*/
 
-        $this->show('/account');
+        $this->show('/loginPage/loginPage');
     }
 
     public function logoff()
@@ -125,4 +126,35 @@ class ConnectController extends Controller
 
     }
 
+    public function envoiMail($users, $message)
+    {
+
+        $mail = new PHPMailer();
+
+        $mail->isSMTP();                                        // On va se servir de SMTP
+        $mail->Host = 'smtp.gmail.com';                 // Serveur SMTP
+        $mail->SMTPAuth = true;                                 // Active l'autentification SMTP
+        $mail->Username = 'mail.wf3@gmail.com';                 // SMTP username
+        $mail->Password = 'mailwf3741';                         // SMTP password
+        $mail->SMTPSecure = 'tls';                              // TLS Mode
+        $mail->Port = 587;                                      // Port TCP à utiliser
+
+        $mail->Sender = 'mailer@monsite.fr';          //mail de l expediteur
+        $mail->setFrom('mailer@monsite.fr', 'Mon programme PHP', false);
+        $mail->addAddress($users, 'Marielle');          // Ajouter un destinataire
+        $mail->addAddress('ellen@example.com');                 // Le nom est optionnel
+        $mail->addReplyTo('contact@monsite.fr', 'Information');
+
+
+        $mail->isHTML(true);                                     // Set email format to HTML
+
+        $mail->Subject = 'Nouveau mot de passe';
+        $mail->Body = 'Message au format html : <h1>Nouveau mot de passe</h1> <p> <a href="http://localhost/password/lost-pass/reset-password.php?tk="> Mot de passe </a> </p>';
+        $mail->AltBody = 'Le message en texte brut, pour les clients qui ont désactivé l\'affichage HTML';
+
+        $mail->send();
+
+        // username et setfrom et sender doivent etre les memes
+
+    }
 }

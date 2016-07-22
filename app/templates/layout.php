@@ -19,6 +19,16 @@
 
     <!-- *** STYLE CSS HOME *** -->
     <?php if($title == 'home'):?>
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/home-style.css') ?>">
+    <?php endif; ?>
+
+        <!-- *** STYLE CSS ACTIVITY *** -->
+    <?php if($title == 'activity') : ?>
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/activity-style.css') ?>">
+    <?php endif; ?>
+
+    <?php if($title == 'newsletter') : ?>
+        <!-- *** STYLE CSS NEWSLETTER*** -->
         <link rel="stylesheet" href="<?= $this->assetUrl('css/home-style.css') ?>">
     <?php endif; ?>
 
@@ -34,6 +44,12 @@
 
     <!-- *** STYLE CSS SEARCH *** -->
     <?php if($title == 'search') :?>
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/search-style.css') ?>">
+    <?php endif; ?>
+
+        <!-- *** STYLE CSS CONTACT *** -->
+    <?php if($title == 'contact') :?>
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/contact-style.css') ?>">
         <link rel="stylesheet" href="<?= $this->assetUrl('css/search-style.css') ?>">
     <?php endif; ?>
 
