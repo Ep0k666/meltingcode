@@ -64,14 +64,18 @@ class ResetPassController extends Controller
         $mailer->isHTML(true);                                       // Set email format to HTML
 
         $mailer->Subject = 'Sujet de l\'email';
-        $mailer->Body    = 'Message au format html : <a href="'.$this->show('loginPage/resetPass', ['tk' => $token]).'">Bonjour</a>';
+        $mailer->Body    = 'Message au format html : <a href="'.Controller::generateUrl('reset', [':tk' => $token]).'">Bonjour</a>';
         $mailer->AltBody = 'Le message en texte brut, pour les clients qui ont désactivé l\'affichage HTML';
 
         $mailer->send();
 
+        if (!$mailer->send()) {
+            echo "Mailer Error: " . $mail->ErrorInfo;
+        } else {
+            echo "Message sent!";
+        }
         $_SESSION['flash'] = 'Un lien de reset ..';
     }
-
 
     public function resetPassword($tk)
     {
