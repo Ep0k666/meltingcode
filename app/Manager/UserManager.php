@@ -19,9 +19,9 @@ class UserManager extends \W\Manager\UserManager
      */
     public function getIdForMail($mail) {
         $pdo= $this->dbh;
-        $sql = 'SELECT id FROM ' . $this->getTable() . ' WHERE email LIKE :mail LIMIT 1';
+        $sql = 'SELECT id FROM ' . $this->getTable() . ' WHERE email LIKE :email LIMIT 1';
         $stmt = $pdo->prepare($sql);
-        $stmt->bindValue(':mail', $mail);
+        $stmt->bindValue(':email', $mail);
         $stmt->execute();
 
         $result = $stmt->fetch(\PDO::FETCH_ASSOC);

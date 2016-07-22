@@ -36,7 +36,7 @@ class ConnectController extends Controller
                 } else {
                     echo 'La Connexion à échoué';
                     // Redirection vers le login
-                    $this->show('connexion', ['errors' => $errors]);
+                    $this->show('/loginPage/connect', ['errors' => $errors]);
                 }
 
             }
@@ -57,7 +57,7 @@ class ConnectController extends Controller
                     isset($_POST['company']))
             ) {
                 $usersManager = new \Manager\LoginPageManager();
-                $usersManager->setTable('users');
+                $usersManager->setTable('user');
                 $data = [
                     'login' => htmlspecialchars($_POST['login'], FILTER_SANITIZE_FULL_SPECIAL_CHARS),
                     'password' => htmlspecialchars(password_hash($_POST['pass1'], PASSWORD_DEFAULT)),
