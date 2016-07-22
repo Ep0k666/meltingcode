@@ -7,6 +7,8 @@
 
 			<h1>Newsletter</h1>
     
+    	<!-- Afficher le formulaire si les infos n'existent pas en base de donnée -->
+    	<?php if(isset($infoInserted) === false) : ?>
 	    <form method="POST" action="">
 		      <div class="field lastname-box">
 
@@ -83,6 +85,9 @@
 			        <!-- *** Format *** -->
 			        <?php if(isset($errors['mail']['format'])) echo '<p class="errors">Le mail doit avoir ce format : adresse@mail.com</p>' ?>
 
+			        <!-- *** Format *** -->
+			        <?php if(isset($errors['mail']['exist'])) echo '<p class="errors">Ce mail existe déjà</p>' ?>
+
 			        <label for="email">Email</label>
 			        <span class="ss-icon">check</span>
 		      </div>
@@ -105,6 +110,16 @@
 		      <input class="button" type="submit" name="news-submit" value="send" />
 
 	  	</form>
+
+	  	<!-- Si les coordonnées ont été enregistrées en base de donnée: -->
+	  	<?php else : ?>
+	  		<div class="news_success">
+	  			<div class="container">
+	  				<p>Votre inscription à la newsletter a bien été prise en compte.</p>
+	  			</div>
+	  		</div>
+	  <?php endif; ?>
+
   	</article>
 </section>
 

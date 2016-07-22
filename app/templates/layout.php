@@ -42,8 +42,6 @@
         <link rel="stylesheet" href="<?= $this->assetUrl('css/news-style.css') ?>">
     <?php endif; ?>
 
-    <link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
-
     <!-- *** STYLE CSS SEARCH *** -->
     <?php if($title == 'search') :?>
     <link rel="stylesheet" href="<?= $this->assetUrl('css/search-style.css') ?>">
