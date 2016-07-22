@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'admin-home']) ?>
+<?php $this->layout('layout', ['title' => 'admin-home'])?>
 
 <?php $this->start('main_content') ?>
 
@@ -11,7 +11,7 @@
 			<h2>Bienvenue dans l’aventure!</h2>
 			<h3>Pas encore de boutique ?</h3>
 
-			<a href="<?= $this->url('add-shop')  ?>" type="submit" name>Ajouter</a>
+			<a href="<?= $this->url('add-shop')  ?>">Ajouter</a>
 			<div class="clearfix"></div>
 			<hr>
 		</div>
@@ -29,9 +29,9 @@
 				</div>
 
 				<div class="link-admin-shop">
-					<a href="<?= $this->url('add-shop')  ?>" type="submit" name>Modifier</a>
+					<a href="<?= $this->url('') ?>">Modifier</a>
 
-					<a href="<?= $this->url('add-shop')  ?>" type="submit" name>Supprimer</a>
+					<a href="<?= $this->url('')  ?>">Supprimer</a>
 				</div>
 
 				<div class="clearfix"></div>

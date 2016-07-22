@@ -74,10 +74,19 @@ class DisplayController extends Controller
             ]);
     }
 
-    public function adminHome($id)
+    public function adminHome()
     {
         $manager = new \Manager\ShopManager();
 
         $this->show('display/admin-shops');
     }
+
+
+    public function apropos()
+    {
+        $manager = new \Manager\ShopManager();
+
+        $this->show('display/a-propos');
+    }
+
 }

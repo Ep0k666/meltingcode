@@ -47,16 +47,22 @@
     <link rel="stylesheet" href="<?= $this->assetUrl('css/search-style.css') ?>">
     <?php endif; ?>
 
-        <!-- *** STYLE CSS CONTACT *** -->
-    <?php if($title == 'contact') :?>
-    <link rel="stylesheet" href="<?= $this->assetUrl('css/contact-style.css') ?>">
-        <link rel="stylesheet" href="<?= $this->assetUrl('css/search-style.css') ?>">
+        <!-- *** STYLE CSS ADMIN *** -->
+    <?php if($title == 'admin-home') :?>
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/admin-shops.css') ?>">
     <?php endif; ?>
 
     <!-- *** STYLE CSS CONTACT *** -->
     <?php if($title == 'contact') :?>
         <link rel="stylesheet" href="<?= $this->assetUrl('css/contact-style.css') ?>">
     <?php endif; ?>
+
+    <!-- *** STYLE CSS A PROPOS *** -->
+    <?php if($title == 'a-propos') :?>
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/a-propos-style.css') ?>">
+    <?php endif; ?>
+
+
     <!-- *** FONT AWESOME CDN *** -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <!-- *** CSS Page Login/Connect *** -->

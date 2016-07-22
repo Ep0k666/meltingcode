@@ -30,4 +30,6 @@ $w_routes = array(
     ['GET|POST',     '/shops/delete/[:id]', 'Shop#delete', 'delete-shop'],
     /*************** ---------- Vue ------------ ******************/
     ['GET|POST', '/shops/shopview/[:id]', 'Shop#shopview', 'shop-view'],
+      /*************** ---------- A PROPOS ------------ ******************/
+    ['GET|POST',     '/apropos', 'Display#aPropos', 'a-propos'],
 );

@@ -479,4 +479,12 @@ class ShopController extends Controller
  
     }
 
+    public function shopEdit($id)
+    {
+        $manager = new \Manager\ShopManager();
+        $shopToEdit = $manager->find($id);
+
+        $this->show('shops/admin-shops', ['shopsToEdit' => $shopToEdit]);
+    }
+
 }
