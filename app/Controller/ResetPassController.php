@@ -80,27 +80,67 @@ class ResetPassController extends Controller
 
     public function resetPassword($tk)
     {
+        $tk; // token
+        $recoveryTokenManager = new \Manager\RecoverytokenManager();
+        // On rÈcupËre l'id utilisateur en fonction du token
+        $idUser = $recoveryTokenManager->getUserIdByToken($tk);
+        if ($idUser === false) {
+            /* Si ce token n'a jamais ÈtÈ Èmis, on redirige */
+            $this->redirectToRoute('login');
+        }
+        /* A partir de la, je sais que mon token existe en DB */
 
+        /* Si on a soumis le nouveau mot de passe */
         if (isset($_POST['change_password'])) {
+            // On dÈclare le tableau d'erreur
+            $errors = [];
 
-            $usersModel = new \Manager\RecoverytokenManager();
-            $userId = $usersModel->getUserIdByToken($_GET['tk']);
-            if ($userId === false) {
-                $this->redirectToRoute('connexion');
+            // Verification
+            if (!empty($_POST['new_pass'])) {
+                if (strlen($_POST['new_pass']) < 8 || strlen($_POST['new_pass']) > 50) {
+                    // S'il est pas vide et qu'il est pas compris entre 2 et 50 carractËres
+                    $errors['new_pass']['size'] = true;
+                }
+            } else {
+                // Si on a pas prÈcisÈ de mot de passe
+                $errors['new_pass']['empty'] = true;
             }
-//
-            $this->show('/loginPage/resetPass');
-        };
+
+            if (!empty($_POST['password2'])) {
+                if (!empty($_POST['new_pass']) && ($_POST['new_pass'] !== $_POST['password2'])) {
+                    // Si les deux mot de passe ne sont pas identique
+                    $errors['password2']['different'] = true;
+                }
+            } else {
+                // Si la vÈrification de mot de passe n'est pas renseignÈ
+                $errors['password2']['empty'] = true;
+            }
+
+            // S'il n'y a pas d'erreur, on entre les changement dans la base de donnÈe
+            if (count($errors) === 0) {
+
+                /* Hash du nouveau mot de passe */
+                $security = new \W\Security\AuthentificationManager();
+                $passHash = $security->hashPassword($_POST['new_pass']);
+
+                /*  Mise ‡ jour du mot de passe */
+
+                // Model pour insertion en base de donnees
+                $usersModel = new \Manager\UserManager();
+                $data = ['password' => $passHash];
+                $usersModel->update($data, $idUser);
+
+                /* Suppression du token maintenant inutile */
+                $recoveryTokenManager->deleteTokenForUser($tk);
+
+                /* Pour affichage du message */
+                $passUpdated = true;
+                $this->redirectToRoute('login');
+            }
+            // Si j'ai une erreur
+            $this->show('loginPage/resetPass', ['errors' => $errors]);
+        }
+        $this->show('loginPage/resetPass');
 
     }
-        public function updateUserPassword($uId, $newPass)
-    {
-        $userManager = new \Manager\UserManager();
-
-        $userManager->updateUserPassword($uId, $newPass);
-
-        $userManager->insert(['id' => $uId, 'password' => $newPass]);
-    }
-
-
 }
