@@ -52,6 +52,12 @@ class UserManager extends \W\Manager\UserManager
         /* Cast facultatif */
     }
 
-
+    public function updateUserPassword( $uId, $newPass) {
+        $pdo= $this->dbh;
+        $sql = 'UPDATE User SET password = :password WHERE id = :uid;';
+        $stmt = $pdo->prepare($sql);
+        $stmt->bindValue(':uid', $uId);
+        $stmt->bindValue(':password', $newPass);
+        $stmt->execute();}
 
 }

@@ -58,13 +58,13 @@ class ResetPassController extends Controller
         $mailer->Port = 587;                                        // Port TCP à utiliser
 
         $mailer->Sender='lor.n.shops@gmail.com';
-        $mailer->setFrom('lor.n.shops@gmail.com', 'Mon programme PHP', false);
+        $mailer->setFrom('lor.n.shops@gmail.com', 'Bonjour, voici votre nouveau mot de passe', false);
         $mailer->addAddress($mail, 'Joe User');    // Ajouter un destinataire
 
         $mailer->isHTML(true);                                       // Set email format to HTML
 
         $mailer->Subject = 'Sujet de l\'email';
-        $mailer->Body    = 'Message au format html : <a href="'.Controller::generateUrl('reset', [':tk' => $token]).'">Bonjour</a>';
+        $mailer->Body    = 'Message au format html : <a href="'.Controller::generateUrl('reset', [':tk' => $token]).'">Lien vers la page de mot de passe</a>';
         $mailer->AltBody = 'Le message en texte brut, pour les clients qui ont désactivé l\'affichage HTML';
 
         $mailer->send();
@@ -75,6 +75,7 @@ class ResetPassController extends Controller
             echo "Message sent!";
         }
         $_SESSION['flash'] = 'Un lien de reset ..';
+        $this->show('/loginPage/resetPass');
     }
 
     public function resetPassword($tk)
@@ -85,12 +86,21 @@ class ResetPassController extends Controller
             $usersModel = new \Manager\RecoverytokenManager();
             $userId = $usersModel->getUserIdByToken($_GET['tk']);
             if ($userId === false) {
-                /* Si ce token n'a jamais été émis, on redirige */
                 $this->redirectToRoute('connexion');
             }
-//        $this->show('', ['passUpdated' => true]);
+//
             $this->show('/loginPage/resetPass');
-        }
+        };
+
     }
+        public function updateUserPassword($uId, $newPass)
+    {
+        $userManager = new \Manager\UserManager();
+
+        $userManager->updateUserPassword($uId, $newPass);
+
+        $userManager->insert(['id' => $uId, 'password' => $newPass]);
+    }
+
 
 }
