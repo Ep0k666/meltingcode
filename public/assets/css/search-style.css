@@ -37,6 +37,11 @@
 	display: block;
 }
 
+.shop_discovery a{
+	text-decoration: none;
+	color: #FFF;
+}
+
 #search_shop h3{
 	font-family: 'Lobster', cursive;
 	background-color:  white;

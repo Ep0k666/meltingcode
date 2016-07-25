@@ -11,7 +11,7 @@
 			<h2>Bienvenue dans l’aventure!</h2>
 			<h3>Pas encore de boutique ?</h3>
 
-			<a href="<?= $this->url('add-shop')  ?>" type="submit" name>Ajouter</a>
+			<a href="<?= $this->url('add-shop') ?>">Ajouter</a>
 			<div class="clearfix"></div>
 			<hr>
 		</div>

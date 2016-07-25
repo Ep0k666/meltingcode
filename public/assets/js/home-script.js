@@ -6,7 +6,7 @@ $(function(){
    	});
 
 	/*** Récupération search bar ***/ 
-	searchBar = $('#search_bar');
+	searchBar = $('#high_nav input');
 
 	/*** Animate width for search bar ***/
 	searchBar.on('click', function(){

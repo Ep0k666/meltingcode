@@ -203,6 +203,11 @@ body #high_nav{
 	display: block;
 }
 
+.shop_discovery a{
+	text-decoration: none;
+	color: #FFF;
+}
+
 #activity_shop h3, #about_us h3 {
 	font-family: 'Lobster', cursive;
 	background-color:  white;

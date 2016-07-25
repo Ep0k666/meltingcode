@@ -175,6 +175,11 @@ ol li a{
 	margin-top: -30px;
 }
 
+#slider a{
+	text-decoration: none;
+	color: #FFF;
+}
+
 /*** Images shops ***/
 .most_viewed{
 	background-repeat: no-repeat;
@@ -251,6 +256,13 @@ ol li a{
 	display: block;
 }
 
+.shop_discovery a{
+	text-decoration: none;
+	color: #FFF;
+	display: block;
+	box-sizing: border-box;
+}
+
 #new_shop h3, #about_us h3 {
 	font-family: 'Lobster', cursive;
 	background-color:  white;
@@ -285,7 +297,6 @@ ol li a{
 .shop_discovery{
 	float: left;
 	width: 33.33%;
-	padding: 25px;
 	min-height: 440px;
 }
 

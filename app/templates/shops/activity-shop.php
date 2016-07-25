@@ -85,15 +85,17 @@
 					?>
 
 						<!-- *** Image Shop *** -->
-						<div class="img_shop_discovery" style="background-image: url('<?= $img ?>');">
+						<a href="<?= $this->url('shop-view', ['id' => $shop['id']])?>">
+							<div class="img_shop_discovery" style="background-image: url('<?= $img ?>');">
 
-							<!-- *** Name Shop *** -->
-							<h4 class="shop_title"><?= $shop['name'] ?></h4>
+								<!-- *** Name Shop *** -->
+								<h4 class="shop_title"><?= $shop['name'] ?></h4>
 
-						</div>
+							</div>
+						</a>
 
 					<!-- *** Shop description *** -->
-					<p class="shop_description"><?= substr($shop['description'], 0, 250)." <a href='' class='link_read_more'>Lire la suite ...</a>"; ?></p>
+					<p class="shop_description"><?= substr($shop['description'], 0, 250)." [...]"; ?></p>
 
 				</article>
 

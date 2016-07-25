@@ -14,6 +14,7 @@
 
 	 		<form method="POST" action="">
 
+	 			<!-- *** MOTS-CLÉS *** -->
 	 			<label for="tag_detailed">Mots-clés</label>
 	 			<input type="text" id="tag_detailed" name="tag_detailed" placeholder="Exemple : nom boutique, ville, secteur d'activité etc... "><br />
 
@@ -29,7 +30,7 @@
 
 			 				<label for="<?= $activity['category'] ?>"><?= $activity['category'] ?></label>
 
-			 				<input type="checkbox" id="<?= $activity['category'] ?>" name="<?= $activity['category'] ?>" value="<?= $activity['id_catshops'] ?>">
+			 				<input type="checkbox" id="<?= $activity['category'] ?>" name="<?= $activity['name_id'] ?>" value="<?= $activity['id_catshops'] ?>">
 
 			 			</div>
 

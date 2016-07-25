@@ -73,7 +73,7 @@ class DisplayController extends Controller
     public function detailedSearch()
     {
         /*** Search Manager ***/
-        $searchManager = new \Manager\SearchManager();
+        $searchManager      = new \Manager\SearchManager();
 
         /*** Shop Manager ***/
         $shopManager         = new \Manager\ShopManager();
@@ -86,9 +86,27 @@ class DisplayController extends Controller
         /*** Si le formulaire n'a pas été soumi ***/
         
         
-            $this->show('display/detailed-search', [
-                'activities' => $activities
-                ]);
+        $this->show('display/detailed-search', [
+            'activities' => $activities
+            ]);
+
+        /*** Si le formulaire de recherche détaillée a été soumi ***/
+        if(isset($_POST['search_detailed']))
+        {
+            /*** Enregistrement du tag si existant***/
+            if(isset($_POST['tag_detailed']))
+            {
+                $tag_detailed = trim(htmlspecialchars($_POST['tag_detailed']));
+            }
+
+            /*** Enregistrement des catégories si existantes ***/
+            foreach($activities as $activity)
+            {
+                if(isset($_POST['$activity["name_id"]']))
+                {
+                }
+            }
+        }
         
     }
 

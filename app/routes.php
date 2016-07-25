@@ -12,7 +12,7 @@ $w_routes = array(
     ['GET|POST', 	'/search', 				 'Display#search', 				     'search'],
 
                 /************** ---------- DETAILED SEARCH ------------ ***************/
-    ['GET|POST',    '/detailed-search',               'Display#detailedSearch',                   'detailed-search'],
+    ['GET|POST',    '/detailed-search',      'Display#detailedSearch',           'detailed-search'],
 
                 /************** ---------- CONTACT ------------ ***************/
     ['GET|POST', 	 '/contact', 			 'Contact#contact',				     'contact'],
@@ -21,22 +21,22 @@ $w_routes = array(
     ['GET|POST',     '/newsletter',          'Newsletter#subscribeNewsletter',   'newsletter'],
 
                 /*************** ---------- account ------------ ******************/
-    ['GET|POST',     '/account[:id]/',       'Connect#account',                  'id'],
+    ['GET|POST',     '/account/[:id]',       'Connect#account',                  'id'],
 
                 /************** ---------- LOGIN ------------ ***************/
-    ['GET|POST',     '/signup',              'Connect#login',                    'login'],
+    ['GET|POST',     '/inscription',         'Connect#login',                    'login'],
 
                 /************** ---------- CONNECT ------------ ***************/
-    ['GET|POST',     '/connect',             'Connect#connexion',                'connexion'],
+    ['GET|POST',     '/login',               'Connect#connexion',                'connexion'],
 
                 /*************** ---------- LOGOFF ------------ ******************/
-    ['GET|POST',     '/disconnect',          'Connect#logoff',                   'logoff'],
+    ['GET|POST',     '/logout',              'Connect#logoff',                   'logoff'],
 
                 /*************** ---------- ADMIN BOUTIQ ------------ ******************/
-    ['GET|POST',     '/admin',                'Display#adminHome',               'admin-home'],
+    ['GET|POST',     '/shops/admin/[:id]', 'Shop#adminHome',                     'admin-shop'],
 
                 /*************** ---------- Ajout ------------ ******************/
-    ['GET|POST',     '/shops',                'Shop#shopListCategory',           'add-shop'],
+    ['GET|POST',     '/shops/adding', 'Shop#shopListCategory',                   'add-shop'],
 
                 /*************** ---------- Edition ------------ ******************/
     ['GET|POST',     '/shops/edit/[:id]',     'Shop#shopEdit',                   'edit-shop'],
@@ -45,5 +45,8 @@ $w_routes = array(
     ['GET|POST',     '/shops/delete/[:id]',   'Shop#delete',                     'delete-shop'],
 
                 /*************** ---------- Vue ------------ ******************/
-    ['GET|POST', '/shops/shopview/[:id]',     'Shop#shopview',                   'shop-view'],
+    ['GET|POST',     '/shopview/[:id]',     'Shop#shopview',               'shop-view'],
+
+                /*************** ---------- AJAX ROAD ------------ ******************/
+    ['GET|POST',      '/ajax/path/create',        'AjaxPath#add',           'ajax_path_create'],
 );

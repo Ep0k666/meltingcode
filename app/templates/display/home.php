@@ -81,18 +81,20 @@
 							?>
 
 							<!-- *** Pour chaque Shop dans le slider *** -->
-							<li class="most_viewed" style="background-image: url('<?= $img ?>')">
+							<a href="<?= $this->url('shop-view', ['id' => $shopMostViewed['id']])?>">
+								<li class="most_viewed" style="background-image: url('<?= $img ?>')">
 
-							<!-- *** Container info shop opaque *** -->
-								<div id="slider_container"></div>
+								<!-- *** Container info shop opaque *** -->
+									<div id="slider_container"></div>
 
-									<!-- *** Shop Name *** -->
-									<h2 class="title_most_viewed"><?= $shopMostViewed['name'] ?></h2>
+										<!-- *** Shop Name *** -->
+										<h2 class="title_most_viewed"><?= $shopMostViewed['name'] ?></h2>
 
-									<!-- *** Shop Description *** -->
-									<p class="description_most_viewed"><?= substr($shopMostViewed['description'], 0, 250)." <a href='' class='link_read_more'>Lire la suite ...</a>"; ?></p>
+										<!-- *** Shop Description *** -->
+										<p class="description_most_viewed"><?= substr($shopMostViewed['description'], 0, 250)."[ <a href='' class='link_read_more'>...]"; ?></p>
 
-							</li>
+								</li>
+							</a>
 
 						<?php endforeach; ?>
 
@@ -125,15 +127,17 @@
 						?>
 
 						<!-- *** Image Shop *** -->
-						<div class="img_shop_discovery" style="background-image: url('<?= $img ?>');">
+						<a href="<?= $this->url('shop-view', ['id' => $shopMostRecent['id']])?>">
+							<div class="img_shop_discovery" style="background-image: url('<?= $img ?>');">
 
-							<!-- *** Name Shop *** -->
-							<h4 class="shop_title"><?= $shopMostRecent['name'] ?></h4>
+								<!-- *** Name Shop *** -->
+								<h4 class="shop_title"><?= $shopMostRecent['name'] ?></h4>
 
-						</div>
+							</div>
+						</a>
 
 						<!-- *** Shop Description *** -->
-						<p class="shop_description"><?= substr($shopMostRecent['description'], 0, 260)." <a href='' class='link_read_more'>Lire la suite ...</a>"; ?></p>
+						<p class="shop_description"><?= substr($shopMostRecent['description'], 0, 260) . "[...]"; ?></p>
 
 					</article>
 
