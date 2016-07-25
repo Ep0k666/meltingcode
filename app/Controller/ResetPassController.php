@@ -93,7 +93,7 @@ class ResetPassController extends Controller
         /* Si on a soumis le nouveau mot de passe */
         if (isset($_POST['change_password'])) {
             // On dÈclare le tableau d'erreur
-            $errors = [];
+            /*$errors = [];
 
             // Verification
             if (!empty($_POST['new_pass'])) {
@@ -105,19 +105,10 @@ class ResetPassController extends Controller
                 // Si on a pas prÈcisÈ de mot de passe
                 $errors['new_pass']['empty'] = true;
             }
-
-            if (!empty($_POST['password2'])) {
-                if (!empty($_POST['new_pass']) && ($_POST['new_pass'] !== $_POST['password2'])) {
-                    // Si les deux mot de passe ne sont pas identique
-                    $errors['password2']['different'] = true;
-                }
-            } else {
-                // Si la vÈrification de mot de passe n'est pas renseignÈ
-                $errors['password2']['empty'] = true;
-            }
+            */
 
             // S'il n'y a pas d'erreur, on entre les changement dans la base de donnÈe
-            if (count($errors) === 0) {
+//            if (count($errors) === 0) {
 
                 /* Hash du nouveau mot de passe */
                 $security = new \W\Security\AuthentificationManager();
@@ -135,11 +126,11 @@ class ResetPassController extends Controller
 
                 /* Pour affichage du message */
                 $passUpdated = true;
-                $this->redirectToRoute('login');
+                $this->redirectToRoute('connexion');
             }
             // Si j'ai une erreur
-            $this->show('loginPage/resetPass', ['errors' => $errors]);
-        }
+            //$this->show('loginPage/resetPass' /*['errors' => $errors]*/);
+        //}
         $this->show('loginPage/resetPass');
 
     }

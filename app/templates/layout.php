@@ -65,6 +65,8 @@
     <link rel="stylesheet" href="<?= $this->assetUrl('css/shopviewstyle.css') ?>">
     <!-- *** CSS Page Login/Connect *** -->
     <link rel="stylesheet" href="<?= $this->assetUrl('css/shopstyles.css') ?>">
+    <!-- *** CSS Page Login/account *** -->
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/account-user.css') ?>">
 
     <!-- *** CDN JQUERY *** -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>

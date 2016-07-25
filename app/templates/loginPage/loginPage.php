@@ -4,22 +4,35 @@
 
 <div id="account">
     <div class="container">
+        <fieldset>
+            <form action="#" method="POST">
 
-        <form action="#" method="POST">
-            <div id="fade-box">
-                <label for="connexion">Vos données</label>
-                <input type="text" name="login" placeholder="Identifiant" required>
-                <input type="text" name="company" id="company" placeholder="Compagnie" required>
-                <input type="text" name="firstname" id="firstname" placeholder="Prénom" required >
-                <input type="text" name="lastname" id="lastname" placeholder="Nom de famille" required >
-                <input type="email" name="mail" placeholder="Votre E-Mail" id="" required>
-                <input type="password" name="pass1" placeholder="Mot de Passe" required>
+                <h1>VOS DO<span>N</span><span>N</span>EES</h1><br>
+
+                <label for="login">Votre Identifiant : </label>
+                <input type="text" name="login" placeholder="Identifiant" required><br>
+
+                <label for="login">Le nom de votre Compangie : </label>
+                <input type="text" name="company" id="company" placeholder="Compagnie" required><br>
+
+                <label for="login">Votre Nom de famille : </label>
+                <input type="text" name="firstname" id="firstname" placeholder="Prénom" required ><br>
+
+                <label for="login">Votre prénom : </label>
+                <input type="text" name="lastname" id="lastname" placeholder="Nom de famille" required ><br>
+
+                <label for="login">Votre E-Mail : </label>
+                <input type="email" name="mail" placeholder="Votre E-Mail" id="" required><br>
+
+                <label for="login">Votre Mot de Passe : </label>
+                <input type="password" name="pass" placeholder="Mot de Passe" required><br>
                 <br>
-                <button type="submit" name="add-user" value="add-user">Modifier vos données</button>
-                <a href="<?= $this->url("home")?>">Revenir à l'acceuil</a>
-            </div>
-        </form>
+                <button type="submit" name="edit-user" value="edit-user">Modifier vos données</button><br>
+                <a href="<?= $this->url("home")?>">--> Revenir à l'acceuil</a><br>
+                <a href="<?= $this->url("add-shop")?>">--> Vers l'administration de votre boutique</a>
+            </form>
 
+        </fieldset>
 
     </div>
 </div>

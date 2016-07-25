@@ -1,0 +1,38 @@
+#account {
+  display: block;
+  height: 600px;
+  font-family: "Lobster", cursive;
+  color: #80C2BB; }
+  #account .container {
+    margin: auto;
+    width: 1154px; }
+  #account form h1 {
+    font-size: 50px;
+    color: #80C2BB;
+    vertical-align: baseline; }
+    #account form h1 span {
+      transform: rotate(0deg);
+      display: inline-block;
+      vertical-align: baseline; }
+  #account form label {
+    font-size: 20px;
+    display: block;
+    line-height: 30px; }
+  #account form input {
+    display: inline-block;
+    height: 20px;
+    width: 150px; }
+  #account form button {
+    display: block;
+    height: 100px;
+    width: 150px;
+    margin: auto;
+    font-family: "Lobster", cursive;
+    color: #80C2BB;
+    background-color: #1b1b1b;
+    font-size: 20px; }
+  #account form a {
+    color: #80C2BB;
+    font-size: medium; }
+
+/*# sourceMappingURL=account-user.css.map */

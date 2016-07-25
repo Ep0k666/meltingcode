@@ -60,4 +60,17 @@ class UserManager extends \W\Manager\UserManager
         $stmt->bindValue(':password', $newPass);
         $stmt->execute();}
 
+    public function find($id)
+    {
+        if (!is_numeric($id)){
+            return false;
+        }
+
+        $sql = "SELECT * FROM " . $this->table . " WHERE $this->primaryKey = :id LIMIT 1";
+        $sth = $this->dbh->prepare($sql);
+        $sth->bindValue(":id", $id);
+        $sth->execute();
+
+        return $sth->fetch();}
+
 }

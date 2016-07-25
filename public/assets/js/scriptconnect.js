@@ -1,3 +1,4 @@
+/*
 $(function(){
 
     var canvasDots = function() {
@@ -122,7 +123,7 @@ $(function(){
         });
     }
 
-    /*{"web"
+    /!*{"web"
      {
      "client_id"
      :
@@ -134,10 +135,10 @@ $(function(){
      :
      "https://accounts.google.com/o/oauth2/token", "auth_provider_x509_cert_url"
      :
-     // "https://w*///ww.googleapis.com/oauth2/v1/certs"
+     // "https://w*!///ww.googleapis.com/oauth2/v1/certs"
     // }}
 
-    /*function login()
+    /!*function login()
     {
         var myParams = {
             'clientid' : '594350934468-2233rcvsb3sv4qbiq97a4rvgujgt3n5m.apps.googleusercontent.com',
@@ -182,7 +183,7 @@ $(function(){
         gapi.client.load('plus', 'v1',function(){});
     }
 
-    $()*/
+    $()*!/
 
 
-});
+});*/
