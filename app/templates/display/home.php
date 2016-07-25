@@ -8,20 +8,23 @@
 		*************************-->
 
 	<div id="home">
+
+		<!-- *** Desktop Navigation *** -->
 		<nav id="low_nav_desktop">
 			<div class="container">
 
-			<!-- *** Liste de liens "catégorie" *** -->
+				<!-- *** Liste de liens "activity" *** -->
 				<ul>
 					<?php foreach($activities as $activity) : ?>
 
 						<li>
 							<a href="<?= $this->url('activity', ['id' => $activity['id_catshops']])?>">
-							<?= $activity['category'] ?>
+								<?= $activity['category'] ?>
 							</a>
 						</li>
 
 					<?php endforeach; ?>
+
 				</ul>
 
 				<div class="clearfix"></div>
@@ -32,29 +35,26 @@
 		<!-- *** Mobile Navigation *** -->
 		<nav id="low_nav_mobile">
 
+				<!-- *** Hamburger *** -->
 				<i class="fa fa-bars fa-1x" id="hamburger" aria-hidden="true">
-						<span>Catégorie</span>
-					</i>
+					<span>Catégorie</span>
+				</i>
 
+				<!-- *** Cross menu *** -->
 				<span id="close_menu">
 					<i class="fa fa-times" id="cross" aria-hidden="true"></i> Catégorie
 				</span>
 
+				<!-- *** Liste de liens "activity" *** -->
 				<ul>
-
-					<?php
-						$nbCategory = 0;
-					?>
 
 					<?php foreach($activities as $activity) : ?>
 
 						<li>
 							<a href="<?= $this->url('activity', ['id' => $activity['id_catshops']])?>">
-							<?= $activity['category'] ?>
+								<?= $activity['category'] ?>
 							</a>
 						</li>
-
-						<?php ++$nbCategory ?>
 
 					<?php endforeach; ?>
 
@@ -72,27 +72,30 @@
 			<div class="container">
 				<div class="flexslider">
 					<ul class="slides">
-
-						<!-- *** Pour chaque Shop MostViewed *** -->
 						<?php foreach($shopsMostViewed as $shopMostViewed) : ?>
 
 							<!-- ** Définition du lien de l'image ** -->
 							<?php
 								$path = $shopMostViewed['pictshop1'];
-								$img = $this->assetUrl('uploads/'.$path);
+								$img  = $this->assetUrl('uploads/'.$path);
 							?>
 
-							<li class="most_viewed" style="background-image: url('<?= $img ?>')">
+							<!-- *** Pour chaque Shop dans le slider *** -->
+							<a href="<?= $this->url('shop-view', ['id' => $shopMostViewed['id']])?>">
+								<li class="most_viewed" style="background-image: url('<?= $img ?>')">
 
-								<div id="slider_container"></div>
+								<!-- *** Container info shop opaque *** -->
+									<div id="slider_container"></div>
 
-									<h2 class="title_most_viewed"><?= $shopMostViewed['name'] ?></h2>
+										<!-- *** Shop Name *** -->
+										<h2 class="title_most_viewed"><?= $shopMostViewed['name'] ?></h2>
 
-									<p class="description_most_viewed"><?= substr($shopMostViewed['description'], 0, 250)." [...]"; ?></p>
+										<!-- *** Shop Description *** -->
+										<p class="description_most_viewed"><?= substr($shopMostViewed['description'], 0, 250)."[ <a href='' class='link_read_more'>...]"; ?></p>
 
-							</li>
+								</li>
+							</a>
 
-							<!-- ** Fin foreach ** -->
 						<?php endforeach; ?>
 
 					</ul>
@@ -102,34 +105,42 @@
 
 
 		<!-- ****************************
-					NEWS BOUTIQUE
+					RECENT SHOP
 			 ****************************-->
 		<section id="new_shop">
 			<div class="container">
 
-			<div class="bordure1"></div>
+				<!-- *** Bordure de titre *** -->
+				<div class="bordure1"></div>
+
+				<!-- *** Titre pour recent shop *** -->
 				<h3>Découvrez les dernières boutiques</h3>
 
-				<!-- *** Pour chaque Shop Most Recent *** -->
 				<?php foreach($shopsMostRecent as $shopMostRecent): ?>
 
 					<article class="shop_discovery">
 
 						<!-- ** Définition du lien pour chaque image ** -->
 						<?php
-						$path = $shopMostRecent['pictshop1'];
-						$img = $this->assetUrl('uploads/'.$path);
+							$path = $shopMostRecent['pictshop1'];
+							$img  = $this->assetUrl('uploads/'.$path);
 						?>
 
-						<img src="<?= $img ?>">
+						<!-- *** Image Shop *** -->
+						<a href="<?= $this->url('shop-view', ['id' => $shopMostRecent['id']])?>">
+							<div class="img_shop_discovery" style="background-image: url('<?= $img ?>');">
 
-						<h4 class="shop_title"><?= $shopMostRecent['name'] ?></h4>
+								<!-- *** Name Shop *** -->
+								<h4 class="shop_title"><?= $shopMostRecent['name'] ?></h4>
 
-						<p class="shop_description"><?= substr($shopMostRecent['description'], 0, 250)." [...]"; ?></p>
+							</div>
+						</a>
+
+						<!-- *** Shop Description *** -->
+						<p class="shop_description"><?= substr($shopMostRecent['description'], 0, 260) . "[...]"; ?></p>
 
 					</article>
 
-					<!-- ** Fin foreach ** -->
 				<?php endforeach; ?>
 
 				<div class="clearfix"></div>
@@ -151,155 +162,180 @@
 					$path3 = "M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z";
 				?>
 
+					<!-- *** Bordure de titre *** -->
 					<div class="bordure1"></div>
+
+						<!-- *** Titre la team *** -->
 						<h3>La team Lor'N Shop</h3>
 
 		  				<div data-column='5' class="at-grid">
 
-		  			<!-- Malika -->
-		    		<div class="at-column">
-		      			<div class="at-user">
-					        <!-- On définit le chemin vers l'image -->
-		      				<?php 
-								$path = "img/malika.jpg";
-								$img = $this->assetUrl($path);
-							?>
-					        <div class="at-user__avatar"><img src="<?= $img ?>"/></div>
-					        <div class="at-user__name">Malika</div>
-					        <div class="at-user__title">CEO &amp; Co-Founder</div>
-					        <ul class="at-social">
-					          <li class="at-social__item"><a href="">
-					              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					                <path d="<?= $path1 ?>" fill-rule="evenodd"></path>
-					              </svg></a></li>
-					          <li class="at-social__item"><a href="">
-					              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					                <path d="<?= $path2 ?>" fill-rule="evenodd"></path>
-					              </svg></a></li>
-					          <li class="at-social__item"><a href="https://fr.linkedin.com/in/malikaouldotmane">
-					              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					                <path d="<?= $path3 ?>" fill-rule="evenodd"></path>
-					              </svg></a></li>
-					        </ul>
-		      			</div>
-		    		</div>
+		  					<!--******************
+		  							  MALIKA 
+		  						******************-->
 
-		    		<!-- Julie -->
-		    		<div class="at-column">
-		      			<div class="at-user">
-		      				<!-- On définit le chemin vers l'image -->
-		      				<?php 
-								$path = "img/julie.jpg";
-								$img = $this->assetUrl($path);
-							?>
-					        <div class="at-user__avatar"><img src="<?= $img ?>"/></div>
-					        <div class="at-user__name">Julie</div>
-					        <div class="at-user__title">CEO &amp; Co-Founder</div>
-					        <ul class="at-social">
-					          <li class="at-social__item"><a href="">
-					              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					                <path d="<?= $path1 ?>" fill-rule="evenodd"></path>
-					              </svg></a></li>
-					          <li class="at-social__item"><a href="">
-					              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					                <path d="<?= $path2 ?>" fill-rule="evenodd"></path>
-					              </svg></a></li>
-					          <li class="at-social__item"><a href="https://fr.linkedin.com/in/julie-mathieu-789569b9">
-					              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					                <path d="<?= $path3 ?>" fill-rule="evenodd"></path>
-					              </svg></a></li>
-					        </ul>
-		      			</div>
-		    		</div>
+				    		<div class="at-column">
+				      			<div class="at-user">
 
-		    		<!-- Halima -->
-		    		<div class="at-column">
-		      			<div class="at-user">
-		      				<!-- On définit le chemin vers l'image -->
-		      				<?php 
-								$path = "img/halima.jpg";
-								$img = $this->assetUrl($path);
-							?>
-					        <div class="at-user__avatar"><img src="<?= $img ?>"/></div>
-					        <div class="at-user__name">Halima</div>
-					        <div class="at-user__title">CEO &amp; Co-Founder</div>
-					        <ul class="at-social">
-					          <li class="at-social__item"><a href="">
-					              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					                <path d="<?= $path1 ?>" fill-rule="evenodd"></path>
-					              </svg></a></li>
-					          <li class="at-social__item"><a href="">
-					              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					                <path d="<?= $path2 ?>" fill-rule="evenodd"></path>
-					              </svg></a></li>
-					          <li class="at-social__item"><a href="https://fr.linkedin.com/in/halimalehain">
-					              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					                <path d="<?= $path3 ?>" fill-rule="evenodd"></path>
-					              </svg></a></li>
-					        </ul>
-		      			</div> <!-- Fin du class="at-user" -->
-		    		</div> <!-- Fin du class="at-column" -->
+							        <!-- Définition du chemin pour l'image -->
+				      				<?php 
+										$path = "img/malika.jpg";
+										$img  = $this->assetUrl($path);
+									?>
 
-		    		<!-- François-Xavier -->
-		    		<div class="at-column">
-		      			<div class="at-user">
-		      				<!-- On définit le chemin vers l'image -->
-		      				<?php 
-								$path = "img/fra_xa.jpg";
-								$img = $this->assetUrl($path);
-							?>
+							        <div class="at-user__avatar"><img src="<?= $img ?>" alt="Malika Ould Ottmane" title="Malika Ould Ottmane"/></div>
+							        <div class="at-user__name">Malika</div>
+							        <div class="at-user__title">CEO &amp; Co-Founder</div>
+							        <ul class="at-social">
+							          <li class="at-social__item"><a href="">
+							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+							                <path d="<?= $path1 ?>" fill-rule="evenodd"></path>
+							              </svg></a></li>
+							          <li class="at-social__item"><a href="">
+							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+							                <path d="<?= $path2 ?>" fill-rule="evenodd"></path>
+							              </svg></a></li>
+							          <li class="at-social__item"><a href="https://fr.linkedin.com/in/malikaouldotmane">
+							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+							                <path d="<?= $path3 ?>" fill-rule="evenodd"></path>
+							              </svg></a></li>
+							        </ul>
+				      			</div>
+				    		</div>
 
-					        <div class="at-user__avatar"><img src="<?= $img ?>"/></div>
-					        <div class="at-user__name">François-Xavier</div>
-					        <div class="at-user__title">CEO &amp; Co-Founder</div>
-					        <ul class="at-social">
-					          <li class="at-social__item"><a href="">
-					              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					                <path d="<?= $path1 ?>" fill-rule="evenodd"></path>
-					              </svg></a></li>
-					          <li class="at-social__item"><a href="">
-					              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					                <path d="<?= $path2 ?>" fill-rule="evenodd"></path>
-					              </svg></a></li>
-					          <li class="at-social__item"><a href="https://fr.linkedin.com/in/francoisxavierroux">
-					              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					                <path d="<?= $path3 ?>" fill-rule="evenodd"></path>
-					              </svg></a></li>
-					        </ul>
-		      			</div> <!-- Fin du class="at-user" -->
-		    		</div> <!-- Fin du class="at-column" -->
+				    		<!--******************
+		  							  JULIE 
+		  						******************-->
 
-		    		<!-- Steven -->
-		    		<div class="at-column">
-		      			<div class="at-user">
-		      			<!-- On définit le chemin vers l'image -->
-		      				<?php 
-								$path = "img/steven.jpg";
-								$img = $this->assetUrl($path);
-							?>
+				    		<div class="at-column">
+				      			<div class="at-user">
 
-					        <div class="at-user__avatar"><img src="<?= $img ?>"/></div>
-					        <div class="at-user__name">Steven</div>
-					        <div class="at-user__title">CEO &amp; Co-Founder</div>
-					        <ul class="at-social">
-					          <li class="at-social__item"><a href="">
-					              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					                <path d="<?= $path1 ?>" fill-rule="evenodd"></path>
-					              </svg></a></li>
-					          <li class="at-social__item"><a href="">
-					              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					                <path d="<?= $path2 ?>" fill-rule="evenodd"></path>
-					              </svg></a></li>
-					          <li class="at-social__item"><a href="https://www.linkedin.com/in/steven-perini">
-					              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-					                <path d="<?= $path3 ?>" fill-rule="evenodd"></path>
-					              </svg></a></li>
-					        </ul>
-		      			</div> <!-- Fin du class="at-user" -->
-		    		</div> <!-- Fin du class="at-column" -->
-				</div> <!-- Fin du data-column='5' -->
+				      				<!-- Définition du chemin pour l'image -->
+				      				<?php 
+										$path = "img/julie.jpg";
+										$img  = $this->assetUrl($path);
+									?>
 
-			</div><!-- fin du container -->
+							        <div class="at-user__avatar"><img src="<?= $img ?>" alt="Julie Mathieu" title="Julie Mathieu"/></div>
+							        <div class="at-user__name">Julie</div>
+							        <div class="at-user__title">CEO &amp; Co-Founder</div>
+							        <ul class="at-social">
+							          <li class="at-social__item"><a href="">
+							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+							                <path d="<?= $path1 ?>" fill-rule="evenodd"></path>
+							              </svg></a></li>
+							          <li class="at-social__item"><a href="">
+							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+							                <path d="<?= $path2 ?>" fill-rule="evenodd"></path>
+							              </svg></a></li>
+							          <li class="at-social__item"><a href="https://fr.linkedin.com/in/julie-mathieu-789569b9">
+							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+							                <path d="<?= $path3 ?>" fill-rule="evenodd"></path>
+							              </svg></a></li>
+							        </ul>
+				      			</div>
+				    		</div>
+
+				    		<!--******************
+		  							  HALIMA 
+		  						******************-->
+
+				    		<div class="at-column">
+				      			<div class="at-user">
+
+				      				<!-- Définition du chemin pour l'image -->
+				      				<?php 
+										$path = "img/halima.jpg";
+										$img  = $this->assetUrl($path);
+									?>
+
+							        <div class="at-user__avatar"><img src="<?= $img ?>" alt="Halima Lehain" title="Halima Lehain"/></div>
+							        <div class="at-user__name">Halima</div>
+							        <div class="at-user__title">CEO &amp; Co-Founder</div>
+							        <ul class="at-social">
+							          <li class="at-social__item"><a href="">
+							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+							                <path d="<?= $path1 ?>" fill-rule="evenodd"></path>
+							              </svg></a></li>
+							          <li class="at-social__item"><a href="">
+							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+							                <path d="<?= $path2 ?>" fill-rule="evenodd"></path>
+							              </svg></a></li>
+							          <li class="at-social__item"><a href="https://fr.linkedin.com/in/halimalehain">
+							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+							                <path d="<?= $path3 ?>" fill-rule="evenodd"></path>
+							              </svg></a></li>
+							        </ul>
+				      			</div>
+				    		</div>
+
+				    		<!--******************
+		  						 FRANCOIS-XAVIER 
+		  						******************-->
+				    		<div class="at-column">
+				      			<div class="at-user">
+
+				      				<!-- Définition du chemin pour  l'image -->
+				      				<?php 
+										$path = "img/fra_xa.jpg";
+										$img  = $this->assetUrl($path);
+									?>
+
+							        <div class="at-user__avatar"><img src="<?= $img ?>" alt="François-Xavier Roux" title="François-Xavier Roux"/></div>
+							        <div class="at-user__name">François-Xavier</div>
+							        <div class="at-user__title">CEO &amp; Co-Founder</div>
+							        <ul class="at-social">
+							          <li class="at-social__item"><a href="">
+							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+							                <path d="<?= $path1 ?>" fill-rule="evenodd"></path>
+							              </svg></a></li>
+							          <li class="at-social__item"><a href="">
+							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+							                <path d="<?= $path2 ?>" fill-rule="evenodd"></path>
+							              </svg></a></li>
+							          <li class="at-social__item"><a href="https://fr.linkedin.com/in/francoisxavierroux">
+							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+							                <path d="<?= $path3 ?>" fill-rule="evenodd"></path>
+							              </svg></a></li>
+							        </ul>
+				      			</div>
+				    		</div>
+
+				    		<!--******************
+		  							  STEVEN 
+		  						******************-->
+
+				    		<div class="at-column">
+				      			<div class="at-user">
+
+				      			<!-- Définition du chemin pour l'image -->
+				      				<?php 
+										$path = "img/steven.jpg";
+										$img  = $this->assetUrl($path);
+									?>
+
+							        <div class="at-user__avatar"><img src="<?= $img ?>" alt="Steven Perini" title="Steven Perini"/></div>
+							        <div class="at-user__name">Steven</div>
+							        <div class="at-user__title">CEO &amp; Co-Founder</div>
+							        <ul class="at-social">
+							          <li class="at-social__item"><a href="">
+							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+							                <path d="<?= $path1 ?>" fill-rule="evenodd"></path>
+							              </svg></a></li>
+							          <li class="at-social__item"><a href="">
+							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+							                <path d="<?= $path2 ?>" fill-rule="evenodd"></path>
+							              </svg></a></li>
+							          <li class="at-social__item"><a href="https://www.linkedin.com/in/steven-perini">
+							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+							                <path d="<?= $path3 ?>" fill-rule="evenodd"></path>
+							              </svg></a></li>
+							        </ul>
+				      			</div>
+				    		</div>
+						</div>
+
+			</div>
 		</section>
 	</div>
 

@@ -12,4 +12,16 @@ class NewsletterManager extends \W\Manager\Manager
         $stmt->execute();
         return $stmt->fetch();
     }
+
+    public function getShopsRecent($lastWeek)
+    {
+        $sql = 'SELECT * FROM shops WHERE date_adding > ' . $lastWeek . ';';
+        $stmt = $this->dbh->query($sql);
+        return $stmt->fetchAll();
+    }
+
+    public function getInfosShopsRecent($name, $description)
+    {
+
+    }
 }
