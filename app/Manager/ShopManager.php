@@ -5,18 +5,9 @@ namespace Manager;
 
 class ShopManager extends \W\Manager\Manager
 {
-
-    /*créer un categoryManager à part */
-    public function getAllcategories()
-    {
-        $sql = 'SELECT DISTINCT category FROM categoryshops ORDER BY category';
-        $stmt=$this->dbh->query($sql);
-        return $stmt->fetchAll();
-    }
-
-       /***
+    /***
      * Fonction pour page "home"
-     * Shops les plus consultées
+     * Shops les plus consultés
      ***/
     public function mostViewed()
     {
@@ -38,7 +29,7 @@ class ShopManager extends \W\Manager\Manager
 
     /***
      * Fonction pour page "home" 
-     * Return Shop category
+     * Toutes les activités 
      ***/
     public function getAllActivities()
     {
@@ -49,7 +40,7 @@ class ShopManager extends \W\Manager\Manager
 
     /***
      * Fonction pour page "home" 
-     * Return Shop par l'activité
+     * Shop par l'activité
      ***/
     public function getShopByActivity($id)
     {
@@ -62,9 +53,9 @@ class ShopManager extends \W\Manager\Manager
 
     /***
      * Fonction pour page "home" 
-     * Return Shop par l'activité
+     * Activité recherché
      ***/
-    public function getCategorySearch($id)
+    public function getActivitySearched($id)
     {
         $sql = 'SELECT * FROM categoryshops WHERE id_catshops = :id';
         $stmt = $this->dbh->prepare($sql);

@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Account Management']) ?>
+<?php $this->layout('layout', ['title' => 'login']) ?>
 
 <?php $this->start('main_content') ?>
 
