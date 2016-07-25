@@ -104,6 +104,7 @@ class DisplayController extends Controller
             {
                 if(isset($_POST['$activity["name_id"]']))
                 {
+                    $ . $_POST['activity']
                 }
             }
         }
