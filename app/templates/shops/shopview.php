@@ -1,3 +1,4 @@
+
 <?php $this->layout('layout', ['title' => 'shop-view']) ?>
 
 <?php $this->start('main_content') ?>

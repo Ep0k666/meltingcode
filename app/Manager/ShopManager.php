@@ -28,7 +28,7 @@ class ShopManager extends \W\Manager\Manager
     }
 
     /***
-     * Fonction pour page "home"
+     * Fonction pour page "home" 
      * Toutes les activités 
      ***/
     public function getAllActivities()
@@ -39,7 +39,7 @@ class ShopManager extends \W\Manager\Manager
     }
 
     /***
-     * Fonction pour page "home"
+     * Fonction pour page "home" 
      * Shop par l'activité
      ***/
     public function getShopByActivity($id)
@@ -52,7 +52,7 @@ class ShopManager extends \W\Manager\Manager
     }
 
     /***
-     * Fonction pour page "home"
+     * Fonction pour page "home" 
      * Activité recherché
      ***/
     public function getActivitySearched($id)

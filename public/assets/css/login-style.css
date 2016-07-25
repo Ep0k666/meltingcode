@@ -516,11 +516,11 @@ body {
 @media (min-width: 1200px) {
 
 
+
 }
 
 /** Supérieur à 992px et inférieur à 1200px **/
 @media (min-width: 992px) and (max-width: 1200px) {
-
 
 }
 
@@ -564,7 +564,6 @@ body {
 
 /** Supérieur à 768px et inférieur à 992px **/
 @media (min-width: 700px) and (max-width: 992px) {
-
 
     .containerconnect {
         width: 100%;

@@ -75,7 +75,7 @@ class ResetPassController extends Controller
             echo "Message sent!";
         }
         $_SESSION['flash'] = 'Un lien de reset ..';
-        $this->url('resetPass/[:tk]');
+        $this->show('loginPage/resetPass');
     }
 
     public function resetPassword($tk)

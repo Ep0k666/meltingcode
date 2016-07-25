@@ -4,9 +4,7 @@
  * Created by HLEHAIN.
  **/
 namespace Controller;
-
 use W\Controller\Controller;
-
 class AjaxPathController extends Controller
 {
     /**

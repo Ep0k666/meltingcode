@@ -3,7 +3,6 @@
 namespace Controller;
 
 use \W\Controller\Controller;
-
 class LoginPageController extends Controller
 {
 

@@ -96,81 +96,84 @@
                 <tr class="content">
                     <td class="w640" class="w640" width="640" bgcolor="#efefef">
                         <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
-                            <tbody>
-                            <tr>
-                                <td class="w30" width="30"></td>
-                                <td class="w580" width="580">
-                                    <!-- une zone de contenu -->
-                                    <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
                                         <tbody>
                                         <tr>
+                                            <td class="w30" width="30"></td>
                                             <td class="w580" width="580">
-                                                <h2 style="color:#80C2BB; font-size:22px; padding-top:12px; font-family: "
-                                                    Lobster", cursive;">
-                                                Notre région a du talent: </h2>
+                                                <!-- une zone de contenu -->
+                                                <table class="w580" width="580" cellpadding="0" cellspacing="0"
+                                                       border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="w580" width="580">
+                                                            <h2 style="color:#80C2BB; font-size:22px; padding-top:12px; font-family: "
+                                                                Lobster", cursive;">
+                                                            Notre région a du talent: </h2>
 
-                                                <div align="left" class="article-content">
-                                                    <p> Bienvenue en Lorraine! </p>
-                                                    <p style="text-align: justify;">
-                                                        Notre région regorge de personnes talentueuses, de commerçants
-                                                        qui valent le coup d"être connus. Nous vous invitons donc, à
-                                                        travers notre site et notre newsletter, à découvrir l"univers
-                                                        riche de ceux qui rendent notre région plus belle.
-                                                    </p>
-                                                </div>
+                                                            <div align="left" class="article-content">
+                                                                <p> Bienvenue en Lorraine! </p>
+                                                                <p style="text-align: justify;">
+                                                                    Notre région regorge de personnes talentueuses, de
+                                                                    commerçants qui valent le coup d"être connus. Nous
+                                                                    vous invitons donc, à travers notre site et notre
+                                                                    newsletter, à découvrir l"univers riche de ceux qui
+                                                                    rendent notre région plus belle.
+                                                                </p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w580" width="580" height="1" bgcolor="#c7c5c5"></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- fin zone -->
+
+                                                <!-- une autre zone de contenu -->
+                                                <table class="w580" width="580" cellspacing="0" cellpadding="0"
+                                                       border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td colspan="3">
+                                                            <h2 style="color:#80C2BB; font-size:22px; padding-top:12px; font-family: "
+                                                                Lobster", cursive;">
+                                                            Découvrez les dernière boutiques: </h2>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w275" width="275" valign="top">
+                                                            <div align="left" class="article-content">
+
+                                                                <ul>
+                                                                    <li> des kiwis</li>
+                                                                    <li> des chatons</li>
+                                                                    <li> des citrons</li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                        <td class="w30" width="30" class="w30"></td>
+                                                        <td class="w275" width="275" valign="top">
+                                                            <div align="left" class="article-content">
+
+                                                                <h3></h3>
+                                                                <p> Lemon drops icing croissant. Sweet cotton candy
+                                                                    macaroon gingerbread chocolate bar wafer cotton
+                                                                    candy powder sugar plum. </p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    </tbody>
+                                                </table>
+
+
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w580" width="580" height="1" bgcolor="#c7c5c5"></td>
+                                            <td class="w30" class="w30" width="30"></td>
                                         </tr>
                                         </tbody>
                                     </table>
-                                    <!-- fin zone -->
-
-                                    <!-- une autre zone de contenu -->
-                                    <table class="w580" width="580" cellspacing="0" cellpadding="0" border="0">
-                                        <tbody>
-                                        <tr>
-                                            <td colspan="3">
-                                                <h2 style="color:#80C2BB; font-size:22px; padding-top:12px; font-family: "
-                                                    Lobster", cursive;">
-                                                Découvrez les dernière boutiques: </h2>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w275" width="275" valign="top">
-                                                <div align="left" class="article-content">
-
-                                                    <ul>
-                                                        <li> des kiwis</li>
-                                                        <li> des chatons</li>
-                                                        <li> des citrons</li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                            <td class="w30" width="30" class="w30"></td>
-                                            <td class="w275" width="275" valign="top">
-                                                <div align="left" class="article-content">
-
-                                                    <!--<h3> <? /*=  */ ?></h3>-->
-                                                    <p> Lemon drops icing croissant. Sweet cotton candy macaroon
-                                                        gingerbread chocolate bar wafer cotton candy powder sugar
-                                                        plum. </p>
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                        </tbody>
-                                    </table>
-
-
                                 </td>
-                                <td class="w30" class="w30" width="30"></td>
                             </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
 
                 <!--  separateur horizontal de 15px de  haut-->
                 <tr>

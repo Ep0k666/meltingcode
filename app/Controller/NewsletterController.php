@@ -9,7 +9,7 @@ class NewsletterController extends Controller
 
     /***
      * Fonction pour page 'newsletter'
-     * Ajout des infos utlisateurs
+     * Ajout des infos utlisateurs 
      * Envoi mail de confirmation
      ***/
     public function subscribeNewsletter()

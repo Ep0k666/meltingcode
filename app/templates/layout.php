@@ -49,6 +49,11 @@
         <link rel="stylesheet" href="<?= $this->assetUrl('css/news-style.css') ?>">
     <?php endif; ?>
 
+    <!-- *** STYLE CSS NEWSLETTER*** -->
+    <?php if ($title == 'newsletter') : ?>
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/news-style.css') ?>">
+    <?php endif; ?>
+
         <!-- *** STYLE CSS CONTACT *** -->
     <?php if ($title == 'contact') : ?>
         <link rel="stylesheet" href="<?= $this->assetUrl('css/contact-style.css') ?>">
@@ -154,10 +159,12 @@
 
                 <?php if ($w_user) : ?>
 
+
                     <li><a href="<?= $this->url('account', ['id' => $w_user['id']]) ?>"><?= $w_user['firstname'] ?></a>
                     </li>
                     <li><a href="<?= $this->url('admin-shop') ?>">Boutiques</a></li>
                     <li><a href="<?= $this->url('logoff') ?>">Logout</a></li>
+
 
                     <!-- sinon on affiche les liens de connexions et d'inscription -->
                 <?php else : ?>

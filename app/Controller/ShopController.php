@@ -186,8 +186,8 @@ class ShopController extends Controller
 
                             // Insert DB
                             $insertBDD = new \Manager\ShopManager();
-                            $shopsInsert = $insertBDD->setTable('shops');
-
+                            $shopsInsert = $insertBDD->setTable('shops'); 
+                            
                             //Récupération PHP des latitudes et longitudes via api google maps
                             $params = http_build_query([
                                 'address' => $_POST['number'] . ',' . $_POST['adress'] . ',' . $_POST['zip_code'] . ',' . $_POST['city'],
@@ -374,7 +374,7 @@ class ShopController extends Controller
                                 @unlink('assets/uploads/' . $shopToEdit['logo']);
                             }
                         }
-                    }
+                    }                 
                 } // fin pour chaque file: Logo
 
                 // pour chaque file : image1
@@ -457,8 +457,8 @@ class ShopController extends Controller
                                 $moved_image2 = move_uploaded_file($_FILES['image2']['tmp_name'], $path_image2);
                             } else {
                                 /*die('dossier non existant');*/
-                            }
-
+                            }                   
+                        
                             if (!$moved_logo) {
                                 $errors['files']['moveUpload'] = true;
                             } else {
@@ -469,7 +469,7 @@ class ShopController extends Controller
                                 @unlink('assets/uploads/' . $shopToEdit['logo']);
                             }
                         }
-                    }
+                    }       
                 } // fin pour chaque file  : image2
 
                 // pour chaque file : image3
@@ -516,7 +516,7 @@ class ShopController extends Controller
                                 @unlink('assets/uploads/' . $shopToEdit['image3']);
                             }
                         }
-                    }
+                    }    
                 } // fin pour chaque file  : image3
 
 
@@ -587,7 +587,7 @@ class ShopController extends Controller
     }
     
     public function shopview($id)
-    {
+    { 
         $manager = new \Manager\ShopManager();
         $shopsCategory = $manager->getAllActivities();
         $shopManager  = new \Manager\ShopManager();

@@ -9,7 +9,7 @@ class DisplayController extends Controller
 
     /***
      * Fonction pour page "home"
-     * Shops les plus consultées
+     * Shops les plus consultées 
      * Shops les plus récents
      ***/
     public function listing()
@@ -27,7 +27,7 @@ class DisplayController extends Controller
         $activities      = $manager->getAllActivities();
 
         /*** Show to template 'home' ***/
-        $this->show('display/home',
+        $this->show('display/home', 
             [
                 'shopsMostViewed'   => $shopsMostViewed,
                 'shopsMostRecent'   => $shopsMostRecent,
@@ -37,7 +37,7 @@ class DisplayController extends Controller
 
     /***
      * Fonction pour page "search"
-     * Récupère les shops contenant le tag dans la description
+     * Récupère les shops contenant le tag dans la description 
      * Récupère les products contenant le tag dans la description
      ***/
     public function search()
@@ -55,7 +55,7 @@ class DisplayController extends Controller
             $resultShops = $manager->searchShop($tagSearch);
 
             /*** Show to template "search" ***/
-            $this->show('display/search',
+            $this->show('display/search', 
                 [
                     'resultShops'   => $resultShops,
                     'tagSearch'     => $tagSearch
@@ -67,7 +67,7 @@ class DisplayController extends Controller
     }
 
     /***
-     * Fonction pour page "detailed-search"
+     * Fonction pour page "detailed-search" 
      * Récupère les shops correspondant à la recheche effectué
      ***/
     public function detailedSearch()
@@ -111,7 +111,7 @@ class DisplayController extends Controller
     }
 
     /***
-     * Fonction pour page "home"
+     * Fonction pour page "home" 
      * Récupère les shops correspondant à l'activité choisi
      ***/
     public function shopActivity($id)
@@ -129,7 +129,7 @@ class DisplayController extends Controller
         $activities       = $manager->getAllActivities();
 
         /*** Show to template 'activity-shop' ***/
-        $this->show('shops/activity-shop',
+        $this->show('shops/activity-shop', 
             [
                 'shopByActivity' => $shopByActivity,
                 'activitySearched' => $activitySearched,
