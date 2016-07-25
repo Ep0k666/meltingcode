@@ -2,51 +2,59 @@
 
 $w_routes = array(
 
-                /*************** ---------- HOME ------------ ******************/
-    ['GET|POST',     '/', 					'Display#listing',                  'home'],
+    /*************** ---------- HOME ------------ ******************/
+    ['GET|POST', '/', 'Display#listing', 'home'],
 
-                /************** ---------- ACTIVITY ------------ ***************/
-    ['GET|POST',     '/activity/[:id]',     'Display#shopActivity',             'activity'],
+    /************** ---------- ACTIVITY ------------ ***************/
+    ['GET|POST', '/activity/[:id]', 'Display#shopActivity', 'activity'],
 
-                /************** ---------- SEARCH ------------ ***************/
-    ['GET|POST', 	'/search', 				 'Display#search', 				     'search'],
+    /************** ---------- SEARCH ------------ ***************/
+    ['GET|POST', '/search', 'Display#search', 'search'],
 
-                /************** ---------- DETAILED SEARCH ------------ ***************/
-    ['GET|POST',    '/detailed-search',      'Display#detailedSearch',           'detailed-search'],
+    /************** ---------- DETAILED SEARCH ------------ ***************/
+    ['GET|POST', '/detailed-search', 'Display#detailedSearch', 'detailed-search'],
 
-                /************** ---------- CONTACT ------------ ***************/
-    ['GET|POST', 	 '/contact', 			 'Contact#contact',				     'contact'],
+    /************** ---------- CONTACT ------------ ***************/
+    ['GET|POST', '/contact', 'Contact#contact', 'contact'],
 
-                /************** ---------- NEWSLETTER ------------ ***************/
-    ['GET|POST',     '/newsletter',          'Newsletter#subscribeNewsletter',   'newsletter'],
+    /************** ---------- NEWSLETTER ------------ ***************/
+    ['GET|POST', '/newsletter', 'Newsletter#subscribeNewsletter', 'newsletter'],
 
-                /*************** ---------- account ------------ ******************/
-    ['GET|POST',     '/account/[:id]',       'Connect#account',                  'id'],
+    /*************** ---------- account ------------ ******************/
+    ['GET|POST', '/account/[:id]', 'Connect#account', 'account'],
 
-                /************** ---------- LOGIN ------------ ***************/
-    ['GET|POST',     '/inscription',         'Connect#login',                    'login'],
+    /************** ---------- LOGIN ------------ ***************/
+    ['GET|POST', '/inscription', 'Connect#login', 'login'],
 
-                /************** ---------- CONNECT ------------ ***************/
-    ['GET|POST',     '/login',               'Connect#connexion',                'connexion'],
 
-                /*************** ---------- LOGOFF ------------ ******************/
-    ['GET|POST',     '/logout',              'Connect#logoff',                   'logoff'],
+    /************** ---------- LOST ------------ ***************/
+    ['GET|POST', '/lost/', 'ResetPass#lostPassword', 'lost'],
 
-                /*************** ---------- ADMIN BOUTIQ ------------ ******************/
-    ['GET|POST',     '/shops/admin/[:id]', 'Shop#adminHome',                     'admin-shop'],
+    /************** ---------- RESET ------------ ***************/
+    ['GET|POST', '/reset/[:tk]', 'User#UpdateUser', 'reset'],
 
-                /*************** ---------- Ajout ------------ ******************/
-    ['GET|POST',     '/shops/adding', 'Shop#shopListCategory',                   'add-shop'],
 
-                /*************** ---------- Edition ------------ ******************/
-    ['GET|POST',     '/shops/edit/[:id]',     'Shop#shopEdit',                   'edit-shop'],
+    /************** ---------- CONNECT ------------ ***************/
+    ['GET|POST', '/login', 'Connect#connexion', 'connexion'],
 
-                /*************** ---------- Suppression ------------ ******************/
-    ['GET|POST',     '/shops/delete/[:id]',   'Shop#delete',                     'delete-shop'],
+    /*************** ---------- LOGOFF ------------ ******************/
+    ['GET|POST', '/logout', 'Connect#logoff', 'logoff'],
 
-                /*************** ---------- Vue ------------ ******************/
-    ['GET|POST',     '/shopview/[:id]',     'Shop#shopview',               'shop-view'],
+    /*************** ---------- ADMIN BOUTIQ ------------ ******************/
+    ['GET|POST', '/shops/admin/[:id]', 'Shop#adminHome', 'admin-shop'],
 
-                /*************** ---------- AJAX ROAD ------------ ******************/
-    ['GET|POST',      '/ajax/path/create',        'AjaxPath#add',           'ajax_path_create'],
+    /*************** ---------- Ajout ------------ ******************/
+    ['GET|POST', '/shops/adding', 'Shop#shopListCategory', 'add-shop'],
+
+    /*************** ---------- Edition ------------ ******************/
+    ['GET|POST', '/shops/edit/[:id]', 'Shop#shopEdit', 'edit-shop'],
+
+    /*************** ---------- Suppression ------------ ******************/
+    ['GET|POST', '/shops/delete/[:id]', 'Shop#delete', 'delete-shop'],
+
+    /*************** ---------- Vue ------------ ******************/
+    ['GET|POST', '/shopview/[:id]', 'Shop#shopview', 'shop-view'],
+
+    /*************** ---------- AJAX ROAD ------------ ******************/
+    ['GET|POST', '/ajax/path/create', 'AjaxPath#add', 'ajax_path_create'],
 );

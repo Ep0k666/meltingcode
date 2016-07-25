@@ -2,7 +2,7 @@
 
 /**
  * Created by HLEHAIN.
-**/
+ **/
 namespace Controller;
 use W\Controller\Controller;
 class AjaxPathController extends Controller
@@ -13,20 +13,20 @@ class AjaxPathController extends Controller
      */
     public function add()
     {
-        if(isset($_POST['shop-add'])) {
+        if (isset($_POST['shop-add'])) {
             // récupérer le user courant
             $user_id = json_decode($_POST['user_id']);
             // créer le chemin en BDD
-        /*    $data = [
-                'id_user' => $user_id
-            ];
-            $path = (new \Model\PathModel()) -> insert($data);*/
+            /*    $data = [
+                    'id_user' => $user_id
+                ];
+                $path = (new \Model\PathModel()) -> insert($data);*/
             // créer les étapes du chemin EN BDD
             /*$pointsList = json_decode($_POST['points_to_add']);*/
             $lat = json_decode($_POST['lat']);
             $lng = json_decode($_POST['lng']);
-        
-            $manager = new \Model\PathStepModel();
+
+            $manager = new \Manager\PathStepManager();
             $manager->insert([
                 'latitude' => $lat,
                 'longitude' => $lng

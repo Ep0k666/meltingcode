@@ -27,8 +27,8 @@
                     <p class="error">le mot de passe est faux doit être spécifié</p>
                 <?php endif ?>
                 <button type="submit" name="connect" value="submit">Connexion</button>
-               <!-- <a href="<?/*= $this->url("login")*/?>">Pas encore de compte ?</a>
-                <a href="<?/*= $this->url("home")*/?>">Revenir à l'acceuil</a>-->
+               <!-- <a href="<?/*= $this->url("login")*/?>">Pas encore de compte ?</a>-->
+                <a href="<?= $this->url("lost")?>">Mot de passe oublié ?</a>
             </div>
         </form>
 

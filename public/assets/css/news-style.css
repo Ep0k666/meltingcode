@@ -3,18 +3,18 @@
 /* Police des textes */
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
 
-#subscribe_newsletter #hire{
+#subscribe_newsletter #hire {
   font-size: 62.5%;
   font-weight: 300;
   color: #B6B6B6;
   font-family: 'Titillium Web', sans-serif;
 }
 
-#subscribe_newsletter #news_gender{
+#subscribe_newsletter #news_gender {
   font-size: 20px;
 }
 
-#subscribe_newsletter #newsletter{
+#subscribe_newsletter #newsletter {
   background: #efefef;
   margin: 0px auto 120px;
   text-align: center;
@@ -76,7 +76,6 @@
   transition: all 333ms ease-in-out;
 }
 
-
 #subscribe_newsletter form .field input[type="text"],
 #subscribe_newsletter form .field textarea {
   border: none;
@@ -101,7 +100,8 @@
   -ms-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }
-#subscribe_newsletter #news_gender{
+
+#subscribe_newsletter #news_gender {
   margin-top: 30px;
 }
 #subscribe_newsletter form .field input[type="text"]:focus, #subscribe_newsletter form .field input[type="text"].focused,
@@ -130,7 +130,8 @@
   background: #313A3D;
   color: white;
 }
-#subscribe_newsletter form input[type="submit"], #subscribe_newsletter #back_home{
+
+#subscribe_newsletter form input[type="submit"], #subscribe_newsletter #back_home {
   background:#313A3D;
   color: white;
   -webkit-appearance: none;
@@ -150,84 +151,86 @@
   margin-bottom:30px;
 }
 
-#subscribe_newsletter #back_home{
+#subscribe_newsletter #back_home {
   display: block;
   width: 50%;
   margin: 120px auto 0;
   text-decoration: none;
   text-align: center;
 }
-#subscribe_newsletter form input[type="submit"]:hover, #subscribe_newsletter #back_home:hover{
+
+#subscribe_newsletter form input[type="submit"]:hover, #subscribe_newsletter #back_home:hover {
   background: #80C2BB;
   color: white;
 }
-#subscribe_newsletter form input[type="submit"]:focus, #subscribe_newsletter #back_home:focus{
+
+#subscribe_newsletter form input[type="submit"]:focus, #subscribe_newsletter #back_home:focus {
   outline: none;
   background: #D1D2D2;
 }
 
-#subscribe_newsletter form input[type="submit"]:active, #subscribe_newsletter #back_home:active{
+#subscribe_newsletter form input[type="submit"]:active, #subscribe_newsletter #back_home:active {
   outline: none;
   background: #D1D2D2;
 }
 
-#subscribe_newsletter .errors{
+#subscribe_newsletter .errors {
   font-size: 18px;
   color: #1D8C7E;
 }
 
 /* Si les infos ont été insérées en BDD */
-#subscribe_newsletter .news_success{
+#subscribe_newsletter .news_success {
   font-size:20px;
   color:#80C2BB;
   padding: 20px 0 100px 0px;
 }
 
 /*** Espace radio 'homme / femme' ***/
-#male{
+#male {
   margin-right: 50px;
 }
 
 @media (max-width: 992px) and (min-width: 768px){
 
-  #subscribe_newsletter #newsletter{
+  #subscribe_newsletter #newsletter {
     font-size: 1.2em;
   }
 
-  #subscribe_newsletter #newsletter h1{
+  #subscribe_newsletter #newsletter h1 {
     font-size: 5em;
   }
 }
 
-@media (max-width: 992px) and (min-width: 768px){
-  #subscribe_newsletter #back_home span{
+@media (max-width: 992px) and (min-width: 768px) {
+  #subscribe_newsletter #back_home span {
     display: none;
   }
 }
 
 @media (max-width: 768px) and (min-width: 500px){
 
-  #subscribe_newsletter #newsletter{
+  #subscribe_newsletter #newsletter {
     font-size: 1.2em;
     width: 95%;
   }
 
-  #subscribe_newsletter #back_home span{
+  #subscribe_newsletter #back_home span {
     display: none;
   }
 
-  #subscribe_newsletter #back_home{
+  #subscribe_newsletter #back_home {
     width: 70%;
   }
 
-  #subscribe_newsletter #hire{
+  #subscribe_newsletter #hire {
     background-color: #efefef;
   }
 }
 
 @media (max-width: 500px){
-  
-  #subscribe_newsletter #newsletter{
+
+  #subscribe_newsletter #newsletter {
     width: 100%;
     font-size: 1.2em;
     border-top: none;
@@ -236,20 +239,20 @@
     padding-top: 2px;
   }
 
-  #subscribe_newsletter #back_home span{
+  #subscribe_newsletter #back_home span {
     display: none;
   }
 
-  #subscribe_newsletter #back_home{
+  #subscribe_newsletter #back_home {
     font-size: 1em;
     width: 100%;
   }
 
-  #subscribe_newsletter form{
+  #subscribe_newsletter form {
     width: 90%;
   }
 
-  #subscribe_newsletter form .field input[type="text"], form .field textarea{
+  #subscribe_newsletter form .field input[type="text"], form .field textarea {
     width: 100%;
   }
 }

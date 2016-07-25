@@ -10,7 +10,6 @@
 
 /* Icones pour le footer */
 @import url(http://weloveiconfonts.com/api/?family=entypo);
-
 /* Police liens low_nav */
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
 /*****************************
@@ -38,9 +37,9 @@ body #high_nav{
 
 /*** DESKTOP ***/
 #low_nav_desktop{
-	background-color: #FFF;
+    background-color: #FFF;
 	overflow: hidden;
-	border-bottom: 1px solid #D4C6C6;
+    border-bottom: 1px solid #D4C6C6;
 }
 
 #low_nav_desktop ul{
@@ -53,85 +52,85 @@ body #high_nav{
 	display: block;
 	color: #1A1717;
 	text-decoration: none;
-	padding: 20px 3.24%;
-	text-transform: uppercase;
+    padding: 20px 3.24%;
+    text-transform: uppercase;
 	transform: rotate(0deg);
 	float: left;
-	box-sizing: border-box;
-	font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 	font-size: 16px;
-	font-weight: 400;
+    font-weight: 400;
 }
 
-#low_nav_desktop ul li:first-of-type a{
-	border-left: 1px solid #D4C6C6;
+#low_nav_desktop ul li:first-of-type a {
+    border-left: 1px solid #D4C6C6;
 }
 
-#low_nav_desktop ul li:last-of-type a{
-	border-right: 1px solid #D4C6C6;
+#low_nav_desktop ul li:last-of-type a {
+    border-right: 1px solid #D4C6C6;
 }
 
-#low_nav_desktop ul li:nth-child(1) a:hover{
-	color: #BE27DA;
-	border-bottom: 5px solid #BE27DA;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(1) a:hover {
+    color: #BE27DA;
+    border-bottom: 5px solid #BE27DA;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(2) a:hover{
-	color: #7DD82D;
-	border-bottom: 5px solid #7DD82D;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(2) a:hover {
+    color: #7DD82D;
+    border-bottom: 5px solid #7DD82D;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(3) a:hover{
-	color: #1504FB;
-	border-bottom: 5px solid #1504FB;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(3) a:hover {
+    color: #1504FB;
+    border-bottom: 5px solid #1504FB;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(4) a:hover{
-	color: #FB6704;
-	border-bottom: 5px solid #FB6704;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(4) a:hover {
+    color: #FB6704;
+    border-bottom: 5px solid #FB6704;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(5) a:hover{
-	color: #E4E623;
-	border-bottom: 5px solid #E4E623;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(5) a:hover {
+    color: #E4E623;
+    border-bottom: 5px solid #E4E623;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(6) a:hover{
-	color: #31C813;
-	border-bottom: 5px solid #31C813;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(6) a:hover {
+    color: #31C813;
+    border-bottom: 5px solid #31C813;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(7) a:hover{
-	color: #16C7A4;
-	border-bottom: 5px solid #16C7A4;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(7) a:hover {
+    color: #16C7A4;
+    border-bottom: 5px solid #16C7A4;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(8) a:hover{
-	color: #F6FF00;
-	border-bottom: 5px solid #F6FF00;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(8) a:hover {
+    color: #F6FF00;
+    border-bottom: 5px solid #F6FF00;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(9) a:hover{
-	color: #FB0444;
-	border-bottom: 5px solid #FB0444;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(9) a:hover {
+    color: #FB0444;
+    border-bottom: 5px solid #FB0444;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
 @keyframes taihitienneQuiDanse{
@@ -203,9 +202,9 @@ body #high_nav{
 	display: block;
 }
 
-.shop_discovery a{
-	text-decoration: none;
-	color: #FFF;
+.shop_discovery a {
+    text-decoration: none;
+    color: #FFF;
 }
 
 #activity_shop h3, #about_us h3 {
@@ -223,8 +222,8 @@ body #high_nav{
 	color:#80C2BB;
 }
 
-#activity_shop{
-	min-height: 450px;
+#activity_shop {
+    min-height: 450px;
 }
 
 #activity_shop h4{
@@ -245,18 +244,18 @@ body #high_nav{
 .shop_discovery{
 	float: left;
 	width: 33.33%;
-	min-height: 440px;
+    min-height: 440px;
 }
 
-.img_shop_discovery{
-	background-position: center;
-	background-size: cover;
-	width: 85%;
+.img_shop_discovery {
+    background-position: center;
+    background-size: cover;
+    width: 85%;
 	height: 200px;
-	margin: auto;
+    margin: auto;
 }
 
-.img_shop_discovery:hover{
+.img_shop_discovery:hover {
 	background-color:#80C2BB;
 	opacity:0.5; 
 }
@@ -413,7 +412,7 @@ footer p{
 
 	/** Links category **/
 	#low_nav_desktop ul li a{
-		padding: 10px 3%;
+        padding: 10px 3%;
 	}
 
 	.at-grid{
@@ -439,10 +438,10 @@ footer p{
 		display: block;
 	}
 
-	#home #low_nav_mobile{
+    #home #low_nav_mobile {
 		display: block;
-		font-size: 16px;
-		font-family: 'Titillium Web', sans-serif;
+        font-size: 16px;
+        font-family: 'Titillium Web', sans-serif;
 	}
 
 	/*** Titre avec bordure séparation ***/
@@ -454,12 +453,12 @@ footer p{
 
 	/*** Description shops discovery ***/
 	.shop_discovery p{
-		padding: 30px 20px;
+        padding: 30px 20px;
 	}
 
 	.shop_discovery{
 		width: 50%;
-		min-height: 460px;
+        min-height: 460px;
 	}
 
 	#activity_shop img{
@@ -510,10 +509,10 @@ footer p{
 
 	.shop_discovery{
 		width: 100%;
-	}
+    }
 
-	.shop_title{
-		font-size: 25px;
+    .shop_title {
+        font-size: 25px;
 	}
 
 	#activity_shop img{

@@ -12,7 +12,7 @@
 
 		<div class="bordure1"></div>
 
-			<!-- *** Titre du tag recherché *** -->
+            <!-- *** Titre du tag recherché *** -->
 			<h3>Résultat de recherche pour : <?= $tagSearch ?></h3>
 
 			<?php foreach($resultShops as $shop): ?>
@@ -21,21 +21,21 @@
 
 					<!-- ** Définition du lien pour chaque image ** -->
 					<?php
-						$path = $shop['pictshop1'];
-						$img  = $this->assetUrl('uploads/'.$path);
+                    $path = $shop['pictshop1'];
+                    $img = $this->assetUrl('uploads/' . $path);
 					?>
 
-					<!-- *** Image Shop *** -->
-					<a href="<?= $this->url('shop-view', ['id' => $shop['id']])?>">
-						<div class="img_shop_discovery" style="background-image: url('<?= $img ?>');">
+                    <!-- *** Image Shop *** -->
+                    <a href="<?= $this->url('shop-view', ['id' => $shop['id']]) ?>">
+                        <div class="img_shop_discovery" style="background-image: url('<?= $img ?>');">
 
-							<!-- *** Name Shop *** -->
-							<h4 class="shop_title"><?= $shop['name'] ?></h4>
+                            <!-- *** Name Shop *** -->
+                            <h4 class="shop_title"><?= $shop['name'] ?></h4>
 
-						</div>
-					</a>
+                        </div>
+                    </a>
 
-					<!-- *** Shop Description *** -->
+                    <!-- *** Shop Description *** -->
 					<p class="shop_description"><?= substr($shop['description'], 0, 250)." [...]"; ?></p>
 
 				</article>

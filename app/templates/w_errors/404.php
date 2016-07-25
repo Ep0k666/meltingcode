@@ -25,7 +25,11 @@
         text-align: center;
 
     }
-
+    .error a {
+        font-size: 1.7em;
+        margin: 1.2em .5em;
+        color: rgba(128, 194, 187, 0.6);
+    }
     footer{
         display: none;
     }
@@ -34,5 +38,6 @@
 <div class="error">
     <h1>404</h1>
     <h2>Zut alors! Page Introuvable</h2>
+    <a href="<?= $this->url("home")?>">--> Revenir à l'acceuil</a><br>
 </div>
 <?php $this->stop('main_content'); ?>

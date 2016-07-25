@@ -28,7 +28,7 @@ abstract class Manager
 
 	/**
 	 * Déduit le nom de la table en fonction du nom du Manager enfant
-	 * @return W\Manager $this
+	 * @return Manager $this
 	 */
 	private function setTableFromClassName()
 	{
@@ -50,17 +50,6 @@ abstract class Manager
 	}
 
 	/**
-	 * Définit le nom de la table (si le nom déduit ne convient pas)
-	 * @param string $table Nom de la table
-	 * @return W\Manager $this
-	 */
-	public function setTable($table)
-	{
-		$this->table = $table;
-		return $this;
-	}
-
-	/**
 	 * Retourne le nom de la table associée à ce gestionnaire
 	 * @return string Le nom de la table
 	 */
@@ -70,13 +59,13 @@ abstract class Manager
 	}
 
 	/**
-	 * Définit le nom de la clef primaire
-	 * @param string $primaryKey Nom de la clef primaire de la table
-	 * @return W\Manager $this
+	 * Définit le nom de la table (si le nom déduit ne convient pas)
+	 * @param string $table Nom de la table
+	 * @return Manager $this
 	 */
-	public function setPrimaryKey($primaryKey)
+	public function setTable($table)
 	{
-		$this->primaryKey = $primaryKey;
+		$this->table = $table;
 		return $this;
 	}
 
@@ -90,22 +79,14 @@ abstract class Manager
 	}
 
 	/**
-	 * Récupère une ligne de la table en fonction d'un identifiant
-	 * @param  integer Identifiant
-	 * @return mixed Les données sous forme de tableau associatif
+	 * Définit le nom de la clef primaire
+	 * @param string $primaryKey Nom de la clef primaire de la table
+	 * @return Manager $this
 	 */
-	public function find($id)
+	public function setPrimaryKey($primaryKey)
 	{
-		if (!is_numeric($id)){
-			return false;
-		}
-
-		$sql = "SELECT * FROM " . $this->table . " WHERE $this->primaryKey = :id LIMIT 1";
-		$sth = $this->dbh->prepare($sql);
-		$sth->bindValue(":id", $id);
-		$sth->execute();
-
-		return $sth->fetch();
+		$this->primaryKey = $primaryKey;
+		return $this;
 	}
 
 	/**
@@ -200,6 +181,34 @@ abstract class Manager
 	}
 
 	/**
+	 * Récupère une ligne de la table en fonction d'un identifiant
+	 * @param  integer Identifiant
+	 * @return mixed Les données sous forme de tableau associatif
+	 */
+	public function find($id)
+	{
+		if (!is_numeric($id)){
+			return false;
+		}
+
+		$sql = "SELECT * FROM " . $this->table . " WHERE $this->primaryKey = :id LIMIT 1";
+		$sth = $this->dbh->prepare($sql);
+		$sth->bindValue(":id", $id);
+		$sth->execute();
+
+		return $sth->fetch();
+	}
+
+	/**
+	 * Retourne l'identifiant de la dernière ligne insérée
+	 * @return int L'identifiant
+	 */
+	public function lastInsertId()
+	{
+		return $this->dbh->lastInsertId();
+	}
+
+	/**
 	 * Modifie une ligne en fonction d'un identifiant
 	 * @param array $data Un tableau associatif de valeurs à insérer
 	 * @param mixed $id L'identifiant de la ligne à modifier
@@ -211,7 +220,7 @@ abstract class Manager
 		if (!is_numeric($id)){
 			return false;
 		}
-		
+
 		$sql = "UPDATE " . $this->table . " SET ";
 		foreach($data as $key => $value){
 			$sql .= "$key = :$key, ";
@@ -232,12 +241,4 @@ abstract class Manager
 		return $this->find($id);
 	}
 
-	/**
-	 * Retourne l'identifiant de la dernière ligne insérée
-	 * @return int L'identifiant
-	 */
-	public function lastInsertId()
-	{
-		return $this->dbh->lastInsertId();
-	}
 }

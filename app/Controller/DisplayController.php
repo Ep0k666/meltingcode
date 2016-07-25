@@ -8,7 +8,7 @@ class DisplayController extends Controller
 {
 
     /***
-     * Fonction pour page "home" 
+     * Fonction pour page "home"
      * Shops les plus consultées 
      * Shops les plus récents
      ***/
@@ -25,7 +25,7 @@ class DisplayController extends Controller
 
         /*** Toutes les activités des shops ***/
         $activities      = $manager->getAllActivities();
-        
+
         /*** Show to template 'home' ***/
         $this->show('display/home', 
             [
@@ -36,7 +36,7 @@ class DisplayController extends Controller
     }
 
     /***
-     * Fonction pour page "search" 
+     * Fonction pour page "search"
      * Récupère les shops contenant le tag dans la description 
      * Récupère les products contenant le tag dans la description
      ***/
@@ -44,7 +44,7 @@ class DisplayController extends Controller
     {
         /*** Search Manager ***/
         $manager = new \Manager\SearchManager();
-        
+
         /*** Si le formulaire de recherche a été soumi ***/
         if(isset($_POST['search_submit'])){
 
@@ -80,15 +80,14 @@ class DisplayController extends Controller
 
         /*** Récupère tous les noms d'activités ***/
         $activities       = $shopManager->getAllActivities();
-        
-        
+
 
         /*** Si le formulaire n'a pas été soumi ***/
-        
-        
+
+
         $this->show('display/detailed-search', [
             'activities' => $activities
-            ]);
+        ]);
 
         /*** Si le formulaire de recherche détaillée a été soumi ***/
         if(isset($_POST['search_detailed']))
@@ -102,13 +101,13 @@ class DisplayController extends Controller
             /*** Enregistrement des catégories si existantes ***/
             foreach($activities as $activity)
             {
-                if(isset($_POST['$activity["name_id"]']))
-                {
-                    $ . $_POST['activity']
-                }
+                /* if(isset($_POST['$activity["name_id"]']))
+                 {
+                     $ . $_POST['activity']
+                 }*/
             }
         }
-        
+
     }
 
     /***
@@ -132,9 +131,9 @@ class DisplayController extends Controller
         /*** Show to template 'activity-shop' ***/
         $this->show('shops/activity-shop', 
             [
-            'shopByActivity'   => $shopByActivity,
-            'activitySearched' => $activitySearched,
-            'activities'       => $activities
+                'shopByActivity' => $shopByActivity,
+                'activitySearched' => $activitySearched,
+                'activities' => $activities
             ]);
     }
 }

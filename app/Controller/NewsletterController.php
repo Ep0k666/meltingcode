@@ -8,7 +8,7 @@ class NewsletterController extends Controller
 {
 
     /***
-     * Fonction pour page 'newsletter' 
+     * Fonction pour page 'newsletter'
      * Ajout des infos utlisateurs 
      * Envoi mail de confirmation
      ***/
@@ -17,7 +17,7 @@ class NewsletterController extends Controller
 
         /*** Si le formualire de souscription à la news a été soumi ***/
         if(isset($_POST['news-submit'])){
-            
+
             /*** Newsletter Manager ***/
             $manager = new \Manager\NewsletterManager();
 
@@ -25,7 +25,7 @@ class NewsletterController extends Controller
             $lastname   = trim(htmlspecialchars($_POST['lastname']));
             $firstname  = trim(htmlspecialchars($_POST['firstname']));
             $age        = trim(htmlspecialchars($_POST['age']));
-            $mail      = filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL);
+            $mail = filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL);
             $gender     = $_POST['gender'];
 
             // Gestion des erreurs
@@ -36,119 +36,108 @@ class NewsletterController extends Controller
 
 
             /********************
-                  LASTNAME 
+             * LASTNAME
              ********************/
 
             /*** Too Short ***/
-            if(strlen($lastname) < 3)
-            {
+            if (strlen($lastname) < 3) {
                 $errors['lastname']['tooShort'] = '
                     <p class="errors">Le nom doit contenir au moins 3 caractères</p>';
             }
 
             /*** Too Long ***/
-            if(strlen($lastname) >= 50)
-            {
+            if (strlen($lastname) >= 50) {
                 $errors['lastname']['tooLong'] = '
                     <p class="errors">Le nom ne peut pas contenir plus de 100 caractères</p>';
             }
 
             /*** Integer ***/
-            if(filter_var($lastname, FILTER_VALIDATE_INT))
-            {
+            if (filter_var($lastname, FILTER_VALIDATE_INT)) {
                 $errors['lastname']['int'] = '
                     <p class="errors">Le nom ne peut pas contenir de chiffres</p>';
             }
 
 
             /********************
-                  FIRSTNAME 
+             * FIRSTNAME
              ********************/
 
             /*** Too Short ***/
-            if(strlen($firstname) < 3)
-            {
+            if (strlen($firstname) < 3) {
                 $errors['firstname']['tooShort'] = '
                     <p class="errors">Le prénom doit contenir au moins 3 caractères</p>';
             }
 
             /*** Integer ***/
-            if(filter_var($firstname, FILTER_VALIDATE_INT))
-            {
+            if (filter_var($firstname, FILTER_VALIDATE_INT)) {
                 $errors['firstname']['int'] = '
                     <p class="errors">Le nom ne peut pas contenir de chiffres</p>';
             }
 
             /*** Too Long ***/
-            if(strlen($firstname) >= 50)
-            {
+            if (strlen($firstname) >= 50) {
                 $errors['firstname']['tooLong'] = '
                     <p class="errors">Le prénom ne peut pas contenir plus de 100 caractères</p>';
             }
 
 
             /********************
-                      AGE 
+             * AGE
              ********************/
 
             /*** Empty ***/
-            if(empty($age))
-            {
+            if (empty($age)) {
                 $errors['age']['empty'] = '
                     <p class="errors">L\'âge doit être spécifié</p>';
             }
 
             /*** Too Long ***/
-            if(strlen($age) >= 3)
-            {
+            if (strlen($age) >= 3) {
                 $errors['age']['tooLong'] = '
                     <p class="errors">L\'âge ne peut pas contenir plus de 2 caractères</p>';
             }
 
 
             /********************
-                    EMAIL 
+             * EMAIL
              ********************/
 
             /*** Too  Short ***/
-            if(strlen($mail) <= 8)
-            {
+            if (strlen($mail) <= 8) {
                 $errors['mail']['tooShort'] = '
                     <p class="errors">Le mail doit contenir au moins 8 caractères</p>';
             }
 
             /*** Too Long ***/
-            if(strlen($mail) >= 50)
-            {
+            if (strlen($mail) >= 50) {
                 $errors['mail']['tooLong'] = '
                     <p class="errors">Le mail ne peut pas contenir plus de 50 caractères</p>';
             }
 
             /*** Invalid format ***/
-            if(!filter_var($mail, FILTER_VALIDATE_EMAIL))
-            {
+            if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
                 $errors['mail']['format'] = '
                     <p class="errors">Le mail doit avoir ce format : adresse@mail.com</p>';
             }
 
             /*** Email exist ***/
-            if($manager->emailExists($mail)){
+            if ($manager->emailExists($mail)) {
                 $errors['mail']['exist'] = '
                     <p class="errors">Ce mail existe déjà</p>';
             }
 
             // Si aucune erreurs dans le tableau $errors
-            if(count($errors) === 0){
+            if (count($errors) === 0) {
 
                 /*** Address pour confirmation ***/
-                $addressUserConf    = $mail;
+                $addressUserConf = $mail;
 
                 /*** Sujet confirmation ***/
-                $subjectConf        = 'Votre inscription à la newsletter Lor\'N Shop';
+                $subjectConf = 'Votre inscription à la newsletter Lor\'N Shop';
 
                 // Déclaration des valeurs de "semaines"
-                $thisWeek   = date('Y-m-d');
-                $lastWeek   = date('Y-m-d', strtotime('-1 week'));
+                $thisWeek = date('Y-m-d');
+                $lastWeek = date('Y-m-d', strtotime('-1 week'));
 
                 /*** Début du contenu HTML ***/
                 $contentConfHtml = '
@@ -319,11 +308,11 @@ class NewsletterController extends Controller
 
                 // Déclaration de data []
                 $data = [
-                'lastname'  => $lastname,
-                'firstname' => $firstname,
-                'age'       => $age,
-                'mail'     => $mail,
-                'gender'    => $gender,
+                    'lastname' => $lastname,
+                    'firstname' => $firstname,
+                    'age' => $age,
+                    'mail' => $mail,
+                    'gender' => $gender,
                 ];
 
                 /*** Insertion en DB des infos utilisateurs ***/
@@ -335,18 +324,52 @@ class NewsletterController extends Controller
                 /*** Show to template 'newsletter' ***/
                 $this->show('display/newsletter', ['infoInserted' => $infoInserted]);
 
-            } 
-
-            /*** S'il y des erreurs show to template 'newsletter' + $errors[] ***/
+            } /*** S'il y des erreurs show to template 'newsletter' + $errors[] ***/
             else{
                 $this->show('display/newsletter',['errors' => $errors]);
             }
-        }
-
-        /*** Sinon j'affiche newsletter ***/
+        } /*** Sinon j'affiche newsletter ***/
         else{
             $this->show('display/newsletter');
         }
+    }
+
+    /***
+     * Fonction d'envoi de mail
+     * Envoi mail de confirmation
+     * Envoi newsletter
+     ***/
+    public function sendMail($address, $subject, $contentHtml, $contentNoHtml, $recentShops = null)
+    {
+        $mail = new \PHPMailer();
+
+        $mail->isSMTP();                                        // On va se servir de SMTP
+        $mail->Host = 'smtp.gmail.com';                         // Serveur SMTP
+        $mail->SMTPAuth = true;                                 // Active l'autentification SMTP
+        $mail->Username = 'lor.n.shops@gmail.com';              // SMTP username
+        $mail->Password = '1esquimauentongs%';                  // SMTP password
+        $mail->SMTPSecure = 'tls';                              // TLS Mode
+        $mail->Port = 587;                                      // Port TCP à utiliser
+
+
+        /*** Username, sender et setform doivent être identiques pour Gmail ***/
+        $mail->Sender = 'lor.n.shops@gmail.com';
+        $mail->setFrom('lor.n.shops@gmail.com', $subject, false);
+
+        // Ajouter un destinataire
+        // Boucle foreach pour chaque user
+
+        $mail->addAddress($address);                          // Le nom est optionnel
+
+        $mail->addReplyTo($address);
+
+        $mail->isHTML(true);                                     // Set email format to HTML
+
+        $mail->Subject = $subject;
+        $mail->Body = $contentHtml;
+        $mail->AltBody = $contentNoHtml;
+
+        $mail->send();
     }
 
     /***
@@ -363,20 +386,20 @@ class NewsletterController extends Controller
         $usersNews = $manager->findAll();
 
         /*** Récupération des infos utilisateurs ***/
-        foreach($usersNews as $userNews){
-            $firstnameUsersNews  = $userNews['firstname'];
-            $lastnameUsersNews   = $userNews['lastname'];
-            $addressUsersNews    = $userNews['mail'];
+        foreach ($usersNews as $userNews) {
+            $firstnameUsersNews = $userNews['firstname'];
+            $lastnameUsersNews = $userNews['lastname'];
+            $addressUsersNews = $userNews['mail'];
         }
 
         /*** Date du week end en cours ***/
-        $thisWeek   = date('Y-m-d');
+        $thisWeek = date('Y-m-d');
 
         /*** Date du week end dernier ***/
-        $lastWeek   = date('Y-m-d', strtotime('-1 week'));
+        $lastWeek = date('Y-m-d', strtotime('-1 week'));
 
         /*** Sujet confirmation ***/
-        $subjectNews        = 'Votre newsletter Lor\'N Shop';
+        $subjectNews = 'Votre newsletter Lor\'N Shop';
 
         /*** Récupération boutiques ajoutés pendant la semaine ***/
         $recentShops = $manager->getShopsRecent($thisWeek, $lastWeek);
@@ -498,21 +521,21 @@ class NewsletterController extends Controller
                                                                                     </tr>
                                                                                         
                                                                                     ';
-    /***** ------- FIN DU DEBUT DU CONTENU HTML -------- ******/
+        /***** ------- FIN DU DEBUT DU CONTENU HTML -------- ******/
 
 
-    /***** ------- ELEMENT DU CONTENU HTML ------------- ******/
+        /***** ------- ELEMENT DU CONTENU HTML ------------- ******/
 
-                $eltContentNewsConfHtml = '';
+        $eltContentNewsConfHtml = '';
 
-                    foreach($recentShops as $shop){
+        foreach ($recentShops as $shop) {
 
-                /*** Chemin par URL pour l'image de la boutique ***/
-                $pathImage = $shop['logo'];
+            /*** Chemin par URL pour l'image de la boutique ***/
+            $pathImage = $shop['logo'];
 
-                /*** Ajout de chaque article pour les boutiques de la semaine ***/
-                $eltContentNewsHtml .= 
-                                                                                            '<tr>
+            /*** Ajout de chaque article pour les boutiques de la semaine ***/
+            $eltContentNewsHtml .=
+                '<tr>
                                                                                                 <td class="w275"  width="275" valign="top">
 
                                                                                                     <div align="left" class="article-content">
@@ -524,19 +547,19 @@ class NewsletterController extends Controller
                                                                                                     <div align="left" class="article-content">
                                                                                                         
                                                                                                         <h3>' . $shop["name"] . '</h3>
-                                                                                                        <p>' . substr($shop['description'], 0, 250).' <a href="#" class="link_read_more">Lire la suite ...</a>' . 
-                                                                                                        '</p>
+                                                                                                        <p>' . substr($shop['description'], 0, 250) . ' <a href="#" class="link_read_more">Lire la suite ...</a>' .
+                '</p>
                                                                                                     </div>
                                                                                                 </td>
                                                                                             </tr>
                                                                                             <tr>
                                                                                                 <td class="w580"  width="580" height="1" bgcolor="#c7c5c5"></td>
                                                                                             </tr>';
-                                                                                    }
+        }
 
-    /******* ------------- FIN DU DEBUT DU CONTENU HTML ---------------- ********/
-                $endContentNewsHtml = 
-                                                                '</tbody>
+        /******* ------------- FIN DU DEBUT DU CONTENU HTML ---------------- ********/
+        $endContentNewsHtml =
+            '</tbody>
                                                             </table>
 
                                                                            
@@ -590,51 +613,13 @@ class NewsletterController extends Controller
                         </body>
                     </html>';
 
-    /*** Concaténation de l'ensemble des éléments News Html ***/
-    $startContentNewsHtml .= $eltContentNewsHtml;
-    $startContentNewsHtml .= $endContentNewsHtml;
-    $contentNewsHtml       = $startContentNewsHtml;
+        /*** Concaténation de l'ensemble des éléments News Html ***/
+        $startContentNewsHtml .= $eltContentNewsHtml;
+        $startContentNewsHtml .= $endContentNewsHtml;
+        $contentNewsHtml = $startContentNewsHtml;
 
-    /*** Envoi de l'email newsletter à chaque utilisateurs abonnés ***/
-    $this->sendMail($addressUsersNews, $firstnameUsersNews, $subjectNews, $contentNewsHtml, $contentNewsHtml);
+        /*** Envoi de l'email newsletter à chaque utilisateurs abonnés ***/
+        $this->sendMail($addressUsersNews, $firstnameUsersNews, $subjectNews, $contentNewsHtml, $contentNewsHtml);
 
-    }
-    
-    /***
-     * Fonction d'envoi de mail
-     * Envoi mail de confirmation
-     * Envoi newsletter 
-     ***/
-    public function sendMail($address, $subject, $contentHtml, $contentNoHtml, $recentShops = null)
-    {
-        $mail = new \PHPMailer();
-
-        $mail->isSMTP();                                        // On va se servir de SMTP
-        $mail->Host = 'smtp.gmail.com';                         // Serveur SMTP
-        $mail->SMTPAuth = true;                                 // Active l'autentification SMTP
-        $mail->Username = 'lor.n.shops@gmail.com';              // SMTP username
-        $mail->Password = '1esquimauentongs%';                  // SMTP password
-        $mail->SMTPSecure = 'tls';                              // TLS Mode
-        $mail->Port = 587;                                      // Port TCP à utiliser
-
-
-        /*** Username, sender et setform doivent être identiques pour Gmail ***/
-        $mail->Sender='lor.n.shops@gmail.com';
-        $mail->setFrom('lor.n.shops@gmail.com', $subject, false);  
-
-        // Ajouter un destinataire
-        // Boucle foreach pour chaque user
-        
-            $mail->addAddress($address);                          // Le nom est optionnel
-        
-            $mail->addReplyTo($address);
-
-        $mail->isHTML(true);                                     // Set email format to HTML
-
-        $mail->Subject = $subject;
-        $mail->Body    = $contentHtml;
-        $mail->AltBody = $contentNoHtml;
-
-        $mail->send();
     }
 }

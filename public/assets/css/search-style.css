@@ -37,7 +37,7 @@
 	display: block;
 }
 
-.shop_discovery a{
+.shop_discovery a {
 	text-decoration: none;
 	color: #FFF;
 }
@@ -78,7 +78,7 @@
 	min-height: 440px;
 }
 
-.img_shop_discovery{
+.img_shop_discovery {
 	background-position: center;
 	background-size: cover;
 	width: 85%;
@@ -86,7 +86,7 @@
 	margin: auto;
 }
 
-.img_shop_discovery:hover{
+.img_shop_discovery:hover {
 	background-color:#80C2BB;
 	opacity:0.5; 
 }
@@ -305,8 +305,8 @@
 		width: 100%;
 		min-height: 460px;
 	}
-	
-	.shop_title{
+
+	.shop_title {
 		font-size: 25px;
 	}
 

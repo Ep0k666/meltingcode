@@ -31,51 +31,45 @@ class ContactController extends Controller
             $msgInserted = false;
 
             /**************
-                  NAME
+             * NAME
              **************/
 
             /* Vérif name integer */
-            if(filter_var($name, FILTER_VALIDATE_INT))
-            {
+            if (filter_var($name, FILTER_VALIDATE_INT)) {
                 $errors['name']['int'] = '
                     <p class="errors">Le nom ne peut pas contenir de chiffres</p>';
             }
 
             /* Vérif name tooShort */
-            if(strlen($name) < 3)
-            {
+            if (strlen($name) < 3) {
                 $errors['name']['tooShort'] = '
                     <p class="errors">Le nom doit contenir au moins 3 caractères</p>';
             }
 
             /* Vérif name tooLong */
-            if(strlen($name) > 50)
-            {
+            if (strlen($name) > 50) {
                 $errors['name']['tooLong'] = '
                     <p class="errors">Le nom ne peut pas contenir plus de 100 caractères</p>';
             }
 
             /**************
-                  EMAIL
+             * EMAIL
              **************/
 
             /* Vérif mail format mail */
-            if(!filter_var($mail, FILTER_VALIDATE_EMAIL))
-            {
+            if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
                 $errors['mail']['format'] = '
                     <p class="errors">Le mail doit avoir ce format : adresse@mail.com</p>';
             }
 
             /* Vérif name tooShort */
-            if(strlen($mail) < 8)
-            {
+            if (strlen($mail) < 8) {
                 $errors['mail']['tooShort'] = '
                     <p class="errors">Le mail doit contenir au moins 8 caractères</p>';
             }
 
             /* Vérif mail tooLong */
-            if(strlen($mail) > 50)
-            {
+            if (strlen($mail) > 50) {
                 $errors['mail']['tooLong'] = '
                     <p class="errors">Le mail ne peut pas contenir plus de 50 caractères</p>';
             }
@@ -85,22 +79,19 @@ class ContactController extends Controller
              **************/
 
             /* Vérif message tooShort */
-            if(strlen($message) < 20)
-            {
+            if (strlen($message) < 20) {
                 $errors['message']['tooShort'] = '
                     <p class="errors">Le message doit contenir au moins 20 caractères</p>';
             }
 
             /* Vérif message tooLong */
-            if(strlen($message) > 750)
-            {
+            if (strlen($message) > 750) {
                 $errors['message']['tooLong'] = '
                     <p class="errors">Le message ne peut pas contenir plus de 750 caractères</p>';
             }
 
             /** Si 0 erreurs dans $errors **/
-            if(count($errors) === 0)
-            {
+            if (count($errors) === 0) {
                 /*** Contact Manager ***/
                 $manager = new \Manager\ContactManager();
 
@@ -122,11 +113,8 @@ class ContactController extends Controller
 
                 /*** Show to template 'contact' ***/
                 $this->show('display/contact', ['msgInserted' => $msgInserted]);
-            }
-        
-            /** Si les champs comportent des erreurs **/
-            else
-            {
+            } /** Si les champs comportent des erreurs **/
+            else {
                 /*** Contact Manager ***/
                 $mangager = new \Manager\ContactManager();
 
@@ -134,11 +122,9 @@ class ContactController extends Controller
                 $this->show('display/contact', ['errors' => $errors]);
             }
 
-        } 
-
-        /*** Si le formulaire n'a pas été soumi ***/
+        } /*** Si le formulaire n'a pas été soumi ***/
         else{
-            
+
             /*** Contact Manager ***/
             $manager =  new \Manager\ContactManager();
 
