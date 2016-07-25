@@ -101,10 +101,10 @@ class DisplayController extends Controller
             /*** Enregistrement des catégories si existantes ***/
             foreach($activities as $activity)
             {
-                if(isset($_POST['$activity["name_id"]']))
-                {
-                    $ . $_POST['activity']
-                }
+                /* if(isset($_POST['$activity["name_id"]']))
+                 {
+                     $ . $_POST['activity']
+                 }*/
             }
         }
 

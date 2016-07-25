@@ -14,25 +14,25 @@ class UserController extends Controller
         if (isset($_POST['edit-user'])) {
 
 
-            //     if (isset($_POST['login'])
+            if (isset($_POST['login'])
 
-//                && !empty($_POST['pass'])
-//                && !empty($_POST['mail'])
-//                && !empty($_POST['firstname'])
-//                && !empty($_POST['lastname'])
-//                && !empty($_POST['company'])
+                && !empty($_POST['pass'])
+                && !empty($_POST['mail'])
+                && !empty($_POST['firstname'])
+                && !empty($_POST['lastname'])
+                && !empty($_POST['company'])
 
-//                && (isset($_POST['login'])
-//                   && isset($_POST['pass'])
-//                    && isset($_POST['mail'])
-//                    && isset($_POST['firstname'])
-//                    && isset($_POST['lastname'])
-//                    && isset($_POST['company']))
-            //)
+                && (isset($_POST['login'])
+                    && isset($_POST['pass'])
+                    && isset($_POST['mail'])
+                    && isset($_POST['firstname'])
+                    && isset($_POST['lastname'])
+                    && isset($_POST['company']))
+            )
 
 
-            $usersManager = new \Manager\UserManager();
-            $usersManager->setTable('user');
+                $usersManager1 = new \Manager\UserManager();
+            $usersManager1->setTable('users');
             $data = [
                 'login' => htmlspecialchars($_POST['login'], FILTER_SANITIZE_FULL_SPECIAL_CHARS),
                 'password' => htmlspecialchars(password_hash($_POST['pass'], PASSWORD_DEFAULT)),
@@ -43,7 +43,7 @@ class UserController extends Controller
                 'role' => 'editeur',
             ];
 
-            $usersManager->update($data, $id);
+            $usersManager1->update($data, $id);
             $this->redirectToRoute('account');
 
 

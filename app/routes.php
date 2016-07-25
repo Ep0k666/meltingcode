@@ -21,10 +21,16 @@ $w_routes = array(
     ['GET|POST', '/newsletter', 'Newsletter#subscribeNewsletter', 'newsletter'],
 
     /*************** ---------- account ------------ ******************/
-    ['GET|POST', '/account/[:id]', 'Connect#account', 'id'],
+    ['GET|POST', '/account/[:id]', 'Connect#account', 'account'],
 
     /************** ---------- LOGIN ------------ ***************/
     ['GET|POST', '/inscription', 'Connect#login', 'login'],
+
+    /************** ---------- LOST ------------ ***************/
+    ['GET|POST', '/lost/', 'ResetPass#lostPassword', 'lost'],
+
+    /************** ---------- RESET ------------ ***************/
+    ['GET|POST', '/reset/[:tk]', 'User#UpdateUser', 'reset'],
 
     /************** ---------- CONNECT ------------ ***************/
     ['GET|POST', '/login', 'Connect#connexion', 'connexion'],

@@ -39,6 +39,11 @@
         <link rel="stylesheet" href="<?= $this->assetUrl('css/home-style.css') ?>">
     <?php endif; ?>
 
+    <!-- *** STYLE CSS Login PAge *** -->
+    <?php if ($title == 'login'): ?>
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/account-user.css') ?>">
+    <?php endif; ?>
+
     <!-- *** STYLE CSS NEWSLETTER*** -->
     <?php if ($title == 'newsletter') : ?>
         <link rel="stylesheet" href="<?= $this->assetUrl('css/news-style.css') ?>">
@@ -149,7 +154,8 @@
 
                 <?php if ($w_user) : ?>
 
-                    <li><a href="<?= $this->url('id', ['id' => $w_user['id']]) ?>"><?= $w_user['firstname'] ?></a></li>
+                    <li><a href="<?= $this->url('account', ['id' => $w_user['id']]) ?>"><?= $w_user['firstname'] ?></a>
+                    </li>
                     <li><a href="<?= $this->url('admin-shop') ?>">Boutiques</a></li>
                     <li><a href="<?= $this->url('logoff') ?>">Logout</a></li>
 

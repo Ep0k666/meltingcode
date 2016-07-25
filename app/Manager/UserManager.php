@@ -43,7 +43,7 @@ class UserManager extends \W\Manager\UserManager
         $stmt->bindValue(':token', $token);
         $stmt->execute();
 
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        $result = $stmt->fetch();
         $idUser = $result['id_user'];
         if ($idUser) {
             return (int) $idUser;
