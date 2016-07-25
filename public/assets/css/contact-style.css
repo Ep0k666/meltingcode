@@ -3,7 +3,6 @@
 /* Police des textes */
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
 
-
 #contact_us #hire {
   font-size: 62.5%;
   font-weight: 300;
@@ -11,9 +10,9 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
-#contact_us #contact{
+#contact_us #contact {
   background: #efefef;
-  margin: 0px auto 120px;
+    margin: 0px auto 120px;
   text-align: center;
   padding: 0 0 50px 0px;
   width: 80%;
@@ -34,11 +33,13 @@
   width: 58.33333%;
   margin: 0 auto;
 }
+
 #contact_us form .field {
   width: 100%;
   position: relative;
   margin-bottom: 15px;
 }
+
 #contact_us form .field label {
   position: absolute;
   top: 0;
@@ -73,7 +74,6 @@
   transition: all 333ms ease-in-out;
 }
 
-
 #contact_us form .field input[type="text"],
 #contact_us form .field textarea {
   border: none;
@@ -87,6 +87,7 @@
   font-size: 1.4em;
   letter-spacing: 0.05em;
 }
+
 #contact_us form .field input[type="text"]#msg,
 #contact_us form .field textarea#msg {
   height: 50px;
@@ -98,16 +99,19 @@
   -ms-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }
+
 #contact_us form .field input[type="text"]:focus, #contact_us form .field input[type="text"].focused,
 #contact_us form .field textarea:focus,
 #contact_us form .field textarea.focused {
   outline: none;
 }
+
 #contact_us form .field input[type="text"]:focus#msg, #contact_us form .field input[type="text"].focused#msg,
 #contact_us form .field textarea:focus#msg,
 #contact_us form .field textarea.focused#msg {
   padding-bottom: 200px;
 }
+
 #contact_us form .field input[type="text"]:focus + label, #contact_us form .field input[type="text"].focused + label,
 #contact_us form .field textarea:focus + label,
 #contact_us form .field textarea.focused + label {
@@ -126,7 +130,8 @@
   background: #313A3D;
   color: white;
 }
-#contact_us form input[type="submit"], #contact_us #back_home{
+
+#contact_us form input[type="submit"], #contact_us #back_home {
   background:#313A3D;
   color: white;
   -webkit-appearance: none;
@@ -146,37 +151,37 @@
   margin-bottom:30px;
 }
 
-#contact_us #back_home{
-  display: block;
-  width: 50%;
-  margin: 120px auto 0;
-  text-decoration: none;
-  text-align: center;
+#contact_us #back_home {
+    display: block;
+    width: 50%;
+    margin: 120px auto 0;
+    text-decoration: none;
+    text-align: center;
 }
 
-#contact_us form input[type="submit"]:hover, #contact_us #back_home:hover{
+#contact_us form input[type="submit"]:hover, #contact_us #back_home:hover {
   background: #80C2BB;
   color: white;
 }
-#contact_us form input[type="submit"]:focus, #contact_us #back_home:focus{
+
+#contact_us form input[type="submit"]:focus, #contact_us #back_home:focus {
   outline: none;
   background: #D1D2D2;
 }
 
-#contact_us form input[type="submit"]:active, #contact_us #back_home:active{
+#contact_us form input[type="submit"]:active, #contact_us #back_home:active {
   outline: none;
   background: #D1D2D2;
 }
 
-
-#contact_us .errors{
+#contact_us .errors {
   font-size: 18px;
   color: #1D8C7E;
 }
 
 
 /* Si les infos ont été insérées en BDD */
-#contact_us .contact_success{
+#contact_us .contact_success {
   font-size:20px;
   color:#80C2BB;
   padding: 20px 0 100px 0px;
@@ -184,39 +189,39 @@
 
 @media (max-width: 992px) and (min-width: 768px){
 
-  #contact_us #back_home span{
-    display: none;
-  }
+    #contact_us #back_home span {
+        display: none;
+    }
 
-  #contact_us #contact{
+    #contact_us #contact {
     font-size: 1.2em;
   }
 
-  #contact_us #contact h1{
+    #contact_us #contact h1 {
     font-size: 5em;
   }
 }
 
 @media (max-width: 768px) and (min-width: 500px){
 
-  #contact_us #contact{
+    #contact_us #contact {
     font-size: 1.2em;
     width: 95%;
   }
 
-  #contact_us #back_home span{
-    display: none;
-  }
+    #contact_us #back_home span {
+        display: none;
+    }
 
-  #contact_us #back_home{
-    width: 70%;
-  }
+    #contact_us #back_home {
+        width: 70%;
+    }
 
 }
 
 @media (max-width: 500px){
-  
-  #contact_us #contact{
+
+    #contact_us #contact {
     width: 100%;
     font-size: 1.2em;
     border-top: none;
@@ -226,20 +231,20 @@
     padding-top: 2px;
   }
 
-  #contact_us #back_home span{
-    display: none;
-  }
+    #contact_us #back_home span {
+        display: none;
+    }
 
-  #contact_us #back_home{
-    font-size: 1em;
-    width: 100%;
-  }
+    #contact_us #back_home {
+        font-size: 1em;
+        width: 100%;
+    }
 
-  #contact_us form{
+    #contact_us form {
     width: 90%;
   }
 
-  #contact_us form .field input[type="text"], form .field textarea{
+    #contact_us form .field input[type="text"], form .field textarea {
     width: 100%;
   }
 }

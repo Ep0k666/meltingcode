@@ -3,12 +3,12 @@
 <?php $this->start('main_content') ?>
 
 
-<?php if(isset($errors) && count($errors) > 0) : ?>
+<?php if (isset($errors) && count($errors) > 0) : ?>
     <style>
 
-    #add-shop form p{
-        margin-bottom: 0;
-    }
+        #add-shop form p {
+            margin-bottom: 0;
+        }
 
     </style>
 <?php endif; ?>
@@ -35,7 +35,10 @@
                 <?php endif ?>
 
                 <!-- DATE DE CREATION DE BOUTIQUE -->
-                <p><label>Date d'ouverture de votre boutique: <input type="text" name="date_adding" class="datepicker" placeholder="Date de création" value="<?php echo date("Y-m-d H:i:s");?>"></label></p>
+                <p><label>Date d'ouverture de votre boutique: <input type="text" name="date_adding" class="datepicker"
+                                                                     placeholder="Date de création"
+                                                                     value="<?php echo date("Y-m-d H:i:s"); ?>"></label>
+                </p>
 
                 <!-- LES CATEGORIES -->
                 <p><label>Catégorie Boutique:  <span>(en sélectionnant "Personnalisée" vous pouvez créer votre propre catégorie)</span>
@@ -73,7 +76,7 @@
             <section>
                 <!-- CONTACT -->
                 <h3>Contact</h3>
- 
+
                 <!-- TELEPHONE -->
                 <p><label>Téléphone: <input type="tel" name="phone" value="" placeholder="0387040853"> </label></p>
 
@@ -119,7 +122,7 @@
                 <!-- DEUXIEME IMAGE BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                     Sélectionnez votre photo n° 2: <input name="image2" type="file" /></p>
-                <!-- <?php if(isset($errors['file']['upload'])) : ?>
+                <!-- <?php if (isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
                 <?php elseif(isset($errors['file']['noImg'])) : ?>
                     <p  class="error">Le fichier n'est pas une image</p>
@@ -132,7 +135,7 @@
                 <!-- TROISIEME IMAGE BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                     Sélectionnez votre photo n° 3: <input name="image3" type="file" /></p>
-                <!-- <?php if(isset($errors['file']['upload'])) : ?>
+                <!-- <?php if (isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
                 <?php elseif(isset($errors['file']['noImg'])) : ?>
                     <p  class="error">Le fichier n'est pas une image</p>
@@ -148,9 +151,9 @@
                 <h3>Vos 3 produits phares: </h3>
 
                 <!-- PREMIER PRODUIT PHARE -->
-                <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+                <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000"/>
                     Sélectionnez votre premier produit phare: <input name="imgprod1" type="file" /></p>
-                <!-- <?php if(isset($errors['file']['upload'])) : ?>
+                <!-- <?php if (isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
                 <?php elseif(isset($errors['file']['noImg'])) : ?>
                     <p  class="error">Le fichier n'est pas une image</p>
@@ -161,13 +164,15 @@
                 <?php endif ?>  -->
 
                 <!-- DESCRIPTION PRODUIT -->
-                <p><label>Description du produit: <textarea name="descprod1" placeholder="Ajoutez une description courte et concise"></textarea></label></p>
-                <!-- <?php if(isset($errors['description']['empty'])) : ?>
+                <p><label>Description du produit: <textarea name="descprod1"
+                                                            placeholder="Ajoutez une description courte et concise"></textarea></label>
+                </p>
+                <!-- <?php if (isset($errors['description']['empty'])) : ?>
                     <p  class="error">La description doit être spécifiée</p>
                 <?php endif ?>
  -->
                 <!-- SECOND PRODUIT PHARE -->
-             <!--  <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+                <!--  <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                     Sélectionnez votre second produit phare: <input name="imgprod2" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
@@ -179,7 +184,7 @@
                     <p  class="error">Merci de choisir un fichier</p>
                 <?php endif ?> -->
                 <!-- DESCRIPTION PRODUIT -->
-              <!--   <p><label>Description du produit: <textarea name="descprod2" placeholder="Ajoutez une description courte et concise"></textarea></label></p>
+                <!--   <p><label>Description du produit: <textarea name="descprod2" placeholder="Ajoutez une description courte et concise"></textarea></label></p>
                 <?php if(isset($errors['description']['empty'])) : ?>
                     <p  class="error">La description doit être spécifiée</p>
                 <?php endif ?> 
@@ -206,7 +211,7 @@
             <section>
                 <!-- LIENS RESEAUX SOCIAUX -->
                 <h3>Les réseaux sociaux</h3>
-                
+
                 <!-- FACEBOOK -->
                 <p><label>Lien vers votre Facebook:<input type="text" name="facebook" value="" placeholder="Facebook"></label></p>
 
@@ -225,7 +230,7 @@
             <div class="clearfix"></div>
 
             <p><button type="submit" name="shop-add" value="" />Ajouter la boutique</button></p>
-<!--             <p><button type="submit" name="draft-shop" value="" />Brouillon</button></p> -->
+            <!--             <p><button type="submit" name="draft-shop" value="" />Brouillon</button></p> -->
             <p><button type="submit" name="cancel">Annuler</button></p>
         </form>
     </div>

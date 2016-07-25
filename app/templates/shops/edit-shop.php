@@ -59,7 +59,7 @@
                 <?php endif ?>
 
                 <!-- COORDONNEES GPS -->
-               <!--  <p><label>Coordonnées GPS:  </label>
+                <!--  <p><label>Coordonnées GPS:  </label>
                     <input type="text" name="latitude" value="<?php echo $shopToEdit['latitude'] ?>" placeholder="Latitude">
                     
                     <input type="text" name="longitude" value="<?php echo $shopToEdit['longitude'] ?>" placeholder="Longitude">
@@ -88,7 +88,7 @@
                 <!-- LOGO BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                 <p>Logo actuel :</p>
-                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['logo']) ?>">           
+                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['logo']) ?>">
                 <p>Choisissez un autre fichier si vous souhaitez changer de logo :</p>
                     Sélectionnez votre logo: <input name="logo" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
@@ -105,7 +105,7 @@
                 <!-- PREMIERE IMAGE BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                 <p> Photo n° 1 actuel:</p>
-                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop1']) ?>">      
+                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop1']) ?>">
                 <p>Choisissez un autre fichier si vous souhaitez changer de photo n° 1:</p>
                     Sélectionnez votre photo n° 1: <input name="image1" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
@@ -121,7 +121,7 @@
                 <!-- DEUXIEME IMAGE BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                 <p> Photo n° 2 actuel:</p>
-                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop2']) ?>">      
+                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop2']) ?>">
                 <p>Choisissez un autre fichier si vous souhaitez changer de photo n° 2:</p>
                     Sélectionnez votre photo n° 2: <input name="image2" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
@@ -137,7 +137,8 @@
                 <!-- TROISIEME IMAGE BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                 <p> Photo n° 3 actuel:</p>
-                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop3']) ?>">      <p>Choisissez un autre fichier si vous souhaitez changer de photo n° 3:</p>
+                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop3']) ?>">
+                <p>Choisissez un autre fichier si vous souhaitez changer de photo n° 3:</p>
                     Sélectionnez votre photo n° 3: <input name="image3" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>

@@ -10,7 +10,6 @@
 
 /* Icones pour le footer */
 @import url(http://weloveiconfonts.com/api/?family=entypo);
-
 /* Police liens low_nav */
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
 
@@ -20,9 +19,9 @@
 
 /*** DESKTOP ***/
 #low_nav_desktop{
-	background-color: #FFF;
+    background-color: #FFF;
 	overflow: hidden;
-	border-bottom: 1px solid #D4C6C6;
+    border-bottom: 1px solid #D4C6C6;
 }
 
 #low_nav_desktop ul{
@@ -34,86 +33,86 @@
 #low_nav_desktop ul li a{
 	display: block;
 	color: #1A1717;
-	text-transform: uppercase;
+    text-transform: uppercase;
 	text-decoration: none;
-	padding: 20px 3.24%;
+    padding: 20px 3.24%;
 	transform: rotate(0deg);
 	float: left;
-	box-sizing: border-box;
-	font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 	font-size: 16px;
-	font-weight: 400;
+    font-weight: 400;
 }
 
-#low_nav_desktop ul li:first-of-type a{
-	border-left: 1px solid #D4C6C6;
+#low_nav_desktop ul li:first-of-type a {
+    border-left: 1px solid #D4C6C6;
 }
 
-#low_nav_desktop ul li:last-of-type a{
-	border-right: 1px solid #D4C6C6;
+#low_nav_desktop ul li:last-of-type a {
+    border-right: 1px solid #D4C6C6;
 }
 
-#low_nav_desktop ul li:nth-child(1) a:hover{
-	color: #BE27DA;
-	border-bottom: 5px solid #BE27DA;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(1) a:hover {
+    color: #BE27DA;
+    border-bottom: 5px solid #BE27DA;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(2) a:hover{
-	color: #7DD82D;
-	border-bottom: 5px solid #7DD82D;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(2) a:hover {
+    color: #7DD82D;
+    border-bottom: 5px solid #7DD82D;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(3) a:hover{
-	color: #1504FB;
-	border-bottom: 5px solid #1504FB;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(3) a:hover {
+    color: #1504FB;
+    border-bottom: 5px solid #1504FB;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(4) a:hover{
-	color: #FB6704;
-	border-bottom: 5px solid #FB6704;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(4) a:hover {
+    color: #FB6704;
+    border-bottom: 5px solid #FB6704;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(5) a:hover{
-	color: #E4E623;
-	border-bottom: 5px solid #E4E623;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(5) a:hover {
+    color: #E4E623;
+    border-bottom: 5px solid #E4E623;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(6) a:hover{
-	color: #31C813;
-	border-bottom: 5px solid #31C813;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(6) a:hover {
+    color: #31C813;
+    border-bottom: 5px solid #31C813;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(7) a:hover{
-	color: #16C7A4;
-	border-bottom: 5px solid #16C7A4;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(7) a:hover {
+    color: #16C7A4;
+    border-bottom: 5px solid #16C7A4;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(8) a:hover{
-	color: #F6FF00;
-	border-bottom: 5px solid #F6FF00;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(8) a:hover {
+    color: #F6FF00;
+    border-bottom: 5px solid #F6FF00;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-#low_nav_desktop ul li:nth-child(9) a:hover{
-	color: #FB0444;
-	border-bottom: 5px solid #FB0444;
-	padding-bottom: 15px;
-	box-sizing: border-box;
+#low_nav_desktop ul li:nth-child(9) a:hover {
+    color: #FB0444;
+    border-bottom: 5px solid #FB0444;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
 @keyframes fretille{
@@ -175,9 +174,9 @@ ol li a{
 	margin-top: -30px;
 }
 
-#slider a{
-	text-decoration: none;
-	color: #FFF;
+#slider a {
+    text-decoration: none;
+    color: #FFF;
 }
 
 /*** Images shops ***/
@@ -224,8 +223,8 @@ ol li a{
 }
 
 /*** LINK READ MORE ***/
-.link_read_more{
-	font-weight: 300;
+.link_read_more {
+    font-weight: 300;
 }
 
 /*** Description shops ***/
@@ -247,7 +246,7 @@ ol li a{
 .bordure1{
 	margin-top: 20px;
 	border-bottom: 5px double #80C2BB;
-	z-index: -10;
+    z-index: -10;
 }
 
 .bordure1::after{
@@ -256,11 +255,11 @@ ol li a{
 	display: block;
 }
 
-.shop_discovery a{
-	text-decoration: none;
-	color: #FFF;
-	display: block;
-	box-sizing: border-box;
+.shop_discovery a {
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+    box-sizing: border-box;
 }
 
 #new_shop h3, #about_us h3 {
@@ -276,7 +275,7 @@ ol li a{
 	top: -68px;
 	border: 20px solid #FFF;
 	color:#80C2BB;
-	z-index: 0;
+    z-index: 0;
 }
 
 #new_shop h4{
@@ -297,18 +296,18 @@ ol li a{
 .shop_discovery{
 	float: left;
 	width: 33.33%;
-	min-height: 440px;
+    min-height: 440px;
 }
 
-#new_shop .img_shop_discovery{
-	background-position: center;
-	background-size: cover;
-	width: 85%;
+#new_shop .img_shop_discovery {
+    background-position: center;
+    background-size: cover;
+    width: 85%;
 	height: 200px;
-	margin: auto;
+    margin: auto;
 }
 
-#new_shop .img_shop_discovery:hover{
+#new_shop .img_shop_discovery:hover {
 	background-color:#80C2BB;
 	opacity:0.5; 
 }
@@ -316,17 +315,17 @@ ol li a{
 .shop_title{
 	text-align: center;
 	font-size: 30px;
-	padding: 15px 15px 0;
-	max-width: 90%;
-	margin: auto;
+    padding: 15px 15px 0;
+    max-width: 90%;
+    margin: auto;
 }
 
 .shop_discovery p{
-	padding: 30px 20px;
+    padding: 30px 20px;
 	font-size: 16px;
 	text-align:justify;
 	color: #8A8888;
-	margin: auto;
+    margin: auto;
 }
 
 
@@ -408,7 +407,8 @@ ol li a{
   display: block;
   padding-top: 100%;
 }
-.at-column:hover{
+
+.at-column:hover {
   z-index: 1;
   box-sizing: border-box;
   box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
@@ -520,17 +520,17 @@ ol li a{
 		width: 900px;
 	}
 
-	#new_shop .img_shop_discovery{
-		height: 150px;
+    #new_shop .img_shop_discovery {
+        height: 150px;
 	}
 
-	#new_shop .shop_title{
-		font-size: 25px;
-	}
+    #new_shop .shop_title {
+        font-size: 25px;
+    }
 
 	/** Links category **/
 	#low_nav_desktop ul li a{
-		padding: 10px 2%;
+        padding: 10px 2%;
 	}
 }
 
@@ -552,9 +552,9 @@ ol li a{
 		display: block;
 	}
 
-	#home #low_nav_mobile{
+    #home #low_nav_mobile {
 		display: block;
-		font-size: 16px;
+        font-size: 16px;
 		font-family: 'Titillium Web', sans-serif;
 	}
 
@@ -569,9 +569,9 @@ ol li a{
 		padding: 50px 10px 15px 30px;
 	}
 
-	#new_shop .shop_title{
-		font-size: 25px;
-	}
+    #new_shop .shop_title {
+        font-size: 25px;
+    }
 
 	.description_most_viewed{
 		font-size: 18px;
@@ -591,12 +591,12 @@ ol li a{
 
 	/*** Description new shops ***/
 	.shop_discovery p{
-		padding: 30px 20px;
+        padding: 30px 20px;
 	}
 
 	.shop_discovery{
 		width: 50%;
-		min-height: 460px;
+        min-height: 460px;
 	}
 
 	/** About us **/
@@ -720,13 +720,13 @@ ol li a{
 	/** About us **/
 
 	.at-grid{
-		transform: scale(0.9);
+        transform: scale(0.9);
 		border: none;
 	}
 
 	.at-column{
 		padding-top: 0px;
-		padding-bottom: 50px;
+        padding-bottom: 50px;
 	}
 
 	.at-user__title{
@@ -747,8 +747,8 @@ ol li a{
 	    margin: auto;
 	}
 
-	.at-user__avatar img{
-		border-radius: 100%;
+    .at-user__avatar img {
+        border-radius: 100%;
 	}
 }
 
@@ -762,19 +762,19 @@ ol li a{
 	        -ms-flex-preferred-size: 90% !important;
 	            flex-basis: 90% !important;
 	    margin: auto;
-	}
+    }
 
-	.at-social__item{
-		margin-top: 15px;
-	}
+    .at-social__item {
+        margin-top: 15px;
+    }
 
-	.at-user__title{
-		display: none;
-	}
+    .at-user__title {
+        display: none;
+    }
 
-	.at-column{
-		padding-top: 0px;
-		padding-bottom: 20px;
+    .at-column {
+        padding-top: 0px;
+        padding-bottom: 20px;
 	}
 
 	.most_viewed{

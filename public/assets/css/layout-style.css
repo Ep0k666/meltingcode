@@ -14,8 +14,8 @@
 /*****************************
 		  UTILITAIRES
  *****************************/
-body section:first-of-type{
-	padding-top: 76px;
+body section:first-of-type {
+    padding-top: 76px;
 }
 
 body #high_nav{
@@ -37,11 +37,11 @@ body #high_nav{
 /*****************************
 		HIGH NAVIGATION
  *****************************/
-header{
-	position: fixed;
-	width: 100%;
-	margin: auto;
-	z-index: 5000;
+header {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    z-index: 5000;
 }
 /*** Titre principal ***/
 #high_nav h1{
@@ -311,9 +311,9 @@ footer p{
 		width: 650px;
 	}
 
-	body section:first-of-type{
-	padding-top: 122px;
-	}
+    body section:first-of-type {
+        padding-top: 122px;
+    }
 
 	/*** High navigation ***/
 	#high_nav{
@@ -353,10 +353,10 @@ footer p{
 	/** Utilitaires **/
 	.container{
 		width: 90%;
-	}
+    }
 
-	body section:first-of-type{
-	padding-top: 166px;
+    body section:first-of-type {
+        padding-top: 166px;
 	}
 
 	/*** Titre principal ***/

@@ -1,46 +1,43 @@
 /* ---------------------------------CSS de l'ajout de boutique------------------------------ */
 
 /* LE CSS VALABLE POUR TOUTE LA PAGE */
-#add-shop{
+#add-shop {
     background-color: #efefef;
     padding-bottom: 50px;
     padding-top: 50px;
 }
 
-#add-shop .container{
+#add-shop .container {
     width: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
 /* LES ERREURS DE FORMULAIRE */
-#add-shop .error{
+#add-shop .error {
     color: red;
     font-size: 1.5em;
     padding-bottom: 10px;
 }
 
-
 /* LE CSS GENERAL A TOUTES LES SECTIONS */
 #add-shop section{
     width:33.33%;
     float:left;
-    padding:0px 50px 25px;
+    padding: 0px 50px 25px;
     text-align:left;
     box-sizing:border-box;
 }
 
-
 /* LE CSS DES 3 PREMIERES SECTIONS */
 #add-shop section:nth-child(1), #add-shop section:nth-child(2), #add-shop section:nth-child(3){
-    height:550px;
-    margin-top:50px;
+    height: 550px;
+    margin-top: 50px;
 }
 
-
 /* LE CSS DES 3 DERNIERES SECTIONS */
-#add-shop section:nth-child(4), #add-shop section:nth-child(5), #add-shop section:nth-child(6){
-    margin-top:50px;
-} 
+#add-shop section:nth-child(4), #add-shop section:nth-child(5), #add-shop section:nth-child(6) {
+    margin-top: 50px;
+}
 
 /* TITRE H2 */
 #add-shop h2{
@@ -53,13 +50,12 @@
 
 /* LA LEGENDE: AJOUTER UNE BOUTIQUE */
 #add-shop legend {
-    color:#80C2BB;
+    color: #80C2BB;
     font-size: 4em;
     font-family: 'Lobster', cursive;
-    margin:auto;
+    margin: auto;
     padding-bottom: 50px;
 }
-
 
 /* LES TITRES DE SECTIONS */
 #add-shop h3{
@@ -69,7 +65,6 @@
     text-align:center;
     padding-bottom: 30px;
 }
-
 
 /* LES LABELS */
 #add-shop form label{
@@ -111,7 +106,6 @@
     outline: none;
 }
 
-
 /* LA DESCRIPTION DE LA BOUTIQUE */
 #add-shop textarea{
     width:100%;
@@ -132,7 +126,6 @@
     outline: none;
 }
 
-
 /* LE BOUTON DE SELECTION DE CATEGORIES */
 #add-shop select{
     border: none;
@@ -150,7 +143,6 @@
     outline: none;
     border:none;
 }
-
 
 /* LE BOUTON DE SELECTION DE CATEGORIES AU SURVOL */
 #add-shop select:hover{
@@ -198,7 +190,7 @@
 /*supérieur à 1200px */
 @media (min-width:1200px){
     #add-shop p button:first-of-type{
-        margin-top:10px;
+        margin-top: 10px;
     }
 }
 
@@ -208,10 +200,11 @@
         width:50%;
     }
     #add-shop p button:last-of-type{
-        margin-top:10px;
+        margin-top: 10px;
     }
-    #add-shop section:nth-child(3){
-        height:450px;
+
+    #add-shop section:nth-child(3) {
+        height: 450px;
     }
 }
 
@@ -221,10 +214,11 @@
         width:50%;
     }
     #add-shop p button:last-of-type{
-        margin-top:10px;
+        margin-top: 10px;
     }
-    #add-shop section:nth-child(3){
-        height:450px;
+
+    #add-shop section:nth-child(3) {
+        height: 450px;
     }
 }
 
