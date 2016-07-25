@@ -1,11 +1,29 @@
-#apropos{
+.clearfix {
+	clear: both;
+	display: block;
+}
 
-	margin: 60px auto 120px;
+#apropos{
+	min-height: 800px;
+/* 	margin: 60px auto 120px;
 	text-align: center;
 	padding: 0 0 50px 0px;
 	width: 80%;
 	max-width: 980px;
+	background: #efefef;
+	margin: 60px auto 120px;
+	text-align: center;
+	padding: 0 0 50px 0px;
+	width: 80%;
+	font-size: 2em;
+	max-width: 1100px;
+	border-top: 15px solid #313A3D;
+	font-size: 62.5%;
+	font-weight: 300;
+	color: #B6B6B6;
+	font-family: 'Titillium Web', sans-serif; */
 }
+
 
 #apropos h2{
 	margin-bottom: 40px;
@@ -14,6 +32,10 @@
 	font-weight: 100;
 	margin:50px 0px;
 	color:#D5D5D5;
+}
+
+#apropos article{
+	width: 40%;
 }
 
 
@@ -27,11 +49,38 @@
 	text-align:center;
 }
 
+#apropos #arrow{
+	width: 50%;
+	border-top: 330px solid #D9F1EF;
+	/* border-right: 200px solid transparent; */
+	float:left;
+}
+
 #apropos p{
-	margin-top:50px;
-	margin-bottom:10px;
-	font-size:15px;
+	font-size: 15px;
 	font-family: 'Titillium Web', sans-serif;
 	color:#767575;
 	text-align:justify;
+	float:left;
+	padding: 50px 50px;
+}
+
+#arrow_content1{
+	position: absolute;
+	width: 550px;
+	top: 315px;
+	float:left;
+}
+
+#arrow_image1{
+	background-image:url('../img/apropos3.png');
+	float:left;
+	background-size:cover;
+	background-position:left;
+	height:300px;
+	width:500px;
+}
+
+#arrow_content2{
+	float:left;
 }
