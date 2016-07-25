@@ -18,6 +18,12 @@
     font-size: 20px;
     display: block;
     line-height: 30px; }
+  #account form strong {
+    color: #2aabd2;
+    font-size: 15px; }
+  #account form a {
+    font-size: 15px;
+    color: #66d9ef; }
   #account form input {
     display: inline-block;
     height: 20px;
@@ -31,7 +37,7 @@
     color: #80C2BB;
     background-color: #1b1b1b;
     font-size: 20px; }
-  #account form a {
+  #account form .redirect a {
     color: #80C2BB;
     font-size: medium; }
 

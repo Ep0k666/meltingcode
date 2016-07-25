@@ -11,37 +11,28 @@ class UserController extends Controller
         /*Pour sécuriser l'accès direct via url à la page /shops*/
         $this->allowTo(['editeur']);
 
-        if (isset($_POST['edit-user'])){
+        if (isset($_POST['edit-user'])) {
 
-            $login = trim(htmlspecialchars($_POST['login']));
-            $company = trim(htmlspecialchars($_POST['company']));
-            $firstname = trim(htmlspecialchars($_POST['firstname']));
-            $lastname = trim(htmlspecialchars($_POST['lastname']));
-            $email = trim(htmlspecialchars($_POST['mail']));
-            $pass = trim(htmlspecialchars($_POST['pass']));
-
-
-            $userManager = new \Manager\UserManager();
-            $userToEdit = $userManager->setTable('user');
-
-            $data = [
-                'login' => $login,
-                'company' => $company,
-                'fistname' => $firstname,
-                'lastname' => $lastname,
-                'email' => $email,
-                'password' => $pass,
-            ];
-
-            /* $shopToEditUpdate->update( $data,$id);*/
-            $userToEdit = new \Manager\UserManager();
-            $userToEdit->update($data,$id=NULL);
-
-            $_SESSION['flash'] = 'Données mise à jour';
-            $this->redirectToRoute('account');
-        }else
-        {
-            $this->show('loginPage/loginPage');
+            if (!empty($_POST['login']) && !empty($_POST['pass1']) && !empty($_POST['mail']) && !empty($_POST['firstname']) && !empty($_POST['lastname']) &&
+                !empty($_POST['company']) && (isset($_POST['login']) && isset($_POST['pass1']) && isset($_POST['mail']) && isset($_POST['firstname']) && isset($_POST['lastname']) &&
+                    isset($_POST['company']))
+            ) {
+                $usersManager = new \Manager\UserManager();
+                $usersManager->setTable('user');
+                $data = [
+                    'login' => htmlspecialchars($_POST['login'], FILTER_SANITIZE_FULL_SPECIAL_CHARS),
+                    'password' => htmlspecialchars(password_hash($_POST['pass1'], PASSWORD_DEFAULT)),
+                    'firstname' => htmlentities($_POST['firstname'], FILTER_SANITIZE_FULL_SPECIAL_CHARS),
+                    'company' => htmlspecialchars($_POST['company'], FILTER_SANITIZE_FULL_SPECIAL_CHARS),
+                    'lastname' => htmlspecialchars($_POST['lastname'], FILTER_SANITIZE_FULL_SPECIAL_CHARS),
+                    'email' => filter_var($_POST['mail'], FILTER_SANITIZE_EMAIL),
+                    'role' => 'editeur',
+                ];
+                $usersManager->update($data, $id);
+                $this->redirectToRoute('account');
+            }
         }
+        $this->show('/loginPage/LoginPage');
+
     }
 }

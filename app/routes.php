@@ -12,7 +12,7 @@ $w_routes = array(
     /************** ---------- NEWSLETTER ------------ ***************/
     ['GET|POST',     '/newsletter',            'Newsletter#subscribeNewsletter',              'newsletter'],
     /*************** ---------- account ------------ ******************/
-    ['GET|POST',     '/account/[:id]', 'Connect#account', 'account'],
+    ['GET|POST',     '/account/[:id]', 'User#UpdateUser', 'account'],
     /************** ---------- LOGIN ------------ ***************/
     ['GET|POST',     '/signup', 'Connect#login', 'login'],
     /************** ---------- CONNECT ------------ ***************/
