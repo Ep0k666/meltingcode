@@ -41,7 +41,7 @@ class RecoverytokenManager extends Manager
         $stmt->bindValue(':token', $token);
         $stmt->execute();
 
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        $result = $stmt->fetch();
         $idUser = $result['id_user'];
         if ($idUser) {
             return (int) $idUser;

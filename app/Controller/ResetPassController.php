@@ -3,7 +3,7 @@
 namespace Controller;
 
 use \W\Controller\Controller;
-
+use W\Manager\Manager;
 
 
 class ResetPassController extends Controller
@@ -75,11 +75,13 @@ class ResetPassController extends Controller
             echo "Message sent!";
         }
         $_SESSION['flash'] = 'Un lien de reset ..';
-        $this->show('/loginPage/resetPass');
+        $this->url('resetPass/[:tk]');
     }
 
     public function resetPassword($tk)
     {
+
+
         $tk; // token
         $recoveryTokenManager = new \Manager\RecoverytokenManager();
         // On rÈcupËre l'id utilisateur en fonction du token
@@ -118,8 +120,11 @@ class ResetPassController extends Controller
 
                 // Model pour insertion en base de donnees
                 $usersModel = new \Manager\UserManager();
+
                 $data = ['password' => $passHash];
-                $usersModel->update($data, $idUser);
+                var_dump($data);
+
+            $usersModel->update($data, $idUser);
 
                 /* Suppression du token maintenant inutile */
                 $recoveryTokenManager->deleteTokenForUser($tk);
