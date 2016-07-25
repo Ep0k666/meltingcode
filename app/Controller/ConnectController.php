@@ -38,7 +38,7 @@ class ConnectController extends Controller
                 } else {
                     echo 'La Connexion à échoué';
                     // Redirection vers le login
-                    $this->show('connexion', ['errors' => $errors]);
+                    $this->show('loginPage/connect', ['errors' => $errors]);
                 }
 
             }

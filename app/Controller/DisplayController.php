@@ -14,12 +14,19 @@ class DisplayController extends Controller
      ***/
     public function listing()
     {
-        $manager            = new \Manager\ShopManager();
-        $shopsMostViewed    = $manager->mostViewed();
-        $shopsMostRecent    = $manager->mostRecent();
-        $activities         = $manager->getAllActivities();
+        /*** Shop Manager ***/
+        $manager         = new \Manager\ShopManager();
+
+        /*** Shops les plus vues ***/
+        $shopsMostViewed = $manager->mostViewed();
+
+        /*** Shops les plus récentes ***/
+        $shopsMostRecent = $manager->mostRecent();
+
+        /*** Toutes les activités des shops ***/
+        $activities      = $manager->getAllActivities();
         
-        /*** Envoi à la page home ***/
+        /*** Show to template 'home' ***/
         $this->show('display/home', 
             [
                 'shopsMostViewed'   => $shopsMostViewed,
@@ -35,49 +42,80 @@ class DisplayController extends Controller
      ***/
     public function search()
     {
+        /*** Search Manager ***/
         $manager = new \Manager\SearchManager();
         
-        /*** Si search_submit à été cliqué ***/
+        /*** Si le formulaire de recherche a été soumi ***/
         if(isset($_POST['search_submit'])){
 
-            /*** Récupération et nettoyage saisie ***/
-            $tagSearch = trim(htmlspecialchars($_POST['search_bar']));
+            /*** Récupération et nettoyage saisies ***/
+            $tagSearch   = trim(htmlspecialchars($_POST['search_bar']));
 
-            /*** Appel des fonctions pour comparaison en DB ***/
+            /*** Comparaison des saisies avec infos shops en DB ***/
             $resultShops = $manager->searchShop($tagSearch);
 
-            /*** Envoi à la page "search" ***/
+            /*** Show to template "search" ***/
             $this->show('display/search', 
                 [
                     'resultShops'   => $resultShops,
                     'tagSearch'     => $tagSearch
                 ]);
 
-            /*** Redirection vers "search" ***/
+            /*** Redirect to template "search" ***/
             $this->redirectToRoute('search');
         }
     }
 
-    public function shopActivity($id)
+    /***
+     * Fonction pour page "detailed-search" 
+     * Récupère les shops correspondant à la recheche effectué
+     ***/
+    public function detailedSearch()
     {
-        $manager = new \Manager\ShopManager();
+        /*** Search Manager ***/
+        $searchManager = new \Manager\SearchManager();
 
-        $shopByActivity = $manager->getShopByActivity($id);
-        $categorySearch = $manager->getCategorySearch($id);
-        $activities         = $manager->getAllActivities();
+        /*** Shop Manager ***/
+        $shopManager         = new \Manager\ShopManager();
 
-        $this->show('shops/activity-shop', 
-            [
-            'shopByActivity' => $shopByActivity,
-            'categorySearch' => $categorySearch,
-            'activities'        => $activities
-            ]);
+        /*** Récupère tous les noms d'activités ***/
+        $activities       = $shopManager->getAllActivities();
+        
+        
+
+        /*** Si le formulaire n'a pas été soumi ***/
+        
+        
+            $this->show('display/detailed-search', [
+                'activities' => $activities
+                ]);
+        
     }
 
-    public function adminHome($id)
+    /***
+     * Fonction pour page "home" 
+     * Récupère les shops correspondant à l'activité choisi
+     ***/
+    public function shopActivity($id)
     {
-        $manager = new \Manager\ShopManager();
+        /*** Shop Manager ***/
+        $manager        = new \Manager\ShopManager();
 
-        $this->show('display/admin-shops');
+        /*** Récupère les shops par activité ***/
+        $shopByActivity = $manager->getShopByActivity($id);
+
+        /*** Récupère l'activité choisi ( pour titre )***/
+        $activitySearched = $manager->getActivitySearched($id);
+
+        /*** Récupère tous les noms d'activités ***/
+        $activities       = $manager->getAllActivities();
+
+        /*** Show to template 'activity-shop' ***/
+        $this->show('shops/activity-shop', 
+            [
+            'shopByActivity'   => $shopByActivity,
+            'activitySearched' => $activitySearched,
+            'activities'       => $activities
+            ]);
     }
 }

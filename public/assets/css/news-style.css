@@ -3,21 +3,20 @@
 /* Police des textes */
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
 
-
-#hire {
+#subscribe_newsletter #hire{
   font-size: 62.5%;
   font-weight: 300;
   color: #B6B6B6;
   font-family: 'Titillium Web', sans-serif;
 }
 
-#news_gender{
+#subscribe_newsletter #news_gender{
   font-size: 20px;
 }
 
-#newsletter{
+#subscribe_newsletter #newsletter{
   background: #efefef;
-  margin: 60px auto 120px;
+  margin: 0px auto 120px;
   text-align: center;
   padding: 0 0 50px 0px;
   width: 80%;
@@ -26,7 +25,7 @@
   border-top: 15px solid #313A3D;
 }
 
-#newsletter h1 {
+#subscribe_newsletter #newsletter h1 {
   margin-bottom: 40px;
   font-size: 4em;
   font-family: 'Lobster', cursive;
@@ -34,17 +33,16 @@
   margin:50px 0px;
 }
 
-form {
+#subscribe_newsletter form {
   width: 58.33333%;
   margin: 0 auto;
 }
-form .field {
+#subscribe_newsletter form .field {
   width: 100%;
   position: relative;
   margin-bottom: 15px;
 }
-form .field label {
-  text-transform: uppercase;
+#subscribe_newsletter form .field label {
   position: absolute;
   top: 0;
   left: 0;
@@ -61,7 +59,7 @@ form .field label {
   color:white;
 }
 
-form .field label + span {
+#subscribe_newsletter form .field label + span {
   font-family: 'SSStandard';
   opacity: 0;
   color: white;
@@ -79,8 +77,8 @@ form .field label + span {
 }
 
 
-form .field input[type="text"],
-form .field textarea {
+#subscribe_newsletter form .field input[type="text"],
+#subscribe_newsletter form .field textarea {
   border: none;
   margin-bottom: 20px;
   background: #E8E9EA;
@@ -91,10 +89,9 @@ form .field textarea {
   color: black;
   font-size: 1.4em;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
-form .field input[type="text"]#msg,
-form .field textarea#msg {
+#subscribe_newsletter form .field input[type="text"]#msg,
+#subscribe_newsletter form .field textarea#msg {
   height: 18px;
   margin-bottom: 20px;
   resize: none;
@@ -104,41 +101,40 @@ form .field textarea#msg {
   -ms-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }
-#news_gender{
+#subscribe_newsletter #news_gender{
   margin-top: 30px;
 }
-form .field input[type="text"]:focus, form .field input[type="text"].focused,
-form .field textarea:focus,
-form .field textarea.focused {
+#subscribe_newsletter form .field input[type="text"]:focus, #subscribe_newsletter form .field input[type="text"].focused,
+#subscribe_newsletter form .field textarea:focus,
+#subscribe_newsletter form .field textarea.focused {
   outline: none;
 }
-form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
-form .field textarea:focus#msg,
-form .field textarea.focused#msg {
+#subscribe_newsletter form .field input[type="text"]:focus#msg, #subscribe_newsletter form .field input[type="text"].focused#msg,
+#subscribe_newsletter form .field textarea:focus#msg,
+#subscribe_newsletter form .field textarea.focused#msg {
   padding-bottom: 50px;
 }
-form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
-form .field textarea:focus + label,
-form .field textarea.focused + label {
+#subscribe_newsletter form .field input[type="text"]:focus + label, #subscribe_newsletter form .field input[type="text"].focused + label,
+#subscribe_newsletter form .field textarea:focus + label,
+#subscribe_newsletter form .field textarea.focused + label {
   width: 18%;
   background: #D1D2D2;
   color: #313A3D;
 }
-form .field input[type="text"].focused + label,
-form .field textarea.focused + label {
+#subscribe_newsletter form .field input[type="text"].focused + label,
+#subscribe_newsletter form .field textarea.focused + label {
   color: #FD9638;
 }
-form .field:hover label {
+#subscribe_newsletter form .field:hover label {
   width: 18%;
   background: #313A3D;
   color: white;
 }
-form input[type="submit"] {
+#subscribe_newsletter form input[type="submit"], #subscribe_newsletter #back_home{
   background:#313A3D;
   color: white;
   -webkit-appearance: none;
   border: none;
-  text-transform: uppercase;
   position: relative;
   padding: 13px 50px;
   font-size: 1.4em;
@@ -153,58 +149,85 @@ form input[type="submit"] {
   margin-top:50px;
   margin-bottom:30px;
 }
-form input[type="submit"]:hover {
+
+#subscribe_newsletter #back_home{
+  display: block;
+  width: 50%;
+  margin: 120px auto 0;
+  text-decoration: none;
+  text-align: center;
+}
+#subscribe_newsletter form input[type="submit"]:hover, #subscribe_newsletter #back_home:hover{
   background: #80C2BB;
   color: white;
 }
-form input[type="submit"]:focus {
+#subscribe_newsletter form input[type="submit"]:focus, #subscribe_newsletter #back_home:focus{
   outline: none;
   background: #D1D2D2;
 }
 
-form input[type="submit"]:active {
+#subscribe_newsletter form input[type="submit"]:active, #subscribe_newsletter #back_home:active{
   outline: none;
   background: #D1D2D2;
 }
 
-.errors{
+#subscribe_newsletter .errors{
   font-size: 18px;
   color: #1D8C7E;
 }
 
 /* Si les infos ont été insérées en BDD */
-.news_success{
+#subscribe_newsletter .news_success{
   font-size:20px;
   color:#80C2BB;
   padding: 20px 0 100px 0px;
 }
 
+/*** Espace radio 'homme / femme' ***/
+#male{
+  margin-right: 50px;
+}
+
 @media (max-width: 992px) and (min-width: 768px){
 
-  #newsletter{
+  #subscribe_newsletter #newsletter{
     font-size: 1.2em;
   }
 
-  #newsletter h1{
+  #subscribe_newsletter #newsletter h1{
     font-size: 5em;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px){
+  #subscribe_newsletter #back_home span{
+    display: none;
   }
 }
 
 @media (max-width: 768px) and (min-width: 500px){
 
-  #newsletter{
+  #subscribe_newsletter #newsletter{
     font-size: 1.2em;
     width: 95%;
   }
 
-  #hire{
+  #subscribe_newsletter #back_home span{
+    display: none;
+  }
+
+  #subscribe_newsletter #back_home{
+    width: 70%;
+  }
+
+  #subscribe_newsletter #hire{
     background-color: #efefef;
   }
 }
 
 @media (max-width: 500px){
   
-  #newsletter{
+  #subscribe_newsletter #newsletter{
     width: 100%;
     font-size: 1.2em;
     border-top: none;
@@ -213,11 +236,20 @@ form input[type="submit"]:active {
     padding-top: 2px;
   }
 
-  form{
+  #subscribe_newsletter #back_home span{
+    display: none;
+  }
+
+  #subscribe_newsletter #back_home{
+    font-size: 1em;
+    width: 100%;
+  }
+
+  #subscribe_newsletter form{
     width: 90%;
   }
 
-  form .field input[type="text"], form .field textarea{
+  #subscribe_newsletter form .field input[type="text"], form .field textarea{
     width: 100%;
   }
 }

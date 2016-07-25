@@ -6,11 +6,12 @@
 		  LOW NAVIGATION 
 	*************************-->
 
+	<!-- *** Desktop Navigation *** -->
 	<div id="home">
 		<nav id="low_nav_desktop">
 			<div class="container">
 
-			<!-- *** Liste de liens "catégorie" *** -->
+				<!-- *** Liste de liens "activity" *** -->
 				<ul>
 					<?php foreach($activities as $activity) : ?>
 
@@ -31,35 +32,32 @@
 		<!-- *** Mobile Navigation *** -->
 		<nav id="low_nav_mobile">
 
-				<i class="fa fa-bars fa-1x" id="hamburger" aria-hidden="true">
-						<span>Catégorie</span>
-					</i>
+			<!-- *** Hamburger *** -->
+			<i class="fa fa-bars fa-1x" id="hamburger" aria-hidden="true">
+				<span>Catégorie</span>
+			</i>
 
-				<span id="close_menu">
-					<i class="fa fa-times" id="cross" aria-hidden="true"></i> Catégorie
-				</span>
+			<!-- *** Cross Menu *** -->
+			<span id="close_menu">
+				<i class="fa fa-times" id="cross" aria-hidden="true"></i> Catégorie
+			</span>
 
-				<ul>
+			<!-- *** Liste de liens "activity" *** -->
+			<ul>
 
-					<?php
-						$nbCategory = 0;
-					?>
+				<?php foreach($activities as $activity) : ?>
 
-					<?php foreach($activities as $activity) : ?>
+					<li>
+						<a href="<?= $this->url('activity', ['id' => $activity['id_catshops']])?>">
+						<?= $activity['category'] ?>
+						</a>
+					</li>
 
-						<li>
-							<a href="<?= $this->url('activity', ['id' => $activity['id_catshops']])?>">
-							<?= $activity['category'] ?>
-							</a>
-						</li>
+				<?php endforeach; ?>
 
-						<?php ++$nbCategory ?>
+			</ul>
 
-					<?php endforeach; ?>
-
-				</ul>
-
-				<div class="clearfix"></div>
+			<div class="clearfix"></div>
 
 		</nav>
 
@@ -73,28 +71,32 @@
 
 		<div class="bordure1"></div>
 		
-			<h3><?= $categorySearch['category'] ?></h3>
+			<!-- *** Titre de l'activité recherché *** -->
+			<h3><?= $activitySearched['category'] ?></h3>
 
-			<!-- *** Pour chaque Shop Most Recent *** -->
 			<?php foreach($shopByActivity as $shop): ?>
 
 				<article class="shop_discovery">
 
 					<!-- ** Définition du lien pour chaque image ** -->
 					<?php
-					$path = $shop['pictshop1'];
-					$img = $this->assetUrl('uploads/'.$path);
+						$path = $shop['pictshop1'];
+						$img  = $this->assetUrl('uploads/'.$path);
 					?>
 
-					<img src="<?= $img ?>">
+						<!-- *** Image Shop *** -->
+						<div class="img_shop_discovery" style="background-image: url('<?= $img ?>');">
 
-					<h4 class="shop_title"><?= $shop['name'] ?></h4>
+							<!-- *** Name Shop *** -->
+							<h4 class="shop_title"><?= $shop['name'] ?></h4>
 
-					<p class="shop_description"><?= substr($shop['description'], 0, 250)." [...]"; ?></p>
+						</div>
+
+					<!-- *** Shop description *** -->
+					<p class="shop_description"><?= substr($shop['description'], 0, 250)." <a href='' class='link_read_more'>Lire la suite ...</a>"; ?></p>
 
 				</article>
 
-				<!-- ** Fin foreach ** -->
 			<?php endforeach; ?>
 
 			<div class="clearfix"></div>
