@@ -565,9 +565,6 @@ Utilitaires
     /** Utilitaires **/
 
 
-
-
-
 }
 
 /** Supérieur à 992px et inférieur à 1200px **/
@@ -577,21 +574,6 @@ Utilitaires
         width: 100%;
         margin: auto;
 
-    }
-
-    /** New shops **/
-    #new_shop img{
-        width: 240px;
-        height: 170px;
-    }
-
-    /** Links category **/
-    #low_nav_desktop ul li a{
-        padding: 10px 15px;
-    }
-
-    .at-grid{
-        transform: scale(0.8);
     }
 
 }
@@ -606,26 +588,48 @@ Utilitaires
 
     }
 
-    /** New shops **/
-    #new_shop img{
-        width: 240px;
-        height: 170px;
+    body section:first-of-type {
+        padding-top: 75px;
     }
 
-    /** Links category **/
-    #low_nav_desktop ul li a{
-        padding: 10px 15px;
+    .stark-login form {
+        animation: form-entry 3s ease-in-out;
+        background: #111;
+        background: linear-gradient(rgba(128, 194, 187, 0.7), #fff);
+        border: 6px solid #00a4a2;
+        box-shadow: 0 0 15px #163834;
+        border-radius: 5px;
+        display: inline-block;
+        height: 298px;
+        margin: 99px -12px 0 0;
+        position: relative;
+        z-index: 4;
+        width: 500px;
+        transition: 1s all;
     }
 
-    .at-grid{
-        transform: scale(0.8);
-    }
     #circle2 {
         display: none;
     }
     #circle1 {
         display: none;
     }
+}
+
+.stark-login2 form {
+
+    background: #FFF;
+    background: linear-gradient(#f3f3f3, #FFFFFF);
+    border: 6px solid #00a4a2;
+    box-shadow: 0 0 15px #00fffd;
+    border-radius: 5px;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    transition: 1s all;
+    margin: 0;
 }
 
 /*** Inférieur à 768px ***/
@@ -735,8 +739,8 @@ Utilitaires
     }
 
     .at-column{
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .at-user__title{
