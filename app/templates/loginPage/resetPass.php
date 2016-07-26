@@ -2,18 +2,14 @@
 
 <?php $this->start('main_content') ?>
 
-<?php
-        if ($displayMessage) :
-            if ($mailExists) {
-                echo 'Un lien pour réinitialiser votre mot de passe vous a été envoyé par mail.';
-            } else {
-                echo 'Ce mail ne correspond à aucun utilisateur enregistré.';
-            }
-        endif;
-        ?>
-<form action="#" method="post">
-    <input type="text" name="mail" placeholder="E-mail">
-    <input type="submit" name="reset-pass" value="Réinitialiser le mot de passe">
-
+<?php if (isset($passUpdated)) : ?>
+    Le mot de passe a été modifié<br>
+    <a href="<?= $this->url("home")?>">Revenir à l'acceuil</a>
+<?php else : ?>
+    <form action="#" method="post">
+        <input type="password" name="new_pass" placeholder="Nouveau mot de passe">
+        <input type="submit" name="change_password" value="Modifier le mot de passe">
+    </form>
+<?php endif ?>
 
 <?php $this->stop('main_content') ?>

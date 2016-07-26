@@ -2,93 +2,106 @@
 
 <?php $this->start('main_content') ?>
 
-<section id="hire">
-	<article id="contact">
+    <div id="contact_us">
+        <section id="hire">
+            <article id="contact">
 
-		<h1>Contactez-nous</h1>
-    
-		<!-- Afficher le formulaire si les infos n'existent pas en base de donnée -->
-    	<?php if(isset($msgInserted) === false) : ?>
-	    <form method="POST" action="">
-		      <div class="field name-box">
+                <!-- *** Principal title *** -->
+                <h2>Contactez-nous</h2>
 
-		      		<!-- **** NAME **** -->
-			        <input type="text" id="name" name="name" placeholder="Votre nom ..."/>
+                <!-- Afficher le formulaire si aucun message enregistré avant -->
+                <?php if (isset($msgInserted) === false) : ?>
 
-			        <!--**************
-			        		ERRORS 
-			        	**************-->
+                    <form method="POST" action="">
+                        <div class="field name-box">
 
-			        <!-- **** Too Short **** -->
-			        <?php if(isset($errors['name']['tooShort'])) echo '<p class="errors">Le nom doit contenir au moins 3 caractères</p>' ?>
+                            <!--**************
+                                    NAME
+                                **************-->
 
-			        <!-- **** Integer **** -->
-			        <?php if(isset($errors['name']['int'])) echo '<p class="errors">Le nom ne peut pas contenir de chiffres</p>' ?>
+                            <input type="text" id="name" name="name" placeholder="Votre nom ..."/>
 
-			        <!-- **** Too Long **** -->
-			        <?php if(isset($errors['name']['tooLong'])) echo '<p class="errors">Le nom ne peut pas contenir plus de 100 caractères</p>' ?>
 
-	        		<label for="name">Name</label>
-			        <span class="ss-icon">check</span>
-		      </div>
+                            <!-- **** ERRORS **** -->
 
-		      <div class="field email-box">
+                            <!-- **** Too Short **** -->
+                            <?php if (isset($errors['name']['tooShort'])) echo $errors['name']['tooShort'] ?>
 
-		      		<!-- **** EMAIL **** -->
-			        <input type="text" id="email" name="mail" placeholder="name@email.com"/>
+                            <!-- **** Integer **** -->
+                            <?php if (isset($errors['name']['int'])) echo $errors['name']['int'] ?>
 
-			        <!--**************
-			        		ERRORS 
-			        	**************-->
+                            <!-- **** Too Long **** -->
+                            <?php if (isset($errors['name']['tooLong'])) echo $errors['name']['tooLong'] ?>
 
-			        <!-- **** Too Short **** -->
-			        <?php if(isset($errors['mail']['tooShort'])) echo '<p class="errors">Le mail doit contenir au moins 8 caractères</p>' ?>
+                            <label for="name">Nom</label>
+                            <span class="ss-icon">check</span>
+                        </div>
 
-			        <!-- **** Too Long **** -->
-			        <?php if(isset($errors['mail']['tooLong'])) echo '<p class="errors">Le mail ne peut pas contenir plus de 50 caractères</p>' ?>
+                        <div class="field email-box">
 
-			        <!-- **** Invalid Format **** -->
-			         <?php if(isset($errors['mail']['format'])) echo '<p class="errors">Le mail doit avoir ce format : adresse@mail.com</p>' ?>
+                            <!--**************
+                                    EMAIL
+                                **************-->
 
-			        <label for="email">Email</label>
-			        <span class="ss-icon">check</span>
-		      </div>
+                            <input type="text" id="email" name="mail" placeholder="name@email.com"/>
 
-		      <div class="field msg-box">
+                            <!-- **** ERRORS **** -->
 
-		      		<!-- **** MESSAGE **** -->
-			        <textarea id="msg" rows="4" name="message" placeholder="Écrivez votre message ici"/></textarea>
+                            <!-- **** Too Short **** -->
+                            <?php if (isset($errors['mail']['tooShort'])) echo $errors['mail']['tooShort'] ?>
 
-			        <!--**************
-			        		ERRORS 
-			        	**************-->
+                            <!-- **** Too Long **** -->
+                            <?php if (isset($errors['mail']['tooLong'])) echo $errors['mail']['tooLong'] ?>
 
-			        <!-- **** Too Short **** -->
-			        <?php if(isset($errors['message']['tooShort'])) echo '<p class="errors">Le message doit contenir au moins 20 caractères</p>' ?>
+                            <!-- **** Invalid Format **** -->
+                            <?php if (isset($errors['mail']['format'])) echo $errors['mail']['format'] ?>
 
-			        <!-- **** Too Long **** -->
-			        <?php if(isset($errors['message']['tooLong'])) echo '<p class="errors">Le message ne peut pas contenir plus de 750 caractères</p>' ?>
+                            <label for="email">Email</label>
+                            <span class="ss-icon">check</span>
+                        </div>
 
-			        <label for="msg">Msg</label>
-			        <span class="ss-icon">check</span>
-		      </div>
+                        <div class="field msg-box">
 
-		      <!-- **** SUBMIT **** -->
-		      <input class="button" type="submit" name="send-message" value="send" />
+                            <!--**************
+                                    MESSAGE
+                                **************-->
 
-	  	</form>
+                            <textarea id="msg" rows="4" name="message"
+                                      placeholder="Écrivez votre message ici"/></textarea>
 
-	  	<!-- Si le message est envoyé en base de donnée: -->
-	  	<?php else : ?>
-	  		<div class="contact_success">
-	  			<div class="container">
-	  				<p>Votre message a bien été pris en compte.</p>
-	  			</div>
-	  		</div>
-	  <?php endif; ?>
+                            <!-- **** ERRORS **** -->
 
-  	</article>
-</section>
+                            <!-- **** Too Short **** -->
+                            <?php if (isset($errors['message']['tooShort'])) echo $errors['message']['tooShort'] ?>
 
+                            <!-- **** Too Long **** -->
+                            <?php if (isset($errors['message']['tooLong'])) echo $errors['message']['tooLong'] ?>
+
+                            <label for="msg">Msg</label>
+                            <span class="ss-icon">check</span>
+                        </div>
+
+                        <!-- **** SUBMIT **** -->
+                        <input class="button" type="submit" name="send-message" value="Envoyer"/>
+
+                    </form>
+
+                    <!-- Si un message a déjà été enregistré en DB -->
+                <?php else : ?>
+                    <div class="contact_success">
+                        <div class="container">
+
+                            <p>Votre message a bien été pris en compte.</p>
+
+                            <a href="<?= $this->url('home') ?>" id="back_home">Retour <span>accueil<span></a>
+
+                        </div>
+                    </div>
+
+                <?php endif; ?>
+
+            </article>
+        </section>
+    </div>
 
 <?php $this->stop('main_content') ?>

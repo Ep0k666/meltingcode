@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'edit-shop']) ?>
+<?php $this->layout('layout', ['title' => 'Modification Boutique']) ?>
 
 <?php $this->start('main_content') ?>
 
@@ -37,13 +37,13 @@
 
             <section>
                 <h3>Adresse</h3>
-                <p><label>Numéro de rue *:  <input type="text" name="number" value="<?php echo $shopToEdit['number'] ?>" placeholder="33" ></label></p> 
+                <p><label>Numéro de rue *:  <input type="text" name="number" value="<?php echo $shopToEdit['number'] ?>" placeholder="33" ></label></p>
 
                 <?php if(isset($errors['number']['empty'])) : ?>
                     <p  class="error">Le numéro de rue doit être spécifié</p>
                 <?php endif ?>
 
-                <p><label>Adresse *:  <input type="text" name="adress" value="<?php echo $shopToEdit['address'] ?>" placeholder="Avenue de Gaulle"></label></p> 
+                <p><label>Adresse *:  <input type="text" name="adress" value="<?php echo $shopToEdit['address'] ?>" placeholder="Avenue de Gaulle"></label></p>
                 <?php if(isset($errors['adress']['empty'])) : ?>
                     <p  class="error">L'adresse doit être spécifiée</p>
                 <?php endif ?>
@@ -59,11 +59,11 @@
                 <?php endif ?>
 
                 <!-- COORDONNEES GPS -->
-                <!--  <p><label>Coordonnées GPS:  </label>
+                <p><label>Coordonnées GPS:  </label>
                     <input type="text" name="latitude" value="<?php echo $shopToEdit['latitude'] ?>" placeholder="Latitude">
-                    
+
                     <input type="text" name="longitude" value="<?php echo $shopToEdit['longitude'] ?>" placeholder="Longitude">
-                <p>               --> 
+                <p>
             </section>
 
             <section>
@@ -88,9 +88,9 @@
                 <!-- LOGO BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                 <p>Logo actuel :</p>
-                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['logo']) ?>">
+                <img src="uploads/<?php echo $shopToEdit['logo'] ?>">
                 <p>Choisissez un autre fichier si vous souhaitez changer de logo :</p>
-                    Sélectionnez votre logo: <input name="logo" type="file" /></p>
+                Sélectionnez votre logo: <input name="logo" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
                 <?php elseif(isset($errors['file']['noImg'])) : ?>
@@ -107,7 +107,7 @@
                 <p> Photo n° 1 actuel:</p>
                 <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop1']) ?>">
                 <p>Choisissez un autre fichier si vous souhaitez changer de photo n° 1:</p>
-                    Sélectionnez votre photo n° 1: <input name="image1" type="file" /></p>
+                Sélectionnez votre photo n° 1: <input name="image1" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
                 <?php elseif(isset($errors['file']['noImg'])) : ?>
@@ -121,9 +121,9 @@
                 <!-- DEUXIEME IMAGE BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                 <p> Photo n° 2 actuel:</p>
-                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop2']) ?>">
+                <img src="uploads/<?php echo $shopToEdit['pictshop2'] ?>">
                 <p>Choisissez un autre fichier si vous souhaitez changer de photo n° 2:</p>
-                    Sélectionnez votre photo n° 2: <input name="image2" type="file" /></p>
+                Sélectionnez votre photo n° 2: <input name="image2" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
                 <?php elseif(isset($errors['file']['noImg'])) : ?>
@@ -137,9 +137,9 @@
                 <!-- TROISIEME IMAGE BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                 <p> Photo n° 3 actuel:</p>
-                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop3']) ?>">
+                <img src="uploads/<?php echo $shopToEdit['pictshop3'] ?>">
                 <p>Choisissez un autre fichier si vous souhaitez changer de photo n° 3:</p>
-                    Sélectionnez votre photo n° 3: <input name="image3" type="file" /></p>
+                Sélectionnez votre photo n° 3: <input name="image3" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
                 <?php elseif(isset($errors['file']['noImg'])) : ?>
@@ -192,7 +192,7 @@
                 <?php endif ?> -->
 
                 <!-- TROISIEME PRODUIT PHARE -->
-               <!--  <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+                <!--  <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                     Sélectionnez votre troisième produit phare: <input name="imgprod3" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
@@ -204,38 +204,19 @@
                     <p  class="error">Merci de choisir un fichier</p>
                 <?php endif ?> -->
                 <!-- DESCRIPTION PRODUIT -->
-               <!--  <p><label>Description du produit: <textarea name="descprod3" placeholder="Ajoutez une description courte et concise"></textarea></label></p>
+                <!--  <p><label>Description du produit: <textarea name="descprod3" placeholder="Ajoutez une description courte et concise"></textarea></label></p>
                 <?php if(isset($errors['description']['empty'])) : ?>
                     <p  class="error">La description doit être spécifiée</p>
                 <?php endif ?> -->
             </section>
 
 
-            <section>
-                <!-- LIENS RESEAUX SOCIAUX -->
-                <h3>Les réseaux sociaux</h3>
-                <!-- FACEBOOK -->
-                <p><label>Lien vers votre Facebook:<input type="text" name="facebook" value="<?php echo $shopToEdit['facebook'] ?>" placeholder="Facebook"></label></p>
-
-                <!-- INSTAGRAM -->
-                <p><label>Lien vers votre Instagram:<input type="text" name="instagram" value="<?php echo $shopToEdit['instagram'] ?>" placeholder="Instagram"></label></p>
-
-                <!-- GOOGLE + -->
-                <p><label>Lien vers votre Google +:<input type="text" name="google" value="<?php echo $shopToEdit['google'] ?>" placeholder="Google +"></label></p>
-
-                <!-- TWITTER -->
-                <p><label>Lien vers votre Twitter:<input type="text" name="twitter" value="<?php echo $shopToEdit['twitter'] ?>" placeholder="Twitter"></label></p>
-
-                <!-- PINTEREST -->
-                <p><label>Lien vers votre Pinterest:<input type="text" name="pinterest" value="<?php echo $shopToEdit['pinterest'] ?>" placeholder="Pinterest"></label></p>
-
-            </section>
             <div class="clearfix"></div>
 
 
             <p><button type="submit" name="edit-shop" value="" />Modifier la boutique</button></p>
             <p><button type="submit" name="draft-shop" value="" />Brouillon</button></p>
-            <!-- <p><button type="submit" name="preview-shop" value="" />Prévisualisation de la boutique</button></p> -->
+            <p><button type="submit" name="preview-shop" value="" />Prévisualisation de la boutique</button></p>
             <p><button type="submit" name="cancel">Annuler</button></p>
         </form>
     </div>

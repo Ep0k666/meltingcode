@@ -2,126 +2,150 @@
 
 <?php $this->start('main_content') ?>
 
-<section id="hire">
-	<article id="newsletter">
+    <div id="subscribe_newsletter">
+        <section id="hire">
+            <article id="newsletter">
 
-			<h1>Newsletter</h1>
-    
-    	<!-- Afficher le formulaire si les infos n'existent pas en base de donnée -->
-    	<?php if(isset($infoInserted) === false) : ?>
-	    <form method="POST" action="">
-		      <div class="field lastname-box">
+                <!-- *** Principal title *** -->
+                <h1>Newsletter</h1>
 
-		      		<!-- **** LASTNAME **** -->
-			        <input type="text" id="lastname" name="lastname" placeholder="Votre nom ..."/>
+                <!-- Afficher le formulaire si aucun message n'a déja été enregistré -->
+                <?php if (isset($infoInserted) === false) : ?>
 
-			        <!--**************
-			        		ERRORS 
-			        	**************-->
+                    <form method="POST" action="">
+                        <div class="field lastname-box">
 
-			        <!-- **** Too Short **** -->
-			        <?php if(isset($errors['lastname']['tooShort'])) echo '<p class="errors">Le nom doit contenir au moins 3 caractères</p>' ?>
+                            <!--**************
+                                    LASTNAME
+                                **************-->
 
-			        <!-- **** Too Long **** -->
-			        <?php if(isset($errors['lastname']['tooLong'])) echo '<p class="errors">Le nom ne peut pas contenir plus de 100 caractères</p>' ?>
+                            <input type="text" id="lastname" name="lastname" placeholder="Votre nom ..."/>
 
-	        		<label for="lastname">Nom</label>
-			        <span class="ss-icon">check</span>
-		      </div>
+                            <!-- **** ERRORS **** -->
 
-		      <div class="field firstname-box">
+                            <!-- **** Too Short **** -->
+                            <?php if (isset($errors['lastname']['tooShort'])) echo $errors['lastname']['tooShort'] ?>
 
-		      		<!-- **** FIRSTNAME **** -->
-			        <input type="text" id="firstname" name="firstname" placeholder="Votre prénom ..."/>
+                            <!-- **** Too Long **** -->
+                            <?php if (isset($errors['lastname']['tooLong'])) echo $errors['lastname']['tooLong'] ?>
 
-			        <!--**************
-			        		ERRORS 
-			        	**************-->
+                            <!-- **** INTEGER **** -->
+                            <?php if (isset($errors['lastname']['int'])) echo $errors['lastname']['int'] ?>
 
-			        <!-- **** Too Short **** -->
-			        <?php if(isset($errors['firstname']['tooShort'])) echo '<p class="errors">Le prénom doit contenir au moins 3 caractères</p>' ?>
+                            <label for="lastname">Nom</label>
+                            <span class="ss-icon">check</span>
+                        </div>
 
-			        <!-- **** Too Long **** -->
-			        <?php if(isset($errors['firstname']['tooLong'])) echo '<p class="errors">Le prénom ne peut pas contenir plus de 100 caractères</p>' ?>
+                        <div class="field firstname-box">
 
-	        		<label for="firstname">Prénom</label>
-			        <span class="ss-icon">check</span>
-		      </div>
+                            <!--**************
+                                   FIRSTNAME
+                                **************-->
 
-		      <div class="field age-box">
+                            <input type="text" id="firstname" name="firstname" placeholder="Votre prénom ..."/>
 
-		      		<!-- **** AGE **** -->
-			        <input type="text" id="age" name="age" placeholder="Age"/>
+                            <!-- **** ERRORS **** -->
 
-			        <!--**************
-			        		ERRORS 
-			        	**************-->
+                            <!-- **** Too Short **** -->
+                            <?php if (isset($errors['firstname']['tooShort'])) echo $errors['firstname']['tooShort'] ?>
 
-			        <!-- **** Empty **** -->
-			        <?php if(isset($errors['age']['empty'])) echo '<p class="errors">L\'âge doit être spécifié</p>' ?>
+                            <!-- **** INTEGER **** -->
+                            <?php if (isset($errors['firstname']['int'])) echo $errors['firstname']['int'] ?>
 
-			        <!-- **** Too Long **** -->
-			        <?php if(isset($errors['age']['tooLong'])) echo '<p class="errors">L\'âge ne peut pas contenir plus de 2 caractères</p>' ?>
+                            <!-- **** Too Long **** -->
+                            <?php if (isset($errors['firstname']['tooLong'])) echo $errors['firstname']['tooLong'] ?>
 
-			        <label for="age">Age</label>
-			        <span class="ss-icon">check</span>
-		      </div>
+                            <label for="firstname">Prénom</label>
+                            <span class="ss-icon">check</span>
+                        </div>
 
-		      <div class="field email-box">
+                        <div class="field age-box">
 
-		      		<!-- **** EMAIL **** -->
-			        <input type="text" id="email" name="mail" placeholder="name@email.com"/>
+                            <!--**************
+                                      AGE
+                                **************-->
 
-			        <!--**************
-			        		ERRORS 
-			        	**************-->
+                            <input type="text" id="age" name="age" placeholder="Votre âge ..."/>
 
-			        <!-- **** Too Short **** -->
-			        <?php if(isset($errors['mail']['tooShort'])) echo '<p class="errors">Le mail doit contenir au moins 8 caractères</p>' ?>
+                            <!-- **** ERRORS **** -->
 
-			        <!-- **** Too Long **** -->
-			        <?php if(isset($errors['mail']['tooLong'])) echo '<p class="errors">Le mail ne peut pas contenir plus de 50 caractères</p>' ?>
+                            <!-- **** Empty **** -->
+                            <?php if (isset($errors['age']['empty'])) echo $errors['age']['empty'] ?>
 
-			        <!-- *** Format *** -->
-			        <?php if(isset($errors['mail']['format'])) echo '<p class="errors">Le mail doit avoir ce format : adresse@mail.com</p>' ?>
+                            <!-- **** Too Long **** -->
+                            <?php if (isset($errors['age']['tooLong'])) echo $errors['age']['tooLong'] ?>
 
-			        <!-- *** Format *** -->
-			        <?php if(isset($errors['mail']['exist'])) echo '<p class="errors">Ce mail existe déjà</p>' ?>
+                            <label for="age">Âge</label>
+                            <span class="ss-icon">check</span>
+                        </div>
 
-			        <label for="email">Email</label>
-			        <span class="ss-icon">check</span>
-		      </div>
+                        <div class="field email-box">
 
-		      <div id="news_gender">
+                            <!--**************
+                                    EMAIL
+                                **************-->
 
-		      	<!-- *** HOMME *** -->
-		      	<label for="male">Homme
-		      		<input type="radio" name="gender" id="male" value="male" checked>
-		      	</label>
+                            <input type="text" id="email" name="mail" placeholder="name@email.com"/>
 
-		      	<!-- *** FEMME *** -->
-		      	<label for="female">Femme
-		      		<input type="radio" name="gender" id="female" value="female">
-		      	</label>
+                            <!-- **** ERRORS **** -->
 
-		      </div>
+                            <!-- **** Too Short **** -->
+                            <?php if (isset($errors['mail']['tooShort'])) echo $errors['mail']['tooShort'] ?>
 
-		      <!-- **** SUBMIT **** -->
-		      <input class="button" type="submit" name="news-submit" value="send" />
+                            <!-- **** Too Long **** -->
+                            <?php if (isset($errors['mail']['tooLong'])) echo $errors['mail']['tooLong'] ?>
 
-	  	</form>
+                            <!-- *** Format *** -->
+                            <?php if (isset($errors['mail']['format']))
+                                echo $errors['mail']['format']
+                            ?>
 
-	  	<!-- Si les coordonnées ont été enregistrées en base de donnée: -->
-	  	<?php else : ?>
-	  		<div class="news_success">
-	  			<div class="container">
-	  				<p>Votre inscription à la newsletter a bien été prise en compte.</p>
-	  			</div>
-	  		</div>
-	  <?php endif; ?>
+                            <!-- *** Mail exist *** -->
+                            <?php if (isset($errors['mail']['exist'])) echo $errors['mail']['exist'] ?>
 
-  	</article>
-</section>
+                            <label for="email">Email</label>
+                            <span class="ss-icon">check</span>
+                        </div>
+
+                        <div id="news_gender">
+
+                            <!--**************
+                                  GENDER
+                              **************-->
+
+                            <!-- *** HOMME *** -->
+                            <label for="male">Homme</label>
+                            <input type="radio" name="gender" id="male" value="male" checked>
+
+
+                            <!-- *** FEMME *** -->
+                            <label for="female">Femme</label>
+                            <input type="radio" name="gender" id="female" value="female">
+
+
+                        </div>
+
+                        <!-- **** SUBMIT **** -->
+                        <input class="button" type="submit" name="news-submit" value="Envoyer"/>
+
+                    </form>
+
+                    <!-- Message de succès -->
+                <?php else : ?>
+                    <div class="news_success">
+                        <div class="container">
+
+                            <p>Votre inscription à la newsletter a bien été prise en compte.</p>
+
+                            <a href="<?= $this->url('home') ?>" id="back_home">Retour <span>accueil<span></a>
+
+                        </div>
+                    </div>
+                <?php endif; ?>
+
+            </article>
+        </section>
+    </div>
 
 
 <?php $this->stop('main_content') ?>

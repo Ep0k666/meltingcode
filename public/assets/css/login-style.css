@@ -85,7 +85,7 @@ Log in form => Connexion
     border-radius: 5px;
     display: inline-block;
     height: 298px;
-    margin: 148px 29px 0 0;
+    margin: 67px 29px 0 0;
     position: relative;
     z-index: 4;
     width: 500px;
@@ -207,7 +207,7 @@ Log in form Inscription
     border-radius: 5px;
     display: inline-block;
     height: 530px;
-    margin: 64px 29px 0 0;
+    margin: 0 29px 0 0;
     position: relative;
     z-index: 4;
     width: 500px;
@@ -543,14 +543,13 @@ Utilitaires
  *******************/
 
 /** Supérieur à 1200px **/
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
 
 
 }
 
 /** Supérieur à 992px et inférieur à 1200px **/
-@media (min-width: 992px) and (max-width: 1200px){
-
+@media (min-width: 992px) and (max-width: 1200px) {
 
 }
 
@@ -560,18 +559,14 @@ Utilitaires
  *******************/
 
 /** Supérieur à 1200px **/
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
 
     /** Utilitaires **/
-
-
-
-
 
 }
 
 /** Supérieur à 992px et inférieur à 1200px **/
-@media (min-width: 992px) and (max-width: 1200px){
+@media (min-width: 992px) and (max-width: 1200px) {
 
     .containerconnect {
         width: 100%;
@@ -580,25 +575,24 @@ Utilitaires
     }
 
     /** New shops **/
-    #new_shop img{
+    #new_shop img {
         width: 240px;
         height: 170px;
     }
 
     /** Links category **/
-    #low_nav_desktop ul li a{
+    #low_nav_desktop ul li a {
         padding: 10px 15px;
     }
 
-    .at-grid{
+    .at-grid {
         transform: scale(0.8);
     }
 
 }
 
 /** Supérieur à 768px et inférieur à 992px **/
-@media (min-width: 700px) and (max-width: 992px){
-
+@media (min-width: 700px) and (max-width: 992px) {
 
     .containerconnect {
         width: 100%;
@@ -607,17 +601,17 @@ Utilitaires
     }
 
     /** New shops **/
-    #new_shop img{
+    #new_shop img {
         width: 240px;
         height: 170px;
     }
 
     /** Links category **/
-    #low_nav_desktop ul li a{
+    #low_nav_desktop ul li a {
         padding: 10px 15px;
     }
 
-    .at-grid{
+    .at-grid {
         transform: scale(0.8);
     }
     #circle2 {
@@ -629,8 +623,7 @@ Utilitaires
 }
 
 /*** Inférieur à 768px ***/
-@media (max-width: 700px){
-
+@media (max-width: 700px) {
 
     .stark-login2 form {
 
@@ -645,7 +638,7 @@ Utilitaires
         z-index: 4;
         width: 100%;
         transition: 1s all;
-        margin:0;
+        margin: 0;
     }
     .stark-login form {
 
@@ -660,7 +653,7 @@ Utilitaires
         z-index: 4;
         width: 100%;
         transition: 1s all;
-        margin:0;
+        margin: 0;
     }
     .stark-login2 input {
         background: #222;
@@ -687,22 +680,22 @@ Utilitaires
     }
 
     /** Utilitaires **/
-    .containerconnect{
+    .containerconnect {
         width: 90%;
-        margin:auto;
+        margin: auto;
     }
 
     /*** Low navigation ***/
-    #low_nav_desktop{
+    #low_nav_desktop {
         display: none;
     }
 
     /*** Low navigation mobile ***/
-    #hamburger{
+    #hamburger {
         display: block;
     }
 
-    #low_nav_mobile{
+    #low_nav_mobile {
         display: block;
     }
 
@@ -716,34 +709,33 @@ Utilitaires
         padding-top: 20px;
     }
 
-    #new_shop article:nth-child(5), #new_shop article:nth-child(6){
+    #new_shop article:nth-child(5), #new_shop article:nth-child(6) {
         display: none;
     }
 
 
     /*** Social network ***/
-    .social{
+    .social {
         transform: scale(0.6);
         margin: 0 -10px -15px;
     }
 
     /** About us **/
-
-    .at-grid{
+    .at-grid {
         transform: scale(1);
         border: none;
     }
 
-    .at-column{
+    .at-column {
         padding-top: 0px;
         padding-bottom: 0px;
     }
 
-    .at-user__title{
+    .at-user__title {
         font-size: 0.8rem;
     }
 
-    .at-user__name{
+    .at-user__name {
         font-size: 1rem;
     }
 
@@ -757,12 +749,12 @@ Utilitaires
         margin: auto;
     }
 
-    .at-column img{
+    .at-column img {
         transform: scale(0.75);
     }
 }
 
-@media (max-width: 550px){
+@media (max-width: 550px) {
 
     .stark-login form {
 
@@ -776,7 +768,7 @@ Utilitaires
         z-index: 4;
         width: 100%;
         transition: 1s all;
-        margin:0;
+        margin: 0;
     }
     .stark-login input {
         background: #222;
@@ -859,6 +851,6 @@ Utilitaires
         z-index: 4;
         width: 100%;
         transition: 1s all;
-        margin:0;
+        margin: 0;
     }
 }

@@ -1,0 +1,151 @@
+/* Police des titres */
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+/* Police des textes */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+.clearfix {
+    display: block;
+    clear: both;
+}
+
+#search_box {
+    font-size: 62.5%;
+    font-weight: 300;
+    color: #B6B6B6;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#detailed_search {
+    background: #efefef;
+    margin: 0px auto 120px;
+    text-align: center;
+    padding: 0 0 100px 0px;
+    width: 80%;
+    font-size: 2em;
+    max-width: 1100px;
+    border-top: 15px solid #313A3D;
+    font-family: 'SSStandard';
+}
+
+#detailed_search h2 {
+    margin-bottom: 40px;
+    font-size: 4em;
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    padding: 50px 0px;
+}
+
+#detailed_search form {
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#detailed_search input[type="text"] {
+    padding: 14px 3px 13px;
+    width: 45%;
+    font-size: 1em;
+    border: none;
+}
+
+#detailed_search label {
+    padding: 10px;
+    background-color: #80C2BB;
+    color: #FFF;
+}
+
+#detailed_search h3 {
+    font-size: 2.5em;
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    padding-top: 70px;
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+#detailed_search h3:last-of-type {
+    width: 42%;
+    float: right;
+}
+
+#container_activity_check {
+    width: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+
+#container_sector_shop {
+    width: 40%;
+    box-sizing: border-box;
+    float: right;
+    padding: 10px;
+}
+
+.activity_at_check {
+    float: left;
+    margin-top: 30px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.sector_at_check {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.clearfix {
+    display: block;
+    clear: both;
+}
+
+#detailed_search .activity_at_check label, #detailed_search .sector_at_check label {
+    float: left;
+    width: 75%;
+}
+
+#detailed_search input[type="checkbox"] {
+    width: 40px;
+    height: 36px;
+    border: none;
+    margin-top: -1px;
+    float: left;
+}
+
+button[name="search_detailed"] {
+    background: #313A3D;
+    color: white;
+    -webkit-appearance: none;
+    border: none;
+    position: relative;
+    padding: 13px 50px;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+button[name="search_detailed"]:hover {
+    background: #80C2BB;
+    color: white;
+}
+
+button[name="search_detailed"]:focus {
+    outline: none;
+    background: #D1D2D2;
+}
+
+button[name="search_detailed"]:active {
+    outline: none;
+    background: #D1D2D2;
+}

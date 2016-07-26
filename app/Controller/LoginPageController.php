@@ -9,10 +9,9 @@ class LoginPageController extends Controller
     public function login()
     {
 
-   /*     echo "start var_dump<br />\n";
-        var_dump($_POST);
-        echo "fin var_dump<br />\n";*/
-
+        /*     echo "start var_dump<br />\n";
+             var_dump($_POST);
+             echo "fin var_dump<br />\n";*/
 
 
         if (isset($_POST['add-user'])) {
@@ -33,15 +32,15 @@ class LoginPageController extends Controller
                     'role' => 'editeur',
                 ];
                 $usersManager->insert($data);
-                $this->redirectToRoute('connexion');
             }
         }
         $this->show('/loginPage/signup');
 
     }
 
-     public function account(){
-         $this->allowTo(['editeur']);
+    public function account()
+    {
+        $this->allowTo(['editeur']);
 
         /* $data = [
              'login' => htmlspecialchars($_POST['login'], FILTER_SANITIZE_FULL_SPECIAL_CHARS),
@@ -76,8 +75,8 @@ class LoginPageController extends Controller
          }
          return $this->find($id);*/
 
-         $this->show('/account');
-     }
+        $this->show('/account');
+    }
 
     public function logoff()
     {

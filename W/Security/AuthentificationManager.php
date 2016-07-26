@@ -55,17 +55,6 @@ class AuthentificationManager
 	}
 
 	/**
-	 * Retourne les données présente en session sur l'utilisateur connecté
-	 * @return  mixed Le tableau des données utilisateur, null si non présent
-	 */
-	public function getLoggedUser()
-	{
-		return (isset($_SESSION["user"])) ? $_SESSION['user'] : null;
-	}
-
-	
-
-	/**
 	 * Utilise les données utilisateurs présentes en base pour mettre à jour les données en session
 	 * @return  boolean
 	 */
@@ -85,4 +74,18 @@ class AuthentificationManager
 
 		return false;
 	}
+
+	/**
+	 * Retourne les données présente en session sur l'utilisateur connecté
+	 * @return  mixed Le tableau des données utilisateur, null si non présent
+	 */
+	public function getLoggedUser()
+	{
+		return (isset($_SESSION["user"])) ? $_SESSION['user'] : null;
+	}
+
+    public function hashPassword($plainPassword)
+    {
+        return password_hash($plainPassword, PASSWORD_DEFAULT);
+    }
 }
