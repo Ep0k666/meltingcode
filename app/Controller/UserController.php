@@ -1,38 +1,24 @@
 <?php
-
 namespace Controller;
-
 use \W\Controller\Controller;
-
 class UserController extends Controller
 {
     public function UpdateUser($id)
     {
+
         /*Pour sécuriser l'accès direct via url à la page /shops*/
         $this->allowTo(['editeur']);
-
         if (isset($_POST['edit-user'])) {
-
-
-            if (isset($_POST['login'])
-
+            if (!empty($_POST['login'])
                 && !empty($_POST['pass'])
                 && !empty($_POST['mail'])
                 && !empty($_POST['firstname'])
                 && !empty($_POST['lastname'])
                 && !empty($_POST['company'])
 
-                && (isset($_POST['login'])
-                    && isset($_POST['pass'])
-                    && isset($_POST['mail'])
-                    && isset($_POST['firstname'])
-                    && isset($_POST['lastname'])
-                    && isset($_POST['company']))
             )
-
-
-                $usersManager1 = new \Manager\UserManager();
-            $usersManager1->setTable('users');
+                $usersManager = new \Manager\UserManager();
+            $usersManager->setTable('user');
             $data = [
                 'login' => htmlspecialchars($_POST['login'], FILTER_SANITIZE_FULL_SPECIAL_CHARS),
                 'password' => htmlspecialchars(password_hash($_POST['pass'], PASSWORD_DEFAULT)),
@@ -42,15 +28,9 @@ class UserController extends Controller
                 'email' => filter_var($_POST['mail'], FILTER_SANITIZE_EMAIL),
                 'role' => 'editeur',
             ];
-
-            $usersManager1->update($data, $id);
+            $usersManager->update($data, $id);
             $this->redirectToRoute('account');
-
-
         }
-
         $this->show('/loginPage/LoginPage');
-
-
     }
 }

@@ -12,13 +12,24 @@ class Controller
 {
 
 	/**
+     * Redirige vers une route nommée
+     * @param  string $routeName Le nom de route vers laquelle rediriger
+     * @param  array $params Tableau de paramètres optionnel de cette route
+     */
+    public function redirectToRoute($routeName, array $params = array())
+    {
+        $uri = $this->generateUrl($routeName, $params);
+        $this->redirect($uri);
+    }
+
+    /**
 	 * Génère l'URL correspondant à une route nommée
 	 * @param  string $routeName Le nom de route
 	 * @param  mixed  $params    Tableau de paramètres optionnel de cette route
 	 * @param  boolean $absolute Retourne une url absolue si true (relative si false)
 	 * @return  L'URL correspondant à la route
 	 */
-	public static function generateUrl($routeName, $params = array(), $absolute = false)
+    public static function generateUrl($routeName, $params = array(), $absolute = false)
 	{
 		$params = (empty($params)) ? array() : $params;
 
@@ -40,24 +51,28 @@ class Controller
 	public function redirect($uri)
 	{
 		header("Location: $uri");
-		die();	
+        die();
 	}
 
 	/**
-	 * Redirige vers une route nommée
-	 * @param  string $routeName Le nom de route vers laquelle rediriger
-	 * @param  array  $params    Tableau de paramètres optionnel de cette route
+     * Affiche une page 404
 	 */
-	public function redirectToRoute($routeName, array $params = array())
+    public function showNotFound()
 	{
-		$uri = $this->generateUrl($routeName, $params);
-    	$this->redirect($uri);
-	}
+        //@todo 404
+        header('HTTP/1.0 404 Not Found');
 
+        $file = '../app/templates/w_errors/404.php';
+        if (file_exists($file)) {
+            $this->show('w_errors/404');
+        } else {
+            die("404");
+        }
+	}
 
 	/**
 	 * Affiche un template
-	 * 
+     *
 	 * @param  string $file Chemin vers le template, relatif à app/templates/
 	 * @param  array  $data Données à rendre disponibles à la vue
 	 */
@@ -86,39 +101,6 @@ class Controller
 	}
 
 	/**
-	 * Affiche une page 403
-	 */
-	public function showForbidden()
-	{
-		header('HTTP/1.0 403 Forbidden');
-
-		$file = '../app/templates/w_errors/403.php';
-		if (file_exists($file)){
-			$this->show('w_errors/403');
-		}
-		else {
-			die("403");
-		}
-	}
-
-	/**
-	 * Affiche une page 404
-	 */
-	public function showNotFound()
-	{
-		//@todo 404
-		header('HTTP/1.0 404 Not Found');
-
-		$file = '../app/templates/w_errors/404.php';
-		if (file_exists($file)){
-			$this->show('w_errors/404');
-		}
-		else {
-			die("404");
-		}	
-	}
-
-	/**
 	 * Récupère l'utilisateur actuellement connecté
 	 */
 	public function getUser()
@@ -130,7 +112,7 @@ class Controller
 
 	/**
 	 * Autorise l'accès à un ou plusieurs rôles
-	 * 		
+     *
 	 * @param  mixed $roles Tableau de rôles, ou chaîne pour un seul
 	 */
 	public function allowTo($roles)
@@ -148,6 +130,20 @@ class Controller
 		$this->showForbidden();
 	}
 
+    /**
+     * Affiche une page 403
+     */
+    public function showForbidden()
+    {
+        header('HTTP/1.0 403 Forbidden');
+
+        $file = '../app/templates/w_errors/403.php';
+        if (file_exists($file)) {
+            $this->show('w_errors/403');
+        } else {
+            die("403");
+        }
+    }
 
 	/**
 	 * Retourne une réponse JSON au client

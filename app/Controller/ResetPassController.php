@@ -47,6 +47,7 @@ class ResetPassController extends Controller
 
     public function sendRecoveryLink($mail, $token)
     {
+
         $mailer = new \PHPMailer();
 
         $mailer->isSMTP();                                          // On va se servir de SMTP
@@ -64,7 +65,7 @@ class ResetPassController extends Controller
         $mailer->isHTML(true);                                       // Set email format to HTML
 
         $mailer->Subject = 'Sujet de l\'email';
-        $mailer->Body    = 'Message au format html : <a href="'.Controller::generateUrl('reset', [':tk' => $token]).'">Lien vers la page de mot de passe</a>';
+        $mailer->Body = 'Message au format html : <a href="' . $this->generateUrl('reset', ['tk' => $token]) . '">Lien vers la page de mot de passe</a>';
         $mailer->AltBody = 'Le message en texte brut, pour les clients qui ont désactivé l\'affichage HTML';
 
         $mailer->send();
@@ -96,21 +97,6 @@ class ResetPassController extends Controller
         if (isset($_POST['change_password'])) {
             // On dÈclare le tableau d'erreur
             /*$errors = [];
-
-            // Verification
-            if (!empty($_POST['new_pass'])) {
-                if (strlen($_POST['new_pass']) < 8 || strlen($_POST['new_pass']) > 50) {
-                    // S'il est pas vide et qu'il est pas compris entre 2 et 50 carractËres
-                    $errors['new_pass']['size'] = true;
-                }
-            } else {
-                // Si on a pas prÈcisÈ de mot de passe
-                $errors['new_pass']['empty'] = true;
-            }
-            */
-
-            // S'il n'y a pas d'erreur, on entre les changement dans la base de donnÈe
-//            if (count($errors) === 0) {
 
                 /* Hash du nouveau mot de passe */
                 $security = new \W\Security\AuthentificationManager();
