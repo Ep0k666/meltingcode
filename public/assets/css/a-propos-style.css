@@ -1,0 +1,157 @@
+/* ----------------------------------------CSS PAGE A PROPOS--------------------------------------- */
+.container{
+	display: block;
+	margin: 0 auto;
+	width: 1100px;
+}
+/* PREMIER TITRE DE LA PAGE */
+#apropos h2{
+	margin-bottom: 40px;
+	font-size: 4em;
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	margin:50px 0px;
+	color:#D5D5D5;
+}
+
+/* SECOND TITRE DE LA PAGE */
+#apropos h3{
+	margin-bottom: 40px;
+	font-size: 4em;
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	margin:50px 0px;
+	color:#80C2BB;
+	text-align:center;
+}
+
+/* LE CSS COMMUN AU DEUX ARTICLES TEXTE */
+.apropos_content1{
+	width:50%;
+	float:left;
+	background-color:#D9F1EF;
+	height:400px;
+	box-sizing:border-box;
+	padding:60px 50px;
+	font-size: 1.5em;
+	font-family: 'Titillium Web', sans-serif;
+	color:#928F8F;
+	text-align:justify;
+	line-height:18px;
+	box-sizing: border-box;
+	border: 10px solid #D9F1EF;
+}
+
+/* LE CSS COMMUN AU DEUX ARTICLES TEXTE AU SURVOL */
+.apropos_content1:hover{
+	background-color:#80C2BB;
+	color:white;
+	border: 10px solid #D9F1EF;
+}
+
+/* CSS CORRESPONDANT A LA PREMIERE IMAGE */
+#apropos_image1, #apropos_image2{
+	width:50%;
+	float:left;
+	background-image:url('../img/apropos2.jpg');
+	background-size:cover;
+	background-position:left;
+	height:400px;
+	opacity: 0.5;	
+	box-sizing: border-box;
+}
+
+/* CSS CORRESPONDANT A LA SECONDE IMAGE */
+#apropos_image2{
+	background-image:url('../img/apropos1.jpg');
+}
+
+/* LE CSS COMMUN AU DEUX ARTICLES IMAGE AU SURVOL */
+#apropos_image1:hover, #apropos_image2:hover{
+	opacity:1;
+}
+
+
+/* -------------------------------------RESPONSIVE------------------------------------ */
+
+@media (min-width: 992px) and (max-width: 1200px){
+
+	.container{
+		width: 900px;
+	}
+
+	#apropos_image1, #apropos_image2{
+		width: 50%;
+	}
+
+	.apropos_content1{
+		padding:30px 20px;
+	}
+}
+
+@media (min-width: 700px) and (max-width: 992px){
+
+	.container{
+		width: 90%;
+	}
+
+	#apropos_image1, #apropos_image2{
+		width: 50%;
+	}
+
+	.apropos_content1{
+		padding:10px 10px;
+		line-height: 16px;
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 700px){
+
+	.container{
+		width: 100%;
+	}
+
+	#apropos_image1, #apropos_image2{
+		height: 250px;
+		opacity: 1;
+		width: 80%;
+		display: block;
+		margin: auto;
+	}
+
+	body #apropos{
+		padding-top: 0px;
+	}
+
+	.apropos_content1, .apropos_content1:hover{
+		border: none;
+		background-color: #D9F1EF;
+	}
+
+	.apropos_content1{
+		line-height: 16px;
+		font-size: 15px;
+		height: 480px;
+		width: 100%;
+		border: none;
+		background-color: #D9F1EF;
+		padding: 20px 25px;
+	}
+
+	#apropos_image2{
+		display: none;
+	}
+
+	body #apropos #apropos_content2{
+		height: 360px;
+	}
+
+	#apropos h2{
+		font-size: 30px;
+	}
+
+	#apropos h3{
+		font-size: 25px;
+	}
+}

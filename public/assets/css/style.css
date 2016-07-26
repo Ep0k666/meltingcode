@@ -1,0 +1,145 @@
+/* Police des titres */
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+/* Police des textes */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+#cont section{
+    width:25%;
+    float:left;
+    margin:0 50px;
+}
+#cont{
+    background: #efefef;
+    width: 100%;
+    padding:100px 50px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#cont h2{
+    text-align:center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:40px;
+    margin-bottom:2em;
+    color:#CCCCCC;
+}
+
+#cont h3{
+    color:#80C2BB;
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+    text-align:center;
+}
+#cont .error{
+    color: red;
+}
+#cont legend {
+    color:#80C2BB;
+    font-size: 4em;
+    font-family: 'Lobster', cursive;
+    margin:auto;
+    padding-bottom: 50px;
+}
+
+#cont form label{
+    text-transform:uppercase;
+    font-size:15px;
+}
+
+#cont form{
+    width:100%;
+}
+
+#cont form p{
+    color:#313A3D;
+    margin:20px 0px;
+    font-size:20px;
+}
+
+#cont input{
+    width:100%;
+    height:2em;
+    margin-top:10px;
+    margin-bottom:5px;
+    border: none;
+    background: #E8E9EA;
+    padding-left: 5%;
+    color: #80C2BB;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    padding:10px 5%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#cont input:focus{
+    outline: none;
+}
+
+#cont textarea{
+    width:100%;
+    height:10em;
+    margin-bottom:20px;
+    border: none;
+    background: #E8E9EA;
+    padding-left: 5%;
+    color: #80C2BB;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 10px 5%;
+}
+
+#cont textarea:focus{
+    outline: none;
+}
+
+#cont select{
+    border: none;
+    background: #E8E9EA;
+    font-size: 0.8em;
+    font-family: 'Titillium Web', sans-serif;
+    color: #6E6E6E;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    margin-bottom:4em;
+}
+
+#cont select:focus{
+    outline: none;
+    border:none;
+}
+
+#cont select:hover{
+    outline: none;
+    border:none;
+}
+
+#cont input[type="file"]{
+    background-color:#efefef;
+}
+
+#cont p button{
+    background:#313A3D;
+    color: white;
+    -webkit-appearance: none;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    padding: 13px 50px;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+    display:block;
+    margin:auto;
+
+}
+
+#cont button:hover {
+    background: #80C2BB;
+    color: white;
+}
