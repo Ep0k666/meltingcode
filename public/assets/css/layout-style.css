@@ -14,8 +14,8 @@
 /*****************************
 		  UTILITAIRES
  *****************************/
-body section:first-of-type {
-    padding-top: 76px;
+body section:first-of-type{
+	padding-top: 76px;
 }
 
 body #high_nav{
@@ -37,11 +37,11 @@ body #high_nav{
 /*****************************
 		HIGH NAVIGATION
  *****************************/
-header {
-    position: fixed;
-    width: 100%;
-    margin: auto;
-    z-index: 5000;
+header{
+	position: fixed;
+	width: 100%;
+	margin: auto;
+	z-index: 5000;
 }
 /*** Titre principal ***/
 #high_nav h1{
@@ -59,6 +59,7 @@ header {
 	color: #FFF;
 	transform: rotate(0deg);
 	display: inline-block;
+	font-size: 42px;
 }
 
 #high_nav strong span:nth-child(2){
@@ -66,7 +67,7 @@ header {
 }
 
 #high_nav h1:hover strong span:first-child{
-	animation: 1s returnIt ease 1;
+	animation: 1.5s returnIt ease 1;
 }
 
 @keyframes returnIt{
@@ -96,13 +97,33 @@ header {
 	text-decoration: none;
 	padding: 27px 15px;
 	border-bottom: 0px solid #80C2BB;
+	box-sizing: border-box;
 }
 
 #high_nav ul li a:hover{
 	color: #80C2BB;
 	border-bottom: 5px solid #80C2BB;
+	padding: 27px 15px 29px;
 }
 
+#open_search, #close_search{
+	float: left;
+	background-color: #80C2BB;
+	width: 100px;
+	padding: 10px;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 40px;
+}
+
+#open_search, #close_search{
+	display: none;
+}
+
+#open_search:hover, #close_search:hover{
+	cursor: pointer;
+	background-color: #D1D2D2;
+}
 
 /*** Formulaire de recherche ***/
 #high_nav input{
@@ -144,7 +165,8 @@ button[name="search_submit"]:hover{
 	padding: 10px 20px;
 	margin: 40px auto 20px;
 	background-color: #80C2BB;
-	display: inline-block;
+	display: block;
+	width: 275px;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #FFF;
@@ -265,7 +287,8 @@ footer{
 
 /* Copyright */
 
-footer p{
+footer p, footer a{
+	text-decoration: none;
 	text-align:center;
 	color:#80C2BB;
 	font-weight:bold;
@@ -289,17 +312,36 @@ footer p{
 @media (min-width: 992px) and (max-width: 1200px){
 
 	/** Utilitaires **/
-	.container, .container{
+	.container{
 		width: 900px;
-	}
-
-	/** Search barre **/
-	#high_nav input{
-		width: 150px;
 	}
 
 	button[name="search_submit"]{
 		margin-right: 35px;
+	}
+
+	#high_nav form{
+		display: none;
+	}
+
+	#high_nav input{
+		margin-left: 26px;
+	}
+
+	#open_search{
+		display: block;
+	}
+
+	body #new_shop h3, body #about_us h3{
+		top: -62px;
+	}
+
+	body #new_shop{
+		padding-bottom: 50px;
+	}
+
+	#new_shop article{
+		min-height: 360px;
 	}
 }
 
@@ -311,9 +353,9 @@ footer p{
 		width: 650px;
 	}
 
-    body section:first-of-type {
-        padding-top: 122px;
-    }
+	body section:first-of-type{
+	padding-top: 120px;
+	}
 
 	/*** High navigation ***/
 	#high_nav{
@@ -330,11 +372,12 @@ footer p{
 	}
 
 	#high_nav ul li a{
-		padding: 27px 15px;
+		font-size: 15px;
+		padding: 27px 5px;
 	}
 
 	#high_nav form{
-		margin-right: 0%;
+		margin-left: 50%;
 	}
 
 	#high_nav input{
@@ -345,6 +388,14 @@ footer p{
 		margin-top: 5px;
 		margin-right: 25px;
 	}
+
+	body #new_shop{
+		padding-bottom: 0;
+	}
+
+	body #about_us h3{
+		margin-top: 0;
+	}
 }
 
 /*** Inférieur à 768px ***/
@@ -353,10 +404,10 @@ footer p{
 	/** Utilitaires **/
 	.container{
 		width: 90%;
-    }
+	}
 
-    body section:first-of-type {
-        padding-top: 166px;
+	body section:first-of-type{
+	padding-top: 174px;
 	}
 
 	/*** Titre principal ***/
@@ -369,6 +420,14 @@ footer p{
 	/*** High navigation ***/
 	#high_nav{
 		padding-bottom: 10px;
+	}
+
+	#high_nav input{
+		width: 
+	}
+
+	#open_search, #close_search{
+		display: none;
 	}
 
 	#high_nav a{
@@ -416,6 +475,10 @@ footer p{
 
 	#high_nav ul li a{
 		padding: 15px 10px;
+	}
+
+	#high_nav ul li:nth-child(2){
+		display: none;
 	}
 
 	#high_nav ul li a:focus, #high_nav ul li a:active{

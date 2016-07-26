@@ -5,9 +5,34 @@ namespace Manager;
 
 class ShopManager extends \W\Manager\Manager
 {
+
     /***
+     * Fonction pour page "addshop"
+     * Affiche la liste des catégories dans la balise select
+     ***/
+    public function getAllcategories()
+    {
+        $sql = 'SELECT * FROM categoryshops ORDER BY category';
+        $stmt=$this->dbh->query($sql);
+        return $stmt->fetchAll();
+    }
+
+    
+     /***
+     * Fonction pour page "adminshop"
+     * Affiche la liste des shops en foncton du user connecté
+     ***/
+    public function getShopsUser($id)
+    {
+        $sql = 'SELECT * FROM shops WHERE id_user = :id';
+        $stmt = $this->dbh->prepare($sql);
+        $stmt->bindParam(':id', $id);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+       /***
      * Fonction pour page "home"
-     * Shops les plus consultés
+     * Shops les plus consultées
      ***/
     public function mostViewed()
     {
@@ -29,7 +54,7 @@ class ShopManager extends \W\Manager\Manager
 
     /***
      * Fonction pour page "home" 
-     * Toutes les activités 
+     * Return Shop category
      ***/
     public function getAllActivities()
     {
@@ -40,7 +65,7 @@ class ShopManager extends \W\Manager\Manager
 
     /***
      * Fonction pour page "home" 
-     * Shop par l'activité
+     * Return Shop par l'activité
      ***/
     public function getShopByActivity($id)
     {
@@ -53,9 +78,9 @@ class ShopManager extends \W\Manager\Manager
 
     /***
      * Fonction pour page "home" 
-     * Activité recherché
+     * Return Shop par l'activité
      ***/
-    public function getActivitySearched($id)
+    public function getCategorySearch($id)
     {
         $sql = 'SELECT * FROM categoryshops WHERE id_catshops = :id';
         $stmt = $this->dbh->prepare($sql);

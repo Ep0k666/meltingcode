@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'admin-home']) ?>
+<?php $this->layout('layout', ['title' => 'admin-shop'])?>
 
 <?php $this->start('main_content') ?>
 
@@ -11,7 +11,7 @@
 			<h2>Bienvenue dans l’aventure!</h2>
 			<h3>Pas encore de boutique ?</h3>
 
-            <a href="<?= $this->url('add-shop') ?>">Ajouter</a>
+			<a href="<?= $this->url('add-shop')  ?>">Ajouter</a>
 			<div class="clearfix"></div>
 			<hr>
 		</div>
@@ -20,28 +20,33 @@
 	<section>
 		<div class="container">
 
-			<h3>Gérer vos boutiques:</h3>
+			
+			<?php foreach ($shopToAdmin as $key):?>
+				<article>
+				<h3>Votre boutique: <?=$key['name']?></h3>
+					<div class="img-admin-shop">
+						<!-- <div id="image-shop"> <img src="<?= $this->assetUrl('uploads/' . $shopToAdmin[0]['pictshop1']) ?>"></div> -->
+						<?php
+							$path=$key['pictshop1'];
+							$img=$this->assetUrl('uploads/' . $path);
+						?>
+						<div id="image-shop" style="background-image: url('<?= $img ?>');"> </div>
+					</div>
 
-			<article>
-
-				<div class="img-admin-shop">
-					<div id="image-shop"></div>
-				</div>
-
-				<div class="link-admin-shop">
-					<a href="<?= $this->url('add-shop')  ?>" type="submit" name>Modifier</a>
-
-					<a href="<?= $this->url('add-shop')  ?>" type="submit" name>Supprimer</a>
-				</div>
-
-				<div class="clearfix"></div>
-
-			</article>
+					<div class="link-admin-shop">
+						<!-- <a href="<?= $this->url('edit-shop') ?>">Modifier</a> -->
+						<a href="<?= $this->url('edit-shop',['id'=>$key['id']]) ?>">Modifier</a>
+						<a href="<?= $this->url('delete-shop',['id'=>$key['id']])  ?>">Supprimer</a>
+					</div>
+	 
+					<div class="clearfix"></div>
+				<hr>
+				</article>	
+			<?php endforeach?>	
+			
 		</div>
 	</section>
 
 </div>
-
-
 
 <?php $this->stop('main_content') ?>

@@ -1,136 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Lor'N Shop | Achetez plus proche</title>
 
     <title>Home</title>
 
-    <!-- *******************************************
-                UTILITAIRES, CDN, FONT ETC...
-         *******************************************-->
-
-    <!-- *** FONT AWESOME CDN *** -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
-          integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-    <!-- *** FLEXSLIDER CSS *** -->
-    <link rel="stylesheet" href="<?= $this->assetUrl('css/flexslider.css') ?>">
     <!-- *** RESET CSS *** -->
     <link rel="stylesheet" href="<?= $this->assetUrl('css/reset.css') ?>">
-    <!-- *** CDN JQUERY *** -->
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    <!-- *** JQUERY FLEXSLIDER *** -->
-    <script src="<?= $this->assetUrl('js/jquery.flexslider.js') ?>"></script>
-
+    <!-- *** FLEXSLIDER CSS *** -->
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/flexslider.css') ?>">
 
     <!-- *******************************************
-                        DISPLAY STYLE
-         *******************************************-->
+                            DISPLAY STYLE   
+             *******************************************-->
 
 
-    <!-- *** LAYOUT CSS *** -->
-    <link rel="stylesheet" href="<?= $this->assetUrl('css/layout-style.css') ?>">
+        <!-- *** LAYOUT CSS *** -->
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/layout-style.css') ?>">
 
-    <!-- *** STYLE CSS HOME *** -->
-    <?php if ($title == 'home'): ?>
+        <!-- *** STYLE CSS HOME *** -->
+        <?php if($title == 'home'):?>
         <link rel="stylesheet" href="<?= $this->assetUrl('css/home-style.css') ?>">
-    <?php endif; ?>
+        <?php endif; ?>
 
-    <!-- *** STYLE CSS Login PAge *** -->
+        <!-- *** STYLE CSS NEWSLETTER*** -->
+        <?php if($title == 'newsletter') : ?>
+            <link rel="stylesheet" href="<?= $this->assetUrl('css/news-style.css') ?>">
+        <?php endif; ?>
+
+        <!-- *** STYLE CSS CONTACT *** -->
+        <?php if($title == 'contact') :?>
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/contact-style.css') ?>">
+        <?php endif; ?>
+
+        <!-- *** STYLE CSS A PROPOS *** -->
+        <?php if($title == 'a-propos') :?>
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/a-propos-style.css') ?>">
+        <?php endif; ?>
+
+    
+ <!-- *******************************************
+                            SEARCH STYLE
+             *******************************************-->
+
+
+        <!-- *** STYLE CSS SEARCH *** -->
+        <?php if($title == 'search') :?>
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/search-style.css') ?>">
+        <?php endif; ?>
+
+        <!-- *** STYLE CSS DETAILED SEARCH *** -->
+        <?php if($title == 'detailed-search') :?>
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/detailed-search-style.css') ?>">
+        <?php endif; ?>
+
+        <!-- *** STYLE CSS ACTIVITY *** -->
+        <?php if($title == 'activity') : ?>
+            <link rel="stylesheet" href="<?= $this->assetUrl('css/activity-style.css') ?>">
+        <?php endif; ?>
+
+
+
+    <!-- *** FONT AWESOME CDN *** -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+     <!-- *******************************************
+                            LOGIN STYLE
+             *******************************************-->
+    <!-- *** CSS Page Login/Connect *** -->
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/loginstyle.css') ?>">
     <?php if ($title == 'login'): ?>
         <link rel="stylesheet" href="<?= $this->assetUrl('css/account-user.css') ?>">
     <?php endif; ?>
+    
+    <!-- *** STYLE CSS BACK SHOP *** -->
+    <!-- *** CSS Page AdminShops *** -->
+   <!--  <link rel="stylesheet" href="<?= $this->assetUrl('css/admin-shops.css') ?>"> -->
+    <!-- *** CSS Page Add/Edit/Delete Shop *** -->
+    <!-- <link rel="stylesheet" href="<?= $this->assetUrl('css/shopstyles.css') ?>"> -->
+    <!-- *** CSS Page View Shop *** -->
+    <!-- <link rel="stylesheet" href="<?= $this->assetUrl('css/shopviewstyle.css') ?>"> -->
 
-    <!-- *** STYLE CSS NEWSLETTER*** -->
-    <?php if ($title == 'newsletter') : ?>
-        <link rel="stylesheet" href="<?= $this->assetUrl('css/news-style.css') ?>">
-    <?php endif; ?>
-
-    <!-- *** STYLE CSS NEWSLETTER*** -->
-    <?php if ($title == 'newsletter') : ?>
-        <link rel="stylesheet" href="<?= $this->assetUrl('css/news-style.css') ?>">
-    <?php endif; ?>
-
-        <!-- *** STYLE CSS CONTACT *** -->
-    <?php if ($title == 'contact') : ?>
-        <link rel="stylesheet" href="<?= $this->assetUrl('css/contact-style.css') ?>">
-    <?php endif; ?>
-
-
-    <!-- *******************************************
-                        SEARCH STYLE
-         *******************************************-->
-
-
-    <!-- *** STYLE CSS SEARCH *** -->
-    <?php if ($title == 'search') : ?>
-        <link rel="stylesheet" href="<?= $this->assetUrl('css/search-style.css') ?>">
-    <?php endif; ?>
-
-    <!-- *** STYLE CSS DETAILED SEARCH *** -->
-    <?php if ($title == 'detailed-search') : ?>
-        <link rel="stylesheet" href="<?= $this->assetUrl('css/detailed-search-style.css') ?>">
-    <?php endif; ?>
-
-    <!-- *** STYLE CSS ACTIVITY *** -->
-    <?php if ($title == 'activity') : ?>
-        <link rel="stylesheet" href="<?= $this->assetUrl('css/activity-style.css') ?>">
-    <?php endif; ?>
-
-
-    <!-- *******************************************
+   <!-- *******************************************
                         SHOP STYLE
          *******************************************-->
 
-
     <!-- *** STYLE CSS ADMIN HOME *** -->
-    <?php if ($title == 'admin-home') : ?>
-        <link rel="stylesheet" href="<?= $this->assetUrl('css/admin-shop-style.css') ?>">
+    <?php if ($title == 'admin-shop') : ?>
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/admin-shops.css') ?>">
     <?php endif; ?>
 
     <!-- *** STYLE CSS ADD SHOP *** -->
     <?php if ($title == 'add-shop') : ?>
-        <link rel="stylesheet" href="<?= $this->assetUrl('css/add-shop-style.css') ?>">
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/shopstyles.css') ?>">
     <?php endif; ?>
 
     <!-- *** STYLE CSS EDIT SHOP *** -->
     <?php if ($title == 'edit-shop') : ?>
-        <link rel="stylesheet" href="<?= $this->assetUrl('css/add-shop-style.css') ?>">
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/shopstyles.css') ?>">
     <?php endif; ?>
 
     <!-- *** STYLE CSS SHOP VIEW *** -->
     <?php if ($title == 'shop-view') : ?>
-        <link rel="stylesheet" href="<?= $this->assetUrl('css/shop-view-style.css') ?>">
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/shopviewstyle.css') ?>">
     <?php endif; ?>
 
 
-    <!-- *******************************************
-                        LOGIN STYLE
-         *******************************************-->
-
-    <!-- *** STYLE CSS LOGIN *** -->
-    <link rel="stylesheet" href="<?= $this->assetUrl('css/login-style.css') ?>">
-
-
-    <!-- *******************************************
-                        LOGIN STYLE
-         *******************************************-->
-
-    <!-- *** SCRIPT HOME *** -->
+    <!-- *** CDN JQUERY *** -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!-- *** JQUERY FLEXSLIDER *** -->
+    <script src="<?= $this->assetUrl('js/jquery.flexslider.js') ?>"></script>
+    <!-- *** SCRIPT *** -->
     <script src="<?= $this->assetUrl('js/home-script.js') ?>"></script>
+    <!-- *** SCRIPT *** -->
+    <script src="<?= $this->assetUrl('js/scriptconnect.js') ?>"></script>
+    <!-- *** SCRIPT affichage datepicker et ajax api google maps *** -->
+    <script src="<?= $this->assetUrl('js/script.js') ?>"></script>
+    <!-- *** SCRIPT *** -->
+    <script src="<?= $this->assetUrl('js/shopscript.js') ?>"></script>
+    <!-- *** SCRIPT *** -->
+    <script src="<?= $this->assetUrl('js/script_shop.js') ?>"></script>
 
-    <!-- *** SCRIPT LOGIN *** -->
-    <script src="<?= $this->assetUrl('js/script-login.js') ?>"></script>
-
-    <!-- *** SCRIPT SHOP VIEW *** -->
-    <?php if ($title == 'shop-view') : ?>
-        <script src="<?= $this->assetUrl('js/shop-view-script.js') ?>"></script>
-        <script src="<?= $this->assetUrl('js/shop-slider-script.js') ?>"></script>
-    <?php endif; ?>
-
+    <!-- pour autocomplet places dans addShop -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
 </head>
 <body>
 <!-- ****************************
@@ -138,6 +134,13 @@
  ****************************-->
 
 <header>
+
+<!-- cela me permet d'afficher une alerte une fois le formulaire validé -->
+<?php if(isset($_SESSION['flash'])) {
+    echo '<dialog open>' . $_SESSION['flash'] . '</dialog>';
+    unset($_SESSION['flash']);
+} ?>
+
     <nav id="high_nav">
         <div class="container">
 
@@ -153,30 +156,25 @@
 
             <!-- *** Liens de navigation *** -->
             <ul>
-
                 <li><a href="<?= $this->url('home') ?>">Accueil</a></li>
                 <li><a href="<?= $this->url('contact') ?>">Contact</a></li>
+                <?php if ($w_user) :?>
 
-                <?php if ($w_user) : ?>
-
-
-                    <li><a href="<?= $this->url('account', ['id' => $w_user['id']]) ?>"><?= $w_user['firstname'] ?></a>
-                    </li>
-                    <li><a href="<?= $this->url('admin-shop') ?>">Boutiques</a></li>
+                    <li><a href="<?= $this->url('account', ['id'=>$w_user['id'] ]) ?>"><!-- <?= $w_user['firstname']." ".$w_user['lastname'] ?>  --> Compte</a></li>
+                    <li><a href="<?= $this->url('admin-shop',['id'=>$w_user['id']]) ?>">Boutiques</a></li>
                     <li><a href="<?= $this->url('logoff') ?>">Logout</a></li>
 
-
                     <!-- sinon on affiche les liens de connexions et d'inscription -->
-                <?php else : ?>
+                <?php else :?>
                     <li><a href='<?= $this->url('connexion') ?>' id="connexion">Connexion</a></li>
                     <li><a href='<?= $this->url('login') ?>' id="suscribe">Inscription</a></li>
                 <?php endif ?>
             </ul>
 
-            <hr/>
+            <hr />
 
             <!-- *** Search formulaire *** -->
-            <form method="POST" action="<?= $this->url('search') ?>">
+            <form method="POST" action="search">
 
                 <button type="submit" name="search_submit">
                     <i class="fa fa-search fa-lg" id="search_icon"></i>
@@ -185,28 +183,38 @@
                 <input type="text" name="search_bar" placeholder="Recherche">
             </form>
 
+            <div id="open_search">
+
+                    <p>Recherche</p>
+
+                </div>
+
+                <div id="close_search">
+
+                    <p>Fermer</p>
+
+                </div>
+                
             <div class="clearfix"></div>
 
-        </div>
+
     </nav>
 </header>
-
 <main>
     <section>
 
         <?= $this->section('main_content') ?>
 
         <!-- *** LINK NEWSLETTER *** -->
-        <?php if ($title == 'home' || $title == 'contact') : ?>
+        <?php if($title == 'home' || $title == 'contact' || $title == 'a-propos') :?>
             <a href="<?= $this->url('newsletter') ?>" id="newsletter_link">Souscrivez à la newsletter</a>
         <?php endif; ?>
 
     </section>
-</main>
 
+</main>
 <footer>
 
-    <!-- *** Réseaux sociaux *** -->
     <div class="social">&#62220;</div>
     <div class="social">&#62217;</div>
     <div class="social">&#62223;</div>
@@ -216,8 +224,10 @@
     <div class="social">&#62214;</div>
 
     <!-- *** Copyright *** -->
-    <p>copyright &copy; 2016 Lor'N Shop.com</p>
+   <p>copyright &copy; 2016 Lor'N Shop.com <a href="<?= $this->url('a-propos') ?>">A propos</a></p>
+
 
 </footer>
+</div>
 </body>
 </html>

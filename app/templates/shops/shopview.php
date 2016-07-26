@@ -1,4 +1,3 @@
-
 <?php $this->layout('layout', ['title' => 'shop-view']) ?>
 
 <?php $this->start('main_content') ?>
@@ -18,7 +17,8 @@
                         <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
                     </svg>
                     <div class="slide__text">
-                        <h2 class="slide__text-heading"><?php echo $shopToView['name'] ?></h2>
+                        <h2 class="slide__text-heading"><?php echo $shopToView['name']?></h2>
+                        <img class="logo" src="<?= $this->assetUrl('uploads/' . $shopToView['logo']) ?>">
                         <p class="slide__text-desc">Description de la boutique <br>
                             <?php echo $shopToView['description'] ?></p>
                     </div>
@@ -27,16 +27,16 @@
             <div class="slide slide-1 ">
                 <div class="slide__bg"></div>
                 <style>
-                    /*                body .slide:nth-child(1) .slide__bg {
-                                        background-image: url('<?= $this->assetUrl("img/kami.jpg")?>');
-                }*/
+                    body .slide:nth-child(1) .slide__bg {
+                        background-image: url('<?= $this->assetUrl('uploads/' . $shopToView['pictshop1']) ?>');
+                    }
                     body .slide:nth-child(2) .slide__bg {
                         height: 100%;
-                        background-image: url('<?= $this->assetUrl("img/chat.jpg")?>');
+                        background-image: url('<?= $this->assetUrl('uploads/' . $shopToView['pictshop2']) ?>');
                     }
                     body .slide:nth-child(3) .slide__bg {
                         height: 100%;
-                        background-image: url('<?= $this->assetUrl("img/chaton.jpg")?>');
+                        background-image: url('<?= $this->assetUrl('uploads/' . $shopToView['pictshop3']) ?>');
                     }
                 </style>
                 <div class="slide__bg"></div>
@@ -47,9 +47,8 @@
                     <section>
                         <div class="slide__text">
                             <h2 class="slide__text-heading">Nos produits phare</h2>
-                            <p class="slide__text-desc">Nos meilleures ventes <br>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-                            <a class="slide__text-link">Découvrez notre site</a>
+
+                            <a href="#" class="slide__text-link">Découvrez notre site</a>
                         </div>
 
                         <div class="loadPage shown">
@@ -111,16 +110,14 @@
                         <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
                     </svg>
                     <div class="slide__text">
-                        <h2 class="slide__text-heading"><?php echo $shopToView['name'] ?></h2>
+                        <h2 class="slide__text-heading"><?php echo $shopToView['name']?></h2>
 
                         <h5>Contact</h5>
                         <h6>Adresse</h6>
-                        <p class="slide__text-desc"> <?php echo $shopToView['number'] . ',' . $shopToView['address'] ?>
-                            <br>
-                            <?php echo $shopToView['zip_code'] . ' ' . $shopToView['city'] ?></p>
+                        <p class="slide__text-desc"> <?php echo $shopToView['number'].','.$shopToView['address'] ?> <br>
+                            <?php echo $shopToView['zip_code'].' '.$shopToView['city'] ?></p>
                         <h6>Téléphone / Fax</h6>
-                        <p class="slide__text-desc"><?php echo $shopToView['tel'] ?>
-                            / <?php echo $shopToView['fax'] ?></p>
+                        <p class="slide__text-desc"><?php echo $shopToView['tel'] ?> / <?php echo $shopToView['fax'] ?></p>
                         <h6>Mail</h6>
                         <p class="slide__text-desc"><?php echo $shopToView['mail'] ?></p>
 
@@ -169,17 +166,15 @@
                         </nav>
                     </div>
                     <div id="container_text_two">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2592.8513968238226!2d5.929247315011792!3d49.4684224655143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDI4JzA2LjMiTiA1wrA1NSc1My4yIkU!5e0!3m2!1sfr!2sfr!4v1468397096496"
-                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2592.8513968238226!2d5.929247315011792!3d49.4684224655143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDI4JzA2LjMiTiA1wrA1NSc1My4yIkU!5e0!3m2!1sfr!2sfr!4v1468397096496" frameborder="0" style="border:0" allowfullscreen></iframe>
 
                     </div>
                     <div class="clearfix"></div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 </div>
 

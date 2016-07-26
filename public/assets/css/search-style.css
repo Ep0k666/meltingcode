@@ -21,7 +21,6 @@
 	padding-bottom: 50px;
 	padding-top: 15px;
 	font-family: 'Titillium Web', sans-serif;
-	min-height: 450px;
 }
 
 /* bordure */
@@ -35,11 +34,6 @@
 	clear: both;
 	content:"";
 	display: block;
-}
-
-.shop_discovery a {
-	text-decoration: none;
-	color: #FFF;
 }
 
 #search_shop h3{
@@ -75,18 +69,17 @@
 .shop_discovery{
 	float: left;
 	width: 33.33%;
-	min-height: 440px;
+	padding-top: 50px;
 }
 
-.img_shop_discovery {
-	background-position: center;
-	background-size: cover;
-	width: 85%;
+#search_shop img{
+	width: 300px;
 	height: 200px;
-	margin: auto;
+	display: block;
+	margin: -54px auto;
 }
 
-.img_shop_discovery:hover {
+#search_shop img:hover{
 	background-color:#80C2BB;
 	opacity:0.5; 
 }
@@ -298,16 +291,11 @@
 
 	/*** Description new shops ***/
 	.shop_discovery p{
-		padding: 30px 20px;
+		padding: 30px 40px;
 	}
 
 	.shop_discovery{
 		width: 100%;
-		min-height: 460px;
-	}
-
-	.shop_title {
-		font-size: 25px;
 	}
 
 	#search_shop img{

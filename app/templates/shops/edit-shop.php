@@ -57,18 +57,12 @@
                 <?php if(isset($errors['city']['empty'])) : ?>
                     <p  class="error">La ville doit être spécifiée</p>
                 <?php endif ?>
-
-                <!-- COORDONNEES GPS -->
-                <!--  <p><label>Coordonnées GPS:  </label>
-                    <input type="text" name="latitude" value="<?php echo $shopToEdit['latitude'] ?>" placeholder="Latitude">
-                    
-                    <input type="text" name="longitude" value="<?php echo $shopToEdit['longitude'] ?>" placeholder="Longitude">
-                <p>               --> 
             </section>
 
             <section>
                 <!-- CONTACT -->
                 <h3>Contact</h3>
+                
                 <!-- TELEPHONE -->
                 <p><label>Téléphone: <input type="tel" name="phone" value="<?php echo $shopToEdit['tel'] ?>" placeholder="0387040853"> </label></p>
 
@@ -88,9 +82,9 @@
                 <!-- LOGO BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                 <p>Logo actuel :</p>
-                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['logo']) ?>">
+                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['logo']) ?>">           
                 <p>Choisissez un autre fichier si vous souhaitez changer de logo :</p>
-                    Sélectionnez votre logo: <input name="logo" type="file" /></p>
+                <p><input name="logo" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
                 <?php elseif(isset($errors['file']['noImg'])) : ?>
@@ -101,13 +95,12 @@
                     <p  class="error">Merci de choisir un fichier</p>
                 <?php endif ?>
 
-
                 <!-- PREMIERE IMAGE BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                 <p> Photo n° 1 actuel:</p>
-                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop1']) ?>">
+                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop1']) ?>">      
                 <p>Choisissez un autre fichier si vous souhaitez changer de photo n° 1:</p>
-                    Sélectionnez votre photo n° 1: <input name="image1" type="file" /></p>
+                <p><input name="image1" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
                 <?php elseif(isset($errors['file']['noImg'])) : ?>
@@ -121,10 +114,10 @@
                 <!-- DEUXIEME IMAGE BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                 <p> Photo n° 2 actuel:</p>
-                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop2']) ?>">
+                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop2']) ?>">      
                 <p>Choisissez un autre fichier si vous souhaitez changer de photo n° 2:</p>
-                    Sélectionnez votre photo n° 2: <input name="image2" type="file" /></p>
-                <?php if(isset($errors['file']['upload'])) : ?>
+                <p><input name="image2" type="file" /></p>
+                <!-- <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
                 <?php elseif(isset($errors['file']['noImg'])) : ?>
                     <p  class="error">Le fichier n'est pas une image</p>
@@ -132,15 +125,14 @@
                     <p  class="error">Erreur lors du déplacement du fichier</p>
                 <?php elseif(isset($errors['file']['noFile'])) : ?>
                     <p  class="error">Merci de choisir un fichier</p>
-                <?php endif ?>
+                <?php endif ?> -->
 
                 <!-- TROISIEME IMAGE BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                 <p> Photo n° 3 actuel:</p>
-                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop3']) ?>">
-                <p>Choisissez un autre fichier si vous souhaitez changer de photo n° 3:</p>
-                    Sélectionnez votre photo n° 3: <input name="image3" type="file" /></p>
-                <?php if(isset($errors['file']['upload'])) : ?>
+                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop3']) ?>">      <p>Choisissez un autre fichier si vous souhaitez changer de photo n° 3:</p>
+                <p><input name="image3" type="file" /></p>
+                <!-- <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
                 <?php elseif(isset($errors['file']['noImg'])) : ?>
                     <p  class="error">Le fichier n'est pas une image</p>
@@ -148,7 +140,7 @@
                     <p  class="error">Erreur lors du déplacement du fichier</p>
                 <?php elseif(isset($errors['file']['noFile'])) : ?>
                     <p  class="error">Merci de choisir un fichier</p>
-                <?php endif ?>
+                <?php endif ?> -->
             </section>
 
             <section>
@@ -156,7 +148,7 @@
                 <h3>Vos 3 produits phares: </h3>
 
                 <!-- PREMIER PRODUIT PHARE -->
-                <!-- <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+                <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                     Sélectionnez votre premier produit phare: <input name="imgprod1" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>
@@ -166,12 +158,12 @@
                     <p  class="error">Erreur lors du déplacement du fichier</p>
                 <?php elseif(isset($errors['file']['noFile'])) : ?>
                     <p  class="error">Merci de choisir un fichier</p>
-                <?php endif ?> -->
+                <?php endif ?> 
                 <!-- DESCRIPTION PRODUIT -->
-                <!-- <p><label>Description du produit: <textarea name="descprod1" placeholder="Ajoutez une description courte et concise"></textarea></label></p>
+                <p><label>Description du produit: <textarea name="descprod1" placeholder="Ajoutez une description courte et concise"></textarea></label></p>
                 <?php if(isset($errors['description']['empty'])) : ?>
                     <p  class="error">La description doit être spécifiée</p>
-                <?php endif ?> -->
+                <?php endif ?> 
 
                 <!-- SECOND PRODUIT PHARE -->
                 <!-- <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
@@ -232,14 +224,12 @@
             </section>
             <div class="clearfix"></div>
 
-
             <p><button type="submit" name="edit-shop" value="" />Modifier la boutique</button></p>
-            <p><button type="submit" name="draft-shop" value="" />Brouillon</button></p>
-            <!-- <p><button type="submit" name="preview-shop" value="" />Prévisualisation de la boutique</button></p> -->
-            <p><button type="submit" name="cancel">Annuler</button></p>
+            <!-- <p><button type="submit" name="draft-shop" value="" />Brouillon</button></p> -->
+            <!-- <p><button type="submit" name="cancel">Annuler</button></p> -->
+            <p><a href="<?= $this->url('admin-shop',['id'=>$w_user['id']]) ?>" name="cancel" id="cancel_link">Annuler</a></p>
         </form>
     </div>
 </div>
-
 
 <?php $this->stop('main_content') ?>

@@ -1,60 +1,43 @@
 <?php
 
 $w_routes = array(
-
     /*************** ---------- HOME ------------ ******************/
-    ['GET|POST', '/', 'Display#listing', 'home'],
-
+    ['GET|POST',     '/', 					'Display#listing',              'home'],
     /************** ---------- ACTIVITY ------------ ***************/
-    ['GET|POST', '/activity/[:id]', 'Display#shopActivity', 'activity'],
-
+    ['GET|POST',     '/activity/[:id]',             'Display#shopActivity',             'activity'],
     /************** ---------- SEARCH ------------ ***************/
-    ['GET|POST', '/search', 'Display#search', 'search'],
-
-    /************** ---------- DETAILED SEARCH ------------ ***************/
-    ['GET|POST', '/detailed-search', 'Display#detailedSearch', 'detailed-search'],
-
+    ['GET|POST', 	'/search', 				'Display#search', 				'search'],
     /************** ---------- CONTACT ------------ ***************/
-    ['GET|POST', '/contact', 'Contact#contact', 'contact'],
-
+    ['GET|POST', 	 '/contact', 			'Contact#contact',				'contact'],
     /************** ---------- NEWSLETTER ------------ ***************/
-    ['GET|POST', '/newsletter', 'Newsletter#subscribeNewsletter', 'newsletter'],
-
+    ['GET|POST',     '/newsletter',            'Newsletter#newsletter',              'newsletter'],
+    /************** ---------- A PROPOS ------------ ***************/
+    ['GET|POST',     '/apropos',            'Display#aPropos',              'a-propos'],
     /*************** ---------- account ------------ ******************/
-    ['GET|POST', '/account/[:id]', 'Connect#account', 'account'],
-
+    ['GET|POST',     '/account[:id]/', 'Connect#account', 'account'],
     /************** ---------- LOGIN ------------ ***************/
-    ['GET|POST', '/inscription', 'Connect#login', 'login'],
-
-
-    /************** ---------- LOST ------------ ***************/
+    ['GET|POST',     '/signup', 'Connect#login', 'login'],
+     /************** ---------- LOST ------------ ***************/
     ['GET|POST', '/lost/', 'ResetPass#lostPassword', 'lost'],
 
     /************** ---------- RESET ------------ ***************/
     ['GET|POST', '/reset/[:tk]', 'User#UpdateUser', 'reset'],
 
-
     /************** ---------- CONNECT ------------ ***************/
-    ['GET|POST', '/login', 'Connect#connexion', 'connexion'],
-
+    ['GET|POST',     '/connect', 'Connect#connexion', 'connexion'],
     /*************** ---------- LOGOFF ------------ ******************/
-    ['GET|POST', '/logout', 'Connect#logoff', 'logoff'],
-
-    /*************** ---------- ADMIN BOUTIQ ------------ ******************/
-    ['GET|POST', '/shops/admin/[:id]', 'Shop#adminHome', 'admin-shop'],
-
+    ['GET|POST',     '/disconnect', 'Connect#logoff', 'logoff'],
+    /*************** ---------- ADMIN BOUTIQ HOME ------------ ******************/
+    /*************** ---------- Admin ------------ ******************/
+    ['GET|POST', '/shops/admin/[:id]', 'Shop#adminShop', 'admin-shop'],
     /*************** ---------- Ajout ------------ ******************/
-    ['GET|POST', '/shops/adding', 'Shop#shopListCategory', 'add-shop'],
-
+    ['GET|POST',     '/shops/add', 'Shop#shopListCategory', 'add-shop'],
     /*************** ---------- Edition ------------ ******************/
-    ['GET|POST', '/shops/edit/[:id]', 'Shop#shopEdit', 'edit-shop'],
-
+    ['GET|POST',     '/shops/edit/[:id]', 'Shop#shopEdit', 'edit-shop'],
     /*************** ---------- Suppression ------------ ******************/
-    ['GET|POST', '/shops/delete/[:id]', 'Shop#delete', 'delete-shop'],
-
+    ['GET|POST',     '/shops/delete/[:id]', 'Shop#delete', 'delete-shop'],
     /*************** ---------- Vue ------------ ******************/
-    ['GET|POST', '/shopview/[:id]', 'Shop#shopview', 'shop-view'],
-
+    ['GET|POST', '/shops/shopview/[:id]', 'Shop#shopview', 'shop-view'],
     /*************** ---------- AJAX ROAD ------------ ******************/
     ['GET|POST', '/ajax/path/create', 'AjaxPath#add', 'ajax_path_create'],
 );
