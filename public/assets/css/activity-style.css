@@ -195,7 +195,7 @@ body #high_nav{
 	padding-bottom: 50px;
 	padding-top: 15px;
 	font-family: 'Titillium Web', sans-serif;
-	min-height:700px;
+	/* min-height:620px; */
 }
 
 /* bordure */
@@ -229,10 +229,6 @@ body #high_nav{
 	top: -58px;
 	border: 20px solid #FFF;
 	color:#80C2BB;
-}
-
-#activity_shop{
-	min-height: 450px;
 }
 
 #activity_shop h4{

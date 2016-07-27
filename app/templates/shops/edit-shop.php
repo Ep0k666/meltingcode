@@ -226,9 +226,9 @@
 
             <p><button type="submit" name="edit-shop" value="" />Modifier la boutique</button></p>
             <!-- <p><button type="submit" name="draft-shop" value="" />Brouillon</button></p> -->
-            <!-- <p><button type="submit" name="cancel">Annuler</button></p> -->
-            <p><a href="<?= $this->url('admin-shop',['id'=>$w_user['id']]) ?>" name="cancel" id="cancel_link">Annuler</a></p>
+            <!-- <p><button type="submit" name="cancel">Annuler</button></p> --> 
         </form>
+        <a href="<?= $this->url('admin-shop',['id'=>$w_user['id']]) ?>" name="cancel" id="cancel_link">Annuler</a>
     </div>
 </div>
 
