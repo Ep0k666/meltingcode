@@ -186,12 +186,29 @@
     margin:0 auto;
 }
 
-/* LES BOUTONS AU SURVOL */
+/* LE LIEN */
+#add-shop #cancel_link{
+    background:#313A3D;
+    color: white;
+    padding: 13px 50px;
+    text-decoration:none;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+/* -------AU SURVOL-------- */
+/* LE BOUTON */
 #add-shop button:hover {
     background: #80C2BB;
     color: white;
 }
-
+/* LE LIEN */
+#add-shop #cancel_link:hover{
+     background: #80C2BB;
+    color: white;   
+}
 
 /* RESPONSIVE */
 

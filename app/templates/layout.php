@@ -95,15 +95,10 @@
     <?php endif; ?>
 
     <!-- *** STYLE CSS ADD SHOP *** -->
-    <?php if ($title == 'add-shop') : ?>
+    <?php if ($title == 'add-shop' || $title == 'edit-shop') : ?>
         <link rel="stylesheet" href="<?= $this->assetUrl('css/shopstyles.css') ?>">
     <?php endif; ?>
-
-    <!-- *** STYLE CSS EDIT SHOP *** -->
-    <?php if ($title == 'edit-shop') : ?>
-        <link rel="stylesheet" href="<?= $this->assetUrl('css/shopstyles.css') ?>">
-    <?php endif; ?>
-
+    
     <!-- *** STYLE CSS SHOP VIEW *** -->
     <?php if ($title == 'shop-view') : ?>
         <link rel="stylesheet" href="<?= $this->assetUrl('css/shopviewstyle.css') ?>">

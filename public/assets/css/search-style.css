@@ -15,8 +15,9 @@
 	SECTION SEARCH BOUTIQUE
  ****************************/
 
-/*** Section new shop ***/
+/*** Section search shop ***/
 #search_shop{
+	min-height:700px;
 	color: #322F2F;
 	padding-bottom: 50px;
 	padding-top: 15px;

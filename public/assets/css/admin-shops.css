@@ -1,10 +1,14 @@
+
+/* CSS COMMUN A TOUTE LA PAGE ADMIN */
 #admin-home{
     background-color: #efefef;
     padding-bottom: 50px;
     padding-top: 50px;
     font-family: 'Titillium Web', sans-serif;
+    min-height: 700px;
 }
 
+/* CSS DU TITRE BIENVENUE DANS L'AVENTURE */
 #admin-home h2{
     text-align:center;
     font-family: 'Titillium Web', sans-serif;
@@ -13,6 +17,7 @@
     color:#CCCCCC;
 }
 
+/* CSS DU TITRE D'AJOUT DE BOUTIQUE ET DES BOUTIQUES EXISTANTES */
 #admin-home h3{
     color:#80C2BB;
     font-size: 3em;
@@ -21,11 +26,14 @@
     padding-bottom: 30px;
 }
 
+/* CSS DES IMAGES DES BOUTIQUES EXISTANTES */
 #admin-home #image-shop{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/* CSS DES LIENS */
 #admin-home a{
     background:#313A3D;
     color: white;
@@ -53,31 +61,38 @@
     width: 60%; 
 }
 
-
+/* CSS DES LIENS AU SURVOL */
 #admin-home a:hover {
     background: #80C2BB;
     color: white;
 }
 
-
+/* LA BORDURE QUI SEPARE CHAQUE BOUTIQUE ET L'AJOUT BOUTIQUE DU RESTE */
 #admin-home hr{
     border: 2px solid#CCCCCC;
     margin:50px auto;
 }
 
+/* EFFACER LE DERNIER HR DES BOUTIQUES */
+#admin-home article:last-of-type hr{
+    opacity:0;
+}
+
+/* IMAGE DES BOUTIQUES */
 #admin-home .img-admin-shop{
     float: left;
     width: 50%;
     padding-left: 10%;
 }
 
+/* LES LIENS D'ADMINISTRATION */
 #admin-home .link-admin-shop{
     float: right;
     width: 50%;
     padding-right: 10%;
 }
 
-
+/* LA TAILLE DE LA DIV CONTENANT l'IMAGE */
 #image-shop{
     border:1px solid black;
     width:400px;
@@ -85,10 +100,10 @@
     margin-bottom:20px;
 }
 
-/** A voir pour responsive (link modifier et supprimer) **/
+
+/* ---------------------------RESPONSIVE------------------------------- */
 
 /* inférieur à 1200px */
-
 @media (min-width:300px) and (max-width:1200px){
     #admin-home .img-admin-shop, #admin-home .link-admin-shop{
         padding:0px 0px;

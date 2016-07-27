@@ -375,9 +375,9 @@
             <div class="clearfix"></div>
 
             <p><button type="submit" name="shop-add" value="" />Ajouter la boutique</button></p>
-<!--             <p><button type="submit" name="draft-shop" value="" />Brouillon</button></p> -->
-            <p><a href="<?= $this->url('admin-shop',['id'=>$w_user['id']]) ?>" name="cancel" id="cancel_link">Annuler</a></p>
+<!--             <p><button type="submit" name="draft-shop" value="" />Brouillon</button></p> --> 
         </form>
+        <a href="<?= $this->url('admin-shop',['id'=>$w_user['id']]) ?>" name="cancel" id="cancel_link">Annuler</a>
     </div>
 </div>
 <!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;language=fr></script> -->

@@ -94,24 +94,7 @@ class ResetPassController extends Controller
 
         /* Si on a soumis le nouveau mot de passe */
         if (isset($_POST['change_password'])) {
-            // On dÈclare le tableau d'erreur
-            /*$errors = [];
-
-            // Verification
-            if (!empty($_POST['new_pass'])) {
-                if (strlen($_POST['new_pass']) < 8 || strlen($_POST['new_pass']) > 50) {
-                    // S'il est pas vide et qu'il est pas compris entre 2 et 50 carractËres
-                    $errors['new_pass']['size'] = true;
-                }
-            } else {
-                // Si on a pas prÈcisÈ de mot de passe
-                $errors['new_pass']['empty'] = true;
-            }
-            */
-
-            // S'il n'y a pas d'erreur, on entre les changement dans la base de donnÈe
-//            if (count($errors) === 0) {
-
+            
                 /* Hash du nouveau mot de passe */
                 $security = new \W\Security\AuthentificationManager();
                 $passHash = $security->hashPassword($_POST['new_pass']);

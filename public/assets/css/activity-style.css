@@ -195,6 +195,7 @@ body #high_nav{
 	padding-bottom: 50px;
 	padding-top: 15px;
 	font-family: 'Titillium Web', sans-serif;
+	min-height:700px;
 }
 
 /* bordure */

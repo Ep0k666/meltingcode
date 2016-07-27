@@ -7,7 +7,7 @@
 	*************************-->
 
     <!-- *** Desktop Navigation *** -->
-	<div id="home">
+	<div id="activity_shop">
 		<nav id="low_nav_desktop">
 			<div class="container">
 
