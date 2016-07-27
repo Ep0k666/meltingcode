@@ -14,7 +14,7 @@ class UserController extends Controller
         if (isset($_POST['edit-user'])) {
 
 
-            if (isset($_POST['login'])
+            if (!empty($_POST['login'])
 
                 && !empty($_POST['pass'])
                 && !empty($_POST['mail'])
@@ -22,12 +22,6 @@ class UserController extends Controller
                 && !empty($_POST['lastname'])
                 && !empty($_POST['company'])
 
-                && (isset($_POST['login'])
-                    && isset($_POST['pass'])
-                    && isset($_POST['mail'])
-                    && isset($_POST['firstname'])
-                    && isset($_POST['lastname'])
-                    && isset($_POST['company']))
             )
 
 

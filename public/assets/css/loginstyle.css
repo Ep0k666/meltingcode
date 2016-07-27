@@ -85,7 +85,7 @@ Log in form => Connexion
     border-radius: 5px;
     display: inline-block;
     height: 298px;
-    margin: 148px 29px 0 0;
+    margin: 77px 76px 0 0;
     position: relative;
     z-index: 4;
     width: 500px;
@@ -207,7 +207,7 @@ Log in form Inscription
     border-radius: 5px;
     display: inline-block;
     height: 530px;
-    margin: 64px 29px 0 0;
+    margin: -9px 29px 0 28px;
     position: relative;
     z-index: 4;
     width: 500px;
@@ -323,7 +323,7 @@ Spinner => Connexion
     height: 600px;
     width: 600px;
     position: absolute;
-    top: 86px;
+    top: 104px;
     left: 45%;
     margin-left: -250px;
     overflow: hidden;
@@ -371,7 +371,7 @@ Spinner inscription
     height: 600px;
     width: 600px;
     position: absolute;
-    top: 83px;
+    top: 106px;
     left: 50%;
     margin-left: -300px;
     overflow: hidden;
@@ -535,7 +535,7 @@ Utilitaires
 .containerconnect {
     width: 1124px;
     margin: auto;
-    height: 64em;
+    height: 65em;
 }
 
 /*******************
@@ -631,6 +631,10 @@ Utilitaires
 /*** Inférieur à 768px ***/
 @media (max-width: 700px){
 
+    body section:first-of-type 
+    {
+        padding-top: 90px;
+    }
 
     .stark-login2 form {
 
@@ -655,7 +659,7 @@ Utilitaires
         box-shadow: 0 0 15px #00fffd;
         border-radius: 5px;
         display: inline-block;
-        height: 100%;
+        
         position: relative;
         z-index: 4;
         width: 100%;
