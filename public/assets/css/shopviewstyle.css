@@ -643,7 +643,16 @@ iframe{
 }
 
 
+/*Pour css map google*/
+.google_map{
+	width: 600px;
+	height: 400px;
+	float: left;
+	border: 1px solid black;
+}
 
+
+/* ------------------------------RESPONSIVE --------------------------------------------*/
 @media (max-width: 550px) {
 
 	.containerconnect {
@@ -696,3 +705,4 @@ iframe{
 	}
 
 }
+

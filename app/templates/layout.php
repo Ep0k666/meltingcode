@@ -9,10 +9,15 @@
 
     <title>Home</title>
 
-    <!-- *** RESET CSS *** -->
-    <link rel="stylesheet" href="<?= $this->assetUrl('css/reset.css') ?>">
     <!-- *** FLEXSLIDER CSS *** -->
     <link rel="stylesheet" href="<?= $this->assetUrl('css/flexslider.css') ?>">
+     <!-- Pour api complete shop zip-code zippopotamus -->
+     <?php if($title == 'add-shop') : ?>
+    <link href="<?= $this->assetUrl('css/jquery-ui-bootstrap.css') ?>" rel="stylesheet" type="text/css"/> 
+     <link rel='stylesheet' href='<?= $this->assetUrl('css/bootstrap.css') ?>' type="text/css"/> 
+    <?php endif; ?>
+     <!-- *** RESET CSS *** -->
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/reset.css') ?>">
 
     <!-- *******************************************
                             DISPLAY STYLE   
@@ -113,15 +118,34 @@
     <script src="<?= $this->assetUrl('js/home-script.js') ?>"></script>
     <!-- *** SCRIPT *** -->
     <script src="<?= $this->assetUrl('js/scriptconnect.js') ?>"></script>
-    <!-- *** SCRIPT affichage datepicker et ajax api google maps *** -->
+   <!-- *** SCRIPT affichage datepicker et ajax api google maps / Api autocomplete Zippopotamus *** -->
     <script src="<?= $this->assetUrl('js/script.js') ?>"></script>
     <!-- *** SCRIPT *** -->
     <script src="<?= $this->assetUrl('js/shopscript.js') ?>"></script>
     <!-- *** SCRIPT *** -->
     <script src="<?= $this->assetUrl('js/script_shop.js') ?>"></script>
+     <!-- GOOGLE api map -->
+    <script src="<?= $this->assetUrl('js/map-module.js') ?>"></script> 
 
-    <!-- pour autocomplet places dans addShop -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <!-- pour autocompletE places dans addShop -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
+
+    <!-- pour autocomplete VIA ZIP_CODE DU CITY avec api ZIPPOPOTAMUS dans addShop -->
+    <?php if($title == 'add-shop') : ?>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script> 
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30975659-1']);
+        _gaq.push(['_setDomainName', 'zippopotam.us']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                  })();
+    </script> 
+    <?php endif; ?>
 </head>
 <body>
 <!-- ****************************
@@ -156,7 +180,8 @@
                 <?php if ($w_user) :?>
 
                     <li><a href="<?= $this->url('account', ['id'=>$w_user['id'] ]) ?>"><!-- <?= $w_user['firstname']." ".$w_user['lastname'] ?>  --> Compte</a></li>
-                    <li><a href="<?= $this->url('admin-shop',['id'=>$w_user['id']]) ?>">Boutiques</a></li>
+                    <!-- <li><a href="<?= $this->url('admin-shop',['id'=>$w_user['id']]) ?>">Boutiques</a></li> -->
+                    <li><a href="<?= $this->url('admin-shop') ?>">Boutiques</a></li>
                     <li><a href="<?= $this->url('logoff') ?>">Logout</a></li>
 
                     <!-- sinon on affiche les liens de connexions et d'inscription -->

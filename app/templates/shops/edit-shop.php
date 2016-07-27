@@ -98,7 +98,7 @@
                 <!-- PREMIERE IMAGE BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                 <p> Photo n° 1 actuel:</p>
-                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop1']) ?>" width="300px">      
+                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop1']) ?>">      
                 <p>Choisissez un autre fichier si vous souhaitez changer de photo n° 1:</p>
                 <p><input name="image1" type="file" /></p>
                 <?php if(isset($errors['file']['upload'])) : ?>
@@ -114,7 +114,7 @@
                 <!-- DEUXIEME IMAGE BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                 <p> Photo n° 2 actuel:</p>
-                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop2']) ?>" width="300px">      
+                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop2']) ?>">      
                 <p>Choisissez un autre fichier si vous souhaitez changer de photo n° 2:</p>
                 <p><input name="image2" type="file" /></p>
                 <!-- <?php if(isset($errors['file']['upload'])) : ?>
@@ -130,7 +130,7 @@
                 <!-- TROISIEME IMAGE BOUTIQUE -->
                 <p><input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                 <p> Photo n° 3 actuel:</p>
-                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop3']) ?>" width="300px">      <p>Choisissez un autre fichier si vous souhaitez changer de photo n° 3:</p>
+                <img src="<?= $this->assetUrl('uploads/' . $shopToEdit['pictshop3']) ?>">      <p>Choisissez un autre fichier si vous souhaitez changer de photo n° 3:</p>
                 <p><input name="image3" type="file" /></p>
                 <!-- <?php if(isset($errors['file']['upload'])) : ?>
                     <p  class="error">Erreur lors de l'upload du fichier</p>

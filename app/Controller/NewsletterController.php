@@ -17,6 +17,7 @@ class NewsletterController extends Controller
 
         /*** Si le formualire de souscription à la news a été soumi ***/
         if(isset($_POST['news-submit'])){
+
             
             /*** Newsletter Manager ***/
             $manager = new \Manager\NewsletterManager();
@@ -313,6 +314,8 @@ class NewsletterController extends Controller
                 // Contenu sans HTML
                 $contentConfNoHtml = 'Bonjour ' . $firstname . '
                 Nous avons la joie de vous informer que vous êtes désormais abonné à notre newsletter.';
+
+
 
                 // Appel de sendMail pour envoi confirmation inscription "news"
                 $this->sendMail($mail, $subjectConf, $contentConfHtml, $contentConfNoHtml);

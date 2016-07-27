@@ -1,10 +1,8 @@
-
 <?php $this->layout('layout', ['title' => 'add-shop']) ?>
 
 <?php $this->start('main_content') ?>
-
-   <!--  <style>
-      
+<?php print_r($_POST) ?>
+   <!--  <style>   
       #map {
         height: 100%;
       }
@@ -50,6 +48,7 @@
         margin-bottom: 2px;
       }
     </style> -->
+  
 <?php if (isset($errors) && count($errors)>0) :?>
   <style>
     #add-shop form p{
@@ -91,7 +90,7 @@
                         </select></p></label>
             </section>
 
-            <section>
+            <section>         
                 <h3>Adresse</h3>
                 <p><label>Numéro de rue *:  <input type="text" name="number" value="<?php if(isset($lastWrite['number'])) echo $lastWrite['number'] ?>" placeholder="33" ></label></p> <!-- required  -->
                 <?php if(isset($errors['number']['empty'])) : ?>
@@ -103,15 +102,36 @@
                     <p  class="error">L'adresse doit être spécifiée</p>
                 <?php endif ?>
 
-                <p><label>Code postal *: <input type="text" name="zip_code" value="<?php if(isset($lastWrite['zip_code'])) echo $lastWrite['zip_code'] ?>" placeholder="57290" ></label></p> <!-- required  -->
-                <?php if(isset($errors['zip_code']['empty'])) : ?>
+                <!-- <p><label>Code postal *: <input type="text" name="zip_code" value="<?php if(isset($lastWrite['zip_code'])) echo $lastWrite['zip_code'] ?>" placeholder="57290" ></label></p>  --> <!-- required  -->
+               <!--  <?php if(isset($errors['zip_code']['empty'])) : ?>
                     <p  class="error">Le code postal doit être spécifié</p>
-                <?php endif ?>
+                <?php endif ?>  -->
                
-                <p><label>Ville *: <input type="text" name="city" value="<?php if(isset($lastWrite['city'])) echo $lastWrite['city'] ?>" placeholder="YUTZ" ></label></p> <!-- required  -->
-                <?php if(isset($errors['city']['empty'])) : ?>
+               <!--  <p><label>Ville *: <input type="text" name="city" value="<?php if(isset($lastWrite['city'])) echo $lastWrite['city'] ?>" placeholder="YUTZ" ></label></p>  --> <!-- required  -->
+                <!-- <?php if(isset($errors['city']['empty'])) : ?>
                     <p  class="error">La ville doit être spécifiée</p>
-                <?php endif ?>            
+                <?php endif ?>   -->
+
+
+                <div>
+                    <div id="zipbox" class="control-group">
+                      <label for="zip">Code Postal *</label>
+                     <!--  value="<?php if(isset($lastWrite['zip_code'])) echo $lastWrite['zip_code'] ?>" -->
+                      <input type="text" class='' pattern="[0-9]*" name="zip" id="zip" value="" placeholder="Tapez votre code postal"/>
+                      <?php if(isset($errors['zip_code']['empty'])) : ?>
+                      <p  class="error">Le code postal doit être spécifié</p>
+                      <?php endif ?>
+                    </div>  
+                </div>
+                <div>
+                    <div id="citybox" class="control-group" >
+                      <label for="city">Ville *</label>
+                      <input type="text" name="city" id="city" value="<?php if(isset($lastWrite['city'])) echo $lastWrite['city'] ?>" placeholder="D'abord taper votre code postal" />
+                      <?php if(isset($errors['city']['empty'])) : ?>
+                      <p  class="error">La ville doit être spécifiée</p>
+                      <?php endif ?>  
+                    </div>
+                </div>          
             </section>
 
             <section>
@@ -375,9 +395,8 @@
             <div class="clearfix"></div>
 
             <p><button type="submit" name="shop-add" value="" />Ajouter la boutique</button></p>
-<!--             <p><button type="submit" name="draft-shop" value="" />Brouillon</button></p> --> 
         </form>
-        <a href="<?= $this->url('admin-shop',['id'=>$w_user['id']]) ?>" name="cancel" id="cancel_link">Annuler</a>
+      <a href="<?= $this->url('admin-shop',['id'=>$w_user['id']]) ?>" name="cancel" id="cancel_link">Annuler</a>
     </div>
 </div>
 <!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;language=fr></script> -->
