@@ -10,7 +10,7 @@ $w_routes = array(
     /************** ---------- CONTACT ------------ ***************/
     ['GET|POST', 	 '/contact', 			'Contact#contact',				'contact'],
     /************** ---------- NEWSLETTER ------------ ***************/
-    ['GET|POST',     '/newsletter',            'Newsletter#newsletter',              'newsletter'],
+    ['GET|POST',     '/newsletter',            'Newsletter#subscribeNewsletter',              'newsletter'],
     /************** ---------- A PROPOS ------------ ***************/
     ['GET|POST',     '/apropos',            'Display#aPropos',              'a-propos'],
     /*************** ---------- account ------------ ******************/

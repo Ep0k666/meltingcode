@@ -18,19 +18,26 @@
 
 				<article class="shop_discovery">
 
-					<!-- ** Définition du lien pour chaque image ** -->
-					<?php
-					$path = $shop['pictshop1'];
-					$img = $this->assetUrl('uploads/'.$path);
-					?>
+						<!-- ** Définition du lien pour chaque image ** -->
+						<?php
+							$path = $shop['pictshop1'];
+							$img  = $this->assetUrl('uploads/'.$path);
+						?>
 
-					<img src="<?= $img ?>">
+						<!-- *** Image Shop *** -->
+						<a href="<?= $this->url('shop-view', ['id' => $shop['id']])?>">
+							<div class="img_shop_discovery" style="background-image: url('<?= $img ?>');">
 
-					<h4 class="shop_title"><?= $shop['name'] ?></h4>
+								<!-- *** Name Shop *** -->
+								<h4 class="shop_title"><?= $shop['name'] ?></h4>
 
-					<p class="shop_description"><?= substr($shop['description'], 0, 250)." [...]"; ?></p>
+							</div>
+						</a>
 
-				</article>
+						<!-- *** Shop Description *** -->
+						<p class="shop_description"><?= substr($shop['description'], 0, 260) . "[...]"; ?></p>
+
+					</article>
 
 				<!-- ** Fin foreach ** -->
 			<?php endforeach; ?>

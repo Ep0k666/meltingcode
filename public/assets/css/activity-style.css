@@ -53,7 +53,7 @@ body #high_nav{
 	display: block;
 	color: #1A1717;
 	text-decoration: none;
-	padding: 20px 3.24%;
+	padding: 20px 2.83%;
 	text-transform: uppercase;
 	transform: rotate(0deg);
 	float: left;
@@ -130,6 +130,13 @@ body #high_nav{
 #low_nav_desktop ul li:nth-child(9) a:hover{
 	color: #FB0444;
 	border-bottom: 5px solid #FB0444;
+	padding-bottom: 15px;
+	box-sizing: border-box;
+}
+
+#low_nav_desktop ul li:nth-child(10) a:hover{
+	color: #FE2AD4;
+	border-bottom: 5px solid #FE2AD4;
 	padding-bottom: 15px;
 	box-sizing: border-box;
 }
@@ -245,7 +252,7 @@ body #high_nav{
 .shop_discovery{
 	float: left;
 	width: 33.33%;
-	min-height: 440px;
+	min-height: 410px;
 }
 
 .img_shop_discovery{
@@ -264,13 +271,17 @@ body #high_nav{
 .shop_title{
 	text-align: center;
 	font-size: 30px;
-	padding-top: 15px;
+	padding: 15px 15px 0;
+	max-width: 90%;
+	margin: auto;
 }
 
 .shop_discovery p{
-	padding: 30px;
+	padding: 30px 20px;
 	font-size: 16px;
 	text-align:justify;
+	color: #8A8888;
+	margin: auto;
 }
 
 

@@ -185,7 +185,7 @@
 
 							        <div class="at-user__avatar"><img src="<?= $img ?>" alt="Malika Ould Ottmane" title="Malika Ould Ottmane"/></div>
 							        <div class="at-user__name">Malika</div>
-							        <div class="at-user__title">Branleur &amp; Développeur</div>
+							        <div class="at-user__title">CEO &amp; Co-Founder</div>
 							        <ul class="at-social">
 							          <li class="at-social__item"><a href="">
 							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
@@ -218,7 +218,7 @@
 
 							        <div class="at-user__avatar"><img src="<?= $img ?>" alt="Julie Mathieu" title="Julie Mathieu"/></div>
 							        <div class="at-user__name">Julie</div>
-							        <div class="at-user__title">Branleur &amp; Développeur</div>
+							        <div class="at-user__title">CEO &amp; Co-Founder</div>
 							        <ul class="at-social">
 							          <li class="at-social__item"><a href="">
 							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
@@ -251,7 +251,7 @@
 
 							        <div class="at-user__avatar"><img src="<?= $img ?>" alt="Halima Lehain" title="Halima Lehain"/></div>
 							        <div class="at-user__name">Halima</div>
-							        <div class="at-user__title">Branleur &amp; Développeur</div>
+							        <div class="at-user__title">CEO &amp; Co-Founder</div>
 							        <ul class="at-social">
 							          <li class="at-social__item"><a href="">
 							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
@@ -283,7 +283,7 @@
 
 							        <div class="at-user__avatar"><img src="<?= $img ?>" alt="François-Xavier Roux" title="François-Xavier Roux"/></div>
 							        <div class="at-user__name">François-Xavier</div>
-							        <div class="at-user__title">Branleur &amp; Développeur</div>
+							        <div class="at-user__title">CEO &amp; Co-Founder</div>
 							        <ul class="at-social">
 							          <li class="at-social__item"><a href="">
 							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
@@ -316,7 +316,7 @@
 
 							        <div class="at-user__avatar"><img src="<?= $img ?>" alt="Steven Perini" title="Steven Perini"/></div>
 							        <div class="at-user__name">Steven</div>
-							        <div class="at-user__title">Branleur &amp; Développeur</div>
+							        <div class="at-user__title">CEO &amp; Co-Founder</div>
 							        <ul class="at-social">
 							          <li class="at-social__item"><a href="">
 							              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">

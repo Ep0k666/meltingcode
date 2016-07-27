@@ -72,32 +72,32 @@
 		<div class="bordure1"></div>
 
             <!-- *** Titre de l'activité recherché *** -->
-            <h3><?= $activitySearched['category'] ?></h3>
+            <h3><?= $categorySearch['category'] ?></h3>
 
             <?php foreach ($shopByActivity as $shop): ?>
 
 				<article class="shop_discovery">
 
-					<!-- ** Définition du lien pour chaque image ** -->
-					<?php
-                    $path = $shop['pictshop1'];
-                    $img = $this->assetUrl('uploads/' . $path);
-					?>
+						<!-- ** Définition du lien pour chaque image ** -->
+						<?php
+							$path = $shop['pictshop1'];
+							$img  = $this->assetUrl('uploads/'.$path);
+						?>
 
-                    <!-- *** Image Shop *** -->
-                    <a href="<?= $this->url('shop-view', ['id' => $shop['id']]) ?>">
-                        <div class="img_shop_discovery" style="background-image: url('<?= $img ?>');">
+						<!-- *** Image Shop *** -->
+						<a href="<?= $this->url('shop-view', ['id' => $shop['id']])?>">
+							<div class="img_shop_discovery" style="background-image: url('<?= $img ?>');">
 
-                            <!-- *** Name Shop *** -->
-                            <h4 class="shop_title"><?= $shop['name'] ?></h4>
+								<!-- *** Name Shop *** -->
+								<h4 class="shop_title"><?= $shop['name'] ?></h4>
 
-                        </div>
-                    </a>
+							</div>
+						</a>
 
-                    <!-- *** Shop description *** -->
-					<p class="shop_description"><?= substr($shop['description'], 0, 250)." [...]"; ?></p>
+						<!-- *** Shop Description *** -->
+						<p class="shop_description"><?= substr($shop['description'], 0, 260) . "[...]"; ?></p>
 
-				</article>
+					</article>
 
 			<?php endforeach; ?>
 

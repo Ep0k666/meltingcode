@@ -26,6 +26,9 @@ class ContactController extends Controller
             /** Déclaration tableau erreurs **/
             $errors = [];
 
+            /**  Déclaration de msgInserted **/
+            $msgInserted = false;
+
             /**************
                 NAME
              **************/
@@ -94,6 +97,9 @@ class ContactController extends Controller
                 ];
 
                 $usersContact->insert($data);
+                $msgInserted = true;
+
+                $this->show('display/contact', ['msgInserted' => $msgInserted]);
             }
         
             /** Sinon ... **/

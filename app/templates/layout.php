@@ -174,7 +174,7 @@
             <hr />
 
             <!-- *** Search formulaire *** -->
-            <form method="POST" action="search">
+            <form method="POST" action="<?= $this->url('search') ?>">
 
                 <button type="submit" name="search_submit">
                     <i class="fa fa-search fa-lg" id="search_icon"></i>
@@ -215,7 +215,7 @@
 </main>
 <footer>
 
-    <div class="social">&#62220;</div>
+    <div class="social" ><a href="https://www.facebook.com/LorN-Shop-1221309817903801/?fref=ts">&#62220;</a></div>
     <div class="social">&#62217;</div>
     <div class="social">&#62223;</div>
     <div class="social">&#62232;</div>
