@@ -1,7 +1,6 @@
 <?php $this->layout('layout', ['title' => 'add-shop']) ?>
 
 <?php $this->start('main_content') ?>
-<?php print_r($_POST) ?>
    <!--  <style>   
       #map {
         height: 100%;
