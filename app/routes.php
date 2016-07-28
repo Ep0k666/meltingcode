@@ -14,14 +14,14 @@ $w_routes = array(
     /************** ---------- A PROPOS ------------ ***************/
     ['GET|POST',     '/apropos',            'Display#aPropos',              'a-propos'],
     /*************** ---------- account ------------ ******************/
-    ['GET|POST',     '/account[:id]/', 'Connect#account', 'account'],
+    ['GET|POST', '/account[:id]/', 'User#UpdateUser', 'account'],
     /************** ---------- LOGIN ------------ ***************/
     ['GET|POST',     '/signup', 'Connect#login', 'login'],
      /************** ---------- LOST ------------ ***************/
     ['GET|POST', '/lost/', 'ResetPass#lostPassword', 'lost'],
 
     /************** ---------- RESET ------------ ***************/
-    ['GET|POST', '/reset/[:tk]', 'User#UpdateUser', 'reset'],
+    ['GET|POST', '/reset/[:tk]', 'ResetPass#resetPassword', 'reset'],
 
     /************** ---------- CONNECT ------------ ***************/
     ['GET|POST',     '/connect', 'Connect#connexion', 'connexion'],
