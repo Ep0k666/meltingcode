@@ -2,8 +2,14 @@
 
 <?php $this->start('main_content') ?>
 
-<form action="#" method="post">
-    <input type="text" name="mail" placeholder="E-mail">
-    <input type="submit" name="reset-pass" value="Réinitialiser le mot de passe">
-</form>
+<div id="lostP">
+	
+	<form action="#" method="post">
+		<label >Votre adresse mail de récupération :</label><br>
+	    	
+	    <input type="text" name="mail" placeholder="E-mail"><br>
+	    <input type="submit" name="reset-pass" value="Réinitialiser le mot de passe">
+	</form>
+
+</div>
 <?php $this->stop('main_content') ?>

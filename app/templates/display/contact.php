@@ -7,6 +7,8 @@
 
 		<h1>Contactez-nous</h1>
     
+		<!-- Afficher le formulaire si les infos n'existent pas en base de donnée -->
+    	<?php if(isset($msgInserted) === false) : ?>
 	    <form method="POST" action="">
 		      <div class="field name-box">
 
@@ -72,9 +74,19 @@
 		      </div>
 
 		      <!-- **** SUBMIT **** -->
-		      <input class="button" type="submit" name="send-message" value="send" />
+		      <input class="button" type="submit" name="send-message" value="Envoyer" />
 
 	  	</form>
+
+	  	<!-- Si le message est envoyé en base de donnée: -->
+	  	<?php else : ?>
+	  		<div class="contact_success">
+	  			<div class="container">
+	  				<p>Votre message a bien été pris en compte.</p>
+	  			</div>
+	  		</div>
+	  <?php endif; ?>
+
   	</article>
 </section>
 

@@ -6,7 +6,7 @@ namespace Manager;
 class ShopManager extends \W\Manager\Manager
 {
 
-    /***
+   /***
      * Fonction pour page "addshop"
      * Affiche la liste des catégories dans la balise select
      ***/
@@ -26,10 +26,23 @@ class ShopManager extends \W\Manager\Manager
     {
         $sql = 'SELECT * FROM shops WHERE id_user = :id';
         $stmt = $this->dbh->prepare($sql);
-        $stmt->bindParam(':id', $id);
+        $stmt->bindParam(':id', $id, \PDO::PARAM_INT);
         $stmt->execute();
         return $stmt->fetchAll();
     }
+
+    /***
+     * Fonction pour page "shopview" parer au paasge en url de l id mais nok
+     * Affiche le detail du shop sélectionné
+     ***/
+    /*public function getShop($id)
+    {
+        $sql = 'SELECT * FROM shops WHERE id = :id';
+        $stmt = $this->dbh->prepare($sql);
+        $stmt->bindParam(':id', $id, \PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }*/
        /***
      * Fonction pour page "home"
      * Shops les plus consultées

@@ -115,7 +115,7 @@
 	#apropos_image1, #apropos_image2{
 		height: 250px;
 		opacity: 1;
-		width: 80%;
+		width: 100%;
 		display: block;
 		margin: auto;
 	}

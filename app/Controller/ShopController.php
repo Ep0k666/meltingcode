@@ -15,12 +15,16 @@ class ShopController extends Controller
         if (isset($_POST['shop-add'])) {
 
             // Vérification des champs
-            $id_user = $w_user['id'];
             $name = trim(htmlspecialchars($_POST['name']));
             $number = trim(htmlspecialchars($_POST['number']));
             $adress = trim(htmlspecialchars($_POST['adress']));
-            $zip_code = trim(htmlspecialchars($_POST['zip_code']));
-            $city = trim(htmlspecialchars($_POST['city']));
+            /*$zip_code = trim(htmlspecialchars($_POST['zip_code']));*/
+            $zip_code = trim(htmlspecialchars($_POST['zip']));
+            if (isset($_POST['city'])){
+                $city = trim(htmlspecialchars($_POST['city']));
+            } else {
+                $city = "";
+            }
             $description = trim(htmlspecialchars($_POST['description']));
             $category = trim(htmlspecialchars($_POST['category']));
             $date_adding = trim(htmlspecialchars($_POST['date_adding']));
@@ -69,12 +73,12 @@ class ShopController extends Controller
             if($_FILES['image1']['error'] == UPLOAD_ERR_NO_FILE) {
                 $errors['file']['noFile'] = true;
             }
-            /*if($_FILES['image2']['error'] == UPLOAD_ERR_NO_FILE) {
+            if($_FILES['image2']['error'] == UPLOAD_ERR_NO_FILE) {
                 $errors['file']['noFile'] = true;
             }
             if($_FILES['image3']['error'] == UPLOAD_ERR_NO_FILE) {
                 $errors['file']['noFile'] = true;
-            }*/
+            }
             
              // Gestion du réaffichage des champs déjà saisies lors de la soumission des erreurs
             $lastWrite = [];
@@ -99,7 +103,7 @@ class ShopController extends Controller
            
             if(count($errors) === 0) {
                 // Vérifier si le téléchargement du fichier n'a pas été interrompu
-                if (($_FILES['logo']['error'] != UPLOAD_ERR_OK) || ($_FILES['image1']['error'] != UPLOAD_ERR_OK) /*|| ($_FILES['image2']['error'] != UPLOAD_ERR_OK) || ($_FILES['image3']['error'] != UPLOAD_ERR_OK)*/) {
+                if (($_FILES['logo']['error'] != UPLOAD_ERR_OK) || ($_FILES['image1']['error'] != UPLOAD_ERR_OK) || ($_FILES['image2']['error'] != UPLOAD_ERR_OK) || ($_FILES['image3']['error'] != UPLOAD_ERR_OK)) {
                     $errors['file']['upload'] = true;
                 } else {
                     // Objet FileInfo
@@ -153,7 +157,7 @@ class ShopController extends Controller
                         )
                     );
 
-                    if (($extFoundInArray_logo === false) || ($extFoundInArray_image1 === false) /*||($extFoundInArray_image2 === false) ||($extFoundInArray_image3 === false)*/ ) {
+                    if (($extFoundInArray_logo === false) || ($extFoundInArray_image1 === false) ||($extFoundInArray_image2 === false) ||($extFoundInArray_image3 === false) ) {
                         $errors['file']['noImg'] = true;
                     } else {
 
@@ -196,7 +200,7 @@ class ShopController extends Controller
                         }
                         
                         
-                        if ((!$moved_logo) || (!$moved_image1) /*|| (!$moved_image2) || (!$moved_image3)*/) {
+                        if ((!$moved_logo) || (!$moved_image1) || (!$moved_image2) || (!$moved_image3)) {
                             $errors['files']['moveUpload'] = true;
                         } else {
 
@@ -223,8 +227,10 @@ class ShopController extends Controller
                             $latitude = $responseArray->results[0]->geometry->location->lat;
                             $longitude = $responseArray->results[0]->geometry->location->lng;                           
                             
+                            // Récupération de l'identifiant de connexion pour éviter l'accès des données d'autre compte user via l'url on appelle cette méthode (cela évite de passer en paramètre dans l'url l'id user 
+                            $user = $this->getUser();
                             $data = [
-                                'id_user' =>        $id_user, 
+                                'id_user' =>        $user['id'],
                                 'name' =>           $name, 
                                 'number' =>         $number, 
                                 'address' =>        $adress, 
@@ -251,8 +257,6 @@ class ShopController extends Controller
                                 'number_view' =>    $number_view 
                                     ];
                             
-                           /* print_r($data);
-                            die('stop');*/
                             $shopsInsert ->insert($data);
                             // Méthode pour afficher via $_SESSION un message indicatif de CRUD en DB après validation formulaire
                             $_SESSION['flash'] = 'Données insérées';
@@ -270,9 +274,13 @@ class ShopController extends Controller
             }
         } else{
                 $manager = new \Manager\ShopManager();
+               /* $user = $this->getUser();
+                $id = $user['id'];*/
                 $shopsCategory = $manager->getAllcategories();
-                $this->show('shops/add-shop', ['shopsCategory' => $shopsCategory,
-                                               'id'=>$w_user['id']]);
+                /*$shopManager  = new \Manager\ShopManager();
+                $shopToAdd = $shopManager->getShopsUser($id);*/
+                $this->show('shops/add-shop', ['shopsCategory' => $shopsCategory/*,
+                                               'shopToAdd' => $shopToAdd*/]);
         }
         
     }
@@ -311,8 +319,6 @@ class ShopController extends Controller
             $description = trim(htmlspecialchars($_POST['description']));
             $category = trim(htmlspecialchars($_POST['category']));
             $date_adding = trim(htmlspecialchars($_POST['date_adding']));
-/*            $latitude = NULL;
-            $longitude = NULL ;*/
             $tel = trim(htmlspecialchars($_POST['phone']));
             $fax = trim(htmlspecialchars($_POST['fax']));
             $mail = trim(htmlspecialchars($_POST['mail']));
@@ -627,44 +633,26 @@ class ShopController extends Controller
             $this->redirectToRoute('home');
             exit;
         }
-        
+
         $this->show('shops/shopview', ['shopsCategory' => $shopsCategory,
                                        'shopToView' => $shopToView]);
     }
 
-     public function adminShop($id)
+    public function adminShop(/*$id*/)
     {
         $manager = new \Manager\ShopManager();
         $shopsCategory = $manager->getAllcategories();
         $shopManager  = new \Manager\ShopManager();
-        /*$shopToAdmin = $shopManager->find($id);*/
-        $shopToAdmin = $shopManager->getShopsUser($id);
-/*
-        if(!$shopToAdmin) {
+        
+        $user = $this->getUser();
+        /*$shopToAdmin = $shopManager->getShopsUser($id);*/
+        $shopToAdmin = $shopManager->getShopsUser( $user['id']);     
+        /*if(!$shopToAdmin) {
             $this->redirectToRoute('home');
             exit;
-        }
-*/      
-        /*print_r($shopToAdmin);
-        die('stop');*/
+        }*/
+      
         $this->show('shops/admin-shops', ['shopsCategory' => $shopsCategory,
                                           'shopToAdmin' => $shopToAdmin]);
     }
-
-    /*header button{
-    display: block;
-    margin: auto;
-    margin-top: 48px;
-    border: none;
-    color: white;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-    border-radius: 4px;
-    background-color:  #eb7d4b;
-    width: 293px;
-    height: 70px;
-    cursor: pointer; /*car je veux que le pointeur utilisé au-dessus du lien bouton soit une main et non la flèche par défaut.
-}*/
-
 }

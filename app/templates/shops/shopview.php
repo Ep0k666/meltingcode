@@ -6,7 +6,7 @@
 <div id="boutik">
 
     <div class="slider-container">
-        <div class="slider-control left inactive"></div>
+        <div class="slider-control left inactive"></div> 
         <div class="slider-control right"></div>
         <ul class="slider-pagi"></ul>
         <div class="slider">
@@ -19,7 +19,7 @@
                     <div class="slide__text">
                         <h2 class="slide__text-heading"><?php echo $shopToView['name']?></h2>
                         <img class="logo" src="<?= $this->assetUrl('uploads/' . $shopToView['logo']) ?>">
-                        <p class="slide__text-desc">Description de la boutique <br>
+                        <p class="slide__text-desc">
                             <?php echo $shopToView['description'] ?></p>
                     </div>
                 </div>
@@ -58,18 +58,18 @@
                             <div class="elementItemWrapper">
                                 <div class="elementItem superfarLeft"><img src="<?= $this->assetUrl("img/harnais.jpg")?>" alt=""></div>
                                 <div class="elementItem farLeft">
-                                    <img src="<?= $this->assetUrl("img/jouet.jpg")?>" alt="">
+                                    <img src="<?= $this->assetUrl("img/pc_ultra.jpg")?>" alt="">
                                 </div>
                                 <div class="elementItem left">
-                                    <img src="<?= $this->assetUrl("img/caisse.jpg")?>" alt="">
+                                    <img src="<?= $this->assetUrl("img/creme_bio.jpg")?>" alt="">
                                 </div>
                                 <div class="elementItem active">
-                                    <img src="<?= $this->assetUrl("img/harnais.jpg")?>" alt="">
+                                    <img src="<?= $this->assetUrl("img/madeleine.jpg")?>" alt="">
                                 </div>
-                                <div class="elementItem right"><img src="<?= $this->assetUrl("img/arbre.jpg")?>" alt=""></div>
+                                <div class="elementItem right"><img src="<?= $this->assetUrl("img/short_thai.jpg")?>" alt=""></div>
                                 <div class="elementItem farRight"><img src="<?= $this->assetUrl("img/shampoing.jpg")?>" alt=""></div>
                                 <div class="elementItem superfarRight">
-                                    <img src="<?= $this->assetUrl("img/sac.jpg")?>" alt=""></div>
+                                    <img src="<?= $this->assetUrl("img/bonbons.jpg")?>" alt=""></div>
                             </div>
                             <div class="elementArrowWrapper">
                                 <div class="elementArrow arrowLeft">
@@ -85,19 +85,19 @@
                             </div>
                             <div class="elementContent">
                                 <div class="elementContentWrapper left">
-                                    <p>subtitle</p>
+                                    <!-- <p>subtitle</p>
                                     <h1>Title</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.                        Summum a vobis bonum voluptas dicitur.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.                        Summum a vobis bonum voluptas dicitur.</p> -->
                                 </div>
                                 <div class="elementContentWrapper active">
-                                    <p>subtitle</p>
+                                    <!-- <p>subtitle</p>
                                     <h1>Title</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.                        Summum a vobis bonum voluptas dicitur.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.                        Summum a vobis bonum voluptas dicitur.</p> -->
                                 </div>
                                 <div class="elementContentWrapper right">
-                                    <p>subtitle</p>
+                                    <!-- <p>subtitle</p>
                                     <h1>Title</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.                        Summum a vobis bonum voluptas dicitur.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.                        Summum a vobis bonum voluptas dicitur.</p> -->
                                 </div>
                             </div>
                         </div>

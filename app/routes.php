@@ -10,7 +10,7 @@ $w_routes = array(
     /************** ---------- CONTACT ------------ ***************/
     ['GET|POST', 	 '/contact', 			'Contact#contact',				'contact'],
     /************** ---------- NEWSLETTER ------------ ***************/
-    ['GET|POST',     '/newsletter',            'Newsletter#newsletter',              'newsletter'],
+    ['GET|POST',     '/newsletter',            'Newsletter#subscribeNewsletter',              'newsletter'],
     /************** ---------- A PROPOS ------------ ***************/
     ['GET|POST',     '/apropos',            'Display#aPropos',              'a-propos'],
     /*************** ---------- account ------------ ******************/
@@ -27,17 +27,19 @@ $w_routes = array(
     ['GET|POST',     '/connect', 'Connect#connexion', 'connexion'],
     /*************** ---------- LOGOFF ------------ ******************/
     ['GET|POST',     '/disconnect', 'Connect#logoff', 'logoff'],
-    /*************** ---------- ADMIN BOUTIQ HOME ------------ ******************/
+     /*************** ---------- ADMIN BOUTIQ HOME ------------ ******************/
     /*************** ---------- Admin ------------ ******************/
-    ['GET|POST', '/shops/admin/[:id]', 'Shop#adminShop', 'admin-shop'],
+    /*['GET|POST', '/shops/admin/[:id]', 'Shop#adminShop', 'admin-shop'],*/
+    ['GET|POST', '/shops/admin', 'Shop#adminShop', 'admin-shop'],
     /*************** ---------- Ajout ------------ ******************/
+    /*['GET|POST',     '/shops/add/[:id]', 'Shop#shopListCategory', 'add-shop'],*/
     ['GET|POST',     '/shops/add', 'Shop#shopListCategory', 'add-shop'],
     /*************** ---------- Edition ------------ ******************/
     ['GET|POST',     '/shops/edit/[:id]', 'Shop#shopEdit', 'edit-shop'],
+    /*['GET|POST',     '/shops/edit', 'Shop#shopEdit', 'edit-shop'],*/
     /*************** ---------- Suppression ------------ ******************/
     ['GET|POST',     '/shops/delete/[:id]', 'Shop#delete', 'delete-shop'],
     /*************** ---------- Vue ------------ ******************/
     ['GET|POST', '/shops/shopview/[:id]', 'Shop#shopview', 'shop-view'],
-    /*************** ---------- AJAX ROAD ------------ ******************/
-    ['GET|POST', '/ajax/path/create', 'AjaxPath#add', 'ajax_path_create'],
+ /*   ['GET|POST', '/shops/shopview', 'Shop#shopview', 'shop-view'], */  
 );

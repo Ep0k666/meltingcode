@@ -35,7 +35,7 @@
 	display: block;
 	color: #1A1717;
 	text-decoration: none;
-	padding: 20px 3.24%;
+	padding: 20px 2.83%;
 	text-transform: uppercase;
 	transform: rotate(0deg);
 	float: left;
@@ -56,6 +56,8 @@
 #low_nav_desktop ul li:nth-child(1) a:hover{
 	color: #BE27DA;
 	border-bottom: 5px solid #BE27DA;
+	padding-bottom: 15px;
+	box-sizing: border-box;
 }
 
 #low_nav_desktop ul li:nth-child(2) a:hover{
@@ -114,6 +116,13 @@
 	box-sizing: border-box;
 }
 
+#low_nav_desktop ul li:nth-child(10) a:hover{
+	color: #FE2AD4;
+	border-bottom: 5px solid #FE2AD4;
+	padding-bottom: 15px;
+	box-sizing: border-box;
+}
+
 @keyframes fretille{
 	33%{ transform: rotate(2deg); }
 	66%{ transform: rotate(-2deg); }
@@ -167,6 +176,10 @@
 	z-index: -1;
 	text-align: left;
   font-family: 'Titillium Web', sans-serif;
+}
+
+div[class="flexslider"]{
+	border:none;
 }
 
 ol li a{
@@ -528,7 +541,7 @@ ol li a{
 
 	/** Links category **/
 	#low_nav_desktop ul li a{
-	padding: 20px 2.73%;
+		padding: 20px 2.35%;
 	}
 }
 
@@ -755,12 +768,12 @@ ol li a{
 	/** About us **/
 
 	.at-grid{
-		transform: scale(0.8);
+		transform: scale(0.9);
 		border: none;
 	}
 
 	.at-column{
-		padding-top: 0px;
+		padding-top: 20px;
 		padding-bottom: 50px;
 	}
 
@@ -782,6 +795,7 @@ ol li a{
 	        -ms-flex-preferred-size: 100% !important;
 	            flex-basis: 100% !important;
 	    margin: auto;
+	    font-size: 15px;
 	}
 
 	.at-user__avatar img{

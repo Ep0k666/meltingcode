@@ -40,7 +40,6 @@ form .field {
   margin-bottom: 15px;
 }
 form .field label {
-  text-transform: uppercase;
   position: absolute;
   top: 0;
   left: 0;
@@ -87,7 +86,6 @@ form .field textarea {
   color: black;
   font-size: 1.4em;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 form .field input[type="text"]#msg,
 form .field textarea#msg {
@@ -168,6 +166,14 @@ form input[type="submit"]:active {
   color: #1D8C7E;
 }
 
+
+/* Si les infos ont été insérées en BDD */
+.contact_success{
+  font-size:20px;
+  color:#80C2BB;
+  padding: 20px 0 100px 0px;
+}
+
 @media (max-width: 992px) and (min-width: 768px){
 
   #contact{
@@ -188,6 +194,10 @@ form input[type="submit"]:active {
 }
 
 @media (max-width: 500px){
+
+  #hire{
+    padding-top: 0;
+  }
   
   #contact{
     width: 100%;

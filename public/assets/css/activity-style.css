@@ -53,7 +53,7 @@ body #high_nav{
 	display: block;
 	color: #1A1717;
 	text-decoration: none;
-	padding: 20px 3.24%;
+	padding: 20px 2.83%;
 	text-transform: uppercase;
 	transform: rotate(0deg);
 	float: left;
@@ -134,6 +134,13 @@ body #high_nav{
 	box-sizing: border-box;
 }
 
+#low_nav_desktop ul li:nth-child(10) a:hover{
+	color: #FE2AD4;
+	border-bottom: 5px solid #FE2AD4;
+	padding-bottom: 15px;
+	box-sizing: border-box;
+}
+
 @keyframes taihitienneQuiDanse{
 	33%{ transform: rotate(2deg); }
 	66%{ transform: rotate(-2deg); }
@@ -186,8 +193,9 @@ body #high_nav{
 #activity_shop{
 	color: #322F2F;
 	padding-bottom: 50px;
-	padding-top: 15px;
+	padding-top: 0px;
 	font-family: 'Titillium Web', sans-serif;
+	/* min-height:620px; */
 }
 
 /* bordure */
@@ -208,23 +216,19 @@ body #high_nav{
 	color: #FFF;
 }
 
-#activity_shop h3, #about_us h3 {
+#activity_shop h3{
 	font-family: 'Lobster', cursive;
 	background-color:  white;
 	font-size: 35px;
 	font-weight: 700;
 	width: 400px;
-	margin: auto;
+	margin: 5px auto 0;
 	padding: 13px;
 	text-align: center;
 	position: relative;
 	top: -58px;
 	border: 20px solid #FFF;
 	color:#80C2BB;
-}
-
-#activity_shop{
-	min-height: 450px;
 }
 
 #activity_shop h4{
@@ -245,7 +249,7 @@ body #high_nav{
 .shop_discovery{
 	float: left;
 	width: 33.33%;
-	min-height: 440px;
+	min-height: 410px;
 }
 
 .img_shop_discovery{
@@ -264,13 +268,17 @@ body #high_nav{
 .shop_title{
 	text-align: center;
 	font-size: 30px;
-	padding-top: 15px;
+	padding: 15px 15px 0;
+	max-width: 90%;
+	margin: auto;
 }
 
 .shop_discovery p{
-	padding: 30px;
+	padding: 30px 20px;
 	font-size: 16px;
 	text-align:justify;
+	color: #8A8888;
+	margin: auto;
 }
 
 
@@ -413,7 +421,7 @@ footer p{
 
 	/** Links category **/
 	#low_nav_desktop ul li a{
-		padding: 10px 3%;
+		padding: 20px 2.35%;
 	}
 
 	.at-grid{
@@ -423,6 +431,10 @@ footer p{
 
 /** Supérieur à 768px et inférieur à 992px **/
 @media (min-width: 700px) and (max-width: 992px){
+
+	#activity_shop{
+		padding-top: 0;
+	}
 
 	/** Utilitaires **/
 	.container{
@@ -439,10 +451,11 @@ footer p{
 		display: block;
 	}
 
-	#home #low_nav_mobile{
+	#low_nav_mobile{
 		display: block;
-		font-size: 16px;
+		font-size: 15px;
 		font-family: 'Titillium Web', sans-serif;
+		font: normal;
 	}
 
 	/*** Titre avec bordure séparation ***/
@@ -471,6 +484,10 @@ footer p{
 /*** Inférieur à 768px ***/
 @media (max-width: 700px){
 
+	#activity_shop{
+		padding-top: 0;
+	}
+
 	/** Utilitaires **/
 	.container{
 		width: 90%;
@@ -488,6 +505,7 @@ footer p{
 
 	#low_nav_mobile{
 		display: block;
+		font-size: 15px;
 	}
 
 	/*** Titre avec bordure séparation ***/
@@ -539,10 +557,18 @@ footer p{
 
 @media (max-width: 550px){
 
+	#activity_shop{
+		padding-top: 0;
+	}
+
 	.title_most_viewed{
 		font-size: 22px;
 		width: 130px;
 		padding: 30px 10px 15px 20px;
+	}
+
+	#low_nav_mobile{
+		font-size: 15px;
 	}
 
 	.description_most_viewed{
