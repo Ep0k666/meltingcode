@@ -5,11 +5,15 @@
 <section class="stark-login">
 
     <div class="containerconnect">
+        <div id="fade-box">
         <form action="#" method="POST">
-            <div id="fade-box">
+
                 <label for="connexion">Connexion</label>
-                <!--<div class="g-signin2" data-onsuccess="onSignIn" ></div>
-                <a class="g-signout" href="#" onclick="signOut();">Sign out</a>
+
+            <button class="fbBtn"><strong>Se connecter</strong> avec <strong>Facebook</strong></button>
+            <button class="ggBtn"><strong>Se connecter</strong> avec <strong>Google+ </strong></button>
+             <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
                 <script>
                     function signOut() {
                         var auth2 = gapi.auth2.getAuthInstance();
@@ -27,13 +31,15 @@
                     <p class="error">le mot de passe est faux doit être spécifié</p>
                 <?php endif ?>
                 <button type="submit" name="connect" value="submit">Connexion</button>
-               <!-- <a href="<?/*= $this->url("login")*/?>">Pas encore de compte ?</a>-->
+                <!-- <a href="<?/*= $this->url("login")*/?>">Pas encore de compte ?</a>-->
                 <a href="<?= $this->url("lost")?>">Mot de passe oublié ?</a>
-            </div>
+
         </form>
 
 </section>
 
+
+</div>
 <div id="circle1">
     <div id="inner-cirlce1">
         <h2> </h2>

@@ -74,7 +74,7 @@ class ResetPassController extends Controller
         } else {
             echo "Message sent!";
         }
-        $_SESSION['flash'] = 'Un lien de reset ..';
+        
         $this->show('loginPage/resetPass');
     }
 

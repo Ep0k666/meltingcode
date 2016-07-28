@@ -184,7 +184,7 @@
             <!-- *** Liens de navigation *** -->
             <ul>
                 <li><a href="<?= $this->url('home') ?>">Accueil</a></li>
-                <li><a href="<?= $this->url('contact') ?>">Contact</a></li>
+                
                 <?php if ($w_user) :?>
 
                     <li><a href="<?= $this->url('account', ['id'=>$w_user['id'] ]) ?>"><!-- <?= $w_user['firstname']." ".$w_user['lastname'] ?>  --> Compte</a></li>
@@ -197,7 +197,9 @@
                     <li><a href='<?= $this->url('connexion') ?>' id="connexion">Connexion</a></li>
                     <li><a href='<?= $this->url('login') ?>' id="suscribe">Inscription</a></li>
                 <?php endif ?>
+                <li><a href="<?= $this->url('contact') ?>">Contact</a></li>
             </ul>
+
 
             <hr />
 
