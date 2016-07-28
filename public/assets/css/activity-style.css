@@ -193,7 +193,7 @@ body #high_nav{
 #activity_shop{
 	color: #322F2F;
 	padding-bottom: 50px;
-	padding-top: 15px;
+	padding-top: 0px;
 	font-family: 'Titillium Web', sans-serif;
 	/* min-height:620px; */
 }
@@ -216,13 +216,13 @@ body #high_nav{
 	color: #FFF;
 }
 
-#activity_shop h3, #about_us h3 {
+#activity_shop h3{
 	font-family: 'Lobster', cursive;
 	background-color:  white;
 	font-size: 35px;
 	font-weight: 700;
 	width: 400px;
-	margin: auto;
+	margin: 5px auto 0;
 	padding: 13px;
 	text-align: center;
 	position: relative;
@@ -421,7 +421,7 @@ footer p{
 
 	/** Links category **/
 	#low_nav_desktop ul li a{
-		padding: 10px 3%;
+		padding: 20px 2.35%;
 	}
 
 	.at-grid{
@@ -431,6 +431,10 @@ footer p{
 
 /** Supérieur à 768px et inférieur à 992px **/
 @media (min-width: 700px) and (max-width: 992px){
+
+	#activity_shop{
+		padding-top: 0;
+	}
 
 	/** Utilitaires **/
 	.container{
@@ -447,10 +451,11 @@ footer p{
 		display: block;
 	}
 
-	#home #low_nav_mobile{
+	#low_nav_mobile{
 		display: block;
-		font-size: 16px;
+		font-size: 15px;
 		font-family: 'Titillium Web', sans-serif;
+		font: normal;
 	}
 
 	/*** Titre avec bordure séparation ***/
@@ -479,6 +484,10 @@ footer p{
 /*** Inférieur à 768px ***/
 @media (max-width: 700px){
 
+	#activity_shop{
+		padding-top: 0;
+	}
+
 	/** Utilitaires **/
 	.container{
 		width: 90%;
@@ -496,6 +505,7 @@ footer p{
 
 	#low_nav_mobile{
 		display: block;
+		font-size: 15px;
 	}
 
 	/*** Titre avec bordure séparation ***/
@@ -547,10 +557,18 @@ footer p{
 
 @media (max-width: 550px){
 
+	#activity_shop{
+		padding-top: 0;
+	}
+
 	.title_most_viewed{
 		font-size: 22px;
 		width: 130px;
 		padding: 30px 10px 15px 20px;
+	}
+
+	#low_nav_mobile{
+		font-size: 15px;
 	}
 
 	.description_most_viewed{

@@ -160,6 +160,14 @@
     unset($_SESSION['flash']);
 } ?>
 
+<?php if($w_user) : ?>
+    <style>
+        #high_nav ul li:nth-child(2){
+            display: none;
+        }
+    </style>
+<?php endif; ?>
+
     <nav id="high_nav">
         <div class="container">
 

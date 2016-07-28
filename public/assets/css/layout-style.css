@@ -369,6 +369,7 @@ footer p, footer a{
 
 	#high_nav ul li a:hover{
 		border: none;
+		padding: 27px 5px;
 	}
 
 	#high_nav ul li a{
@@ -407,7 +408,7 @@ footer p, footer a{
 	}
 
 	body section:first-of-type{
-	padding-top: 174px;
+		padding-top: 174px;
 	}
 
 	/*** Titre principal ***/
@@ -420,11 +421,11 @@ footer p, footer a{
 	/*** High navigation ***/
 	#high_nav{
 		padding-bottom: 10px;
-	}
+	}/* 
 
 	#high_nav input{
-		width: 
-	}
+		width: ;
+	} */
 
 	#open_search, #close_search{
 		display: none;
@@ -437,12 +438,14 @@ footer p, footer a{
 	/*** High navigation ***/
 	#high_nav ul li a:hover{
 		border: none;
+		padding: 15px 10px;
 	}
 
 	/*** Newsletter ***/
 	#newsletter_link{
 		font-size: 17px;
-		padding: 10px 15px;
+		padding: 10px 0px;
+		width: 70%;
 	}
 
 	#high_nav hr{
@@ -475,10 +478,6 @@ footer p, footer a{
 
 	#high_nav ul li a{
 		padding: 15px 10px;
-	}
-
-	#high_nav ul li:nth-child(2){
-		display: none;
 	}
 
 	#high_nav ul li a:focus, #high_nav ul li a:active{

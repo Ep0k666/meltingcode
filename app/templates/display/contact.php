@@ -74,7 +74,7 @@
 		      </div>
 
 		      <!-- **** SUBMIT **** -->
-		      <input class="button" type="submit" name="send-message" value="send" />
+		      <input class="button" type="submit" name="send-message" value="Envoyer" />
 
 	  	</form>
 

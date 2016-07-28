@@ -40,7 +40,6 @@ form .field {
   margin-bottom: 15px;
 }
 form .field label {
-  text-transform: uppercase;
   position: absolute;
   top: 0;
   left: 0;
@@ -87,7 +86,6 @@ form .field textarea {
   color: black;
   font-size: 1.4em;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 form .field input[type="text"]#msg,
 form .field textarea#msg {
@@ -196,6 +194,10 @@ form input[type="submit"]:active {
 }
 
 @media (max-width: 500px){
+
+  #hire{
+    padding-top: 0;
+  }
   
   #contact{
     width: 100%;
